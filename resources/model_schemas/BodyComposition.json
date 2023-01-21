@@ -1,0 +1,166 @@
+[
+    {
+        "name": "patient_id",
+        "dbType": "integer",
+        "htmlType": "number",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": true
+    },
+    {
+        "name": "user_id",
+        "dbType": "integer",
+        "htmlType": "number",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": true
+    },
+    {
+        "name": "Age",
+        "dbType": "string,4",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "Sex",
+        "dbType": "tinyInteger",
+        "htmlType": "radio",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "Waist",
+        "dbType": "string,50",
+        "htmlType": "text",
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "SMM",
+        "dbType": "string,50",
+        "htmlType": "text",
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "VFP",
+        "dbType": "string,50",
+        "htmlType": "text",
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "Height",
+        "dbType": "string,50",
+        "htmlType": "text",
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "Weight",
+        "dbType": "string,50",
+        "htmlType": "text",
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "Hip",
+        "dbType": "string,50",
+        "htmlType": "text",
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "BFMP",
+        "dbType": "string,50",
+        "htmlType": "text",
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "created_at",
+        "dbType": "dateTime,0",
+        "htmlType": "datetime",
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": false,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "updated_at",
+        "dbType": "dateTime,0",
+        "htmlType": "datetime",
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": false,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,\\App\\Models\\User,user_id,id,true,true"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,\\Modules\\User\\Models\\Patient,patient_id,id,true,true"
+    }
+]

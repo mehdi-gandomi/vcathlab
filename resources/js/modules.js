@@ -46,4 +46,5 @@ export default [
     },
 	...require('@external_modules/User/Resources/js/mace_assesments/routes.js').default,
 	...require('@external_modules/User/Resources/js/echo_calculations/routes.js').default,
+	...require('@external_modules/User/Resources/js/body_compositions/routes.js').default,
 ];

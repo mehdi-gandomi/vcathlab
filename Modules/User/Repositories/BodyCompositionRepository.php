@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class BodyCompositionRepository
  * @package Modules\User\Repositories
- * @version December 30, 2022, 3:59 pm +0330
+ * @version January 21, 2023, 9:26 pm +0330
 */
 
 class BodyCompositionRepository extends BaseRepository

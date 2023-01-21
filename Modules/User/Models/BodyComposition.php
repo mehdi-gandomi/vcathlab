@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model as Model;
 /**
  * Class BodyComposition
  * @package Modules\User\Models
- * @version December 30, 2022, 3:59 pm +0330
+ * @version January 21, 2023, 9:26 pm +0330
  *
  * @property \Modules\User\Models\\App\Models\User $user
  * @property \Modules\User\Models\\Modules\User\Models\Patient $patient
@@ -232,7 +232,7 @@ class BodyComposition extends Model
             ,
         'created_at'=>[
                 'htmlType'=>'datetime',
-                'inIndex'=>0,
+                'inIndex'=>1,
                 'inForm'=>0,
                 'title'=>'Created At',
                 'name'=>'created_at',
@@ -241,7 +241,7 @@ class BodyComposition extends Model
             ,
         'updated_at'=>[
                 'htmlType'=>'datetime',
-                'inIndex'=>0,
+                'inIndex'=>1,
                 'inForm'=>0,
                 'title'=>'Updated At',
                 'name'=>'updated_at',

@@ -502,7 +502,7 @@
           <vs-row vs-align="center" v-if="userInfo.panel_type == 6" vs-type="flex" vs-w="12" class="mb-6 m-0">
 
             <vs-col
-              vs-lg="6"
+              vs-lg="4"
               vs-sm="6"
               vs-xs="12"
             >
@@ -546,7 +546,7 @@
   <vs-col
               vs-type="flex"
               vs-align="center"
-              vs-lg="6"
+              vs-lg="4"
               vs-sm="6"
               vs-xs="12"
             >
