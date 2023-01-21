@@ -1,0 +1,499 @@
+  if ( $Sex == 1 )
+                $PTPsexx_point = 2;
+            if ( $Sex == 0 )
+                $PTPsexx_point = -1;
+
+            if ($symptom == "Typical Chest Pain")
+                $PTPsymptom_point = 2;
+
+            if ($symptom == "Atypical Chest Pain")
+                $PTPsymptom_point = 0;
+            if ($symptom == "No angina (Asymptomatic)")
+                $PTPsymptom_point = -1;
+            if ($symptom == "Dyspnea")
+                $PTPsymptom_point = -1;
+
+            if ($Age >= 18 && $Age <= 39)
+                $PTPAge_point = 3;
+
+            if ($Age >= 40 && $Age <= 49)
+                $PTPAge_point = 4;
+
+            if ($Age >= 50 && $Age <= 59)
+                $PTPAge_point = 5;
+
+            if ($Age >= 60 && $Age <= 69)
+                $PTPAge_point = 6;
+
+            if ($Age >= 70)
+                $PTPAge_point = 7;
+
+
+            if ($TBP == 1)
+                $PTPTHTN_point = 1;
+
+
+            if ($TBP == 0)
+                $PTPTHTN_point = 0;
+
+
+            if ($Diabetes == 1)
+                $PTPDM_point = 1;
+
+
+            if ($Diabetes == 0)
+                $PTPDM_point = 0;
+
+
+            if ($FH == 1)
+                $PTPFH_point = 1;
+
+
+            if ($FH == 0)
+                $PTPFH_point = 0;
+
+
+
+            if ($THL == 1)
+                $PTPHLP_point = 1;
+
+            if ($THL == 0)
+                $PTPHLP_point = 0;
+
+
+
+            if ($Smoker == 1)
+                $PTPSMOKER_point = 1;
+            if ($Smoker == 0)
+                $PTPSMOKER_point = 0;
+
+
+            $Total_PTP_point = $PTPSMOKER_point + $PTPHLP_point + $PTPFH_point + $PTPDM_point + $PTPTHTN_point + $PTPAge_point + $PTPsymptom_point + $PTPsexx_point;
+
+
+
+            if ( $Total_PTP_point >= 1 && $Total_PTP_point <= 3 )
+                $RSK_PTP = 1.1;
+            if ( $Total_PTP_point >= 4 )
+                $RSK_PTP = -0.0706*pow($Total_PTP_point,3) + 2.3783*pow($Total_PTP_point,2) - 15.492*pow($Total_PTP_point,1) + 29.931;
+
+
+
+            if ($RSK_PTP <= 15){
+                $CondRSK_PTP = "Low risk";
+
+                $CondRule = "Rule out CAD";
+            }
+
+            if ($RSK_PTP > 15 && $RSK_PTP <= 65){
+                $CondRSK_PTP = "Moderate risk";
+
+                $CondRule = "Rule out and Rule in CAD";
+            }
+
+            if ($RSK_PTP > 65 && $RSK_PTP <= 85){
+                $CondRSK_PTP = "Moderate to high risk";
+
+                $CondRule = "Rule in and Rule out CAD"; ;
+            }
+
+            if ($RSK_PTP > 85){
+                $CondRSK_PTP = "High risk";
+                $CondRule = "Rule in CAD"; ;
+            }
+
+
+
+            $Sens_ETT = 0.61;
+
+            $Spec_ETT = 0.77;
+
+            $PLR_ETT = $Sens_ETT/(1-$Spec_ETT);
+
+            $NLR_ETT = (1-$Sens_ETT)/$Spec_ETT;
+
+            $PTP_PLR_ETT = $RSK_PTP/100;
+
+            $PTP_NLR_ETT = $RSK_PTP/100;
+
+            $PTP_PLR_ODD_ETT = $PTP_PLR_ETT/(1-$PTP_PLR_ETT);
+
+            $PTP_NLR_ODD_ETT = $PTP_NLR_ETT/(1-$PTP_NLR_ETT);
+
+            $POST_PLR_ETT = ($PTP_PLR_ODD_ETT*$PLR_ETT)/(($PTP_PLR_ODD_ETT*$PLR_ETT)+1)*100;
+
+            $POST_NLR_ETT = ($PTP_NLR_ODD_ETT*$NLR_ETT)/(($PTP_NLR_ODD_ETT*$NLR_ETT)+1)*100;
+
+
+            if ( $POST_PLR_ETT >= 85 )
+
+                $CondPOST_PLR_ETT = "Strogly Reliable";
+
+            if ( $POST_PLR_ETT >= 75 && $POST_PLR_ETT < 85)
+
+                $CondPOST_PLR_ETT = "Modestly Reliable";
+
+            if ( $POST_PLR_ETT < 75)
+
+                $CondPOST_PLR_ETT = "Weakly Reliable";
+
+
+
+            if ( (100 - $POST_NLR_ETT) >= 85 )
+
+                $CondPOST_NLR_ETT = "Strogly Reliable";
+
+            if ( (100 - $POST_NLR_ETT) >= 75 && $POST_NLR_ETT < 85)
+
+                $CondPOST_NLR_ETT = "Modestly Reliable";
+
+            if ( (100 - $POST_NLR_ETT) < 75)
+
+                $CondPOST_PLR_ETT = "Weakly Reliable";
+
+
+
+
+
+            // SPECT
+
+
+            $Sens_SPECT = 0.80;
+
+            $Spec_SPECT = 0.72;
+
+            $PLR_SPECT = $Sens_SPECT/(1-$Spec_SPECT);
+
+            $NLR_SPECT = (1-$Sens_SPECT)/$Spec_SPECT;
+
+            $PTP_PLR_SPECT = $RSK_PTP/100;
+
+            $PTP_NLR_SPECT = $RSK_PTP/100;
+
+            $PTP_PLR_ODD_SPECT = $PTP_PLR_SPECT/(1-$PTP_PLR_SPECT);
+
+            $PTP_NLR_ODD_SPECT = $PTP_NLR_SPECT/(1-$PTP_NLR_SPECT);
+
+            $POST_PLR_SPECT = ($PTP_PLR_ODD_SPECT*$PLR_SPECT)/(($PTP_PLR_ODD_SPECT*$PLR_SPECT)+1)*100;
+
+            $POST_NLR_SPECT = ($PTP_NLR_ODD_SPECT*$NLR_SPECT)/(($PTP_NLR_ODD_SPECT*$NLR_SPECT)+1)*100;
+
+
+            if ( $POST_PLR_SPECT >= 85 )
+
+                $CondPOST_PLR_SPECT = "Strogly Reliable";
+
+            if ( $POST_PLR_SPECT >= 75 && $POST_PLR_SPECT < 85)
+
+                $CondPOST_PLR_SPECT = "Modestly Reliable";
+
+            if ( $POST_PLR_SPECT < 75)
+
+                $CondPOST_PLR_SPECT = "Weakly Reliable";
+
+
+
+            if ( (100 - $POST_NLR_SPECT) >= 85 )
+
+                $CondPOST_NLR_SPECT = "Strogly Reliable";
+
+            if ( (100 - $POST_NLR_SPECT) >= 75 && $POST_NLR_SPECT < 85)
+
+                $CondPOST_NLR_SPECT = "Modestly Reliable";
+
+            if ( (100 - $POST_NLR_SPECT) < 75)
+
+                $CondPOST_PLR_SPECT = "Weakly Reliable";
+
+
+
+
+            // Stressecho
+
+
+            $Sens_Stressecho = 0.76;
+
+            $Spec_Stressecho = 0.88;
+
+            $PLR_StressEcho = $Sens_Stressecho/(1-$Spec_Stressecho);
+
+            $NLR_StressEcho = (1-$Sens_Stressecho)/$Spec_Stressecho;
+
+            $PTP_PLR_Stressecho = $RSK_PTP/100;
+
+            $PTP_NLR_Stressecho = $RSK_PTP/100;
+
+            $PTP_PLR_ODD_Stressecho = $PTP_PLR_Stressecho/(1-$PTP_PLR_Stressecho);
+
+            $PTP_NLR_ODD_Stressecho = $PTP_NLR_Stressecho/(1-$PTP_NLR_Stressecho);
+
+            $POST_PLR_Stressecho = ($PTP_PLR_ODD_Stressecho*$PLR_StressEcho)/(($PTP_PLR_ODD_Stressecho*$PLR_StressEcho)+1)*100;
+
+            $POST_NLR_Stressecho = ($PTP_NLR_ODD_Stressecho*$NLR_StressEcho)/(($PTP_NLR_ODD_Stressecho*$NLR_StressEcho)+1)*100;
+
+
+            if ( $POST_PLR_Stressecho >= 85 )
+
+                $CondPOST_PLR_Stressecho = "Strogly Reliable";
+
+            if ( $POST_PLR_Stressecho >= 75 && $POST_PLR_Stressecho < 85)
+
+                $CondPOST_PLR_Stressecho = "Modestly Reliable";
+
+            if ( $POST_PLR_Stressecho < 75)
+
+                $CondPOST_PLR_Stressecho = "Weakly Reliable";
+
+
+
+            if ( (100 - $POST_NLR_Stressecho) >= 85 )
+
+                $CondPOST_NLR_Stressecho = "Strogly Reliable";
+
+            if ( (100 - $POST_NLR_Stressecho) >= 75 && $POST_NLR_Stressecho < 85)
+
+                $CondPOST_NLR_Stressecho = "Modestly Reliable";
+
+            if ( (100 - $POST_NLR_Stressecho) < 75)
+
+                $CondPOST_PLR_Stressecho = "Weakly Reliable";
+
+
+            // CTANGIO
+
+
+            $Sens_CTANGIO = 0.95;
+
+            $Spec_CTANGIO = 0.72;
+
+            $PLR_CTANGIO = $Sens_CTANGIO/(1-$Spec_CTANGIO);
+
+            $NLR_CTANGIO = (1-$Sens_CTANGIO)/$Spec_CTANGIO;
+
+            $PTP_PLR_CTANGIO = $RSK_PTP/100;
+
+            $PTP_NLR_CTANGIO = $RSK_PTP/100;
+
+            $PTP_PLR_ODD_CTANGIO = $PTP_PLR_CTANGIO/(1-$PTP_PLR_CTANGIO);
+
+            $PTP_NLR_ODD_CTANGIO = $PTP_NLR_CTANGIO/(1-$PTP_NLR_CTANGIO);
+
+            $POST_PLR_CTANGIO = ($PTP_PLR_ODD_CTANGIO*$PLR_CTANGIO)/(($PTP_PLR_ODD_CTANGIO*$PLR_CTANGIO)+1)*100;
+
+            $POST_NLR_CTANGIO = ($PTP_NLR_ODD_CTANGIO*$NLR_CTANGIO)/(($PTP_NLR_ODD_CTANGIO*$NLR_CTANGIO)+1)*100;
+
+
+            if ( $POST_PLR_CTANGIO >= 85 )
+
+                $CondPOST_PLR_CTANGIO = "Strogly Reliable";
+
+            if ( $POST_PLR_CTANGIO >= 75 && $POST_PLR_CTANGIO < 85)
+
+                $CondPOST_PLR_CTANGIO = "Modestly Reliable";
+
+            if ( $POST_PLR_CTANGIO < 75)
+
+                $CondPOST_PLR_CTANGIO = "Weakly Reliable";
+
+
+
+            if ( (100 - $POST_NLR_CTANGIO) >= 85 )
+
+                $CondPOST_NLR_CTANGIO = "Strogly Reliable";
+
+            if ( (100 - $POST_NLR_CTANGIO) >= 75 && $POST_NLR_CTANGIO < 85)
+
+                $CondPOST_NLR_CTANGIO = "Modestly Reliable";
+
+            if ( (100 - $POST_NLR_CTANGIO) < 75)
+
+                $CondPOST_PLR_CTANGIO = "Weakly Reliable";
+
+
+
+
+
+
+            // ETTP + SPECT
+
+            $PTP_PLR_ETTPSPECT = $POST_PLR_ETT/100;
+
+            $PTP_NLR_ETTPSPECT = $POST_PLR_ETT/100;
+
+            $PTP_PLR_ODD_ETTPSPECT = $PTP_PLR_ETTPSPECT/(1-$PTP_PLR_ETTPSPECT);
+
+            $PTP_NLR_ODD_ETTPSPECT = $PTP_NLR_ETTPSPECT/(1-$PTP_NLR_ETTPSPECT);
+
+            $POST_PLR_ETTPSPECT = ($PTP_PLR_ODD_ETTPSPECT*$PLR_SPECT)/(($PTP_PLR_ODD_ETTPSPECT*$PLR_SPECT)+1)*100;
+
+            $POST_NLR_ETTPSPECT = 100-(($PTP_NLR_ODD_ETTPSPECT*$NLR_SPECT)/(($PTP_NLR_ODD_ETTPSPECT*$NLR_SPECT)+1)*100);
+
+
+
+            if ( $POST_PLR_ETTPSPECT >= 85 )
+
+                $CondPOST_PLR_ETTPSPECT = "Strogly Detectable";
+
+            if ( $POST_PLR_ETTPSPECT >= 75 && $POST_PLR_ETTPSPECT < 85)
+
+                $CondPOST_PLR_ETTPSPECT = "Modestly Detectable";
+
+            if ( $POST_PLR_ETTPSPECT < 75)
+
+                $CondPOST_PLR_ETTPSPECT = "Weakly Detectable";
+
+
+
+            if ( ($POST_NLR_ETTPSPECT) >= 85 )
+
+                $CondPOST_NLR_ETTPSPECT = "Strogly Detectable";
+
+            if ( ($POST_NLR_ETTPSPECT) >= 75 && $POST_NLR_ETTPSPECT < 85)
+
+                $CondPOST_NLR_ETTPSPECT = "Modestly Detectable";
+
+            if ( ($POST_NLR_ETTPSPECT) < 75)
+
+                $CondPOST_NLR_ETTPSPECT = "Weakly Detectable";
+
+
+
+
+
+
+            // ETTN + SPECT
+
+            $PTP_PLR_ETTNSPECT = (100-$POST_NLR_ETT)/100;
+
+            $PTP_NLR_ETTNSPECT = (100-$POST_NLR_ETT)/100;
+
+            $PTP_PLR_ODD_ETTNSPECT = $PTP_PLR_ETTNSPECT/(1-$PTP_PLR_ETTNSPECT);
+
+            $PTP_NLR_ODD_ETTNSPECT = $PTP_NLR_ETTNSPECT/(1-$PTP_NLR_ETTNSPECT);
+
+            $POST_PLR_ETTNSPECT = ($PTP_PLR_ODD_ETTNSPECT*$PLR_SPECT)/(($PTP_PLR_ODD_ETTNSPECT*$PLR_SPECT)+1)*100;
+
+            $POST_NLR_ETTNSPECT = 100-(($PTP_NLR_ODD_ETTNSPECT*$NLR_SPECT)/(($PTP_NLR_ODD_ETTNSPECT*$NLR_SPECT)+1)*100);
+
+
+
+            if ( $POST_PLR_ETTNSPECT >= 85 )
+
+                $CondPOST_PLR_ETTNSPECT = "Strogly Detectable";
+
+            if ( $POST_PLR_ETTNSPECT >= 75 && $POST_PLR_ETTNSPECT < 85)
+
+                $CondPOST_PLR_ETTNSPECT = "Modestly Detectable";
+
+            if ( $POST_PLR_ETTNSPECT < 75)
+
+                $CondPOST_PLR_ETTNSPECT = "Weakly Detectable";
+
+
+
+            if ( ($POST_NLR_ETTNSPECT) >= 85 )
+
+                $CondPOST_NLR_ETTNSPECT = "Strogly Detectable";
+
+            if ( ($POST_NLR_ETTNSPECT) >= 75 && $POST_NLR_ETTNSPECT < 85)
+
+                $CondPOST_NLR_ETTNSPECT = "Modestly Detectable";
+
+            if ( ($POST_NLR_ETTNSPECT) < 75)
+
+                $CondPOST_NLR_ETTNSPECT = "Weakly Detectable";
+
+
+
+
+
+            // ETTP + StressEcho
+
+            $PTP_PLR_ETTPStressEcho = $POST_PLR_ETT/100;
+
+            $PTP_NLR_ETTPStressEcho = $POST_PLR_ETT/100;
+
+            $PTP_PLR_ODD_ETTPStressEcho = $PTP_PLR_ETTPStressEcho/(1-$PTP_PLR_ETTPStressEcho);
+
+            $PTP_NLR_ODD_ETTPStressEcho = $PTP_NLR_ETTPStressEcho/(1-$PTP_NLR_ETTPStressEcho);
+
+            $POST_PLR_ETTPStressEcho = ($PTP_PLR_ODD_ETTPStressEcho*$PLR_StressEcho)/(($PTP_PLR_ODD_ETTPStressEcho*$PLR_StressEcho)+1)*100;
+
+            $POST_NLR_ETTPStressEcho = 100-(($PTP_NLR_ODD_ETTPStressEcho*$NLR_StressEcho)/(($PTP_NLR_ODD_ETTPStressEcho*$NLR_StressEcho)+1)*100);
+
+
+
+            if ( $POST_PLR_ETTPStressEcho >= 85 )
+
+                $CondPOST_PLR_ETTPStressEcho = "Strogly Detectable";
+
+            if ( $POST_PLR_ETTPStressEcho >= 75 && $POST_PLR_ETTPStressEcho < 85)
+
+                $CondPOST_PLR_ETTPStressEcho = "Modestly Detectable";
+
+            if ( $POST_PLR_ETTPStressEcho < 75)
+
+                $CondPOST_PLR_ETTPStressEcho = "Weakly Detectable";
+
+
+
+            if ( ($POST_NLR_ETTPStressEcho) >= 85 )
+
+                $CondPOST_NLR_ETTPStressEcho = "Strogly Detectable";
+
+            if ( ($POST_NLR_ETTPStressEcho) >= 75 && $POST_NLR_ETTPStressEcho < 85)
+
+                $CondPOST_NLR_ETTNSPECT = "Modestly Detectable";
+
+            if ( ($POST_NLR_ETTPStressEcho) < 75)
+
+                $CondPOST_NLR_ETTPStressEcho = "Weakly Detectable";
+
+
+
+
+
+
+            // ETTN + StressEcho
+
+            $PTP_PLR_ETTNStressEcho = (100-$POST_NLR_ETT)/100;
+
+            $PTP_NLR_ETTNStressEcho = (100-$POST_NLR_ETT)/100;
+
+            $PTP_PLR_ODD_ETTNStressEcho = $PTP_PLR_ETTNStressEcho/(1-$PTP_PLR_ETTNStressEcho);
+
+            $PTP_NLR_ODD_ETTNStressEcho = $PTP_NLR_ETTNStressEcho/(1-$PTP_NLR_ETTNStressEcho);
+
+            $POST_PLR_ETTNStressEcho = ($PTP_PLR_ODD_ETTNStressEcho*$PLR_StressEcho)/(($PTP_PLR_ODD_ETTNStressEcho*$PLR_StressEcho)+1)*100;
+
+            $POST_NLR_ETTNStressEcho = 100-(($PTP_NLR_ODD_ETTNStressEcho*$NLR_StressEcho)/(($PTP_NLR_ODD_ETTNStressEcho*$NLR_StressEcho)+1)*100);
+
+
+
+
+
+            if ( $POST_PLR_ETTNStressEcho >= 85 )
+
+                $CondPOST_PLR_ETTNStressEcho = "Strogly Detectable";
+
+            if ( $POST_PLR_ETTNStressEcho >= 75 && $POST_PLR_ETTNStressEcho < 85)
+
+                $CondPOST_PLR_ETTNStressEcho = "Modestly Detectable";
+
+            if ( $POST_PLR_ETTNStressEcho < 75)
+
+                $CondPOST_PLR_ETTNStressEcho = "Weakly Detectable";
+
+
+
+            if ( ($POST_NLR_ETTNStressEcho) >= 85 )
+
+                $CondPOST_NLR_ETTNStressEcho = "Strogly Detectable";
+
+            if ( ($POST_NLR_ETTNStressEcho) >= 75 && $POST_NLR_ETTNStressEcho < 85)
+
+                $CondPOST_NLR_ETTNStressEcho = "Modestly Detectable";
+
+            if ( ($POST_NLR_ETTNStressEcho) < 75)
+
+                $CondPOST_NLR_ETTNStressEcho = "Weakly Detectable";

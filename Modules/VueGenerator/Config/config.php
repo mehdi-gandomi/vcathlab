@@ -1,0 +1,44 @@
+<?php
+
+return [
+    'model_namespace'=>"\\App\\Models",
+    'templates_dir'=>'templates',
+    'base_api_path'=>'/api',
+    'modules_base_path'=>'Modules/Panel/Resources/js/src/modules',
+    'modules_relative_base_path'=>'@/modules',
+    'crud'=>[
+        'create'=>'Create.vue',
+        'update'=>'Update.vue',
+        'index'=>'Index.vue',
+        'detail'=>'Detail.vue',
+        'print'=>'Print.vue',
+        'routes_path'=>'Modules/Panel/Resources/js/src/routes.json',
+        'routes_js_path'=>'Modules/Panel/Resources/js/src/routes.js'
+    ],
+    'pagination'=>[
+        'limit'=>20
+    ],
+    'inputs'=>[
+        'number'=>'vs-input',
+        'email'=>'vs-input',
+        'text'=>'vs-input',
+        'spin'=>'vs-input-number',
+        'textarea'=>'vs-textarea',
+        'date'=>'persian-date-picker',
+        'time'=>'persian-date-picker',
+        'datetime'=>'persian-date-picker',
+        'password'=>'vs-input',
+        'file'=>'vs-input',
+        'radio'=>'vs-radio',
+        'checkbox'=>'vs-checkbox',
+        'toggle-switch'=>'vs-switch',
+        'select'=>'v-select',
+        'selectTable'=>'v-select',
+        'multi_select'=>'v-select',
+        'filepond'=>'filepond',
+        'filepond_image'=>'filepond',
+        'quill'=>'quill-editor',
+    ],
+    'modulesjs-file'=>resource_path("js/modules.js"),
+];
+

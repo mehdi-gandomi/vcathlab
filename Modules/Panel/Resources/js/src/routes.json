@@ -1,0 +1,784 @@
+[
+    {
+        "path": "",
+        "component": "./layouts/main/Main.vue",
+        "children": [
+            {
+                "path": "/",
+                "redirect": "/dashboard/analytics"
+            },
+            {
+                "path": "/dashboard/analytics",
+                "name": "dashboard-analytics",
+                "component": "./views/DashboardAnalytics.vue",
+                "meta": {
+                    "authRequired": true
+                }
+            },
+            {
+                "path": "/profile",
+                "name": "profile-page",
+                "component": "./views/pages/profile/Profile"
+            },
+            {
+                "path": "/dashboard/ecommerce",
+                "name": "dashboard-ecommerce",
+                "component": "./views/DashboardECommerce.vue"
+            },
+            {
+                "path": "users/create",
+                "name": "users-create-form",
+                "component": "./views/pages/users/Create.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Users",
+                            "url": "/users"
+                        },
+                        {
+                            "title": "Create User",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Create User"
+                }
+            },
+            {
+                "path": "users",
+                "name": "users-index",
+                "component": "./views/pages/users/Index.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Users",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Users"
+                }
+            },
+            {
+                "path": "users/:id/edit",
+                "name": "users-update-form",
+                "component": "./views/pages/users/Update.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Users",
+                            "url": "/users"
+                        },
+                        {
+                            "routeParam": "id",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Update User"
+                }
+            },
+            {
+                "path": "users/:id",
+                "name": "users-detail",
+                "component": "./views/pages/users/Detail.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Users",
+                            "url": "/users"
+                        },
+                        {
+                            "routeParam": "id",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "User Details"
+                }
+            },
+            {
+                "path": "menus/create",
+                "name": "menus-create-form",
+                "component": "./views/pages/menus/Create.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Menus",
+                            "url": "/menus"
+                        },
+                        {
+                            "title": "Create Menu",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Create Menu"
+                }
+            },
+            {
+                "path": "menus",
+                "name": "menus-index",
+                "component": "./views/pages/menus/Index.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Menus",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Menus"
+                }
+            },
+            {
+                "path": "menus/:id/edit",
+                "name": "menus-update-form",
+                "component": "./views/pages/menus/Update.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Menus",
+                            "url": "/menus"
+                        },
+                        {
+                            "routeParam": "name",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Update Menu"
+                }
+            },
+            {
+                "path": "menus/:id",
+                "name": "menus-detail",
+                "component": "./views/pages/menus/Detail.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Menus",
+                            "url": "/menus"
+                        },
+                        {
+                            "routeParam": "name",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Menu Details"
+                }
+            },
+            {
+                "path": "roles/create",
+                "name": "roles-create-form",
+                "component": "./views/pages/roles/Create.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Roles",
+                            "url": "/roles"
+                        },
+                        {
+                            "title": "Create Role",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Create Role"
+                }
+            },
+            {
+                "path": "roles",
+                "name": "roles-index",
+                "component": "./views/pages/roles/Index.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Roles",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Roles"
+                }
+            },
+            {
+                "path": "roles/:id/edit",
+                "name": "roles-update-form",
+                "component": "./views/pages/roles/Update.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Roles",
+                            "url": "/roles"
+                        },
+                        {
+                            "routeParam": "id",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Update Role"
+                }
+            },
+            {
+                "path": "roles/:id",
+                "name": "roles-detail",
+                "component": "./views/pages/roles/Detail.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Roles",
+                            "url": "/roles"
+                        },
+                        {
+                            "routeParam": "id",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Role Details"
+                }
+            },
+            {
+                "path": "subsystems/create",
+                "name": "subsystems-create-form",
+                "component": "./views/pages/subsystems/Create.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "SubSystems",
+                            "url": "/subsystems"
+                        },
+                        {
+                            "title": "Create SubSystem",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Create SubSystem"
+                }
+            },
+            {
+                "path": "subsystems",
+                "name": "subsystems-index",
+                "component": "./views/pages/subsystems/Index.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "SubSystems",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "SubSystems"
+                }
+            },
+            {
+                "path": "subsystems/:id/edit",
+                "name": "subsystems-update-form",
+                "component": "./views/pages/subsystems/Update.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "SubSystems",
+                            "url": "/subsystems"
+                        },
+                        {
+                            "routeParam": "id",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Update SubSystem"
+                }
+            },
+            {
+                "path": "subsystems/:id",
+                "name": "subsystems-detail",
+                "component": "./views/pages/subsystems/Detail.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "SubSystems",
+                            "url": "/subsystems"
+                        },
+                        {
+                            "routeParam": "id",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "SubSystem Details"
+                }
+            },
+            {
+                "path": "menu_items/create",
+                "name": "menu_items-create-form",
+                "component": "./views/pages/menu_items/Create.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Menuitems",
+                            "url": "/menu_items"
+                        },
+                        {
+                            "title": "Create Menuitem",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Create Menuitem"
+                }
+            },
+            {
+                "path": "menu_items",
+                "name": "menu_items-index",
+                "component": "./views/pages/menu_items/Index.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Menuitems",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Menuitems"
+                }
+            },
+            {
+                "path": "menu_items/:id/edit",
+                "name": "menu_items-update-form",
+                "component": "./views/pages/menu_items/Update.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Menuitems",
+                            "url": "/menu_items"
+                        },
+                        {
+                            "routeParam": "id",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Update Menuitem"
+                }
+            },
+            {
+                "path": "menu_items/:id",
+                "name": "menu_items-detail",
+                "component": "./views/pages/menu_items/Detail.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Menuitems",
+                            "url": "/menu_items"
+                        },
+                        {
+                            "routeParam": "id",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Menuitem Details"
+                }
+            },
+            {
+                "path": "user_activities/create",
+                "name": "user_activities-create-form",
+                "component": "./views/pages/user_activities/Create.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Activitylogs",
+                            "url": "/user_activities"
+                        },
+                        {
+                            "title": "Create Activitylog",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Create Activitylog"
+                }
+            },
+            {
+                "path": "user_activities",
+                "name": "user_activities-index",
+                "component": "./views/pages/user_activities/Index.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Activitylogs",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Activitylogs"
+                }
+            },
+            {
+                "path": "user_activities/:id/edit",
+                "name": "user_activities-update-form",
+                "component": "./views/pages/user_activities/Update.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Activitylogs",
+                            "url": "/user_activities"
+                        },
+                        {
+                            "routeParam": "id",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Update Activitylog"
+                }
+            },
+            {
+                "path": "user_activities/:id",
+                "name": "user_activities-detail",
+                "component": "./views/pages/user_activities/Detail.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Activitylogs",
+                            "url": "/user_activities"
+                        },
+                        {
+                            "routeParam": "id",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Activitylog Details"
+                }
+            },
+            {
+                "path": "user_activities/create",
+                "name": "user_activities-create-form",
+                "component": "./views/pages/user_activities/Create.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Useractivities",
+                            "url": "/user_activities"
+                        },
+                        {
+                            "title": "Create Useractivity",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Create Useractivity"
+                }
+            },
+            {
+                "path": "user_activities",
+                "name": "user_activities-index",
+                "component": "./views/pages/user_activities/Index.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Useractivities",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Useractivities"
+                }
+            },
+            {
+                "path": "user_activities/:id/edit",
+                "name": "user_activities-update-form",
+                "component": "./views/pages/user_activities/Update.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Useractivities",
+                            "url": "/user_activities"
+                        },
+                        {
+                            "routeParam": "id",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Update Useractivity"
+                }
+            },
+            {
+                "path": "user_activities/:id",
+                "name": "user_activities-detail",
+                "component": "./views/pages/user_activities/Detail.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Useractivities",
+                            "url": "/user_activities"
+                        },
+                        {
+                            "routeParam": "id",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Useractivity Details"
+                }
+            },
+            {
+                "path": "subsystems/create",
+                "name": "subsystems-create-form",
+                "component": "./views/pages/subsystems/Create.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Subsystems",
+                            "url": "/subsystems"
+                        },
+                        {
+                            "title": "Create Subsystem",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Create Subsystem"
+                }
+            },
+            {
+                "path": "subsystems",
+                "name": "subsystems-index",
+                "component": "./views/pages/subsystems/Index.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Subsystems",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Subsystems"
+                }
+            },
+            {
+                "path": "subsystems/:id/edit",
+                "name": "subsystems-update-form",
+                "component": "./views/pages/subsystems/Update.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Subsystems",
+                            "url": "/subsystems"
+                        },
+                        {
+                            "routeParam": "id",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Update Subsystem"
+                }
+            },
+            {
+                "path": "subsystems/:id",
+                "name": "subsystems-detail",
+                "component": "./views/pages/subsystems/Detail.vue",
+                "meta": {
+                    "breadcrumb": [
+                        {
+                            "title": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "title": "Subsystems",
+                            "url": "/subsystems"
+                        },
+                        {
+                            "routeParam": "id",
+                            "active": true
+                        }
+                    ],
+                    "pageTitle": "Subsystem Details"
+                }
+            }
+        ]
+    },
+    {
+        "path": "",
+        "component": "@/layouts/full-page/FullPage.vue",
+        "children": [
+            {
+                "path": "/callback",
+                "name": "auth-callback",
+                "component": "@/views/Callback.vue",
+                "meta": []
+            },
+            {
+                "path": "/tree",
+                "name": "page-tree",
+                "component": "@/views/pages/tree/Test.vue",
+                "meta": []
+            },
+            {
+                "path": "/login",
+                "name": "page-login",
+                "component": "@/views/pages/login/Login.vue",
+                "meta": []
+            },
+            {
+                "path": "/pages/register",
+                "name": "page-register",
+                "component": "@/views/pages/register/Register.vue",
+                "meta": []
+            },
+            {
+                "path": "/pages/forgot-password",
+                "name": "page-forgot-password",
+                "component": "@/views/pages/ForgotPassword.vue",
+                "meta": []
+            },
+            {
+                "path": "/pages/reset-password",
+                "name": "page-reset-password",
+                "component": "@/views/pages/ResetPassword.vue",
+                "meta": []
+            },
+            {
+                "path": "/pages/lock-screen",
+                "name": "page-lock-screen",
+                "component": "@/views/pages/LockScreen.vue",
+                "meta": []
+            },
+            {
+                "path": "/pages/comingsoon",
+                "name": "page-coming-soon",
+                "component": "@/views/pages/ComingSoon.vue",
+                "meta": []
+            },
+            {
+                "path": "/pages/error-404",
+                "name": "page-error-404",
+                "component": "@/views/pages/Error404.vue",
+                "meta": []
+            },
+            {
+                "path": "/pages/error-500",
+                "name": "page-error-500",
+                "component": "@/views/pages/Error500.vue",
+                "meta": []
+            },
+            {
+                "path": "/pages/not-authorized",
+                "name": "page-not-authorized",
+                "component": "@/views/pages/NotAuthorized.vue",
+                "meta": []
+            },
+            {
+                "path": "/pages/maintenance",
+                "name": "page-maintenance",
+                "component": "@/views/pages/Maintenance.vue",
+                "meta": []
+            }
+        ]
+    },
+    {
+        "path": "*",
+        "redirect": "/pages/error-404"
+    }
+]

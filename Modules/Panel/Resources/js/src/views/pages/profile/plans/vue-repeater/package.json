@@ -1,0 +1,61 @@
+{
+  "name": "vue-repeater",
+  "version": "1.1.2",
+  "author": "Eugen Guriev <gurievcreative@gmail.com",
+  "description": "The VueJS repeater component allows you to create a set of sub components which can be repeated again and again whilst editing content!",
+  "main": "dist/lib/vue-repeater.common.js",
+  "module": "dist/lib/vue-repeater.common.js",
+  "unpkg": "dist/lib/vue-repeater.umd.min.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --dest dist/app",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --dest dist/lib --target lib --inline-vue src/components/repeater.vue --name VueRepeater --filename vue-repeater",
+    "wc": "vue-cli-service build --skip-plugins lodash --dest dist/wc --target wc --name vue-repeater --inline-vue src/components/repeater.vue"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "sass": "^1.18.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "license": "MIT",
+  "keywords": ["VueJS", "repeater", "ui", "ux", "gutenberg", "builder"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcofficial/vue-repeater"
+  }
+}

@@ -1,0 +1,4 @@
+زوم تصئیر سه بعدی
+هر چی تو عکس هست انجام بشه
+عکس ضربان قلب برداشته لشه
+https://github.com/spatie/laravel-sitemap

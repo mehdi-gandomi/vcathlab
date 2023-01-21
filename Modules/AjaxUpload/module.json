@@ -1,0 +1,13 @@
+{
+    "name": "AjaxUpload",
+    "alias": "ajaxupload",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\AjaxUpload\\Providers\\AjaxUploadServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

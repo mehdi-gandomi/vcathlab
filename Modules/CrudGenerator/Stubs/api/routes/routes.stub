@@ -1,0 +1,1 @@
+Route::crud('$MODEL_NAME_PLURAL_SNAKE$', '$PATH_PREFIX$$MODEL_NAME$APIController');

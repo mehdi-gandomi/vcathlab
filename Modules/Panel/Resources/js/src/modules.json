@@ -1,0 +1,398 @@
+{
+  "components/VxTour": {
+    "name": "zwx1fsdrou2",
+    "ver": 1
+  },
+  "layouts/main/Main": {
+    "name": "y1boqhkkw14",
+    "ver": 1
+  },
+  "views/DashboardAnalytics": {
+    "name": "tbbgvm0jtpn",
+    "ver": 1
+  },
+  "views/DashboardECommerce": {
+    "name": "z0agpcnsxfb",
+    "ver": 1
+  },
+  "views/apps/todo/Todo": {
+    "name": "zo48i9ftimi",
+    "ver": 1
+  },
+  "views/apps/chat/Chat": {
+    "name": "t6n40x6jz65",
+    "ver": 1
+  },
+  "views/apps/email/Email": {
+    "name": "z3trbz12rs0",
+    "ver": 1
+  },
+  "views/apps/calendar/SimpleCalendar": {
+    "name": "joggy60nfhd",
+    "ver": 1
+  },
+  "views/apps/eCommerce/components/ItemGridView": {
+    "name": "mqt48xlyv6y",
+    "ver": 2
+  },
+  "views/apps/eCommerce/components/ItemListView": {
+    "name": "zn58ue1fwp9",
+    "ver": 2
+  },
+  "views/apps/eCommerce/ECommerceShop": {
+    "name": "kythsg4sp97",
+    "ver": 1
+  },
+  "views/apps/eCommerce/ECommerceWishList": {
+    "name": "zdi4i34nfqy",
+    "ver": 1
+  },
+  "views/apps/eCommerce/ECommerceCheckout": {
+    "name": "zxc4dusu8n3",
+    "ver": 1
+  },
+  "views/apps/eCommerce/ECommerceItemDetailView": {
+    "name": "zzhw750qcve",
+    "ver": 1
+  },
+  "views/apps/user/user-list/UserList": {
+    "name": "zbktcmc62js",
+    "ver": 1
+  },
+  "views/apps/user/UserView": {
+    "name": "zo52msqkmtc",
+    "ver": 1
+  },
+  "views/apps/user/user-edit/UserEdit": {
+    "name": "z0v79vpxh7w",
+    "ver": 1
+  },
+  "views/ui-elements/data-list/list-view/DataListListView": {
+    "name": "nuocfg71zgp",
+    "ver": 1
+  },
+  "views/ui-elements/data-list/thumb-view/DataListThumbView": {
+    "name": "z690zu1lyyd",
+    "ver": 1
+  },
+  "views/ui-elements/grid/vuesax/GridVuesax": {
+    "name": "j5csxd196m3",
+    "ver": 1
+  },
+  "views/ui-elements/grid/tailwind/GridTailwind": {
+    "name": "t4z2ximrwvh",
+    "ver": 1
+  },
+  "views/ui-elements/colors/Colors": {
+    "name": "zwyv6w4ty1r",
+    "ver": 1
+  },
+  "views/ui-elements/card/CardBasic": {
+    "name": "fkrbf0x6g9s",
+    "ver": 1
+  },
+  "views/ui-elements/card/CardStatistics": {
+    "name": "n4xby67mjei",
+    "ver": 1
+  },
+  "views/ui-elements/card/CardAnalytics": {
+    "name": "zo8o2z4y0cw",
+    "ver": 1
+  },
+  "views/ui-elements/card/CardActions": {
+    "name": "gexxdaypj1f",
+    "ver": 1
+  },
+  "views/ui-elements/card/CardColors": {
+    "name": "kt2tb738yk1",
+    "ver": 1
+  },
+  "views/ui-elements/table/Table": {
+    "name": "ada3gyx88fu",
+    "ver": 1
+  },
+  "views/ui-elements/ag-grid-table/AgGridTable": {
+    "name": "soinzotvaqf",
+    "ver": 1
+  },
+  "views/components/vuesax/alert/Alert": {
+    "name": "ousjqqdjzc5",
+    "ver": 1
+  },
+  "views/components/vuesax/avatar/Avatar": {
+    "name": "do2xq47d4kj",
+    "ver": 1
+  },
+  "views/components/vuesax/breadcrumb/Breadcrumb": {
+    "name": "lzmhffyd0sz",
+    "ver": 1
+  },
+  "views/components/vuesax/button/Button": {
+    "name": "wx9gg0813ol",
+    "ver": 1
+  },
+  "views/components/vuesax/button-group/ButtonGroup": {
+    "name": "gh6fnk1gssw",
+    "ver": 1
+  },
+  "views/components/vuesax/chip/Chip": {
+    "name": "pr4wi1njfv7",
+    "ver": 1
+  },
+  "views/components/vuesax/collapse/Collapse": {
+    "name": "zgc1vbt67nu",
+    "ver": 1
+  },
+  "views/components/vuesax/dialogs/Dialogs": {
+    "name": "oqlf35yergx",
+    "ver": 1
+  },
+  "views/components/vuesax/divider/Divider": {
+    "name": "zsjqpu5re6h",
+    "ver": 1
+  },
+  "views/components/vuesax/dropdown/Dropdown": {
+    "name": "th1d9ii1i4m",
+    "ver": 1
+  },
+  "views/components/vuesax/list/List": {
+    "name": "xhzfnvcqm2k",
+    "ver": 1
+  },
+  "views/components/vuesax/loading/Loading": {
+    "name": "z91qnysi990",
+    "ver": 1
+  },
+  "views/components/vuesax/navbar/Navbar": {
+    "name": "f1u8kxusocx",
+    "ver": 1
+  },
+  "views/components/vuesax/notifications/Notifications": {
+    "name": "vsw6tfzibxk",
+    "ver": 1
+  },
+  "views/components/vuesax/pagination/Pagination": {
+    "name": "esdx20ivl0x",
+    "ver": 1
+  },
+  "views/components/vuesax/popup/Popup": {
+    "name": "zh5h7chyf4o",
+    "ver": 1
+  },
+  "views/components/vuesax/progress/Progress": {
+    "name": "zfbts4or5lz",
+    "ver": 1
+  },
+  "views/components/vuesax/sidebar/Sidebar": {
+    "name": "z4wp3m5w8tc",
+    "ver": 1
+  },
+  "views/components/vuesax/slider/Slider": {
+    "name": "lq8dh94eeye",
+    "ver": 1
+  },
+  "views/components/vuesax/tabs/Tabs": {
+    "name": "jlyda4wul68",
+    "ver": 1
+  },
+  "views/components/vuesax/tooltip/Tooltip": {
+    "name": "fkhkizxq67c",
+    "ver": 1
+  },
+  "views/components/vuesax/upload/Upload": {
+    "name": "zqg4m4g0pk1",
+    "ver": 1
+  },
+  "views/forms/form-elements/select/Select": {
+    "name": "z3g2vqimicg",
+    "ver": 1
+  },
+  "views/forms/form-elements/switch/Switch": {
+    "name": "zoqwnn8b1uw",
+    "ver": 1
+  },
+  "views/forms/form-elements/checkbox/Checkbox": {
+    "name": "tashu1b9kkr",
+    "ver": 1
+  },
+  "views/forms/form-elements/radio/Radio": {
+    "name": "z6b20rrqpr6",
+    "ver": 1
+  },
+  "views/forms/form-elements/input/Input": {
+    "name": "abaqazakmw8",
+    "ver": 1
+  },
+  "views/forms/form-elements/number-input/NumberInput": {
+    "name": "lgv675svuix",
+    "ver": 1
+  },
+  "views/forms/form-elements/textarea/Textarea": {
+    "name": "dimmvok8vpv",
+    "ver": 1
+  },
+  "views/forms/FormLayouts": {
+    "name": "ujnfdm6imio",
+    "ver": 1
+  },
+  "views/forms/form-wizard/FormWizard": {
+    "name": "zf55w3kd61q",
+    "ver": 1
+  },
+  "views/forms/form-validation/FormValidation": {
+    "name": "n3hnt3o8inp",
+    "ver": 1
+  },
+  "views/forms/form-input-group/FormInputGroup": {
+    "name": "z2qxqk01ewp",
+    "ver": 1
+  },
+  "views/pages/Profile": {
+    "name": "c8slizn211c",
+    "ver": 1
+  },
+  "views/pages/user-settings/UserSettings": {
+    "name": "zmj4mal4gzm",
+    "ver": 1
+  },
+  "views/pages/Faq": {
+    "name": "xq0175krt2n",
+    "ver": 1
+  },
+  "views/pages/KnowledgeBase": {
+    "name": "zdhppjaik5y",
+    "ver": 1
+  },
+  "views/pages/KnowledgeBaseCategory": {
+    "name": "z5ylqtshjtl",
+    "ver": 1
+  },
+  "views/pages/KnowledgeBaseCategoryQuestion": {
+    "name": "za2tb3j6549",
+    "ver": 1
+  },
+  "views/pages/Search": {
+    "name": "os3l09en2lx",
+    "ver": 1
+  },
+  "views/pages/Invoice": {
+    "name": "n7y1798lj8u",
+    "ver": 1
+  },
+  "views/charts-and-maps/charts/apex-charts/ApexCharts": {
+    "name": "c25o2znd66i",
+    "ver": 1
+  },
+  "views/charts-and-maps/charts/echarts/Echarts": {
+    "name": "shm5pt16f9b",
+    "ver": 1
+  },
+  "views/charts-and-maps/maps/google-map/GoogleMap": {
+    "name": "zz6d99brut3",
+    "ver": 1
+  },
+  "views/components/extra-components/select/Select": {
+    "name": "jqoi8q08xps",
+    "ver": 1
+  },
+  "views/components/extra-components/quill-editor/QuillEditor": {
+    "name": "z1aw31wvtu3",
+    "ver": 1
+  },
+  "views/components/extra-components/drag-and-drop/DragAndDrop": {
+    "name": "iw92q67cbv4",
+    "ver": 1
+  },
+  "views/components/extra-components/datepicker/Datepicker": {
+    "name": "ou094lmmlda",
+    "ver": 1
+  },
+  "views/components/extra-components/datetime-picker/DatetimePicker": {
+    "name": "zemaicllmfe",
+    "ver": 1
+  },
+  "views/components/extra-components/access-control/AccessControl": {
+    "name": "n36bolrwr89",
+    "ver": 1
+  },
+  "views/components/extra-components/I18n": {
+    "name": "p0lj5s8l2wn",
+    "ver": 1
+  },
+  "views/components/extra-components/carousel/Carousel": {
+    "name": "z005a11uxy3",
+    "ver": 1
+  },
+  "views/components/extra-components/clipboard/Clipboard": {
+    "name": "bxmlukpfkzw",
+    "ver": 1
+  },
+  "views/components/extra-components/context-menu/ContextMenu": {
+    "name": "zen29iu0akr",
+    "ver": 1
+  },
+  "views/components/extra-components/star-ratings/StarRatings": {
+    "name": "zw8ti0bhrpb",
+    "ver": 1
+  },
+  "views/components/extra-components/autocomplete/Autocomplete": {
+    "name": "s1bevts352l",
+    "ver": 1
+  },
+  "views/components/extra-components/tree/Tree": {
+    "name": "z023i9jht2a",
+    "ver": 1
+  },
+  "views/components/extra-components/import-export/Import": {
+    "name": "bxy1p1zpbn9",
+    "ver": 1
+  },
+  "layouts/full-page/FullPage": {
+    "name": "seieki8ete8",
+    "ver": 1
+  },
+  "views/Callback": {
+    "name": "bj1e25zk3ll",
+    "ver": 1
+  },
+  "views/pages/login/Login": {
+    "name": "gyofrh1l4n5",
+    "ver": 1
+  },
+  "views/pages/register/Register": {
+    "name": "zdy79xo5d0k",
+    "ver": 1
+  },
+  "views/pages/ForgotPassword": {
+    "name": "zk8l4ccf15t",
+    "ver": 1
+  },
+  "views/pages/ResetPassword": {
+    "name": "wvaqvmljv7a",
+    "ver": 1
+  },
+  "views/pages/LockScreen": {
+    "name": "gzmxabyk0mv",
+    "ver": 1
+  },
+  "views/pages/ComingSoon": {
+    "name": "zj34n6mwzdf",
+    "ver": 1
+  },
+  "views/pages/Error404": {
+    "name": "z3n25jr46b8",
+    "ver": 1
+  },
+  "views/pages/Error500": {
+    "name": "mn46c2d89wd",
+    "ver": 1
+  },
+  "views/pages/NotAuthorized": {
+    "name": "ripidaxjlus",
+    "ver": 1
+  },
+  "views/pages/Maintenance": {
+    "name": "j5uvip4hucz",
+    "ver": 1
+  }
+}

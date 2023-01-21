@@ -1,0 +1,64 @@
+<template>
+    <div class="mb-base index-page" id="ag-grid-demo">
+      $FILTERS_CARD$
+      <vx-card >
+          <IndexToolbar v-if="shouldShowToolbar" :parent="this"/>
+          <ag-grid-vue
+              ref="agGridTable"
+              :gridOptions="gridOptions"
+              class="ag-theme-material w-100 my-4 ag-grid-table"
+              :columnDefs="columnDefs"
+              :defaultColDef="defaultColDef"
+              rowSelection="multiple"
+              colResizeDefault="shift"
+              domLayout="autoHeight"
+              :animateRows="true"
+              :modules="modules"
+              :localeText="translations"
+              :cacheBlockSize="paginationData.limit"
+              @grid-ready="onGridReady"
+              :rowModelType="rowModelType"
+              :pagination="true"
+              :paginationPageSize="paginationData.limit"
+              :suppressPaginationPanel="true"
+              :frameworkComponents="frameworkComponents"
+              :enableRtl="$vs.rtl"
+              :overlayLoadingTemplate="__('loading') + '...'"
+          ></ag-grid-vue>
+
+        <div class="pagination-wrap vs-pagination-primary" v-if="paginationData.totalPages > 1">
+                <!-- <feather-icon icon="ChevronsLeftIcon" /> -->
+                <button
+                    class="vs-pagination--buttons mx-2"
+                    @click="gotoFirstPage">
+                    <vs-icon
+                        icon-pack="feather"
+                        icon="icon-chevrons-right"
+                    ></vs-icon>
+                </button>
+                <vs-pagination
+                    class="pagination"
+                    goto
+                    :total="paginationData.totalPages"
+                    @change="loadPage"
+                    :max="paginationData.maxPageNumbers"
+                    v-model="paginationData.currentPage"
+                />
+                <button
+                    class="vs-pagination--buttons mx-2"
+                    @click="gotoLastPage">
+                    <vs-icon
+                    icon-pack="feather"
+                    icon="icon-chevrons-left"
+                    ></vs-icon>
+                </button>
+                <!-- <feather-icon icon="ChevronsRightIcon" /> -->
+            </div>
+
+      </vx-card>
+    </div>
+</template>
+
+<script>
+    $SCRIPTS$
+</script>

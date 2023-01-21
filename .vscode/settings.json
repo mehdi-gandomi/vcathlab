@@ -1,0 +1,16 @@
+{
+    "i18n-ally.localesPaths": [
+        "resources/lang",
+        "Modules/AccessLevel/Resources/lang",
+        "Modules/Admin/Resources/lang",
+        "Modules/CrudGenerator/Resources/lang",
+        "Modules/GeneratorBuilder/Resources/lang",
+        "Modules/Panel/Resources/lang",
+        "Modules/Place/Resources/lang",
+        "Modules/Settings/Resources/lang",
+        "Modules/UserVerification/Resources/lang",
+        "Modules/User/Resources/lang",
+        "Modules/VueGenerator/Resources/lang",
+        "Modules/Panel/Resources/js/src/i18n"
+    ]
+}

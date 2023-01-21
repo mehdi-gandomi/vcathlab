@@ -1,0 +1,15 @@
+*{
+    direction: rtl;
+}
+#crudPrint {
+    padding: 5rem;
+    max-width: 90%;
+    margin: auto;
+}
+ .logo {
+    width: 100px;
+
+}
+ .logo img {
+    width: 100%;
+}

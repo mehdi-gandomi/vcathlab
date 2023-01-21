@@ -1,0 +1,15 @@
+.ag-img-wrap{
+    width: 40px;
+    img{
+        width: 100%;
+        cursor: pointer;
+    }
+}
+.header-v-img{
+    background-color: unset !important;
+}
+.content-v-img{
+    img{
+        max-height: 90vh !important;
+    }
+}

@@ -1,0 +1,49 @@
+
+
+
+if CondHBP == (Uncontrolled home blood pressure)
+
+if CondHBP == (Controlled home blood pressure)
+
+
+
+Office mean arterial blood pressure (MAP) and BP category (according to seated clinic BP)
+
+were **$MMAP** mmHg ($SBP/$DBP) and optimal ** $CondSBP **, ** $CondHBP **;
+
+hypertension risk was **$RISK_HTN**% (CondRISK_HTN) based on scoring system.
+
+
+
+  $Difweight = $weight - $ideal_weight
+
+
+The difference between current (** $weight ** kg) and normal (** Ideal_$weight ** kg) for $weight based on anthropometric
+
+$indices was ** Dif$weight ** kg. Recommended lifestyle modification in regard to (Cardiovascular risk = ** RSK **%).
+
+
+  $DifRSK = RSK_CURRENT - RSK_OPTIMAL
+
+
+The difference between current (** RSK_CURRENT **%) and optimal (** RSK_OPTIMAL **%) for (fatal and non-fatal CAD risk) was 6.85%. The patient
+
+was ** ConditionRSK ** based on computation.
+
+
+
+$Dif_age = $vascular_age - age
+
+
+if ($$vascular_age > age)
+
+    $Cond_age = older than calendar age
+
+if ($$vascular_age < age)
+
+    $Cond_age = younger than calendar age
+
+
+The difference between vascular age ( ** $vascular_age ** year old) and calendar age (** age ** year old) was ** Dif_age **-year-old (** Cond_Age **).
+
+Official compliance of arterial was ** $CAVI ** ** $CondCAVI **.

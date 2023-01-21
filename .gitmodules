@@ -1,0 +1,30 @@
+# [submodule "Modules/AjaxUpload"]
+# 	path = Modules/AjaxUpload
+# 	url = http://gitlab.com/iracodelaravel/ajax-upload.git
+[submodule "Modules/CrudGenerator"]
+	path = Modules/CrudGenerator
+	url = http://gitlab.com/iracodelaravel/crud-generator.git
+[submodule "Modules/GeneratorBuilder"]
+	path = Modules/GeneratorBuilder
+	url = http://gitlab.com/iracodelaravel/generator-builder.git
+[submodule "Modules/Location"]
+	path = Modules/Location
+	url = git@gitlab.com:iracodelaravel/componenet-province.git
+[submodule "Modules/Panel"]
+	path = Modules/Panel
+	url = http://gitlab.com/iracodelaravel/template.git
+[submodule "Modules/VueGenerator"]
+	path = Modules/VueGenerator
+	url = https://gitlab.com/iracodelaravel/vue-generator.git
+[submodule "Modules/Settings"]
+	path = Modules/Settings
+	url = https://gitlab.com/iracodelaravel/settings.git
+[submodule "Modules/Modules/AccessLevel"]
+	path = Modules/Modules/AccessLevel
+	url = https://gitlab.com/iracodelaravel/access-level.git
+[submodule "Modules/AccessLevel"]
+	path = Modules/AccessLevel
+	url = https://gitlab.com/iracodelaravel/access-level.git
+[submodule "Modules/AjaxUpload"]
+	path = Modules/AjaxUpload
+	url = https://gitlab.com/iracodelaravel/ajax-upload.git

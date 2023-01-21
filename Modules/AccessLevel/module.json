@@ -1,0 +1,16 @@
+{
+    "name": "AccessLevel",
+    "alias": "accesslevel",
+    "description": "",
+    "keywords": [],
+    "order": 1,
+    "priority": 1,
+    "providers": [
+        "Modules\\AccessLevel\\Providers\\AccessLevelServiceProvider"
+    ],
+    "aliases": {
+	    "RoleManager" : "Silber\\Bouncer\\BouncerFacade"
+    },
+    "files": [],
+    "requires": []
+}

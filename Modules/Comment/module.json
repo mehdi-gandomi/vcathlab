@@ -1,0 +1,13 @@
+{
+    "name": "Comment",
+    "alias": "comment",
+    "description": "",
+    "keywords": [],
+    "priority": 1,
+    "providers": [
+        "Modules\\Comment\\CommentsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

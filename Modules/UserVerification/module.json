@@ -1,0 +1,14 @@
+{
+    "name": "UserVerification",
+    "alias": "userverification",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\UserVerification\\Providers\\UserVerificationServiceProvider",
+        "phplusir\\smsir\\SmsirServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

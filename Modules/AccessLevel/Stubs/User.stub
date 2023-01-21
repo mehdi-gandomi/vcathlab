@@ -1,0 +1,9 @@
+<?php
+namespace App\Models;
+use Modules\Panel\Models\User as BaseUser;
+use Modules\AccessLevel\Traits\HasRolesAndAbilities;
+
+class User extends BaseUser
+{
+    use HasRolesAndAbilities;
+}

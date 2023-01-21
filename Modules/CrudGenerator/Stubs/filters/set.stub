@@ -1,0 +1,21 @@
+<?php
+namespace $NAMESPACE$;
+use Spatie\QueryBuilder\Filters\Filter;
+use Illuminate\Database\Eloquent\Builder;
+
+class $CLASS_NAME$ implements Filter
+{
+    public function __invoke(Builder $query, $value, string $property)
+    {
+        return $query->whereIn($property,$value);
+    }
+    public static function getValues(){
+        return $VALUES$;
+    }
+    public static function getType(){
+        return "set";
+    }
+    public static function getComponent(){
+        return "agSetColumnFilter";
+    }
+}

@@ -1,0 +1,116 @@
+<?php
+
+namespace $NAMESPACE_MODEL$;
+use Modules\Panel\Traits\FormatesDates;
+use Modules\Panel\Traits\HasRelationships;
+use Modules\CrudGenerator\Filters\AllowedFilter;
+use $NAMESPACE_MODEL_EXTEND$ as Model;
+$IMAGE_UPLOAD_TRAIT_NAMESPACE$
+$SOFT_DELETE_IMPORT$
+$SANCTOM_TRAIT_IMPORT$
+$PASSWORD_TRAIT_IMPORT$
+$DOCS$
+class $MODEL_NAME$ extends Model
+{
+    use FormatesDates;
+    use HasRelationships;
+    $IMAGE_UPLOAD_TRAIT$
+$SOFT_DELETE$
+    public $table = '$TABLE_NAME$';
+    $SANCTUM_TRAIT$
+    $PASSWORD_TRAIT$
+    $TIMESTAMPS$
+$SOFT_DELETE_DATES$
+$CONNECTION$
+$PRIMARY$
+    public $fillable = [
+        $FIELDS$
+    ];
+    public $with = [
+        $WITH_RELATIONSHIPS$
+    ];
+    public $appends = [
+
+    ];
+    /**
+     * The attributes that should be casted to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        $CAST$
+    ];
+    public static $dateFormats = [
+        $DATE_FORMATS$
+    ];
+   /**
+     * Api route
+     *
+     * @var array
+     */
+    public static $api_route = '$API_ROUTE$';
+
+    /**
+     * Validation rules
+     *
+     * @var array
+     */
+    public static $rules = [
+        $RULES$
+    ];
+
+
+    /**
+    * All the images fields for model
+    *
+    * @var array
+    */
+    public static $imageFields = [
+        $IMAGES_FIELDS$
+    ];
+
+    /**
+     * All the file fields for model
+     *
+     * @var array
+     */
+    public static $fileFields = [
+        $FILES_FIELDS$
+    ];
+
+    /**
+     * Flag to disable auto upload
+     *
+     * @var bool
+     */
+    public static $disableAutoUpload = true;
+
+    /**
+     * Fields
+     *
+     * @var array
+     */
+    public static $fields = [
+        $CRUD_FIELDS$
+    ];
+
+    public static $title="$TITLE_FIELD$";
+
+    $RELATIONS$
+
+    public static function allowedFilters(){
+        return [
+            $ALLOWED_FILTERS$
+        ];
+    }
+    public static function allowedIncludes(){
+        return [
+            $ALLOWED_INCLUDES$
+        ];
+    }
+    public static function allowedSorts(){
+        return [
+            $ALLOWED_SORTS$
+        ];
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "GeneratorBuilder",
+    "alias": "generatorbuilder",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\GeneratorBuilder\\Providers\\GeneratorBuilderServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,16 @@
+{
+    "CrudGenerator": true,
+    "Panel": true,
+    "User": true,
+    "Place": true,
+    "Settings": true,
+    "VueGenerator": true,
+    "GeneratorBuilder": true,
+    "AjaxUpload": true,
+    "Ticket": false,
+    "Admin": true,
+    "AccessLevel": false,
+    "Test": true,
+    "Comment": true,
+    "UserVerification": false
+}

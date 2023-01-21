@@ -1,0 +1,27 @@
+{
+    "name": "iracode/admin-module",
+    "type":"laravel-module",
+    "description": "",
+    "authors": [
+        {
+            "name": "Iracode",
+            "email": "info@iracode.com"
+        }
+    ],
+    "require":{
+
+    },
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Admin\\": ""
+        }
+    }
+}

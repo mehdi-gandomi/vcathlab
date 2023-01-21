@@ -1,0 +1,22 @@
+
+
+@font-face {
+    font-family: IRANSans;
+    /* font-style: normal; */
+    /* font-weight: bold; */
+    /* src: url('../fonts/eot/IRANSansWeb(FaNum)_Bold.eot'); */
+    src: url('/static/file/iransans-ttf') format('truetype');
+}
+
+
+body{
+    font-family: IRANSans;
+}
+
+.select2,.select2-dropdown{
+    direction: rtl;
+}
+.select2-results__options--nested{
+    padding-right: 1.5rem;
+}
+

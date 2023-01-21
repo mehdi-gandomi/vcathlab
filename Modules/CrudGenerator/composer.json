@@ -1,0 +1,31 @@
+{
+    "name": "iracode/crud-generator-module",
+    "type": "laravel-module",
+    "description": "",
+    "authors": [
+        {
+            "name": "Iracode",
+            "email": "info@iracode.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "require": {
+        "php": "^7.2.5",
+        "illuminate/support": "7.* | 8.*",
+        "laravel/legacy-factories": "^1.0",
+        "laracasts/flash": "^3.1",
+        "spatie/laravel-query-builder": "^2.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\CrudGenerator\\": ""
+        }
+    }
+}
