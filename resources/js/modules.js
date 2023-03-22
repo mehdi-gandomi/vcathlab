@@ -19,6 +19,17 @@ export default [
 
 
 	...require('@external_modules/Admin/Resources/js/physicians/routes.js').default,
+
+    {
+        path: '/computation_center/assesment',
+        name: 'computation_center-assesment',
+        component: ()=> import('@external_modules/User/Resources/js/computation_center/New.vue'),
+    },
+    {
+        path: '/computation_center/list',
+        name: 'computation_center-list',
+        component: ()=> import('@external_modules/User/Resources/js/computation_center/List.vue'),
+    },
     {
         path: '/mace_assesment',
         name: 'mace-assesment',
@@ -35,6 +46,11 @@ export default [
         component: ()=> import('@external_modules/User/Resources/js/Echo.vue'),
     },
     {
+        path: '/angiography',
+        name: 'angiography',
+        component: ()=> import('@external_modules/User/Resources/js/Angiography.vue'),
+    },
+    {
         path: '/body_analyzer',
         name: 'body-analyzer',
         component: ()=> import('@external_modules/User/Resources/js/BodyAnalyzer.vue'),
@@ -47,4 +63,5 @@ export default [
 	...require('@external_modules/User/Resources/js/mace_assesments/routes.js').default,
 	...require('@external_modules/User/Resources/js/echo_calculations/routes.js').default,
 	...require('@external_modules/User/Resources/js/body_compositions/routes.js').default,
+    ...require('@external_modules/User/Resources/js/angiographies/routes.js').default,
 ];

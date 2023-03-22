@@ -142,7 +142,7 @@ class BodyCompositionAPIController extends AppBaseController
             $Cond_BFMP = "Fitness";
         }
 
-        if ($BFMP > 25 && $BFMP <= 30) {
+        if ($BFMP >= 25 && $BFMP <= 30) {
             $Cond_BFMP = "AverAge";
         }
 
@@ -192,8 +192,9 @@ class BodyCompositionAPIController extends AppBaseController
             $Cond_LBM = "Under";
         }
 
-        if ($LBM > 45 && $LBM <= 65) {
-            $Cond_LBM = "Normal";
+        if($LBM >= 45)
+        {
+           $Cond_LBM = "Normal";
         }
 
 
