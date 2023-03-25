@@ -55,3 +55,5 @@ Route::crud('angiographies', 'AngiographyAPIController');
 
 
 Route::crud('body_compositions', 'BodyCompositionAPIController');
+
+Route::crud('aobp_calculations', 'AobpCalculationAPIController');

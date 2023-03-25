@@ -13,3 +13,4 @@
 
 
 Route::get('/', 'UserController@index');
+Route::get('/aobp/result/{id}', 'AOBPController@result');

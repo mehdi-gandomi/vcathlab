@@ -380,6 +380,26 @@ class UserServiceProvider extends ServiceProvider
                             // ],
                             [
                                 "url"=> null,
+                                "name"=> "Automatic OBP",
+                                "icon_url" => "/images/icons/macerisk.png",
+                                "submenu"=> [
+
+
+                                  [
+                                    'url'=>"/aobp",
+                                    'name'=>"AOBP Calculator",
+                                    'slug'=>'aobp-calculator'
+                                ],
+
+                                [
+                                    'url'=>"/user/aobp_calculations",
+                                    'name'=>"List",
+                                    'slug'=>'aobp-list'
+                                ],
+                                ]
+                            ],
+                            [
+                                "url"=> null,
                                 "name"=> "MACE Risk",
                                 "icon_url" => "/images/icons/macerisk.png",
                                 "submenu"=> [
@@ -688,6 +708,26 @@ class UserServiceProvider extends ServiceProvider
                                         'slug' => 'body-analyzer-list',
                                     ],
                                 ],
+                            ];
+                            $menu[]= [
+                                "url"=> null,
+                                "name"=> "Automatic OBP",
+                                "icon_url" => "/images/icons/macerisk.png",
+                                "submenu"=> [
+
+
+                                  [
+                                    'url'=>"/aobp",
+                                    'name'=>"AOBP Calculator",
+                                    'slug'=>'aobp-calculator'
+                                ],
+
+                                [
+                                    'url'=>"/user/aobp_calculations",
+                                    'name'=>"List",
+                                    'slug'=>'aobp-list'
+                                ],
+                                ]
                             ];
                             if(auth()->user()->ffr_access){
                                 $menu[]=[
