@@ -115,14 +115,23 @@ export default {
                 //     filter: "agTextColumnFilter",
                 // },
                 {
-                    headerName: this.__("user"),
-                    field: "user.email",
+                    headerName: this.__("patient"),
+                    field: "patient.name",
                     resizable: true,
                     filter: false,
                 },
                 {
-                    headerName: this.__("patient"),
-                    field: "patient.name",
+                    headerName: this.__("Age"),
+                    field: "patient.age",
+                    resizable: true,
+                    filter: false,
+                },
+                {
+                    headerName: this.__("Sex"),
+                    field: "patient.sex",
+                    valueFormatter:(params)=>{
+                        return params.value == 1 ? "Male":"Female";
+                    },
                     resizable: true,
                     filter: false,
                 },
@@ -135,12 +144,10 @@ export default {
                     filter: "agTextColumnFilter",
                 },
                 {
-                    headerName: this.__("Updated At"),
-                    field: "updated_at",
+                    headerName: this.__("user"),
+                    field: "user.email",
                     resizable: true,
-                    valueFormatter: Formatters.dateFormatter,
-
-                    filter: "agTextColumnFilter",
+                    filter: false,
                 },
 
                 {
