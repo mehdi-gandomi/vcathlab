@@ -57,8 +57,13 @@ export default [
     },
     {
         path: '/aobp',
-        name: 'body-analyzer',
+        name: 'aobp',
         component: ()=> import('@external_modules/User/Resources/js/AOBP.vue'),
+    },
+      {
+        path: '/abpm',
+        name: 'abpm',
+        component: ()=> import('@external_modules/User/Resources/js/ABPM.vue'),
     },
     {
         path: '/admin/report',
@@ -70,4 +75,5 @@ export default [
 	...require('@external_modules/User/Resources/js/body_compositions/routes.js').default,
     ...require('@external_modules/User/Resources/js/angiographies/routes.js').default,
     ...require('@external_modules/User/Resources/js/aobp_calculations/routes.js').default,
+    ...require('@external_modules/User/Resources/js/abpm_calculations/routes.js').default,
 ];

@@ -1220,6 +1220,8 @@ $Cond_age="Younger than";
                     }else{
                         if((auth()->check() && auth()->user()->email == "inajafi@vcathlab.com")){
                             $template=new \PhpOffice\PhpWord\TemplateProcessor(storage_path("app/mace-inajafi.docx"));
+                        }else if((auth()->check() && auth()->user()->email == "mkia@vcathlab.com")){
+                            $template=new \PhpOffice\PhpWord\TemplateProcessor(storage_path("app/TotalResult-monakia.docx"));
                         }else{
                             $template=new \PhpOffice\PhpWord\TemplateProcessor(storage_path("app/TotalResult.docx"));
                         }

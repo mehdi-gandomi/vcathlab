@@ -20,14 +20,26 @@ class AOBPController extends Controller
         $total=max(count($aobp->sys),count($aobp->hr),count($aobp->dia));
 
         for($i=0;$i<$total;$i++){
-            $map=$aobp->dia[$i] + 0.333 * ($aobp->sys[$i] - $aobp->dia[$i]);
-            $maps[]=$map;
-            $pp=$aobp->sys[$i] - $aobp->dia[$i];
-            $pps[]=$pp;
-            $co=$pp * $aobp->hr[$i] / 1000;
-            $cos[]=$co;
-            $ci=$co / (sqrt($aobp->height * $aobp->weight / 3600));
-            $cis[]=$ci;
+            if($aobp->dia[$i] == null && $aobp->sys[$i] == null){
+                $map=null;
+                $pp=null;
+                $co=null;
+                $ci=null;
+            }
+            else{
+                $map=$aobp->dia[$i] + 0.333 * ($aobp->sys[$i] - $aobp->dia[$i]);
+                $pp=$aobp->sys[$i] - $aobp->dia[$i];
+                $co=$pp * $aobp->hr[$i] / 1000;
+                $ci=$co / (sqrt($aobp->height * $aobp->weight / 3600));
+                $maps[]=$map;
+            
+                $pps[]=$pp;
+                
+                $cos[]=$co;
+                
+                $cis[]=$ci;
+            }
+            
         }
 
         $dia_std=$this->std_deviation($aobp->dia);
@@ -39,7 +51,9 @@ class AOBPController extends Controller
         $ci_std=$this->std_deviation($cis);
         $co_std=$this->std_deviation($cos);
 
-        return view("user::aobp.result",compact('aobp','maps','cos','cis','pps','dia_std','sys_std','hr_std','map_std','pp_std','ci_std','co_std'));
+        $summary=$aobp->summary;
+
+        return view("user::aobp.result",compact('aobp','maps','cos','cis','pps','summary','dia_std','sys_std','hr_std','map_std','pp_std','ci_std','co_std'));
    }
    public function std_deviation($data)
    {

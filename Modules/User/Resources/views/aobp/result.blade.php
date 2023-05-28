@@ -1,26 +1,58 @@
 @php
-    function avg($arr)
+    function avg($arr,$count=null)
     {
+        $count=$count ? $count:count($arr);
         $sum = 0;
         foreach ($arr as $item) {
             $sum += $item;
         }
-        return number_format($sum / count($arr), 1);
+        return number_format($sum / $count, 1);
+    }
+    function min_number($arr){
+        $arr = array_diff($arr, array(null));
+        return min($arr);
+    }
+    function max_number($arr){
+        $arr = array_diff($arr, array(null));
+        return max($arr);
     }
 @endphp
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>AOBP Result</title>
+    <title>Automatic Office Blood Pressure</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <style type="text/css" media="print">
+      @media print
+      {
+         @page {
+           margin-top: 0;
+           margin-bottom: 0;
+         }
+         body  {
+           padding-top: 72px;
+           padding-bottom: 72px ;
+         }
+      } 
+</style>
     <style>
         .table-header {
             background: #fde9d9
         }
-
+        .bottom-texts li{
+            margin-top:0.5rem;
+            margin-bottom:0.5rem;
+        }
+       
         @media print {
+             html,body{
+            font-size:22px !important;
+        }
+        .table > :not(caption) > * > *{
+            padding:.4rem .4rem;
+        }
             body {
                 color-adjust: exact;
             }
@@ -32,6 +64,7 @@
         }
         #line-chart{
             border: 1px solid #000;
+            height:85vh;
         }
     </style>
 </head>
@@ -113,10 +146,10 @@
                             <td class="border-end-0 border-start-0">
                                 {{ $sys_std }} </td>
                             <td class="border-end-0 border-start-0">
-                                {{ max($aobp->sys) }}
+                                {{ max_number($aobp->sys) }}
                             </td>
                             <td class=" border-start-0">
-                                {{ min($aobp->sys) }}
+                                {{ min_number($aobp->sys) }}
                             </td>
                         </tr>
                         <tr>
@@ -130,10 +163,10 @@
                                 {{ $dia_std }}
                             </td>
                             <td class="border-end-0 border-start-0">
-                                {{ max($aobp->dia) }}
+                                {{ max_number($aobp->dia) }}
                             </td>
                             <td class=" border-start-0">
-                                {{ min($aobp->dia) }}
+                                {{ min_number($aobp->dia) }}
                             </td>
                         </tr>
                         <tr>
@@ -147,10 +180,10 @@
                                 {{ $hr_std }}
                             </td>
                             <td class="border-end-0 border-start-0">
-                                {{ max($aobp->hr) }}
+                                {{ max_number($aobp->hr) }}
                             </td>
                             <td class=" border-start-0">
-                                {{ min($aobp->hr) }}
+                                {{ min_number($aobp->hr) }}
                             </td>
                         </tr>
                         <tr>
@@ -164,10 +197,10 @@
                                 {{ $map_std }}
                             </td>
                             <td class="border-end-0 border-start-0">
-                                {{ number_format(max($maps), 1) }}
+                                {{ number_format(max_number($maps), 1) }}
                             </td>
                             <td class=" border-start-0">
-                                {{ number_format(min($maps), 1) }}
+                                {{ number_format(min_number($maps), 1) }}
                             </td>
                         </tr>
                         <tr>
@@ -181,10 +214,10 @@
                                 {{ $pp_std }}
                             </td>
                             <td class="border-end-0 border-start-0">
-                                {{ number_format(max($pps), 1) }}
+                                {{ number_format(max_number($pps), 1) }}
                             </td>
                             <td class=" border-start-0">
-                                {{ number_format(min($pps), 1) }}
+                                {{ number_format(min_number($pps), 1) }}
                             </td>
                         </tr>
                         <tr>
@@ -198,10 +231,10 @@
                                 {{ $co_std }}
                             </td>
                             <td class="border-end-0 border-start-0">
-                                {{ number_format(max($cos), 1) }}
+                                {{ number_format(max_number($cos), 1) }}
                             </td>
                             <td class=" border-start-0">
-                                {{ number_format(min($cos), 1) }}
+                                {{ number_format(min_number($cos), 1) }}
                             </td>
                         </tr>
                         <tr>
@@ -215,10 +248,10 @@
                                 {{ $ci_std }}
                             </td>
                             <td class="border-end-0 border-start-0">
-                                {{ number_format(max($cis), 1) }}
+                                {{ number_format(max_number($cis), 1) }}
                             </td>
                             <td class=" border-start-0">
-                                {{ number_format(min($cis), 1) }}
+                                {{ number_format(min_number($cis), 1) }}
                             </td>
                         </tr>
                         <tr>
@@ -243,19 +276,19 @@
                     <tbody>
                         <tr class="border-bottom-0">
                             <td colspan="5" class="border-end-0">
-                                <ul>
+                                <ul class="bottom-texts">
                                     <li>
-                                        45% of SBP values were > 130 mmHg and 41% of DBP values were > 85 mmHg.
+                                        {{$summary['sys_above_130_count']}}% of SBP values were > 130 mmHg and {{$summary['dia_above_85_count']}}% of DBP values were > 85 mmHg.
                                     </li>
                                     <li>
-                                        55% of SBP and 59% of DBP readings were normal value (SBP < 130 mmHg and DBP <
+                                        {{$summary['sys_under_130_count']}}% of SBP and {{$summary['dia_under_85_count']}}% of DBP readings were normal value (SBP < 130 mmHg and DBP <
                                             85 mmHg). </li>
                                     <li>
-                                        Mean home SBP/DBP = 127 / 84 mmHg (Max SBP = 160 mmHg and Max DBP = 99 mmHg).
+                                        Mean office SBP/DBP = {{$aobp->sys_avg}} / {{$aobp->dia_avg}} mmHg (Max SBP = {{max_number($aobp->sys)}} mmHg and Max DBP = {{max_number($aobp->dia)}} mmHg).
                                     </li>
                                     <li>
-                                        Classification of the patient was white-coat hypertension. (Office SBP/DBP = 165
-                                        / 85 mmHg)
+                                        Classification of the patient was {{$aobp->result_msg}}. (Office SBP/DBP = {{$aobp->sys[0]}}
+                                        / {{$aobp->dia[0]}} mmHg)
                                     </li>
                                     <li>
                                         Recommended lifestyle changes and drug treatment (if CVD risk > 7.5% and SBP >
@@ -278,10 +311,11 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/assets/js/chartjs-plugin-annotation.min.js"></script>
     <script>
+    const range = (a,b) => Array(Math.abs(a-b)+1).fill(a).map((v,i)=>v+i*(a>b?-1:1));
         new Chart(document.getElementById("line-chart"), {
             type: 'line',
             data: {
-                labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+                labels: @json(range(1,$aobp->dia_count)),
                 datasets: [{
                         data: @json($aobp->dia),
                         label: "DBP",
@@ -297,6 +331,7 @@
                 ]
             },
             options: {
+                        maintainAspectRatio: false,
                 responsive: true,
                 plugins: {
                     title: {

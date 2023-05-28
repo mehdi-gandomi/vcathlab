@@ -54,334 +54,17 @@ class UserServiceProvider extends ServiceProvider
         Iracode::folderTranslation(__DIR__."/../Resources/lang");
         Iracode::serving(function($event){
             Iracode::script("User",asset("vendor/user/js/app.js"));
-            // Iracode::initializeMenus(  [
 
-
-            //     0 =>
-
-
-            //     [
-
-
-            //       'name' => 'تنظیمات سیستم',
-
-
-            //       'url' => NULL,
-
-
-            //       'slug' => 's1',
-
-
-            //       'icon' => '',
-
-
-            //       'submenu' =>
-
-
-            //       [
-
-
-            //         0 =>
-
-
-            //         [
-
-
-            //           'name' => 'گروههای کاری',
-
-
-            //           'url' => '/accesslevel/roles',
-
-
-            //           'target' => '_self',
-
-
-            //           'slug' => 'm1',
-
-
-            //           'icon' => 'far fa-tty',
-
-
-            //         ],
-
-
-            //         1 =>
-
-
-            //         [
-
-
-            //           'name' => 'زیرسیستم ها',
-
-
-            //           'url' => '/accesslevel/subsystems',
-
-
-            //           'target' => '_self',
-
-
-            //           'slug' => 'm2',
-
-
-            //           'icon' => 'far fa-tty',
-
-
-            //         ],
-
-
-            //         2 =>
-
-
-            //         [
-
-
-            //           'name' => 'گزارش فعالیت کاربران',
-
-
-            //           'url' => '/accesslevel/user_activities',
-
-
-            //           'target' => '_self',
-
-
-            //           'slug' => 'm3',
-
-
-            //           'icon' => 'far fa-tty',
-
-
-            //         ],
-
-
-            //         3 =>
-
-
-            //         [
-
-
-            //           'name' => 'گزارش فعالیت کاربران',
-
-
-            //           'url' => '/accesslevel/users',
-
-
-            //           'target' => '_self',
-
-
-            //           'slug' => 'm4',
-
-
-            //           'icon' => 'far fa-tty',
-
-
-            //         ],
-
-
-            //       ],
-
-
-            //     ],
-
-
-            //     1 =>
-
-
-            //     [
-
-
-            //       'name' => 'اطلاعات پایه',
-
-
-            //       'url' => NULL,
-
-
-            //       'slug' => 's2',
-
-
-            //       'icon' => '',
-
-
-            //       'submenu' =>
-
-
-            //       [
-
-
-            //         0 =>
-
-
-            //         [
-
-
-            //           'name' => 'مدیریت اماکن',
-
-
-            //           'url' => NULL,
-
-
-            //           'target' => '_self',
-
-
-            //           'slug' => 'm5',
-
-
-            //           'icon' => 'far fa-tty',
-
-
-            //           'submenu' =>
-
-
-            //           [
-
-
-            //             0 =>
-
-
-            //             [
-
-
-            //               'name' => 'اطلاعات کشورها',
-
-
-            //               'url' => '/location/countries',
-
-
-            //               'target' => '_self',
-
-
-            //               'slug' => 'm6',
-
-
-            //               'icon' => 'far fa-tty',
-
-
-            //             ],
-
-
-            //             1 =>
-
-
-            //             [
-
-
-            //               'name' => 'اطلاعات شهرها',
-
-
-            //               'url' => '/location/cities',
-
-
-            //               'target' => '_self',
-
-
-            //               'slug' => 'm7',
-
-
-            //               'icon' => 'far fa-tty',
-
-
-            //             ],
-
-
-            //           ],
-
-
-            //         ],
-
-
-            //         1 =>
-
-
-            //         [
-
-
-            //           'name' => 'اطلاعات واحدهای پولی',
-
-
-            //           'url' => '/basicinform/currencies',
-
-
-            //           'target' => '_self',
-
-
-            //           'slug' => 'm8',
-
-
-            //           'icon' => 'far fa-blind',
-
-
-            //         ],
-
-
-            //         2 =>
-
-
-            //         [
-
-
-            //           'name' => 'اطلاعات اصناف',
-
-
-            //           'url' => '/basicinformation/guilds',
-
-
-            //           'target' => '_self',
-
-
-            //           'slug' => 'm9',
-
-
-            //           'icon' => 'far fa-blind',
-
-
-            //         ],
-
-
-            //         3 =>
-
-
-            //         [
-
-
-            //           'name' => 'اطلاعات دسته بندی آگهی ها',
-
-
-            //           'url' => '/basicinformation/categories',
-
-
-            //           'target' => '_self',
-
-
-            //           'slug' => 'm10',
-
-
-            //           'icon' => 'far fa-blind',
-
-
-            //         ],
-
-
-            //       ],
-
-
-            //     ],
-
-
-            //   ]);
             Iracode::initializeMenus(function(){
 
                 if(auth()->check()){
                     if(auth()->user()->master){
                         return [
-                            // [
-                            //     'url'=>"/dashboard/analytics",
-                            //     'name'=>"Dashboard",
-                            //     'slug'=>'dashboard',
-                            //     'icon'=>'HomeIcon'
-                            // ],
+
                             [
                                 "url"=> null,
                                 "name"=> "Automatic OBP",
-                                "icon_url" => "/images/icons/macerisk.png",
+                                "icon_url" => "/images/icons/aobp-icon.png",
                                 "submenu"=> [
 
 
@@ -395,6 +78,26 @@ class UserServiceProvider extends ServiceProvider
                                     'url'=>"/user/aobp_calculations",
                                     'name'=>"List",
                                     'slug'=>'aobp-list'
+                                ],
+                                ]
+                            ],
+                            [
+                                "url"=> null,
+                                "name"=> "ABPM",
+                                "icon_url" => "/images/icons/aobp-icon.png",
+                                "submenu"=> [
+
+
+                                  [
+                                    'url'=>"/abpm",
+                                    'name'=>"ABPM Calculator",
+                                    'slug'=>'abpm-calculator'
+                                ],
+
+                                [
+                                    'url'=>"/user/abpm_calculations",
+                                    'name'=>"List",
+                                    'slug'=>'abpm-list'
                                 ],
                                 ]
                             ],
@@ -441,7 +144,7 @@ class UserServiceProvider extends ServiceProvider
                             [
                                 "url" => null,
                                 "name" => "Computation Center",
-                                "icon" => "HomeIcon",
+                                "icon_url" => "/images/icons/computational-icon.png",
                                 "submenu" => [
 
                                     [
@@ -527,7 +230,7 @@ class UserServiceProvider extends ServiceProvider
                             [
                                 "url"=> null,
                                 "name"=> "Angiography Risk",
-                                "icon_url" => "/images/icons/macerisk.png",
+                                "icon_url" => "/images/icons/angio.png",
                                 "submenu"=> [
 
 
@@ -626,8 +329,29 @@ class UserServiceProvider extends ServiceProvider
                                     'name' => "Dashboard",
                                     'slug' => 'dashboard',
                                     'icon' => 'HomeIcon',
+                                ],
+                                [
+                                    "url"=> null,
+                                    "name"=> "ABPM",
+                                    "icon_url" => "/images/icons/aobp-icon.png",
+                                    "submenu"=> [
+
+
+                                      [
+                                        'url'=>"/abpm",
+                                        'name'=>"ABPM Calculator",
+                                        'slug'=>'abpm-calculator'
+                                    ],
+
+                                    [
+                                        'url'=>"/user/abpm_calculations",
+                                        'name'=>"List",
+                                        'slug'=>'abpm-list'
+                                    ],
+                                    ]
                                 ]
                             ];
+
                             if(auth()->user()->mace_access){
                                 $menu[]=[
                                     "url" => null,
@@ -712,7 +436,7 @@ class UserServiceProvider extends ServiceProvider
                             $menu[]= [
                                 "url"=> null,
                                 "name"=> "Automatic OBP",
-                                "icon_url" => "/images/icons/macerisk.png",
+                                "icon_url" => "/images/icons/aobp-icon.png",
                                 "submenu"=> [
 
 
@@ -784,7 +508,7 @@ class UserServiceProvider extends ServiceProvider
                             $menu[]= [
                                 "url" => null,
                                 "name" => "Computation Center",
-                                "icon" => "HomeIcon",
+                                "icon_url" => "/images/icons/computational-icon.png",
                                 "submenu" => [
 
                                     [
@@ -802,7 +526,7 @@ class UserServiceProvider extends ServiceProvider
                             $menu[]=[
                                 "url"=> null,
                                 "name"=> "Angiography Risk",
-                                "icon_url" => "/images/icons/macerisk.png",
+                                "icon_url" => "/images/icons/angio.png",
                                 "submenu"=> [
 
 
@@ -880,7 +604,7 @@ class UserServiceProvider extends ServiceProvider
                             [
                                 "url" => null,
                                 "name" => "Computation Center",
-                                "icon" => "HomeIcon",
+                                "icon_url" => "/images/icons/computational-icon.png",
                                 "submenu" => [
 
                                     [

@@ -84,7 +84,7 @@ export default {
             baseUrl: "/user/api/aobp_calculations",
             model: "AobpCalculation",
             module: "User",
-            createButtonText: this.__("Create Aobpcalculation"),
+            createButtonText: this.__("Create ABPMcalculation"),
             createButtonLink: "/user/aobp_calculations/create",
             printButtonLink: "/user/aobp_calculations/print",
             columnDefs: [
@@ -156,11 +156,26 @@ export default {
                     filter: false,
                     cellRenderer: "tableActionsRenderer",
                     cellRendererParams: {
-                        model: "Aobpcalculation",
+                        model: "AobpCalculation",
                         baseRoutePath: "user/aobp_calculations",
                         modelPlural: "aobp_calculations",
                         baseApiPath: "/user/api",
                         showEditButton: false,
+                        showDetailButton: false,
+                        showDeleteButton: false,
+                        buttons:[
+                            {
+                                text() {
+                                    return this.__(`Show Result`);
+                                },
+                                class:"includeIcon includeIconOnly",
+                                async callback() {
+                                    location.href=`/user/aobp/result/${this.params.data.id}`
+                                },
+                                color: "success",
+                                icon: "eye",
+                            },
+                        ]
                     },
                 },
             ],

@@ -53,6 +53,7 @@ class MaceController extends Controller
             'symptom'
             // 'Parental_hypertension'
         ]);
+        
 		if($request->bearerToken()){
 		           ['LeftAnklePressure'=>$LeftAnklePressure,'RightAnklePressure'=>$RightAnklePressure]=$data;
           $dataToSave['user_id']=auth("sanctum")->user() ? auth("sanctum")->user()->id:User::find(46)->id;
@@ -1181,7 +1182,10 @@ $Cond_age="Younger than";
                     }else{
                         if((auth()->check() && auth()->user()->email == "inajafi@vcathlab.com")){
                             $template=new \PhpOffice\PhpWord\TemplateProcessor(storage_path("app/mace-inajafi.docx"));
-                        }else{
+                        }else if((auth()->check() && auth()->user()->email == "mkia@vcathlab.com")){
+                            $template=new \PhpOffice\PhpWord\TemplateProcessor(storage_path("app/TotalResult-monakia.docx"));
+                        }
+                        else{
                             $template=new \PhpOffice\PhpWord\TemplateProcessor(storage_path("app/TotalResult.docx"));
                         }
                         $template2=new \PhpOffice\PhpWord\TemplateProcessor(storage_path("app/AnkleBrachialIndex.docx"));

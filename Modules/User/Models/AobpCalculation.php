@@ -269,4 +269,57 @@ class AobpCalculation extends Model
         }
         return number_format(($sum / $count),1);
     }
+    public function getSysCountAttribute(){
+        $count=0;
+        foreach($this->sys as $item){
+            if(is_numeric($item)) $count++;
+        }
+        return $count;
+    }
+    public function getDiaCountAttribute(){
+        $count=0;
+        foreach($this->dia as $item){
+            if(is_numeric($item)) $count++;
+        }
+        return $count;
+    }
+
+    public function getSummaryAttribute(){
+        $sys_above_130_count=0;
+        $sys_under_130_count=0;
+
+        $dia_above_85_count=0;
+        $dia_under_85_count=0;
+        foreach($this->sys as $item){
+            if(is_numeric($item) && $item > 130) $sys_above_130_count++;
+            if(is_numeric($item) && $item <= 130) $sys_under_130_count++;
+        }
+        foreach($this->dia as $item){
+            if(is_numeric($item) && $item >= 85) $dia_above_85_count++;
+            if(is_numeric($item) && $item < 85) $dia_under_85_count++;
+        }
+        $sys_count=$this->sys_count;
+        $dia_count=$this->dia_count;
+        return [
+            'sys_above_130_count'=>round(($sys_above_130_count / $sys_count)*100),
+            'sys_under_130_count'=>round(($sys_under_130_count / $sys_count)*100),
+            'dia_above_85_count'=>round(($dia_above_85_count / $dia_count)*100),
+            'dia_under_85_count'=>round(($dia_under_85_count / $dia_count)*100)
+        ];
+    }
+    public function getResultMsgAttribute(){
+        $message="";
+        if ($this->sys[0] <= 135 && $this->sys_avg <= 135) $message= "Normal Blood Pressure";
+        if ($this->sys[0] < 135 && $this->sys_avg >= 135) $message= "Masked Hypertension";
+        if ($this->sys[0] > 135 && $this->sys_avg <= 135) $message= "White coat hypertension";
+        if ($this->sys[0] > 135 && $this->sys_avg >= 135) $message= "Sustained hypertension";
+        return $message;
+    }
+    // public function getDbpAbove85PercentAttribute(){
+    //     $count=0;
+    //     foreach($this->dia as $item){
+    //         if(is_numeric($item) && $item > 130) $count++;
+    //     }
+    //     return ($count / $this->dia_count)*100;
+    // }
 }
