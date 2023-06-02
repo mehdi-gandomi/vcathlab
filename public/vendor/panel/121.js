@@ -1,16 +1,16 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[121],{
 
-/***/ "../User/Resources/js/body_compositions/Create.vue":
-/*!*********************************************************!*\
-  !*** ../User/Resources/js/body_compositions/Create.vue ***!
-  \*********************************************************/
+/***/ "../User/Resources/js/angiographies/Create.vue":
+/*!*****************************************************!*\
+  !*** ../User/Resources/js/angiographies/Create.vue ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Create_vue_vue_type_template_id_c0f2d9aa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Create.vue?vue&type=template&id=c0f2d9aa& */ "../User/Resources/js/body_compositions/Create.vue?vue&type=template&id=c0f2d9aa&");
-/* harmony import */ var _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Create.vue?vue&type=script&lang=js& */ "../User/Resources/js/body_compositions/Create.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Create_vue_vue_type_template_id_6cc8f288___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Create.vue?vue&type=template&id=6cc8f288& */ "../User/Resources/js/angiographies/Create.vue?vue&type=template&id=6cc8f288&");
+/* harmony import */ var _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Create.vue?vue&type=script&lang=js& */ "../User/Resources/js/angiographies/Create.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -21,8 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Create_vue_vue_type_template_id_c0f2d9aa___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Create_vue_vue_type_template_id_c0f2d9aa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Create_vue_vue_type_template_id_6cc8f288___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Create_vue_vue_type_template_id_6cc8f288___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -32,47 +32,47 @@ var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNorma
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "User/Resources/js/body_compositions/Create.vue"
+component.options.__file = "User/Resources/js/angiographies/Create.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "../User/Resources/js/body_compositions/Create.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************!*\
-  !*** ../User/Resources/js/body_compositions/Create.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************/
+/***/ "../User/Resources/js/angiographies/Create.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ../User/Resources/js/angiographies/Create.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/body_compositions/Create.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/angiographies/Create.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "../User/Resources/js/body_compositions/Create.vue?vue&type=template&id=c0f2d9aa&":
-/*!****************************************************************************************!*\
-  !*** ../User/Resources/js/body_compositions/Create.vue?vue&type=template&id=c0f2d9aa& ***!
-  \****************************************************************************************/
+/***/ "../User/Resources/js/angiographies/Create.vue?vue&type=template&id=6cc8f288&":
+/*!************************************************************************************!*\
+  !*** ../User/Resources/js/angiographies/Create.vue?vue&type=template&id=6cc8f288& ***!
+  \************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_c0f2d9aa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=template&id=c0f2d9aa& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/body_compositions/Create.vue?vue&type=template&id=c0f2d9aa&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_c0f2d9aa___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_6cc8f288___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=template&id=6cc8f288& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/angiographies/Create.vue?vue&type=template&id=6cc8f288&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_6cc8f288___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_c0f2d9aa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_6cc8f288___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/body_compositions/Create.vue?vue&type=script&lang=js&":
-/*!******************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/body_compositions/Create.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/angiographies/Create.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/angiographies/Create.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -425,6 +425,421 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -433,22 +848,102 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   data: function data() {
     return {
       form: new _Form__WEBPACK_IMPORTED_MODULE_1__["default"]({
+        Cr: "",
+        Ht: "",
+        LVEF: "",
+        HR: "",
+        Contrast: "",
+        Hb: "",
+        PTP: "",
+        CAVI: "",
+        WBC: "",
+        PriorCABG: "",
+        PriorPCI: "",
+        HbA1C: "",
         Age: "",
+        SBP: "",
+        DBP: "",
+        Heigth: "",
+        Weigth: "",
         Sex: "",
-        Waist: "",
-        SMM: "",
-        VFP: "",
-        Height: "",
-        Weight: "",
-        Hip: "",
-        BFMP: "",
+        pribleed: "",
+        Hypotension: "",
+        heart_failure: "",
+        Diabet: "",
+        Acute_MI: "",
+        IABP: "",
+        Smoker: "",
         user_id: "",
         patient_id: ""
       }),
-      model: "Modules\\User\\Models\\BodyComposition",
+      model: "Modules\\User\\Models\\Angiography",
       locale: Iracode.$i18n.locale,
       inputs: {
+        Cr: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        Ht: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        LVEF: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        HR: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        Contrast: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        Hb: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        PTP: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        CAVI: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        WBC: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        PriorCABG: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        PriorPCI: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        HbA1C: {
+          type: "vs-input",
+          field_type: "text"
+        },
         Age: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        SBP: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        DBP: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        Heigth: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        Weigth: {
           type: "vs-input",
           field_type: "text"
         },
@@ -456,31 +951,31 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           type: "vs-radio",
           field_type: "radio"
         },
-        Waist: {
+        pribleed: {
           type: "vs-input",
           field_type: "text"
         },
-        SMM: {
+        Hypotension: {
           type: "vs-input",
           field_type: "text"
         },
-        VFP: {
+        heart_failure: {
           type: "vs-input",
           field_type: "text"
         },
-        Height: {
+        Diabet: {
           type: "vs-input",
           field_type: "text"
         },
-        Weight: {
+        Acute_MI: {
           type: "vs-input",
           field_type: "text"
         },
-        Hip: {
+        IABP: {
           type: "vs-input",
           field_type: "text"
         },
-        BFMP: {
+        Smoker: {
           type: "vs-input",
           field_type: "text"
         },
@@ -524,14 +1019,14 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return _this.form.post("/user/api/body_compositions");
+                return _this.form.post("/user/api/angiographies");
 
               case 2:
                 data = _context.sent;
 
                 if (data.success) {
-                  Iracode.success(_this.__("Bodycomposition Created Successfully"));
-                  if (action == "close") _this.$router.push("/user/body_compositions");else _this.form.reset();
+                  Iracode.success(_this.__("Angiography Created Successfully"));
+                  if (action == "close") _this.$router.push("/user/angiographies");else _this.form.reset();
                 }
 
               case 4:
@@ -547,10 +1042,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/body_compositions/Create.vue?vue&type=template&id=c0f2d9aa&":
-/*!**********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/body_compositions/Create.vue?vue&type=template&id=c0f2d9aa& ***!
-  \**********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/angiographies/Create.vue?vue&type=template&id=6cc8f288&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/angiographies/Create.vue?vue&type=template&id=6cc8f288& ***!
+  \******************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -579,7 +1074,7 @@ var render = function() {
                     {
                       attrs: {
                         color: "primary",
-                        to: "/user/body_compositions",
+                        to: "/user/angiographies",
                         type: "filled"
                       }
                     },
@@ -621,6 +1116,916 @@ var render = function() {
                           _c(
                             "vs-col",
                             {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("Cr")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.Cr.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("Cr"),
+                                  "danger-text": _vm.validationError("Cr"),
+                                  name: "Cr",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.Cr,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "Cr", $$v)
+                                  },
+                                  expression: "form.Cr"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("Ht")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.Ht.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("Ht"),
+                                  "danger-text": _vm.validationError("Ht"),
+                                  name: "Ht",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.Ht,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "Ht", $$v)
+                                  },
+                                  expression: "form.Ht"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "vs-row",
+                {
+                  staticClass: "mb-6",
+                  attrs: { "vs-type": "flex", "vs-w": "12" }
+                },
+                [
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("L V E F")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.LVEF.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("LVEF"),
+                                  "danger-text": _vm.validationError("LVEF"),
+                                  name: "LVEF",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.LVEF,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "LVEF", $$v)
+                                  },
+                                  expression: "form.LVEF"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("H R")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.HR.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("HR"),
+                                  "danger-text": _vm.validationError("HR"),
+                                  name: "HR",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.HR,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "HR", $$v)
+                                  },
+                                  expression: "form.HR"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "vs-row",
+                {
+                  staticClass: "mb-6",
+                  attrs: { "vs-type": "flex", "vs-w": "12" }
+                },
+                [
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("Contrast")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.Contrast.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("Contrast"),
+                                  "danger-text": _vm.validationError(
+                                    "Contrast"
+                                  ),
+                                  name: "Contrast",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.Contrast,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "Contrast", $$v)
+                                  },
+                                  expression: "form.Contrast"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("Hb")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.Hb.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("Hb"),
+                                  "danger-text": _vm.validationError("Hb"),
+                                  name: "Hb",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.Hb,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "Hb", $$v)
+                                  },
+                                  expression: "form.Hb"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "vs-row",
+                {
+                  staticClass: "mb-6",
+                  attrs: { "vs-type": "flex", "vs-w": "12" }
+                },
+                [
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("P T P")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.PTP.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("PTP"),
+                                  "danger-text": _vm.validationError("PTP"),
+                                  name: "PTP",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.PTP,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "PTP", $$v)
+                                  },
+                                  expression: "form.PTP"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("C A V I")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.CAVI.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("CAVI"),
+                                  "danger-text": _vm.validationError("CAVI"),
+                                  name: "CAVI",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.CAVI,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "CAVI", $$v)
+                                  },
+                                  expression: "form.CAVI"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "vs-row",
+                {
+                  staticClass: "mb-6",
+                  attrs: { "vs-type": "flex", "vs-w": "12" }
+                },
+                [
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("W B C")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.WBC.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("WBC"),
+                                  "danger-text": _vm.validationError("WBC"),
+                                  name: "WBC",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.WBC,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "WBC", $$v)
+                                  },
+                                  expression: "form.WBC"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [
+                                _vm._v(_vm._s(_vm.__("Prior C A B G")))
+                              ]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.PriorCABG.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("PriorCABG"),
+                                  "danger-text": _vm.validationError(
+                                    "PriorCABG"
+                                  ),
+                                  name: "PriorCABG",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.PriorCABG,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "PriorCABG", $$v)
+                                  },
+                                  expression: "form.PriorCABG"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "vs-row",
+                {
+                  staticClass: "mb-6",
+                  attrs: { "vs-type": "flex", "vs-w": "12" }
+                },
+                [
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [
+                                _vm._v(_vm._s(_vm.__("Prior P C I")))
+                              ]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.PriorPCI.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("PriorPCI"),
+                                  "danger-text": _vm.validationError(
+                                    "PriorPCI"
+                                  ),
+                                  name: "PriorPCI",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.PriorPCI,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "PriorPCI", $$v)
+                                  },
+                                  expression: "form.PriorPCI"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("Hb A1 C")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.HbA1C.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("HbA1C"),
+                                  "danger-text": _vm.validationError("HbA1C"),
+                                  name: "HbA1C",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.HbA1C,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "HbA1C", $$v)
+                                  },
+                                  expression: "form.HbA1C"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "vs-row",
+                {
+                  staticClass: "mb-6",
+                  attrs: { "vs-type": "flex", "vs-w": "12" }
+                },
+                [
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
                               staticClass: "justify-end",
                               attrs: {
                                 "vs-type": "flex",
@@ -628,7 +2033,13 @@ var render = function() {
                                 "vs-lg": "3"
                               }
                             },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("patient")))])]
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("patient")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
                           ),
                           _vm._v(" "),
                           _c(
@@ -713,7 +2124,13 @@ var render = function() {
                                 "vs-lg": "3"
                               }
                             },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("user")))])]
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("user")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
                           ),
                           _vm._v(" "),
                           _c(
@@ -876,6 +2293,306 @@ var render = function() {
                               }
                             },
                             [
+                              _c("span", [_vm._v(_vm._s(_vm.__("S B P")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.SBP.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("SBP"),
+                                  "danger-text": _vm.validationError("SBP"),
+                                  name: "SBP",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.SBP,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "SBP", $$v)
+                                  },
+                                  expression: "form.SBP"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "vs-row",
+                {
+                  staticClass: "mb-6",
+                  attrs: { "vs-type": "flex", "vs-w": "12" }
+                },
+                [
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("D B P")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.DBP.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("DBP"),
+                                  "danger-text": _vm.validationError("DBP"),
+                                  name: "DBP",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.DBP,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "DBP", $$v)
+                                  },
+                                  expression: "form.DBP"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("Heigth")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.Heigth.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("Heigth"),
+                                  "danger-text": _vm.validationError("Heigth"),
+                                  name: "Heigth",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.Heigth,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "Heigth", $$v)
+                                  },
+                                  expression: "form.Heigth"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "vs-row",
+                {
+                  staticClass: "mb-6",
+                  attrs: { "vs-type": "flex", "vs-w": "12" }
+                },
+                [
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("Weigth")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.Weigth.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("Weigth"),
+                                  "danger-text": _vm.validationError("Weigth"),
+                                  name: "Weigth",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.Weigth,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "Weigth", $$v)
+                                  },
+                                  expression: "form.Weigth"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
                               _c("span", [_vm._v(_vm._s(_vm.__("Sex")))]),
                               _vm._v(" "),
                               _c("span", { staticClass: "ml-1 text-red" }, [
@@ -955,7 +2672,13 @@ var render = function() {
                                 "vs-lg": "3"
                               }
                             },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("Waist")))])]
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("Pribleed")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
                           ),
                           _vm._v(" "),
                           _c(
@@ -968,21 +2691,23 @@ var render = function() {
                               }
                             },
                             [
-                              _c(_vm.inputs.Waist.type, {
+                              _c(_vm.inputs.pribleed.type, {
                                 tag: "component",
                                 staticClass: "w-full",
                                 attrs: {
-                                  danger: _vm.hasValidationError("Waist"),
-                                  "danger-text": _vm.validationError("Waist"),
-                                  name: "Waist",
+                                  danger: _vm.hasValidationError("pribleed"),
+                                  "danger-text": _vm.validationError(
+                                    "pribleed"
+                                  ),
+                                  name: "pribleed",
                                   type: "text"
                                 },
                                 model: {
-                                  value: _vm.form.Waist,
+                                  value: _vm.form.pribleed,
                                   callback: function($$v) {
-                                    _vm.$set(_vm.form, "Waist", $$v)
+                                    _vm.$set(_vm.form, "pribleed", $$v)
                                   },
-                                  expression: "form.Waist"
+                                  expression: "form.pribleed"
                                 }
                               })
                             ],
@@ -1019,7 +2744,15 @@ var render = function() {
                                 "vs-lg": "3"
                               }
                             },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("S M M")))])]
+                            [
+                              _c("span", [
+                                _vm._v(_vm._s(_vm.__("Hypotension")))
+                              ]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
                           ),
                           _vm._v(" "),
                           _c(
@@ -1032,21 +2765,23 @@ var render = function() {
                               }
                             },
                             [
-                              _c(_vm.inputs.SMM.type, {
+                              _c(_vm.inputs.Hypotension.type, {
                                 tag: "component",
                                 staticClass: "w-full",
                                 attrs: {
-                                  danger: _vm.hasValidationError("SMM"),
-                                  "danger-text": _vm.validationError("SMM"),
-                                  name: "SMM",
+                                  danger: _vm.hasValidationError("Hypotension"),
+                                  "danger-text": _vm.validationError(
+                                    "Hypotension"
+                                  ),
+                                  name: "Hypotension",
                                   type: "text"
                                 },
                                 model: {
-                                  value: _vm.form.SMM,
+                                  value: _vm.form.Hypotension,
                                   callback: function($$v) {
-                                    _vm.$set(_vm.form, "SMM", $$v)
+                                    _vm.$set(_vm.form, "Hypotension", $$v)
                                   },
-                                  expression: "form.SMM"
+                                  expression: "form.Hypotension"
                                 }
                               })
                             ],
@@ -1093,7 +2828,15 @@ var render = function() {
                                 "vs-lg": "3"
                               }
                             },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("V F P")))])]
+                            [
+                              _c("span", [
+                                _vm._v(_vm._s(_vm.__("Heart Failure")))
+                              ]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
                           ),
                           _vm._v(" "),
                           _c(
@@ -1106,21 +2849,25 @@ var render = function() {
                               }
                             },
                             [
-                              _c(_vm.inputs.VFP.type, {
+                              _c(_vm.inputs.heart_failure.type, {
                                 tag: "component",
                                 staticClass: "w-full",
                                 attrs: {
-                                  danger: _vm.hasValidationError("VFP"),
-                                  "danger-text": _vm.validationError("VFP"),
-                                  name: "VFP",
+                                  danger: _vm.hasValidationError(
+                                    "heart_failure"
+                                  ),
+                                  "danger-text": _vm.validationError(
+                                    "heart_failure"
+                                  ),
+                                  name: "heart_failure",
                                   type: "text"
                                 },
                                 model: {
-                                  value: _vm.form.VFP,
+                                  value: _vm.form.heart_failure,
                                   callback: function($$v) {
-                                    _vm.$set(_vm.form, "VFP", $$v)
+                                    _vm.$set(_vm.form, "heart_failure", $$v)
                                   },
-                                  expression: "form.VFP"
+                                  expression: "form.heart_failure"
                                 }
                               })
                             ],
@@ -1157,7 +2904,13 @@ var render = function() {
                                 "vs-lg": "3"
                               }
                             },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("Height")))])]
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("Diabet")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
                           ),
                           _vm._v(" "),
                           _c(
@@ -1170,21 +2923,21 @@ var render = function() {
                               }
                             },
                             [
-                              _c(_vm.inputs.Height.type, {
+                              _c(_vm.inputs.Diabet.type, {
                                 tag: "component",
                                 staticClass: "w-full",
                                 attrs: {
-                                  danger: _vm.hasValidationError("Height"),
-                                  "danger-text": _vm.validationError("Height"),
-                                  name: "Height",
+                                  danger: _vm.hasValidationError("Diabet"),
+                                  "danger-text": _vm.validationError("Diabet"),
+                                  name: "Diabet",
                                   type: "text"
                                 },
                                 model: {
-                                  value: _vm.form.Height,
+                                  value: _vm.form.Diabet,
                                   callback: function($$v) {
-                                    _vm.$set(_vm.form, "Height", $$v)
+                                    _vm.$set(_vm.form, "Diabet", $$v)
                                   },
-                                  expression: "form.Height"
+                                  expression: "form.Diabet"
                                 }
                               })
                             ],
@@ -1231,7 +2984,15 @@ var render = function() {
                                 "vs-lg": "3"
                               }
                             },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("Weight")))])]
+                            [
+                              _c("span", [
+                                _vm._v(_vm._s(_vm.__("Acute  M I")))
+                              ]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
                           ),
                           _vm._v(" "),
                           _c(
@@ -1244,21 +3005,23 @@ var render = function() {
                               }
                             },
                             [
-                              _c(_vm.inputs.Weight.type, {
+                              _c(_vm.inputs.Acute_MI.type, {
                                 tag: "component",
                                 staticClass: "w-full",
                                 attrs: {
-                                  danger: _vm.hasValidationError("Weight"),
-                                  "danger-text": _vm.validationError("Weight"),
-                                  name: "Weight",
+                                  danger: _vm.hasValidationError("Acute_MI"),
+                                  "danger-text": _vm.validationError(
+                                    "Acute_MI"
+                                  ),
+                                  name: "Acute_MI",
                                   type: "text"
                                 },
                                 model: {
-                                  value: _vm.form.Weight,
+                                  value: _vm.form.Acute_MI,
                                   callback: function($$v) {
-                                    _vm.$set(_vm.form, "Weight", $$v)
+                                    _vm.$set(_vm.form, "Acute_MI", $$v)
                                   },
-                                  expression: "form.Weight"
+                                  expression: "form.Acute_MI"
                                 }
                               })
                             ],
@@ -1295,7 +3058,13 @@ var render = function() {
                                 "vs-lg": "3"
                               }
                             },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("Hip")))])]
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("I A B P")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
                           ),
                           _vm._v(" "),
                           _c(
@@ -1308,21 +3077,21 @@ var render = function() {
                               }
                             },
                             [
-                              _c(_vm.inputs.Hip.type, {
+                              _c(_vm.inputs.IABP.type, {
                                 tag: "component",
                                 staticClass: "w-full",
                                 attrs: {
-                                  danger: _vm.hasValidationError("Hip"),
-                                  "danger-text": _vm.validationError("Hip"),
-                                  name: "Hip",
+                                  danger: _vm.hasValidationError("IABP"),
+                                  "danger-text": _vm.validationError("IABP"),
+                                  name: "IABP",
                                   type: "text"
                                 },
                                 model: {
-                                  value: _vm.form.Hip,
+                                  value: _vm.form.IABP,
                                   callback: function($$v) {
-                                    _vm.$set(_vm.form, "Hip", $$v)
+                                    _vm.$set(_vm.form, "IABP", $$v)
                                   },
-                                  expression: "form.Hip"
+                                  expression: "form.IABP"
                                 }
                               })
                             ],
@@ -1369,7 +3138,13 @@ var render = function() {
                                 "vs-lg": "3"
                               }
                             },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("B F M P")))])]
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("Smoker")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
                           ),
                           _vm._v(" "),
                           _c(
@@ -1382,21 +3157,21 @@ var render = function() {
                               }
                             },
                             [
-                              _c(_vm.inputs.BFMP.type, {
+                              _c(_vm.inputs.Smoker.type, {
                                 tag: "component",
                                 staticClass: "w-full",
                                 attrs: {
-                                  danger: _vm.hasValidationError("BFMP"),
-                                  "danger-text": _vm.validationError("BFMP"),
-                                  name: "BFMP",
+                                  danger: _vm.hasValidationError("Smoker"),
+                                  "danger-text": _vm.validationError("Smoker"),
+                                  name: "Smoker",
                                   type: "text"
                                 },
                                 model: {
-                                  value: _vm.form.BFMP,
+                                  value: _vm.form.Smoker,
                                   callback: function($$v) {
-                                    _vm.$set(_vm.form, "BFMP", $$v)
+                                    _vm.$set(_vm.form, "Smoker", $$v)
                                   },
-                                  expression: "form.BFMP"
+                                  expression: "form.Smoker"
                                 }
                               })
                             ],

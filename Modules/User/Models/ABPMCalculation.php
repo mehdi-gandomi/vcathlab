@@ -260,17 +260,16 @@ class ABPMCalculation extends Model
         }
         return number_format(($sum / $count),1);
     }
-    
+
     public function getSysAwakeAvgAttribute()
     {
         $sum=0;
         $count=0;
-        
+
         foreach($this->sys as $key=>$item){
             if(!isset($this->times[$key])) continue;
             $time=$this->times[$key];
-            $time=floatval(str_replace(":",".",$time));
-            if(($time >= 7.3 && $time <= 23) || ($time >= 0 && $time <= 1.30) ){
+            if($this->isInAwakeRange($time,$item)){
                 $sum+=$item;
                 $count++;
             }
@@ -282,12 +281,12 @@ class ABPMCalculation extends Model
     {
         $sum=0;
         $count=0;
-        
+
         foreach($this->sys as $key=>$item){
             if(!isset($this->times[$key])) continue;
             $time=$this->times[$key];
-            $time=floatval(str_replace(":",".",$time));
-            if($time >= 1.30 && $time <= 7 ){
+
+            if($this->isInAsleepRange($time,$item)){
                 $sum+=$item;
                 $count++;
             }
@@ -295,17 +294,17 @@ class ABPMCalculation extends Model
         $count=$count == 0 ? 1:$count;
         return number_format(($sum / $count),1);
     }
-    
+
     public function getDiaAwakeAvgAttribute()
     {
         $sum=0;
         $count=0;
-        
+
         foreach($this->dia as $key=>$item){
             if(!isset($this->times[$key])) continue;
             $time=$this->times[$key];
-            $time=floatval(str_replace(":",".",$time));
-            if(($time >= 7.3 && $time <= 23) || ($time >= 0 && $time <= 1.30) ){
+
+            if($this->isInAwakeRange($time,$item)){
                 $sum+=$item;
                 $count++;
             }
@@ -317,12 +316,12 @@ class ABPMCalculation extends Model
     {
         $sum=0;
         $count=0;
-        
+
         foreach($this->dia as $key=>$item){
             if(!isset($this->times[$key])) continue;
             $time=$this->times[$key];
-            $time=floatval(str_replace(":",".",$time));
-            if($time >= 1.30 && $time <= 7 ){
+
+            if($this->isInAsleepRange($time,$item)){
                 $sum+=$item;
                 $count++;
             }
@@ -330,7 +329,7 @@ class ABPMCalculation extends Model
         $count=$count == 0 ? 1:$count;
         return number_format(($sum / $count),1);
     }
-    
+
     public function getSysDayAvgAttribute()
     {
         $sum=0;
@@ -348,7 +347,7 @@ class ABPMCalculation extends Model
         $count=$count == 0 ? 1:$count;
         return number_format(($sum / $count),1);
     }
-    
+
      public function getSysNightAvgAttribute()
     {
         $sum=0;
@@ -400,9 +399,9 @@ class ABPMCalculation extends Model
         $count=$count == 0 ? 1:$count;
         return number_format(($sum / $count),1);
     }
-    
-    
-    
+
+
+
         public function getHrNightAvgAttribute()
     {
         $sum=0;
@@ -420,8 +419,8 @@ class ABPMCalculation extends Model
         $count=$count == 0 ? 1:$count;
         return number_format(($sum / $count),1);
     }
-    
-    
+
+
     public function getHrDayAvgAttribute()
     {
         $sum=0;
@@ -439,17 +438,17 @@ class ABPMCalculation extends Model
         $count=$count == 0 ? 1:$count;
         return number_format(($sum / $count),1);
     }
-    
+
     public function getHrAwakeAvgAttribute()
     {
         $sum=0;
         $count=0;
-        
+
         foreach($this->hr as $key=>$item){
             if(!isset($this->times[$key])) continue;
             $time=$this->times[$key];
-            $time=floatval(str_replace(":",".",$time));
-            if(($time >= 7.3 && $time <= 23) || ($time >= 0 && $time <= 1.30) ){
+
+            if($this->isInAwakeRange($time,$item)){
                 $sum+=$item;
                 $count++;
             }
@@ -461,12 +460,12 @@ class ABPMCalculation extends Model
     {
         $sum=0;
         $count=0;
-        
+
         foreach($this->hr as $key=>$item){
             if(!isset($this->times[$key])) continue;
             $time=$this->times[$key];
-            $time=floatval(str_replace(":",".",$time));
-            if($time >= 1.30 && $time <= 7 ){
+
+            if($this->isInAsleepRange($time,$item)){
                 $sum+=$item;
                 $count++;
             }
@@ -474,7 +473,7 @@ class ABPMCalculation extends Model
         $count=$count == 0 ? 1:$count;
         return number_format(($sum / $count),1);
     }
-    
+
     public function getHrAvgAttribute()
     {
         $sum=0;
@@ -519,7 +518,7 @@ public function getDaySummaryAttribute(){
             if(is_numeric($item) && $item > 130) $sys_above_130_count++;
             if(is_numeric($item) && $item <= 130) $sys_under_130_count++;
             $sys_count++;
-            
+
         }
         foreach($this->dia as $key=>$item){
             if(!isset($this->times[$key])) continue;
@@ -528,11 +527,11 @@ public function getDaySummaryAttribute(){
             if(!in_array($timeArr[0],$allowedHours) ||  $item == ""){
                 continue;
             }
-            if(is_numeric($item) && $item >= 85) $dia_above_85_count++;
-            if(is_numeric($item) && $item < 85) $dia_under_85_count++;
+            if(is_numeric($item) && $item > 85) $dia_above_85_count++;
+            if(is_numeric($item) && $item <= 85) $dia_under_85_count++;
             $dia_count++;
         }
-        
+
         return [
             'sys_above_130_count'=>round(($sys_above_130_count / $sys_count)*100),
             'sys_under_130_count'=>round(($sys_under_130_count / $sys_count)*100),
@@ -569,11 +568,11 @@ public function getDaySummaryAttribute(){
             if(!in_array($timeArr[0],$allowedHours) ||  $item == ""){
                 continue;
             }
-            if(is_numeric($item) && $item >= 85) $dia_above_85_count++;
-            if(is_numeric($item) && $item < 85) $dia_under_85_count++;
+            if(is_numeric($item) && $item > 85) $dia_above_85_count++;
+            if(is_numeric($item) && $item <= 85) $dia_under_85_count++;
             $dia_count++;
         }
-        
+
         return [
             'sys_above_130_count'=>round(($sys_above_130_count / $sys_count)*100),
             'sys_under_130_count'=>round(($sys_under_130_count / $sys_count)*100),
@@ -592,8 +591,8 @@ public function getDaySummaryAttribute(){
             if(is_numeric($item) && $item <= 130) $sys_under_130_count++;
         }
         foreach($this->dia as $item){
-            if(is_numeric($item) && $item >= 85) $dia_above_85_count++;
-            if(is_numeric($item) && $item < 85) $dia_under_85_count++;
+            if(is_numeric($item) && $item > 85) $dia_above_85_count++;
+            if(is_numeric($item) && $item <= 85) $dia_under_85_count++;
         }
         $sys_count=$this->sys_count;
         $dia_count=$this->dia_count;
@@ -611,32 +610,32 @@ public function getDaySummaryAttribute(){
     $dia_count=0;
     $dia_above_85_count=0;
     $dia_under_85_count=0;
-    
+
     foreach($this->sys as $key=>$item){
         if(!isset($this->times[$key])) continue;
         $time=$this->times[$key];
-        $time=floatval(str_replace(":",".",$time));
-        if($time >= 1.30 || $time <= 7 ){
+
+        if(!$this->isInAwakeRange($time,$item)){
             continue;
         }
         if(is_numeric($item) && $item > 130) $sys_above_130_count++;
         if(is_numeric($item) && $item <= 130) $sys_under_130_count++;
         $sys_count++;
-        
+
     }
     foreach($this->dia as $key=>$item){
         if(!isset($this->times[$key])) continue;
         $time=$this->times[$key];
-        $time=floatval(str_replace(":",".",$time));
-        if($time >= 1.30 || $time <= 7 ){
+
+        if(!$this->isInAwakeRange($time,$item)){
             continue;
         }
-        if(is_numeric($item) && $item >= 85) $dia_above_85_count++;
-        if(is_numeric($item) && $item < 85) $dia_under_85_count++;
+        if(is_numeric($item) && $item > 85) $dia_above_85_count++;
+        if(is_numeric($item) && $item <= 85) $dia_under_85_count++;
         $dia_count++;
     }
-$dia_count=$dia_count == 0 ? 1:$dia_count;    
-$sys_count=$sys_count == 0 ? 1:$sys_count;    
+$dia_count=$dia_count == 0 ? 1:$dia_count;
+$sys_count=$sys_count == 0 ? 1:$sys_count;
     return [
         'sys_above_130_count'=>round(($sys_above_130_count / $sys_count)*100),
         'sys_under_130_count'=>round(($sys_under_130_count / $sys_count)*100),
@@ -653,13 +652,13 @@ public function getAsleepSummaryAttribute(){
     $dia_above_85_count=0;
     $dia_under_85_count=0;
 
-    
+
 
     foreach($this->sys as $key=>$item){
         if(!isset($this->times[$key])) continue;
         $time=$this->times[$key];
-        $time=floatval(str_replace(":",".",$time));
-        if(($time >= 7.3 && $time <= 23) || ($time >= 0 && $time <= 1.30) ){
+
+        if(!$this->isInAsleepRange($time,$item) ){
             continue;
         }
         if(is_numeric($item) && $item > 130) $sys_above_130_count++;
@@ -669,17 +668,17 @@ public function getAsleepSummaryAttribute(){
     foreach($this->dia as $key=>$item){
         if(!isset($this->times[$key])) continue;
         $time=$this->times[$key];
-        $time=floatval(str_replace(":",".",$time));
-        if(($time >= 7.3 && $time <= 23) || ($time >= 0 && $time <= 1.30) ){
+
+        if(!$this->isInAsleepRange($time,$item) ){
             continue;
         }
-        
-        if(is_numeric($item) && $item >= 85) $dia_above_85_count++;
-        if(is_numeric($item) && $item < 85) $dia_under_85_count++;
+
+        if(is_numeric($item) && $item > 85) $dia_above_85_count++;
+        if(is_numeric($item) && $item <= 85) $dia_under_85_count++;
         $dia_count++;
     }
-$dia_count=$dia_count == 0 ? 1:$dia_count;    
-$sys_count=$sys_count == 0 ? 1:$sys_count;    
+$dia_count=$dia_count == 0 ? 1:$dia_count;
+$sys_count=$sys_count == 0 ? 1:$sys_count;
     return [
         'sys_above_130_count'=>round(($sys_above_130_count / $sys_count)*100),
         'sys_under_130_count'=>round(($sys_under_130_count / $sys_count)*100),
@@ -694,6 +693,30 @@ $sys_count=$sys_count == 0 ? 1:$sys_count;
         if ($this->sys[0] > 135 && $this->sys_avg <= 135) $message= "White coat hypertension";
         if ($this->sys[0] > 135 && $this->sys_avg >= 135) $message= "Sustained hypertension";
         return $message;
+    }
+    public function isInAwakeRange($time,$item)
+    {
+        $allowedHours=[7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,0,1];
+        $timeArr=explode(":",$time);
+        if(in_array($timeArr[0],$allowedHours) &&  $item != ""){
+            // $timeArr[0] == 7
+            if($timeArr[0] == 1){
+                return ($timeArr[1] >= 30);
+            }
+            return true;
+        }
+    }
+    public function isInAsleepRange($time,$item)
+    {
+        $allowedHours=[1,2,3,4,5,6,7];
+        $timeArr=explode(":",$time);
+        if(in_array($timeArr[0],$allowedHours) &&  $item != ""){
+            // $timeArr[0] == 7
+            if($timeArr[0] == 1){
+                return ($timeArr[1] >= 30);
+            }
+            return true;
+        }
     }
     // public function getDbpAbove85PercentAttribute(){
     //     $count=0;

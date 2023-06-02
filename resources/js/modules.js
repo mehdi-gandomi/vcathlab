@@ -60,6 +60,11 @@ export default [
         name: 'aobp',
         component: ()=> import('@external_modules/User/Resources/js/AOBP.vue'),
     },
+    {
+        path: '/imt',
+        name: 'imt',
+        component: ()=> import('@external_modules/User/Resources/js/IMT.vue'),
+    },
       {
         path: '/abpm',
         name: 'abpm',

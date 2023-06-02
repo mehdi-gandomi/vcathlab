@@ -1,16 +1,16 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[62],{
 
-/***/ "../Admin/Resources/js/users/Detail.vue":
-/*!**********************************************!*\
-  !*** ../Admin/Resources/js/users/Detail.vue ***!
-  \**********************************************/
+/***/ "../Admin/Resources/js/physicians/Detail.vue":
+/*!***************************************************!*\
+  !*** ../Admin/Resources/js/physicians/Detail.vue ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Detail_vue_vue_type_template_id_12871954___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Detail.vue?vue&type=template&id=12871954& */ "../Admin/Resources/js/users/Detail.vue?vue&type=template&id=12871954&");
-/* harmony import */ var _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Detail.vue?vue&type=script&lang=js& */ "../Admin/Resources/js/users/Detail.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Detail_vue_vue_type_template_id_73f47b29___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Detail.vue?vue&type=template&id=73f47b29& */ "../Admin/Resources/js/physicians/Detail.vue?vue&type=template&id=73f47b29&");
+/* harmony import */ var _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Detail.vue?vue&type=script&lang=js& */ "../Admin/Resources/js/physicians/Detail.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -21,8 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Detail_vue_vue_type_template_id_12871954___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Detail_vue_vue_type_template_id_12871954___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Detail_vue_vue_type_template_id_73f47b29___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Detail_vue_vue_type_template_id_73f47b29___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -32,38 +32,38 @@ var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNorma
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "Admin/Resources/js/users/Detail.vue"
+component.options.__file = "Admin/Resources/js/physicians/Detail.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "../Admin/Resources/js/users/Detail.vue?vue&type=script&lang=js&":
-/*!***********************************************************************!*\
-  !*** ../Admin/Resources/js/users/Detail.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************/
+/***/ "../Admin/Resources/js/physicians/Detail.vue?vue&type=script&lang=js&":
+/*!****************************************************************************!*\
+  !*** ../Admin/Resources/js/physicians/Detail.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/users/Detail.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Detail.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "../Admin/Resources/js/users/Detail.vue?vue&type=template&id=12871954&":
-/*!*****************************************************************************!*\
-  !*** ../Admin/Resources/js/users/Detail.vue?vue&type=template&id=12871954& ***!
-  \*****************************************************************************/
+/***/ "../Admin/Resources/js/physicians/Detail.vue?vue&type=template&id=73f47b29&":
+/*!**********************************************************************************!*\
+  !*** ../Admin/Resources/js/physicians/Detail.vue?vue&type=template&id=73f47b29& ***!
+  \**********************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_12871954___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=template&id=12871954& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/users/Detail.vue?vue&type=template&id=12871954&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_12871954___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_73f47b29___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=template&id=73f47b29& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Detail.vue?vue&type=template&id=73f47b29&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_73f47b29___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_12871954___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_73f47b29___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -136,10 +136,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/users/Detail.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/users/Detail.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Detail.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/physicians/Detail.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -150,128 +150,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _mixins_DetailPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/mixins/DetailPage */ "./Resources/js/src/mixins/DetailPage.js");
 
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -446,55 +330,40 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   mixins: [_mixins_DetailPage__WEBPACK_IMPORTED_MODULE_1__["default"]],
   data: function data() {
     return {
-      details: {
-        username: "",
+      details: _defineProperty({
         first_name: "",
         last_name: "",
-        state: "",
-        country: "",
         profession: "",
         specialty: "",
-        mobile: "",
-        email: "",
-        email_verified_at: "",
-        password: "",
-        two_factor_secret: "",
-        two_factor_recovery_codes: "",
-        remember_token: "",
+        hostpital: "",
+        cover: "",
+        avatar: "",
         created_at: "",
         updated_at: "",
-        city: {},
-        province: {}
-      },
+        user: ""
+      }, "user", {}),
       formTypes: {
-        username: "text",
         first_name: "text",
         last_name: "text",
-        state: "text",
-        country: "text",
         profession: "text",
         specialty: "text",
-        mobile: "text",
-        email: "text",
-        email_verified_at: "text",
-        password: "text",
-        two_factor_secret: "text",
-        two_factor_recovery_codes: "text",
-        remember_token: "text",
+        hostpital: "text",
+        cover: "text",
+        avatar: "text",
         created_at: "text",
         updated_at: "text",
-        ticketit_admin: "text",
-        ticketit_agent: "text",
-        city: "text",
-        province: "text"
+        user: "text"
       },
       module: "Admin",
-      model: "User"
+      model: "Physician"
     };
   },
   props: {//
   },
-  computed: {//
+  computed: {
+    Iracode: function Iracode() {
+      return window.Iracode;
+    }
   },
   created: function created() {
     var _this = this;
@@ -507,7 +376,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return _this.$http.get("/admin/api/users/".concat(_this.$route.params.id));
+              return _this.$http.get("/admin/api/physicians/".concat(_this.$route.params.id));
 
             case 2:
               _yield$_this$$http$ge = _context.sent;
@@ -532,30 +401,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }))();
   },
   mounted: function mounted() {//
-  },
-  methods: {
-    populateFormFields: function populateFormFields(data) {
-      var newDetails = {};
-
-      var details = _objectSpread({}, this.details);
-
-      for (var key in details) {
-        if (this.formTypes[key] != "password") {
-          newDetails[key] = data[key] ? data[key] : "";
-        }
-      }
-
-      this.details = newDetails;
-    }
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/users/Detail.vue?vue&type=template&id=12871954&":
-/*!***********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/users/Detail.vue?vue&type=template&id=12871954& ***!
-  \***********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Detail.vue?vue&type=template&id=73f47b29&":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/physicians/Detail.vue?vue&type=template&id=73f47b29& ***!
+  \****************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -587,7 +441,7 @@ var render = function() {
                         {
                           attrs: {
                             color: "primary",
-                            to: "/admin/users",
+                            to: "/admin/physicians",
                             type: "filled"
                           }
                         },
@@ -608,36 +462,7 @@ var render = function() {
                       "div",
                       {
                         staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Username")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.username) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
@@ -658,17 +483,15 @@ var render = function() {
                       )
                     ])
                   ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
+                ]),
+                _vm._v(" "),
                 _c("div", { staticClass: "vx-col w-1/2" }, [
                   _c("div", { staticClass: "row flex" }, [
                     _c(
                       "div",
                       {
                         staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
@@ -689,31 +512,6 @@ var render = function() {
                       )
                     ])
                   ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(_vm._s(_vm.__("State")))
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.state) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
                 ])
               ]),
               _vm._v(" "),
@@ -724,92 +522,7 @@ var render = function() {
                       "div",
                       {
                         staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("province")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _c("p", [
-                        _vm._v(
-                          "\n                                    " +
-                            _vm._s(_vm.getRelation("province.en_name")) +
-                            "\n                                "
-                        )
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(_vm._s(_vm.__("city")))
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _c("p", [
-                        _vm._v(
-                          "\n                                    " +
-                            _vm._s(_vm.getRelation("city.en_name")) +
-                            "\n                                "
-                        )
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(_vm._s(_vm.__("Country")))
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.country) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
@@ -830,17 +543,15 @@ var render = function() {
                       )
                     ])
                   ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
+                ]),
+                _vm._v(" "),
                 _c("div", { staticClass: "vx-col w-1/2" }, [
                   _c("div", { staticClass: "row flex" }, [
                     _c(
                       "div",
                       {
                         staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
@@ -861,6 +572,37 @@ var render = function() {
                       )
                     ])
                   ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "vx-row mb-6" }, [
+                _c("div", { staticClass: "vx-col w-1/2" }, [
+                  _c("div", { staticClass: "row flex" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
+                      },
+                      [
+                        _c("p", { staticClass: "font-semibold" }, [
+                          _vm._v(
+                            "\n                                    " +
+                              _vm._s(_vm.__("Hospital")) +
+                              "\n                                "
+                          )
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "vx-col w-3/4" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.details.hostpital) +
+                          "\n                            "
+                      )
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "vx-col w-1/2" }, [
@@ -869,11 +611,15 @@ var render = function() {
                       "div",
                       {
                         staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(_vm._s(_vm.__("Mobile")))
+                          _vm._v(
+                            "\n                                    " +
+                              _vm._s(_vm.__("Cover")) +
+                              "\n                                "
+                          )
                         ])
                       ]
                     ),
@@ -881,7 +627,7 @@ var render = function() {
                     _c("div", { staticClass: "vx-col w-3/4" }, [
                       _vm._v(
                         "\n                                " +
-                          _vm._s(_vm.details.mobile) +
+                          _vm._s(_vm.details.cover) +
                           "\n                            "
                       )
                     ])
@@ -896,11 +642,15 @@ var render = function() {
                       "div",
                       {
                         staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(_vm._s(_vm.__("Email")))
+                          _vm._v(
+                            "\n                                    " +
+                              _vm._s(_vm.__("Avatar")) +
+                              "\n                                "
+                          )
                         ])
                       ]
                     ),
@@ -908,7 +658,7 @@ var render = function() {
                     _c("div", { staticClass: "vx-col w-3/4" }, [
                       _vm._v(
                         "\n                                " +
-                          _vm._s(_vm.details.email) +
+                          _vm._s(_vm.details.avatar) +
                           "\n                            "
                       )
                     ])
@@ -921,158 +671,7 @@ var render = function() {
                       "div",
                       {
                         staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Email Verified At")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.dateFormat("email_verified_at")) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Password")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.password) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Two Factor Secret")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.two_factor_secret) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Two Factor Recovery Codes")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.two_factor_recovery_codes) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Remember Token")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.remember_token) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
@@ -1093,15 +692,17 @@ var render = function() {
                       )
                     ])
                   ])
-                ]),
-                _vm._v(" "),
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "vx-row mb-6" }, [
                 _c("div", { staticClass: "vx-col w-1/2" }, [
                   _c("div", { staticClass: "row flex" }, [
                     _c(
                       "div",
                       {
                         staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
@@ -1122,10 +723,37 @@ var render = function() {
                       )
                     ])
                   ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "vx-col w-1/2" }, [
+                  _c("div", { staticClass: "row flex" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
+                      },
+                      [
+                        _c("p", { staticClass: "font-semibold" }, [
+                          _vm._v(
+                            "\n                                    " +
+                              _vm._s(_vm.__("user")) +
+                              "\n                                "
+                          )
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "vx-col w-3/4" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.details.user) +
+                          "\n                            "
+                      )
+                    ])
+                  ])
                 ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" })
+              ])
             ]
           )
         ],

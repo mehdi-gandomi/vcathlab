@@ -81,6 +81,27 @@ class UserServiceProvider extends ServiceProvider
                                 ],
                                 ]
                             ],
+
+                            [
+                                "url"=> null,
+                                "name"=> "Carotic IMT Scan",
+                                "icon_url" => "/images/icons/aobp-icon.png",
+                                "submenu"=> [
+
+
+                                  [
+                                    'url'=>"/imt",
+                                    'name'=>"IMT Calculator",
+                                    'slug'=>'imt-calculator'
+                                ],
+
+                                [
+                                    'url'=>"/user/imt_scans",
+                                    'name'=>"List",
+                                    'slug'=>'imt-list'
+                                ],
+                                ]
+                            ],
                             [
                                 "url"=> null,
                                 "name"=> "ABPM",
@@ -349,7 +370,28 @@ class UserServiceProvider extends ServiceProvider
                                         'slug'=>'abpm-list'
                                     ],
                                     ]
+                                ],
+
+                            [
+                                "url"=> null,
+                                "name"=> "Carotic IMT Scan",
+                                "icon_url" => "/images/icons/aobp-icon.png",
+                                "submenu"=> [
+
+
+                                  [
+                                    'url'=>"/imt",
+                                    'name'=>"IMT Calculator",
+                                    'slug'=>'imt-calculator'
+                                ],
+
+                                [
+                                    'url'=>"/user/imt_scans",
+                                    'name'=>"List",
+                                    'slug'=>'imt-list'
+                                ],
                                 ]
+                            ],
                             ];
 
                             if(auth()->user()->mace_access){

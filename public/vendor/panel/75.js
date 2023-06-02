@@ -1,16 +1,16 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[75],{
 
-/***/ "../Admin/Resources/js/physicians/Index.vue":
-/*!**************************************************!*\
-  !*** ../Admin/Resources/js/physicians/Index.vue ***!
-  \**************************************************/
+/***/ "../Admin/Resources/js/complex_cases/Index.vue":
+/*!*****************************************************!*\
+  !*** ../Admin/Resources/js/complex_cases/Index.vue ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Index_vue_vue_type_template_id_0f57c9aa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=0f57c9aa& */ "../Admin/Resources/js/physicians/Index.vue?vue&type=template&id=0f57c9aa&");
-/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "../Admin/Resources/js/physicians/Index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Index_vue_vue_type_template_id_e866706e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=e866706e& */ "../Admin/Resources/js/complex_cases/Index.vue?vue&type=template&id=e866706e&");
+/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "../Admin/Resources/js/complex_cases/Index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -21,8 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Index_vue_vue_type_template_id_0f57c9aa___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Index_vue_vue_type_template_id_0f57c9aa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Index_vue_vue_type_template_id_e866706e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Index_vue_vue_type_template_id_e866706e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -32,38 +32,38 @@ var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNorma
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "Admin/Resources/js/physicians/Index.vue"
+component.options.__file = "Admin/Resources/js/complex_cases/Index.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "../Admin/Resources/js/physicians/Index.vue?vue&type=script&lang=js&":
-/*!***************************************************************************!*\
-  !*** ../Admin/Resources/js/physicians/Index.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************/
+/***/ "../Admin/Resources/js/complex_cases/Index.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ../Admin/Resources/js/complex_cases/Index.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/complex_cases/Index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "../Admin/Resources/js/physicians/Index.vue?vue&type=template&id=0f57c9aa&":
-/*!*********************************************************************************!*\
-  !*** ../Admin/Resources/js/physicians/Index.vue?vue&type=template&id=0f57c9aa& ***!
-  \*********************************************************************************/
+/***/ "../Admin/Resources/js/complex_cases/Index.vue?vue&type=template&id=e866706e&":
+/*!************************************************************************************!*\
+  !*** ../Admin/Resources/js/complex_cases/Index.vue?vue&type=template&id=e866706e& ***!
+  \************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_0f57c9aa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=template&id=0f57c9aa& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Index.vue?vue&type=template&id=0f57c9aa&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_0f57c9aa___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_e866706e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=template&id=e866706e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/complex_cases/Index.vue?vue&type=template&id=e866706e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_e866706e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_0f57c9aa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_e866706e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -177,10 +177,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Index.vue?vue&type=script&lang=js&":
-/*!***********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/physicians/Index.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/complex_cases/Index.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/complex_cases/Index.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -267,101 +267,82 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       searchQuery: "",
-      baseUrl: "/admin/api/physicians",
-      model: "Physician",
+      baseUrl: "/admin/api/complex_cases",
+      model: "ComplexCase",
       module: "Admin",
-      createButtonText: this.__("Create Physician"),
-      createButtonLink: "/admin/physicians/create",
-      printButtonLink: "/admin/physicians/print",
-      columnDefs: [// {
-      //     headerName: this.__("Row"),
-      //     width: 80,
-      //     minWidth: 80,
-      //     valueGetter: "node.rowIndex + 1",
-      //     valueFormatter: Formatters.rowNumberFormatter
-      // },
-      {
-        headerName: this.__("First Name"),
-        field: "first_name",
+      createButtonText: this.__("Create Complexcase"),
+      createButtonLink: "/admin/complex_cases/create",
+      printButtonLink: "/admin/complex_cases/print",
+      columnDefs: [{
+        headerName: this.__("Featured Image"),
+        field: "featured_image",
+        cellRenderer: "imageCellRenderer",
         resizable: true,
         filter: "agTextColumnFilter"
       }, {
-        headerName: this.__("Last Name"),
-        field: "last_name",
+        headerName: this.__("Category"),
+        field: "complex_case_category.name",
+        resizable: true,
+        filter: false
+      }, {
+        headerName: this.__("User"),
+        field: "user.name",
+        resizable: true,
+        filter: false
+      }, {
+        headerName: this.__("Title"),
+        field: "title",
         resizable: true,
         filter: "agTextColumnFilter"
       }, {
-        headerName: this.__("Profession"),
-        field: "profession",
+        headerName: this.__("Short Summary"),
+        field: "short_summary",
         resizable: true,
-        valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_5__["default"].selectFormatter,
+        filter: "agTextColumnFilter"
+      }, {
+        headerName: this.__("Nighmare"),
+        field: "nightmare",
+        cellRenderer: "checkboxCellRenderer",
+        cellRendererParams: {
+          yesLabel: "Yes",
+          noLabel: "No"
+        },
+        resizable: true,
+        filter: "agTextColumnFilter"
+      }, {
+        headerName: this.__("Status"),
+        field: "status",
+        resizable: true,
+        valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_5__["default"].radioFormatter,
         filter: "agSelectColumnFilter",
         filterParams: {
           buttons: ["apply"],
           closeOnApply: true,
           type: "select",
           module: "Admin",
-          model: "Physician"
+          model: "ComplexCase"
         }
       }, {
-        headerName: this.__("Specialty"),
-        field: "specialty",
+        headerName: this.__("Created At"),
+        field: "created_at",
         resizable: true,
-        valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_5__["default"].selectFormatter,
-        filter: "agSelectColumnFilter",
-        filterParams: {
-          buttons: ["apply"],
-          closeOnApply: true,
-          type: "select",
-          module: "Admin",
-          model: "Physician"
-        }
-      }, {
-        headerName: this.__("Hospital"),
-        field: "hostpital",
-        resizable: true,
+        valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_5__["default"].dateFormatter,
         filter: "agTextColumnFilter"
       }, {
-        headerName: this.__("Cover"),
-        field: "cover",
+        headerName: this.__("Updated At"),
+        field: "updated_at",
         resizable: true,
-        cellRenderer: "imageCellRenderer",
+        valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_5__["default"].dateFormatter,
         filter: "agTextColumnFilter"
       }, {
-        headerName: this.__("Avatar"),
-        field: "avatar",
-        resizable: true,
-        cellRenderer: "imageCellRenderer",
-        filter: "agTextColumnFilter"
-      }, // {
-      //     headerName: this.__("Created At"),
-      //     field: "created_at",
-      //     resizable: true,
-      //     valueFormatter: Formatters.dateFormatter,
-      //     filter: "agTextColumnFilter"
-      // },
-      // {
-      //     headerName: this.__("Updated At"),
-      //     field: "updated_at",
-      //     resizable: true,
-      //     valueFormatter: Formatters.dateFormatter,
-      //     filter: "agTextColumnFilter"
-      // },
-      // {
-      //     headerName: this.__("user"),
-      //     field: "user.email",
-      //     resizable: true,
-      //     filter: false
-      // },
-      {
         headerName: this.__("Actions"),
         field: "action",
         filter: false,
         cellRenderer: "tableActionsRenderer",
         cellRendererParams: {
-          model: "Physician",
-          baseRoutePath: "admin/physicians",
-          modelPlural: "physicians",
+          model: "Complexcase",
+          baseRoutePath: "admin/complex_cases",
+          modelPlural: "complex_cases",
           baseApiPath: "/admin/api"
         }
       }],
@@ -372,10 +353,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Index.vue?vue&type=template&id=0f57c9aa&":
-/*!***************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/physicians/Index.vue?vue&type=template&id=0f57c9aa& ***!
-  \***************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/complex_cases/Index.vue?vue&type=template&id=e866706e&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/complex_cases/Index.vue?vue&type=template&id=e866706e& ***!
+  \******************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
