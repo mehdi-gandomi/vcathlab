@@ -102,10 +102,68 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _mixins_HasForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/mixins/HasForm */ "./Resources/js/src/mixins/HasForm.js");
 
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -345,70 +403,153 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   data: function data() {
     return {
       form: {
-        Waist: "",
-        SMM: "",
-        VFP: "",
-        Hip: "",
-        BFMP: "",
-        Age: "",
-        Height: 180,
-        Weight: 80,
-        patient_id: 0,
-        Sex: 1
+        "LVEDD": "",
+        "LVESD": "",
+        "IVSD": "",
+        "DBP	": "",
+        "PWTD": "",
+        "TAPSE": "",
+        "PAP": "",
+        "SBP": "",
+        "LVEF": "",
+        "Weight": "",
+        "Height": "",
+        "ُSex": "",
+        "Age": "",
+        "HR": ""
       },
-      patient: {
+      patient: new _Form__WEBPACK_IMPORTED_MODULE_1__["default"]({
         name: "",
-        code: "1136"
+        code: ""
+      }),
+      items: {
+        A1: 1,
+        A2: 1,
+        A3: 1,
+        A4: 1,
+        A5: 1,
+        A6: 1,
+        A7: 1,
+        A8: 1,
+        A9: 1,
+        A10: 1,
+        A11: 1,
+        A12: 1,
+        A13: 1,
+        A14: 1
       },
-      result: {},
-      body: {},
-      downloadBtnKey: 0,
-      patientResult: {},
+      result: {
+        MAP: "",
+        EDV: "",
+        ESV: "",
+        SV: "",
+        SVI: "",
+        CO: "",
+        CI: "",
+        CPP: "",
+        CBF: "",
+        SVR: "",
+        PVR: "",
+        RI: "",
+        LVMI: "",
+        RWT: "",
+        WMS: "",
+        LVEF: "",
+        msg1: "",
+        msg2: "",
+        msg3: "",
+        conditions: {
+          0: "normal",
+          1: "normal",
+          2: "normal",
+          3: "normal",
+          4: "normal",
+          5: "normal",
+          6: "normal",
+          7: "normal",
+          8: "normal",
+          9: "normal",
+          10: "normal",
+          11: "normal",
+          12: "normal",
+          13: "normal"
+        }
+      },
+      conditions: [{
+        label: "Normal",
+        value: 1
+      }, {
+        label: "Hypokinetic",
+        value: 2
+      }, {
+        label: "Akinetic",
+        value: 3
+      }, {
+        label: "Dyskinetic",
+        value: 4
+      }, {
+        label: "Aneurysmal",
+        value: 5
+      }, {
+        label: "Mild Hypokinetic",
+        value: 1.5
+      }, {
+        label: "Severe Hypokinetic",
+        value: 2.5
+      }, {
+        label: "Akinetic with scar",
+        value: 6
+      }, {
+        label: "Dyscinetic with scar",
+        value: 7
+      }],
       model: "Modules\\User\\Models\\CtCase",
       locale: Iracode.$i18n.locale,
       inputs: {
-        Weight: {
+        "LVEDD": {
           type: "vs-input"
         },
-        Height: {
+        "LVESD": {
           type: "vs-input"
         },
-        Waist: {
+        "IVSD": {
           type: "vs-input"
         },
-        SMM: {
+        "PWTD": {
           type: "vs-input"
         },
-        VFP: {
+        "TAPSE": {
           type: "vs-input"
         },
-        Hip: {
+        "Age": {
           type: "vs-input"
         },
-        BFMP: {
+        "PAP": {
           type: "vs-input"
         },
-        name: {
+        "SBP": {
           type: "vs-input"
         },
-        physician: {
+        "LVEF": {
           type: "vs-input"
         },
-        Age: {
+        "Weight": {
           type: "vs-input"
         },
-        Sex: {
-          type: "vs-radio"
-        },
-        code: {
+        "Sex": {
           type: "vs-input"
         },
-        file: {
+        "Height": {
+          type: "vs-input"
+        },
+        "HR": {
+          type: "vs-input"
+        },
+        "DBP": {
           type: "vs-input"
         },
         patient_id: {
-          field_type: "text",
-          type: "vs-input",
+          field_type: "relation",
           options: [],
           selected: {},
           foreign_key: "patient_id",
@@ -432,43 +573,96 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       var _this = this;
 
       return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var patientForm, _yield$_this$$http$po, patient, _yield$_this$$http$po2, data;
+        var _this$form, LVEDD, LVESD, IVSD, DBP, PWTD, TAPSE, PAP, SBP, LVEF, Weight, Height, HR, _this$items, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, SUM, WMS, Ejection_fraction, MAP, EDV, ESV, SV, SVI, CO, CI, CBF, SVR, PVR, CRI, LVMI, RWT, condition, _yield$_this$$http$po, data;
 
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                _this.body = {};
-                patientForm = _this.patient;
-                patientForm.age = _this.form.Age;
-                patientForm.sex = _this.form.Sex;
-                patientForm.hospital = ""; // Iracode.loading();
+                _this$form = _this.form, LVEDD = _this$form.LVEDD, LVESD = _this$form.LVESD, IVSD = _this$form.IVSD, DBP = _this$form.DBP, PWTD = _this$form.PWTD, TAPSE = _this$form.TAPSE, PAP = _this$form.PAP, SBP = _this$form.SBP, LVEF = _this$form.LVEF, Weight = _this$form.Weight, Height = _this$form.Height, HR = _this$form.HR;
+                _this$items = _this.items, A1 = _this$items.A1, A2 = _this$items.A2, A3 = _this$items.A3, A4 = _this$items.A4, A5 = _this$items.A5, A6 = _this$items.A6, A7 = _this$items.A7, A8 = _this$items.A8, A9 = _this$items.A9, A10 = _this$items.A10, A11 = _this$items.A11, A12 = _this$items.A12, A13 = _this$items.A13, A14 = _this$items.A14;
+                SUM = A1 + A2 + A3 + A4 + A5 + A6 + A7 + A8 + A9 + A10 + A11 + A12 + A13 + A14;
+                WMS = SUM / 14;
+                Ejection_fraction = (0.93 - 0.26 * +WMS) * 100;
+                MAP = +DBP + (0.3333 + +HR * 0.0012) * (+SBP - +DBP);
+                EDV = 7 / (2.4 + +LVEDD) * Math.pow(+LVEDD, 3);
+                ESV = 7 / (2.4 + +LVESD) * Math.pow(+LVESD, 3);
+                SV = +EDV - +ESV;
+                SVI = SV / Math.sqrt(+Weight * +Height / 3600);
+                CO = SV * HR / 1000;
+                CI = CO / Math.sqrt(Weight * Height / 3600);
+                CBF = 0.05 * CO;
+                SVR = (+MAP - 12) / CO * 0.8;
+                PVR = (+PAP - 7) / CO * 0.8;
+                CRI = MAP / (CBF * 16.67);
+                LVMI = (1.04 * Math.pow(+IVSD + +LVEDD + +PWTD, 3) - Math.pow(LVEDD, 3)) / Math.sqrt(Weight * Height / 3600);
+                RWT = 200 * (PWTD / LVEDD);
+                condition = "";
+                if (MAP > 110) _this.result.conditions[0] = "critical";
+                if (MAP < 110) _this.result.conditions[0] = "normal";
+                if (EDV < 100) _this.result.conditions[1] = "critical";
+                if (EDV > 110) _this.result.conditions[1] = "normal";
+                if (ESV < 26) _this.result.conditions[2] = "critical";
+                if (ESV > 26) _this.result.conditions[2] = "normal";
+                if (SV < 60) _this.result.conditions[3] = "critical";
+                if (SV > 60) _this.result.conditions[3] = "normal";
+                if (SVI < 33) _this.result.conditions[4] = "critical";
+                if (SVI > 33) _this.result.conditions[4] = "normal";
+                if (CO < 4.0) _this.result.conditions[5] = "critical";
+                if (CO > 4.0) _this.result.conditions[5] = "normal							";
+                if (CI < 2.5) _this.result.conditions[6] = "critical";
+                if (CI > 2.5) _this.result.conditions[6] = "normal";
+                if (SVR > 20) _this.result.conditions[7] = "critical";
+                if (SVR < 20) _this.result.conditions[7] = "normal	";
+                if (PVR > 3.0) _this.result.conditions[8] = "critical";
+                if (PVR < 3.0) _this.result.conditions[8] = "normal						";
+                if (CRI > 35) _this.result.conditions[9] = "critical";
+                if (CRI < 35) _this.result.conditions[9] = "normal	";
+                if (LVEF < 20) _this.result.conditions[10] = "critical";
+                if (LVEF > 20) _this.result.conditions[10] = "normal";
+                if (LVMI > 115) _this.result.conditions[11] = "critical";
+                if (LVMI < 115) _this.result.conditions[11] = "normal";
+                if (RWT > 42) _this.result.conditions[12] = "critical";
+                if (RWT < 42) _this.result.conditions[12] = "normal";
+                if (WMS > 2) _this.result.conditions[13] = "critical";
+                if (WMS < 2) _this.result.conditions[13] = "normal";
+                _this.result.MAP = MAP.toFixed(2);
+                _this.result.EDV = EDV.toFixed(2);
+                _this.result.ESV = ESV.toFixed(2);
+                _this.result.SV = SV.toFixed(2);
+                _this.result.SVI = SVI.toFixed(2);
+                _this.result.CO = CO.toFixed(2);
+                _this.result.CI = CI.toFixed(2); // this.result.CPP=CPP.toFixed(2);
 
-                _context.next = 7;
-                return _this.$http.post("/user/api/patients", patientForm);
+                _this.result.CBF = CBF.toFixed(2);
+                _this.result.SVR = SVR.toFixed(2);
+                _this.result.PVR = PVR.toFixed(2);
+                _this.result.RI = CRI.toFixed(2);
+                _this.result.LVMI = parseFloat(LVMI).toFixed(2);
+                _this.result.RWT = RWT.toFixed(2);
+                _this.result.WMS = WMS.toFixed(2);
+                _this.result.LVEF = parseFloat(LVEF).toFixed(2);
+                console.log(WMS, RWT, condition);
+                if (LVMI > 115 & RWT > 42) _this.result.msg1 = "Left ventricular hypertrophy (LVH) was concentric hypertrophy";
+                if (LVMI < 115 & RWT < 42) _this.result.msg1 = "Left ventricular hypertrophy (LVH) was normal (no LVH)";
+                if (LVMI > 115 & RWT < 42) _this.result.msg1 = "Left ventricular hypertrophy (LVH) was eccentric hypertrophy";
+                if (LVMI < 115 & RWT > 42) _this.result.msg1 = "Left ventricular hypertrophy (LVH) was concentric remodeling";
+                if (SVR > 20) _this.result.msg2 = "Systemic vascular resistance was critical value (SVR > 1.5U) with stenosis.";
+                if (SVR < 20) _this.result.msg2 = "Systemic vascular resistance was normal value (SVR < 1.5U) without dilation or stenosis.";
+                if (SVR < 5) _this.result.msg2 = "Systemic vascular resistance was critical value (SVR< 0.2U) with dilation.";
+                if (PVR > 3) _this.result.msg3 = "Pulmonary vascular resistance was high value with pulmonary vascular disease.";
+                if (PVR < 3) _this.result.msg3 = "Pulmonary vascular resistance was normal value without vascular disease.";
+                _context.next = 74;
+                return _this.$http.post("/user/api/echo_calculations", _objectSpread(_objectSpread({}, _this.form), {}, {
+                  conditions: _this.items
+                }));
 
-              case 7:
+              case 74:
                 _yield$_this$$http$po = _context.sent;
-                patient = _yield$_this$$http$po.data;
-                _this.patientResult = patient;
-                _this.form.patient_id = patient.data.id;
-                _context.next = 13;
-                return _this.$http.post("/user/api/body_composition", _this.form);
+                data = _yield$_this$$http$po.data;
+                console.log(data);
 
-              case 13:
-                _yield$_this$$http$po2 = _context.sent;
-                data = _yield$_this$$http$po2.data;
-                // Iracode.close_loading();
-                _this.body = data.data;
-                setTimeout(function () {
-                  _this.result.data = data;
-
-                  _this.$forceUpdate();
-
-                  _this.downloadBtnKey++;
-                }, 500);
-
-              case 17:
+              case 77:
               case "end":
                 return _context.stop();
             }
@@ -521,7 +715,7 @@ exports = module.exports = __webpack_require__(/*! ../../../Panel/node_modules/c
 
 
 // module
-exports.push([module.i, "\n.gray {\n    color: #b5b2b2;\n    margin: 1.5rem 0;\n}\n.styled-fieldset {\n    padding: 2rem 1rem;\n}\n", ""]);
+exports.push([module.i, "\n.gray{\n    color: #b5b2b2;\n    margin: 1.5rem 0;\n}\n.styled-fieldset{\n    padding: 2rem 1rem;\n}\n", ""]);
 
 // exports
 
@@ -577,27 +771,32 @@ var render = function() {
     "div",
     { staticClass: "mb-base" },
     [
-      _c("vx-card", [
+      _c("vx-card", { staticStyle: { "padding-top": "2rem" } }, [
         _c(
-          "h2",
+          "h3",
+          {
+            staticClass: "text-center mb-8",
+            staticStyle: { "margin-top": "-2rem" }
+          },
+          [_vm._v("Body Composition Analysis")]
+        ),
+        _vm._v(" "),
+        _c(
+          "h4",
           {
             staticStyle: {
-              "text-align": "center",
-              padding: "2rem",
+              "text-align": "left",
+              padding: "1.5rem",
               border: "1px solid #000"
             }
           },
-          [_vm._v("Body Composition")]
+          [_vm._v("Body Analyzer")]
         ),
         _vm._v(" "),
         _c("form", { on: { submit: _vm.onSubmit } }, [
           _c(
             "div",
             [
-              _c("h4", { staticClass: "gray" }, [
-                _vm._v("Patient Information:")
-              ]),
-              _vm._v(" "),
               _c(
                 "vs-row",
                 {
@@ -605,88 +804,6 @@ var render = function() {
                   attrs: { "vs-type": "flex", "vs-w": "12" }
                 },
                 [
-                  _c(
-                    "vs-col",
-                    {
-                      attrs: {
-                        "vs-type": "flex",
-                        "vs-align": "center",
-                        "vs-lg": "4",
-                        "vs-sm": "6",
-                        "vs-xs": "12"
-                      }
-                    },
-                    [
-                      _c("div", { staticClass: "flex text-left" }, [
-                        _c("span", [_vm._v(_vm._s(_vm.__("Name")))]),
-                        _vm._v(" "),
-                        _c("span", { staticClass: "ml-1 text-red" }, [
-                          _vm._v("*")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c(_vm.inputs.name.type, {
-                        tag: "component",
-                        staticStyle: { width: "250px", "margin-left": "1rem" },
-                        attrs: {
-                          danger: _vm.hasValidationError("name"),
-                          "danger-text": _vm.validationError("name"),
-                          name: "name",
-                          type: "text"
-                        },
-                        model: {
-                          value: _vm.patient.name,
-                          callback: function($$v) {
-                            _vm.$set(_vm.patient, "name", $$v)
-                          },
-                          expression: "patient.name"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "vs-col",
-                    {
-                      attrs: {
-                        "vs-type": "flex",
-                        "vs-align": "center",
-                        "vs-lg": "2",
-                        "vs-sm": "6",
-                        "vs-xs": "12"
-                      }
-                    },
-                    [
-                      _c("div", { staticClass: "flex text-left" }, [
-                        _c("span", [_vm._v(_vm._s(_vm.__("Code")))]),
-                        _vm._v(" "),
-                        _c("span", { staticClass: "ml-1 text-red" }, [
-                          _vm._v("*")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c(_vm.inputs.code.type, {
-                        tag: "component",
-                        staticStyle: { width: "120px", "margin-left": "1rem" },
-                        attrs: {
-                          danger: _vm.hasValidationError("code"),
-                          "danger-text": _vm.validationError("code"),
-                          name: "code",
-                          type: "text"
-                        },
-                        model: {
-                          value: _vm.patient.code,
-                          callback: function($$v) {
-                            _vm.$set(_vm.patient, "code", $$v)
-                          },
-                          expression: "patient.code"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
                   _c(
                     "vs-col",
                     {
@@ -722,6 +839,88 @@ var render = function() {
                             _vm.$set(_vm.form, "Age", $$v)
                           },
                           expression: "form.Age"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "3",
+                        "vs-sm": "6",
+                        "vs-xs": "6"
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: "flex text-left" }, [
+                        _c("span", [_vm._v(_vm._s(_vm.__("Weight")))]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "ml-1 text-red" }, [
+                          _vm._v("*")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c(_vm.inputs.Weight.type, {
+                        tag: "component",
+                        staticStyle: { width: "80px", "margin-left": "1rem" },
+                        attrs: {
+                          danger: _vm.hasValidationError("Weight"),
+                          "danger-text": _vm.validationError("Weight"),
+                          name: "Weight",
+                          type: "number"
+                        },
+                        model: {
+                          value: _vm.form.Weight,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "Weight", $$v)
+                          },
+                          expression: "form.Weight"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "3",
+                        "vs-sm": "6",
+                        "vs-xs": "6"
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: "flex text-left" }, [
+                        _c("span", [_vm._v(_vm._s(_vm.__("Height")))]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "ml-1 text-red" }, [
+                          _vm._v("*")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c(_vm.inputs.Height.type, {
+                        tag: "component",
+                        staticStyle: { width: "80px", "margin-left": "1rem" },
+                        attrs: {
+                          danger: _vm.hasValidationError("Height"),
+                          "danger-text": _vm.validationError("Height"),
+                          name: "Height",
+                          type: "number"
+                        },
+                        model: {
+                          value: _vm.form.Height,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "Height", $$v)
+                          },
+                          expression: "form.Height"
                         }
                       })
                     ],
@@ -797,600 +996,297 @@ var render = function() {
                   )
                 ],
                 1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            [
+              ),
+              _vm._v(" "),
               _c(
-                "vs-row",
+                "vs-table",
                 {
-                  staticClass: "mb-6 m-0",
-                  attrs: { "vs-type": "flex", "vs-w": "12" }
+                  attrs: { stripe: "", noDataText: "" },
+                  scopedSlots: _vm._u([
+                    {
+                      key: "default",
+                      fn: function(ref) {
+                        var data = ref.data
+                        return [
+                          _c(
+                            "vs-tr",
+                            [
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        Total Body Water (TBW)\n                    "
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("vs-td"),
+                              _vm._v(" "),
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        kg\n                    "
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-tr",
+                            [
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        Percentage of TBW\n                    "
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("vs-td"),
+                              _vm._v(" "),
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        %\n                    "
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-tr",
+                            [
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        Basal Metabolic Rate (BMR)\n                    "
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("vs-td"),
+                              _vm._v(" "),
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        Kcalor/day\n                    "
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-tr",
+                            [
+                              _c("vs-th", { attrs: { colspan: "4" } }, [
+                                _c(
+                                  "strong",
+                                  {
+                                    staticClass: "text-center w-100",
+                                    staticStyle: { "font-size": "16px" }
+                                  },
+                                  [_vm._v("Obesity Analysis")]
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-tr",
+                            [
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        Weight\n                    "
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("vs-td"),
+                              _vm._v(" "),
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        kg\n                    "
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-tr",
+                            [
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        Skeletal Muscle Mass (SMM)\n                    "
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("vs-td"),
+                              _vm._v(" "),
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        kg\n                    "
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-tr",
+                            [
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        Body Mass Index (BMI)\n                    "
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("vs-td"),
+                              _vm._v(" "),
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        Kg/m2\n                    "
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-tr",
+                            [
+                              _c("vs-th", { attrs: { colspan: "4" } }, [
+                                _c(
+                                  "strong",
+                                  {
+                                    staticClass: "text-center w-100",
+                                    staticStyle: { "font-size": "16px" }
+                                  },
+                                  [_vm._v("Muscle – Fat Analysis ")]
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-tr",
+                            [
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        Body Fat Mass (BFM)\n                    "
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("vs-td"),
+                              _vm._v(" "),
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        kg\n                    "
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-tr",
+                            [
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        Percent Body Fat (PBF)\n                    "
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("vs-td"),
+                              _vm._v(" "),
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        %\n                    "
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-tr",
+                            [
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        Lean Body Mass (LBM)\n                    "
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("vs-td"),
+                              _vm._v(" "),
+                              _c("vs-td", [
+                                _vm._v(
+                                  "\n                        %\n                    "
+                                )
+                              ])
+                            ],
+                            1
+                          )
+                        ]
+                      }
+                    }
+                  ])
                 },
                 [
                   _c(
-                    "vs-col",
-                    { attrs: { "vs-lg": "7", "vs-sm": "7", "vs-xs": "7" } },
+                    "template",
+                    { slot: "thead" },
                     [
-                      _c("h4", { staticClass: "gray" }, [
-                        _vm._v("Anthropometry Parameters")
+                      _c("vs-th", [
+                        _vm._v("\n                Variables\n                ")
                       ]),
                       _vm._v(" "),
-                      _c(
-                        "vs-row",
-                        {
-                          staticClass: "mb-6 m-0",
-                          attrs: { "vs-type": "flex", "vs-w": "12" }
-                        },
-                        [
-                          _c(
-                            "vs-col",
-                            {
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "6",
-                                "vs-sm": "6",
-                                "vs-xs": "12"
-                              }
-                            },
-                            [
-                              _c("div", { staticClass: "flex text-left" }, [
-                                _c("span", [_vm._v(_vm._s(_vm.__("Weight")))]),
-                                _vm._v(" "),
-                                _c("span", { staticClass: "ml-1 text-red" }, [
-                                  _vm._v("*")
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                {
-                                  staticClass: "flex",
-                                  staticStyle: { "align-items": "center" }
-                                },
-                                [
-                                  _c(_vm.inputs.Weight.type, {
-                                    tag: "component",
-                                    staticStyle: {
-                                      width: "100px",
-                                      "margin-left": "1rem"
-                                    },
-                                    attrs: {
-                                      danger: _vm.hasValidationError("Weight"),
-                                      "danger-text": _vm.validationError(
-                                        "Weight"
-                                      ),
-                                      name: "Weight",
-                                      type: "text"
-                                    },
-                                    model: {
-                                      value: _vm.form.Weight,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.form, "Weight", $$v)
-                                      },
-                                      expression: "form.Weight"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "ml-2" }, [
-                                    _vm._v(
-                                      "\n                                        kg\n                                    "
-                                    )
-                                  ])
-                                ],
-                                1
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "vs-col",
-                            {
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "6",
-                                "vs-sm": "6",
-                                "vs-xs": "12"
-                              }
-                            },
-                            [
-                              _c("div", { staticClass: "flex text-left" }, [
-                                _c("span", [_vm._v(_vm._s(_vm.__("Height")))]),
-                                _vm._v(" "),
-                                _c("span", { staticClass: "ml-1 text-red" }, [
-                                  _vm._v("*")
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                {
-                                  staticClass: "flex",
-                                  staticStyle: { "align-items": "center" }
-                                },
-                                [
-                                  _c(_vm.inputs.Height.type, {
-                                    tag: "component",
-                                    staticStyle: {
-                                      width: "100px",
-                                      "margin-left": "1rem"
-                                    },
-                                    attrs: {
-                                      danger: _vm.hasValidationError("Height"),
-                                      "danger-text": _vm.validationError(
-                                        "Height"
-                                      ),
-                                      name: "Height",
-                                      type: "text"
-                                    },
-                                    model: {
-                                      value: _vm.form.Height,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.form, "Height", $$v)
-                                      },
-                                      expression: "form.Height"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "ml-2" }, [
-                                    _vm._v(
-                                      "\n                                        cm\n                                    "
-                                    )
-                                  ])
-                                ],
-                                1
-                              )
-                            ]
-                          )
-                        ],
-                        1
-                      ),
+                      _c("vs-th", [
+                        _vm._v("\n                Result\n                ")
+                      ]),
                       _vm._v(" "),
-                      _c(
-                        "vs-row",
-                        {
-                          staticClass: "mb-6 m-0",
-                          attrs: { "vs-type": "flex", "vs-w": "12" }
-                        },
-                        [
-                          _c(
-                            "vs-col",
-                            {
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "6",
-                                "vs-sm": "6",
-                                "vs-xs": "12"
-                              }
-                            },
-                            [
-                              _c("div", { staticClass: "flex text-left" }, [
-                                _c("span", [_vm._v(_vm._s(_vm.__("Waist")))]),
-                                _vm._v(" "),
-                                _c("span", { staticClass: "ml-1 text-red" }, [
-                                  _vm._v("*")
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                {
-                                  staticClass: "flex",
-                                  staticStyle: { "align-items": "center" }
-                                },
-                                [
-                                  _c(_vm.inputs.Waist.type, {
-                                    tag: "component",
-                                    staticStyle: {
-                                      width: "100px",
-                                      "margin-left": "1rem"
-                                    },
-                                    attrs: {
-                                      danger: _vm.hasValidationError("Waist"),
-                                      "danger-text": _vm.validationError(
-                                        "Waist"
-                                      ),
-                                      name: "Waist",
-                                      type: "text"
-                                    },
-                                    model: {
-                                      value: _vm.form.Waist,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.form, "Waist", $$v)
-                                      },
-                                      expression: "form.Waist"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "ml-2" }, [
-                                    _vm._v(
-                                      "\n                                        cm\n                                    "
-                                    )
-                                  ])
-                                ],
-                                1
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "vs-col",
-                            {
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "6",
-                                "vs-sm": "6",
-                                "vs-xs": "12"
-                              }
-                            },
-                            [
-                              _c("div", { staticClass: "flex text-left" }, [
-                                _c("span", [_vm._v(_vm._s(_vm.__("Hip")))]),
-                                _vm._v(" "),
-                                _c("span", { staticClass: "ml-1 text-red" }, [
-                                  _vm._v("*")
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                {
-                                  staticClass: "flex",
-                                  staticStyle: { "align-items": "center" }
-                                },
-                                [
-                                  _c(_vm.inputs.Hip.type, {
-                                    tag: "component",
-                                    staticStyle: {
-                                      width: "100px",
-                                      "margin-left": "1rem"
-                                    },
-                                    attrs: {
-                                      danger: _vm.hasValidationError("Hip"),
-                                      "danger-text": _vm.validationError("Hip"),
-                                      name: "Hip",
-                                      type: "text"
-                                    },
-                                    model: {
-                                      value: _vm.form.Hip,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.form, "Hip", $$v)
-                                      },
-                                      expression: "form.Hip"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "ml-2" }, [
-                                    _vm._v(
-                                      "\n                                        cm\n                                    "
-                                    )
-                                  ])
-                                ],
-                                1
-                              )
-                            ]
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "vs-row",
-                        {
-                          staticClass: "mb-6 m-0",
-                          attrs: { "vs-type": "flex", "vs-w": "12" }
-                        },
-                        [
-                          _c(
-                            "vs-col",
-                            {
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "12",
-                                "vs-sm": "12",
-                                "vs-xs": "12"
-                              }
-                            },
-                            [
-                              _c("div", { staticClass: "flex text-left" }, [
-                                _c("span", [_vm._v(_vm._s(_vm.__("BFMP")))]),
-                                _vm._v(" "),
-                                _c("span", { staticClass: "ml-1 text-red" }, [
-                                  _vm._v("*")
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                {
-                                  staticClass: "flex",
-                                  staticStyle: { "align-items": "center" }
-                                },
-                                [
-                                  _c(_vm.inputs.BFMP.type, {
-                                    tag: "component",
-                                    staticStyle: {
-                                      width: "100px",
-                                      "margin-left": "1rem"
-                                    },
-                                    attrs: {
-                                      danger: _vm.hasValidationError("BFMP"),
-                                      "danger-text": _vm.validationError(
-                                        "BFMP"
-                                      ),
-                                      name: "BFMP",
-                                      type: "text"
-                                    },
-                                    model: {
-                                      value: _vm.form.BFMP,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.form, "BFMP", $$v)
-                                      },
-                                      expression: "form.BFMP"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "ml-2" }, [
-                                    _vm._v(
-                                      "\n                                        %\n                                    "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "ml-2" }, [
-                                    _vm._v(
-                                      "\n                                        Body Fat Percentage\n                                    "
-                                    )
-                                  ])
-                                ],
-                                1
-                              )
-                            ]
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "vs-row",
-                        {
-                          staticClass: "mb-6 m-0",
-                          attrs: { "vs-type": "flex", "vs-w": "12" }
-                        },
-                        [
-                          _c(
-                            "vs-col",
-                            {
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "12",
-                                "vs-sm": "12",
-                                "vs-xs": "12"
-                              }
-                            },
-                            [
-                              _c("div", { staticClass: "flex text-left" }, [
-                                _c("span", [_vm._v(_vm._s(_vm.__("SMM")))]),
-                                _vm._v(" "),
-                                _c("span", { staticClass: "ml-1 text-red" }, [
-                                  _vm._v("*")
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                {
-                                  staticClass: "flex",
-                                  staticStyle: { "align-items": "center" }
-                                },
-                                [
-                                  _c(_vm.inputs.SMM.type, {
-                                    tag: "component",
-                                    staticStyle: {
-                                      width: "100px",
-                                      "margin-left": "1rem"
-                                    },
-                                    attrs: {
-                                      danger: _vm.hasValidationError("SMM"),
-                                      "danger-text": _vm.validationError("SMM"),
-                                      name: "SMM",
-                                      type: "text"
-                                    },
-                                    model: {
-                                      value: _vm.form.SMM,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.form, "SMM", $$v)
-                                      },
-                                      expression: "form.SMM"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "ml-2" }, [
-                                    _vm._v(
-                                      "\n                                        %\n                                    "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "ml-2" }, [
-                                    _vm._v(
-                                      "\n                                        Skeletal Muscle Mass\n                                    "
-                                    )
-                                  ])
-                                ],
-                                1
-                              )
-                            ]
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "vs-row",
-                        {
-                          staticClass: "mb-6 m-0",
-                          attrs: { "vs-type": "flex", "vs-w": "12" }
-                        },
-                        [
-                          _c(
-                            "vs-col",
-                            {
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "12",
-                                "vs-sm": "12",
-                                "vs-xs": "12"
-                              }
-                            },
-                            [
-                              _c("div", { staticClass: "flex text-left" }, [
-                                _c("span", [_vm._v(_vm._s(_vm.__("VFP")))]),
-                                _vm._v(" "),
-                                _c("span", { staticClass: "ml-1 text-red" }, [
-                                  _vm._v("*")
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                {
-                                  staticClass: "flex",
-                                  staticStyle: { "align-items": "center" }
-                                },
-                                [
-                                  _c(_vm.inputs.VFP.type, {
-                                    tag: "component",
-                                    staticStyle: {
-                                      width: "100px",
-                                      "margin-left": "1rem"
-                                    },
-                                    attrs: {
-                                      danger: _vm.hasValidationError("VFP"),
-                                      "danger-text": _vm.validationError("VFP"),
-                                      name: "VFP",
-                                      type: "text"
-                                    },
-                                    model: {
-                                      value: _vm.form.VFP,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.form, "VFP", $$v)
-                                      },
-                                      expression: "form.VFP"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "ml-2" }, [
-                                    _vm._v(
-                                      "\n                                        %\n                                    "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "ml-2" }, [
-                                    _vm._v(
-                                      "\n                                        Visceral Fat\n                                    "
-                                    )
-                                  ])
-                                ],
-                                1
-                              )
-                            ]
-                          )
-                        ],
-                        1
-                      )
+                      _c("vs-th", [
+                        _vm._v("\n                Unit\n                ")
+                      ])
                     ],
                     1
-                  ),
-                  _vm._v(" "),
-                  _c("vs-col", { attrs: { "vs-lg": "5" } }, [
-                    _c("img", {
-                      staticStyle: { width: "400px" },
-                      attrs: { src: "/images/body-outline.jpg", alt: "" }
-                    })
-                  ])
+                  )
                 ],
-                1
-              )
+                2
+              ),
+              _vm._v(" "),
+              _c("h3", [_vm._v("\n                  Result:\n            ")]),
+              _vm._v(" "),
+              _c("p", { staticClass: "my-2" }, [
+                _c("strong", { staticStyle: { "font-size": "1.2rem" } }, [
+                  _vm._v(_vm._s(_vm.result.msg1))
+                ])
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "my-2" }, [
+                _c("strong", { staticStyle: { "font-size": "1.2rem" } }, [
+                  _vm._v(_vm._s(_vm.result.msg2))
+                ])
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "my-2" }, [
+                _c("strong", { staticStyle: { "font-size": "1.2rem" } }, [
+                  _vm._v(_vm._s(_vm.result.msg3))
+                ])
+              ])
             ],
             1
           ),
           _vm._v(" "),
-          _c("div", [
+          _c("div", { staticClass: "flex justify-center mt-16" }, [
             _c(
               "div",
-              {
-                staticClass: "flex align-items-center justify-content-center",
-                staticStyle: { "justify-content": "center" }
-              },
+              { staticClass: "flex" },
               [
                 _c(
                   "vs-button",
                   {
                     staticClass: "mr-3 mb-2",
-                    staticStyle: { "font-size": "20px" },
+                    staticStyle: { "font-size": "30px" },
                     attrs: { color: "success" },
                     on: { click: _vm.calculate }
                   },
                   [_vm._v(_vm._s(_vm.__("Calculate")))]
-                ),
-                _vm._v(" "),
-                _vm.body.link
-                  ? _c("div", { staticClass: "mt-2" }, [
-                      _c(
-                        "a",
-                        {
-                          key: _vm.downloadBtnKey,
-                          staticClass:
-                            "mr-3  vs-component vs-button vs-button-success vs-button-filled download-btn",
-                          staticStyle: { "font-size": "20px" },
-                          attrs: {
-                            target: "_blank",
-                            rel: "noopener",
-                            href: _vm.body.link
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n                            " +
-                              _vm._s(_vm.__("Export PDF")) +
-                              "\n                        "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        {
-                          key: _vm.downloadBtnKey,
-                          staticClass:
-                            "mr-3  vs-component vs-button vs-button-success vs-button-filled download-btn",
-                          staticStyle: { "font-size": "20px" },
-                          attrs: {
-                            target: "_blank",
-                            rel: "noopener",
-                            href: _vm.body.word_link
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n                            " +
-                              _vm._s(_vm.__("Export Word")) +
-                              "\n                        "
-                          )
-                        ]
-                      )
-                    ])
-                  : _vm._e()
+                )
               ],
               1
             )

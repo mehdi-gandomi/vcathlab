@@ -11,9 +11,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _New_vue_vue_type_template_id_7fbbd6b8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./New.vue?vue&type=template&id=7fbbd6b8& */ "../User/Resources/js/computation_center/New.vue?vue&type=template&id=7fbbd6b8&");
 /* harmony import */ var _New_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./New.vue?vue&type=script&lang=js& */ "../User/Resources/js/computation_center/New.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _New_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./New.vue?vue&type=style&index=0&lang=css& */ "../User/Resources/js/computation_center/New.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
+/* empty/unused harmony star reexport *//* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -21,7 +19,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _New_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _New_vue_vue_type_template_id_7fbbd6b8___WEBPACK_IMPORTED_MODULE_0__["render"],
   _New_vue_vue_type_template_id_7fbbd6b8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -50,22 +48,6 @@ component.options.__file = "User/Resources/js/computation_center/New.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_New_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./New.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/computation_center/New.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_New_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "../User/Resources/js/computation_center/New.vue?vue&type=style&index=0&lang=css&":
-/*!****************************************************************************************!*\
-  !*** ../User/Resources/js/computation_center/New.vue?vue&type=style&index=0&lang=css& ***!
-  \****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_New_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/style-loader!../../../../Panel/node_modules/css-loader??ref--5-1!../../../../Panel/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../Panel/node_modules/postcss-loader/src??ref--5-2!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./New.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/computation_center/New.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_New_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_New_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_New_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_New_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
 
 /***/ }),
 
@@ -312,8 +294,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         hospital: "",
         phone: "",
         patient_procedure: ""
-      }, {
-        resetOnSuccess: false
       }),
       procedures: ["Angio NIFFR", "CT Angio NIFFR", "Complex Case", "Angiography Risk"],
       model: "Modules\\User\\Models\\MaceAssesment",
@@ -425,38 +405,35 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       var _this = this;
 
       return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var computeForm, patient, _yield$_this$$http$po, data;
+        var _yield$_this$$http$po, patient, data;
 
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
                 Iracode.loading();
-                computeForm = {
-                  patient_procedure: _this.form.patient_procedure,
-                  patient_id: "",
-                  physician: _this.form.physician
-                };
-                _context.next = 4;
-                return _this.form.post("/user/api/patients");
+                _context.next = 3;
+                return _this.$http.post("/user/api/patients", _this.form);
 
-              case 4:
-                patient = _context.sent;
-                console.log(patient);
-                computeForm.patient_id = patient.data.id;
-                _context.next = 9;
-                return _this.$http.post("/user/api/computation_center", computeForm);
-
-              case 9:
+              case 3:
                 _yield$_this$$http$po = _context.sent;
-                data = _yield$_this$$http$po.data;
+                patient = _yield$_this$$http$po.data;
+                // this.patientResult=patient;
+                _this.form.patient_id = patient.data.id;
+                _context.next = 8;
+                return _this.form.post("/user/api/computation_center");
+
+              case 8:
+                data = _context.sent;
                 Iracode.close_loading();
 
-                if (data.success) {
+                if (data.ok) {
                   Iracode.success(_this.__("Your request sent successfully"));
+
+                  _this.form.reset();
                 }
 
-              case 13:
+              case 11:
               case "end":
                 return _context.stop();
             }
@@ -466,55 +443,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }
   }
 });
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/computation_center/New.vue?vue&type=style&index=0&lang=css&":
-/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--5-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/computation_center/New.vue?vue&type=style&index=0&lang=css& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../Panel/node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n@media(max-width:768px){\n.m-flex{\n        display: flex !important;\n}\n.m-mt-1{\n        margin-top: 1rem !important;\n}\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/computation_center/New.vue?vue&type=style&index=0&lang=css&":
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--5-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/computation_center/New.vue?vue&type=style&index=0&lang=css& ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../Panel/node_modules/css-loader??ref--5-1!../../../../Panel/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../Panel/node_modules/postcss-loader/src??ref--5-2!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./New.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/computation_center/New.vue?vue&type=style&index=0&lang=css&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../Panel/node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
 
 /***/ }),
 
@@ -582,9 +510,7 @@ var render = function() {
                       attrs: {
                         "vs-type": "flex",
                         "vs-align": "center",
-                        "vs-lg": "4",
-                        "vs-xs": "12",
-                        "vs-sm": "6"
+                        "vs-lg": "4"
                       }
                     },
                     [
@@ -599,8 +525,7 @@ var render = function() {
                               attrs: {
                                 "vs-type": "flex",
                                 "vs-align": "center",
-                                "vs-lg": "3",
-                                "vs-xs": "5"
+                                "vs-lg": "3"
                               }
                             },
                             [_c("span", [_vm._v(_vm._s(_vm.__("Name")))])]
@@ -612,8 +537,7 @@ var render = function() {
                               attrs: {
                                 "vs-type": "flex",
                                 "vs-align": "center",
-                                "vs-lg": "9",
-                                "vs-xs": "7"
+                                "vs-lg": "9"
                               }
                             },
                             [
@@ -641,13 +565,10 @@ var render = function() {
                   _c(
                     "vs-col",
                     {
-                      staticClass: "m-mt-1",
                       attrs: {
                         "vs-type": "flex",
                         "vs-align": "center",
-                        "vs-lg": "4",
-                        "vs-xs": "12",
-                        "vs-sm": "6"
+                        "vs-lg": "4"
                       }
                     },
                     [
@@ -662,8 +583,7 @@ var render = function() {
                               attrs: {
                                 "vs-type": "flex",
                                 "vs-align": "center",
-                                "vs-lg": "3",
-                                "vs-xs": "5"
+                                "vs-lg": "3"
                               }
                             },
                             [_c("span", [_vm._v(_vm._s(_vm.__("Physician")))])]
@@ -675,8 +595,7 @@ var render = function() {
                               attrs: {
                                 "vs-type": "flex",
                                 "vs-align": "center",
-                                "vs-lg": "9",
-                                "vs-xs": "7"
+                                "vs-lg": "9"
                               }
                             },
                             [
@@ -704,13 +623,10 @@ var render = function() {
                   _c(
                     "vs-col",
                     {
-                      staticClass: "m-mt-1",
                       attrs: {
                         "vs-type": "flex",
                         "vs-align": "center",
-                        "vs-lg": "3",
-                        "vs-xs": "12",
-                        "vs-sm": "6"
+                        "vs-lg": "3"
                       }
                     },
                     [
@@ -725,8 +641,7 @@ var render = function() {
                               attrs: {
                                 "vs-type": "flex",
                                 "vs-align": "center",
-                                "vs-lg": "3",
-                                "vs-xs": "5"
+                                "vs-lg": "3"
                               }
                             },
                             [
@@ -744,14 +659,12 @@ var render = function() {
                               attrs: {
                                 "vs-type": "flex",
                                 "vs-align": "center",
-                                "vs-lg": "9",
-                                "vs-xs": "7"
+                                "vs-lg": "9"
                               }
                             },
                             [
                               _c(
                                 "div",
-                                { staticClass: "m-flex" },
                                 [
                                   _c(
                                     "vs-radio",
@@ -811,13 +724,10 @@ var render = function() {
                   _c(
                     "vs-col",
                     {
-                      staticClass: "m-mt-1",
                       attrs: {
                         "vs-type": "flex",
                         "vs-align": "center",
-                        "vs-lg": "4",
-                        "vs-xs": "12",
-                        "vs-sm": "6"
+                        "vs-lg": "4"
                       }
                     },
                     [
@@ -832,8 +742,7 @@ var render = function() {
                               attrs: {
                                 "vs-type": "flex",
                                 "vs-align": "center",
-                                "vs-lg": "3",
-                                "vs-xs": "5"
+                                "vs-lg": "3"
                               }
                             },
                             [_c("span", [_vm._v(_vm._s(_vm.__("Hospital")))])]
@@ -845,8 +754,7 @@ var render = function() {
                               attrs: {
                                 "vs-type": "flex",
                                 "vs-align": "center",
-                                "vs-lg": "9",
-                                "vs-xs": "7"
+                                "vs-lg": "9"
                               }
                             },
                             [
@@ -874,13 +782,10 @@ var render = function() {
                   _c(
                     "vs-col",
                     {
-                      staticClass: "m-mt-1",
                       attrs: {
                         "vs-type": "flex",
                         "vs-align": "center",
-                        "vs-lg": "4",
-                        "vs-xs": "12",
-                        "vs-sm": "6"
+                        "vs-lg": "4"
                       }
                     },
                     [
@@ -895,8 +800,7 @@ var render = function() {
                               attrs: {
                                 "vs-type": "flex",
                                 "vs-align": "center",
-                                "vs-lg": "3",
-                                "vs-xs": "5"
+                                "vs-lg": "3"
                               }
                             },
                             [_c("span", [_vm._v(_vm._s(_vm.__("Age")))])]
@@ -908,8 +812,7 @@ var render = function() {
                               attrs: {
                                 "vs-type": "flex",
                                 "vs-align": "center",
-                                "vs-lg": "9",
-                                "vs-xs": "7"
+                                "vs-lg": "9"
                               }
                             },
                             [
@@ -937,13 +840,10 @@ var render = function() {
                   _c(
                     "vs-col",
                     {
-                      staticClass: "m-mt-1",
                       attrs: {
                         "vs-type": "flex",
                         "vs-align": "center",
-                        "vs-lg": "4",
-                        "vs-xs": "12",
-                        "vs-sm": "6"
+                        "vs-lg": "4"
                       }
                     },
                     [
@@ -958,8 +858,7 @@ var render = function() {
                               attrs: {
                                 "vs-type": "flex",
                                 "vs-align": "center",
-                                "vs-lg": "3",
-                                "vs-xs": "5"
+                                "vs-lg": "3"
                               }
                             },
                             [_c("span", [_vm._v(_vm._s(_vm.__("Mobile")))])]
@@ -971,8 +870,7 @@ var render = function() {
                               attrs: {
                                 "vs-type": "flex",
                                 "vs-align": "center",
-                                "vs-lg": "9",
-                                "vs-xs": "7"
+                                "vs-lg": "9"
                               }
                             },
                             [
@@ -1000,13 +898,10 @@ var render = function() {
                   _c(
                     "vs-col",
                     {
-                      staticClass: "m-mt-1",
                       attrs: {
                         "vs-type": "flex",
                         "vs-align": "center",
-                        "vs-lg": "4",
-                        "vs-xs": "12",
-                        "vs-sm": "6"
+                        "vs-lg": "4"
                       }
                     },
                     [
@@ -1024,8 +919,7 @@ var render = function() {
                               attrs: {
                                 "vs-type": "flex",
                                 "vs-align": "center",
-                                "vs-lg": "3",
-                                "vs-xs": "5"
+                                "vs-lg": "3"
                               }
                             },
                             [_c("span", [_vm._v(_vm._s(_vm.__("Procedure")))])]
@@ -1037,8 +931,7 @@ var render = function() {
                               attrs: {
                                 "vs-type": "flex",
                                 "vs-align": "center",
-                                "vs-lg": "9",
-                                "vs-xs": "7"
+                                "vs-lg": "9"
                               }
                             },
                             [

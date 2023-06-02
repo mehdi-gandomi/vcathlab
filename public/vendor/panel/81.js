@@ -296,7 +296,7 @@ __webpack_require__.r(__webpack_exports__);
         filter: "agTextColumnFilter"
       }, {
         headerName: this.__("Mobile"),
-        field: "patient.phone",
+        field: "mobile",
         resizable: true,
         filter: "agTextColumnFilter"
       }, {

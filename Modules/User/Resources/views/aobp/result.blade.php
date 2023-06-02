@@ -65,6 +65,7 @@
         #line-chart{
             border: 1px solid #000;
             height:85vh;
+            
         }
     </style>
 </head>
@@ -310,9 +311,11 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/assets/js/chartjs-plugin-annotation.min.js"></script>
+    <script src="/assets/js/chartjs-plugin-datalabels.min.js"></script>
     <script>
     const range = (a,b) => Array(Math.abs(a-b)+1).fill(a).map((v,i)=>v+i*(a>b?-1:1));
         new Chart(document.getElementById("line-chart"), {
+              plugins: [ChartDataLabels],
             type: 'line',
             data: {
                 labels: @json(range(1,$aobp->dia_count)),
@@ -320,17 +323,25 @@
                         data: @json($aobp->dia),
                         label: "DBP",
                         borderColor: "#3cba9f",
-                        fill: false
+                        fill: false,
+                 
+    //   backgroundColor:"#000"
                     },
                     {
                         data: @json($aobp->sys),
                         label: "SBP",
                         borderColor: "#e43202",
-                        fill: false
+                        fill: false,
+                 
+    //   backgroundColor:"#000"
                     }
                 ]
             },
             options: {
+                 layout: {
+            padding: 15
+        },
+                 
                         maintainAspectRatio: false,
                 responsive: true,
                 plugins: {
@@ -338,6 +349,27 @@
                         display: true,
                         text: 'AOBP'
                     },
+        datalabels: {
+        align: 'start',
+        anchor: 'start',
+        backgroundColor: null,
+        borderColor: null,
+        borderRadius: 4,
+        borderWidth: 1,
+        color: '#223388',
+        font: {
+          size: 14,
+          weight: 600
+        },
+        offset: -25,
+        padding: 0,
+        formatter: function(value, context) {
+  return context.dataIndex == 0 ? "":value;
+}
+        // formatter: function(value) {
+        // 	return Math.round(value * 10) / 10
+        // }
+      },
                     annotation: {
                         annotations: {
                             line1: {
@@ -371,6 +403,9 @@
                         grid: {
                             display: false
                         },
+                        ticks: {
+                // autoSkip: false
+            },
                         display: true,
                         title: {
                             display: true
@@ -388,7 +423,8 @@
                         suggestedMin: 20,
                         suggestedMax: 240,
                         ticks: {
-                            stepSize: 20
+                            stepSize: 20,
+                            // autoSkip: false
                         }
                     }
                 }

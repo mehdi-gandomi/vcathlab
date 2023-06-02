@@ -2230,7 +2230,7 @@ exports = module.exports = __webpack_require__(/*! ../../../Panel/node_modules/c
 
 
 // module
-exports.push([module.i, "\n.download-btn:hover{\n    color: #fff;\n}\n.examplex {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin: 0 0.5rem;\n}\n.examplex .a-icon {\n  outline: none;\n  text-decoration: none !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.examplex .a-icon i {\n  font-size: 18px;\n}\n.w-100{\n    width: 100% !important;\n}\n", ""]);
+exports.push([module.i, "\n.download-btn:hover{\n    color: #fff;\n}\n.examplex {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin: 0 0.5rem;\n}\n.examplex .a-icon {\n  outline: none;\n  text-decoration: none !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.examplex .a-icon i {\n  font-size: 18px;\n}\n\n", ""]);
 
 // exports
 

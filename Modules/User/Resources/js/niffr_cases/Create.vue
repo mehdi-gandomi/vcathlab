@@ -93,7 +93,7 @@
                                                     <vs-radio
                                                         v-model="form.sex"
                                                         vs-name="sex"
-                                                        vs-value="0"
+                                                        vs-value="2"
                                                         class="ml-4"
                                                         >Female</vs-radio
                                                     >

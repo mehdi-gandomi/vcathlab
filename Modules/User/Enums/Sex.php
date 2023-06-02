@@ -14,4 +14,5 @@ final class Sex extends Enum implements LocalizedEnum
 {
     const MALE =   1;
     const FEMALE =   0;
+    
 }

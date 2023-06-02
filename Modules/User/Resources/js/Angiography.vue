@@ -1056,7 +1056,5 @@
   .examplex .a-icon i {
     font-size: 18px;
   }
-.w-100{
-    width: 100% !important;
-}
+
   </style>

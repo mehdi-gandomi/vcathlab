@@ -38,7 +38,7 @@ class CreateNIFFRReport
         $template->setValue("hospital",$event->nIFFRCase->niffr_case->patient->hospital);
         $template->setValue("doctor",$event->nIFFRCase->niffr_case->physician);
         $template->setValue("patient",$event->nIFFRCase->niffr_case->patient->name);
-        $template->setValue("sex",Sex::getDescription($event->nIFFRCase->niffr_case->patient->sex));
+        $template->setValue("sex",($event->nIFFRCase->niffr_case->patient->sex == 0 ? 'Female':"Male"));
         $template->setValue("age",$event->nIFFRCase->niffr_case->patient->age);
         $template->setValue("time",$event->nIFFRCase->created_at->format("H:i"));
         $template->setValue("date",$event->nIFFRCase->created_at->format("Y-m-d"));

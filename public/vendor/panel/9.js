@@ -2781,7 +2781,7 @@ var render = function() {
                             "vs-radio",
                             {
                               staticClass: "ml-4",
-                              attrs: { "vs-name": "sex", "vs-value": "0" },
+                              attrs: { "vs-name": "sex", "vs-value": "2" },
                               model: {
                                 value: _vm.form.sex,
                                 callback: function($$v) {

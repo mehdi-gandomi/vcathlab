@@ -36,13 +36,21 @@ class ABPMCalculationAPIController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $aobpCalculations = $this->aobpCalculationRepository->all(
+        $aobpCalculations = $this->aobpCalculationRepository->allQuery(
             $request->except(['skip', 'limit']),
             $request->get('skip'),
             $request->get('limit')
         );
+           if (!auth()->user()->master) {
+            $aobpCalculations = $aobpCalculations->where("user_id", auth()->user()->id);
+            $aobpCalculationsCount = ABPMCalculation::where("user_id", auth()->user()->id)->count();
+        } else {
+            $aobpCalculationsCount = ABPMCalculation::count();
+        }
+        
+        $aobpCalculations = $aobpCalculations->get();
         $limit=$request->get('limit',10);
-        $aobpCalculationsCount = $this->aobpCalculationRepository->count();
+        
         return $this->sendResponse(['pagination_data'=>['count'=>$aobpCalculationsCount,'total_pages'=>ceil($aobpCalculationsCount/$limit)],'items'=>$aobpCalculations->toArray()], 'ABPM Calculations retrieved successfully');
     }
 

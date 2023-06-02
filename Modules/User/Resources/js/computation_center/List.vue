@@ -117,7 +117,7 @@ export default {
 
                 {
                     headerName: this.__("Mobile"),
-                    field: "patient.phone",
+                    field: "mobile",
                     resizable: true,
                     filter: "agTextColumnFilter",
                 },

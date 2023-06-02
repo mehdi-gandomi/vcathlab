@@ -1,4 +1,5 @@
 @php
+
     function avg($arr,$count=null)
     {
         $count=$count ? $count:count($arr);
@@ -25,7 +26,7 @@
             $range=[
                 $now->format("H:i")
 ];
-            for($i=0;$i<48;$i++){
+            for($i=0;$i<$abpm->dia_count;$i++){
                 $range[]=$now->addMinute(30)->format("H:i");
             }
 
@@ -282,37 +283,131 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr class="table-header">
-                            <th colspan="5">Result</th>
+                            <th colspan="7">Result</th>
 
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="border-bottom-0">
-                            <td colspan="5" class="border-end-0">
-                                <ul class="bottom-texts">
-                                    <li>
-                                        {{$summary['sys_above_130_count']}}% of SBP values were > 130 mmHg and {{$summary['dia_above_85_count']}}% of DBP values were > 85 mmHg.
-                                    </li>
-                                    <li>
-                                        {{$summary['sys_under_130_count']}}% of SBP and {{$summary['dia_under_85_count']}}% of DBP readings were normal value (SBP < 130 mmHg and DBP <
-                                            85 mmHg). </li>
-                                    <li>
-                                        Mean office SBP/DBP = {{$abpm->sys_avg}} / {{$abpm->dia_avg}} mmHg (Max SBP = {{max_number($abpm->sys)}} mmHg and Max DBP = {{max_number($abpm->dia)}} mmHg).
-                                    </li>
-                                    <li>
-                                        Classification of the patient was {{$abpm->result_msg}}. (Office SBP/DBP = {{$abpm->sys[0]}}
-                                        / {{$abpm->dia[0]}} mmHg)
-                                    </li>
-                                    <li>
-                                        Recommended lifestyle changes and drug treatment (if CVD risk > 7.5% and SBP >
-                                        135 mmHg).
-                                    </li>
-                                </ul>
-
+                        <tr>
+                            <td class="border-end-0">
 
                             </td>
-
+                            <td class="border-end-0 border-start-0" style="font-weight:bold">
+                                Office
+                            </td>
+                            <td class="border-end-0 border-start-0" style="font-weight:bold">
+                                Total
+                            </td>
+                            <td class="border-end-0 border-start-0" style="font-weight:bold">
+                                Day
+                            </td>
+                            <td class=" border-start-0" style="font-weight:bold">
+                                Night
+                            </td>
+                            <td class=" border-start-0" style="font-weight:bold">
+                                Awake
+                            </td>
+                            <td class=" border-start-0" style="font-weight:bold">
+                                Asleep
+                            </td>
                         </tr>
+                        
+                        <tr>
+                           
+                           <td class="border-end-0">
+                           SYS/DIA (mmgHg)
+                           </td>
+                           <td class="border-end-0 border-start-0">
+                               {{$abpm->sys_avg}} / {{$abpm->dia_avg}}
+                           </td>
+                           <td class="border-end-0 border-start-0">
+                           {{$abpm->sys[0]}} / {{$abpm->dia[0]}}
+                           </td>
+                           <td class=" border-start-0">
+                           {{$abpm->sys_avg}} / {{$abpm->dia_avg}}
+                           </td>
+                           <td class=" border-start-0">
+                           {{$abpm->sys_night_avg}} / {{$abpm->dia_night_avg}}
+                           </td>
+                           <td class=" border-start-0">
+                           {{$abpm->sys_awake_avg}} / {{$abpm->dia_awake_avg}}
+                           </td>
+                           <td class=" border-start-0">
+                           {{$abpm->sys_asleep_avg}} / {{$abpm->dia_asleep_avg}} (%)
+                           </td>
+                       </tr>
+                        <tr>
+                           
+                            <td class="border-end-0">
+                                HR (bpm)
+                            </td>
+                            <td class="border-end-0 border-start-0">
+                                {{$abpm->hr[0]}}
+                            </td>
+                            <td class="border-end-0 border-start-0">
+                            {{$abpm->hr_avg}}
+                            </td>
+                            <td class=" border-start-0">
+                            {{$abpm->hr_day_avg}} 
+                            </td>
+                            <td class=" border-start-0">
+                            {{$abpm->hr_night_avg}}
+                            </td>
+                            <td class=" border-start-0">
+                            {{$abpm->hr_awake_avg}}
+                            </td>
+                            <td class=" border-start-0">
+                            {{$abpm->hr_asleep_avg}}
+                            </td>
+                        </tr>
+                        <tr>
+                           
+                           <td class="border-end-0">
+                            SYS/DIA (> 130/85)
+                           </td>
+                           <td class="border-end-0 border-start-0">
+                               -
+                           </td>
+                           <td class="border-end-0 border-start-0">
+                           {{$abpm->summary['sys_above_130_count']}} / {{$abpm->summary['dia_above_85_count']}} (%)
+                           </td>
+                           <td class=" border-start-0">
+                           {{$abpm->day_summary['sys_above_130_count']}} / {{$abpm->day_summary['dia_above_85_count']}} (%)
+                           </td>
+                           <td class=" border-start-0">
+                           {{$abpm->night_summary['sys_above_130_count']}} / {{$abpm->night_summary['dia_above_85_count']}} (%)
+                           </td>
+                           <td class=" border-start-0">
+                           {{$abpm->awake_summary['sys_above_130_count']}} / {{$abpm->awake_summary['dia_above_85_count']}} (%)
+                           </td>
+                           <td class=" border-start-0">
+                           {{$abpm->asleep_summary['sys_above_130_count']}} / {{$abpm->asleep_summary['dia_above_85_count']}} (%)
+                           </td>
+                       </tr>
+                       <tr>
+                           
+                           <td class="border-end-0">
+                            SYS/DIA (< 130/85)
+                           </td>
+                           <td class="border-end-0 border-start-0">
+                               -
+                           </td>
+                           <td class="border-end-0 border-start-0">
+                           {{$abpm->summary['sys_under_130_count']}} / {{$abpm->summary['dia_under_85_count']}} (%)
+                           </td>
+                           <td class=" border-start-0">
+                           {{$abpm->day_summary['sys_under_130_count']}} / {{$abpm->day_summary['dia_under_85_count']}} (%)
+                           </td>
+                           <td class=" border-start-0">
+                           {{$abpm->night_summary['sys_under_130_count']}} / {{$abpm->night_summary['dia_under_85_count']}} (%)
+                           </td>
+                           <td class=" border-start-0">
+                           {{$abpm->awake_summary['sys_under_130_count']}} / {{$abpm->awake_summary['dia_under_85_count']}} (%)
+                           </td>
+                           <td class=" border-start-0">
+                           {{$abpm->asleep_summary['sys_under_130_count']}} / {{$abpm->asleep_summary['dia_under_85_count']}} (%)
+                           </td>
+                       </tr>
                     </tbody>
 
                 </table>
@@ -351,6 +446,30 @@
                     title: {
                         display: true,
                         text: 'ABPM'
+                    },
+                    annotation: {
+                        annotations: {
+                            line1: {
+                                type: 'line',
+                                yMin: 120,
+                                yMax: 120,
+                                borderColor: 'rgb(0, 0, 0)',
+                                borderWidth: 2,
+                                pointStyle:"dash",
+                                borderDash: [10,5]
+                            },
+                            line2: {
+                                type: 'line',
+                                yMin: 80,
+                                yMax: 80,
+                                borderColor: 'rgb(255, 0, 0)',
+                                borderWidth: 2,
+                                borderJoinStyle:"round",
+                                borderCapStyle:"round",
+                                pointStyle:"dash",
+                                borderDash: [10,5]
+                            }
+                        }
                     }
                 },
                 // interaction: {

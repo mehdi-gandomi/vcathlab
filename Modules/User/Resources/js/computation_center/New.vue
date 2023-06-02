@@ -12,49 +12,49 @@
             <form @submit="onSubmit">
 
                 <vs-row vs-type="flex" vs-w="12" class="mb-6">
-                    <vs-col vs-type="flex" vs-align="center" vs-lg="4" vs-xs="12" vs-sm="6">
+                    <vs-col vs-type="flex" vs-align="center" vs-lg="4">
                         <vs-row vs-type="flex" vs-w="12">
                             <vs-col
                                 class="justify-end"
                                 vs-type="flex"
                                 vs-align="center"
-                                vs-lg="3" vs-xs="5"
+                                vs-lg="3"
                             >
                                 <span>{{ __("Name") }}</span>
                             </vs-col>
-                            <vs-col vs-type="flex" vs-align="center" vs-lg="9" vs-xs="7">
+                            <vs-col vs-type="flex" vs-align="center" vs-lg="9">
                                 <vs-input v-model="form.name" class="w-full" name="name" type="text" />
                             </vs-col>
                         </vs-row>
                     </vs-col>
-                    <vs-col class="m-mt-1" vs-type="flex" vs-align="center" vs-lg="4" vs-xs="12" vs-sm="6">
+                    <vs-col vs-type="flex" vs-align="center" vs-lg="4">
                         <vs-row vs-type="flex" vs-w="12">
                             <vs-col
                                 class="justify-end"
                                 vs-type="flex"
                                 vs-align="center"
-                                vs-lg="3" vs-xs="5"
+                                vs-lg="3"
                             >
                                 <span>{{ __("Physician") }}</span>
                             </vs-col>
-                            <vs-col vs-type="flex" vs-align="center" vs-lg="9" vs-xs="7">
+                            <vs-col vs-type="flex" vs-align="center" vs-lg="9">
                                 <vs-input v-model="form.physician" class="w-full" name="physician" type="text" />
                             </vs-col>
                         </vs-row>
                     </vs-col>
-                    <vs-col class="m-mt-1" vs-type="flex" vs-align="center" vs-lg="3" vs-xs="12" vs-sm="6">
+                    <vs-col vs-type="flex" vs-align="center" vs-lg="3">
                         <vs-row vs-type="flex" vs-w="12">
                             <vs-col
                                 class="justify-end pr-5"
                                 vs-type="flex"
                                 vs-align="center"
-                                vs-lg="3" vs-xs="5"
+                                vs-lg="3"
                             >
                                 <span>{{ __("Sex") }}</span>
                                 <span class="ml-1 text-red">*</span>
                             </vs-col>
-                            <vs-col vs-type="flex" vs-align="center" vs-lg="9" vs-xs="7">
-                                <div class="m-flex">
+                            <vs-col vs-type="flex" vs-align="center" vs-lg="9">
+                                <div>
                                         <vs-radio
                                         v-model="form.sex"
                                         vs-name="sex"
@@ -76,65 +76,65 @@
 
                 </vs-row>
                 <vs-row class="mt-4">
-                    <vs-col class="m-mt-1" vs-type="flex" vs-align="center" vs-lg="4" vs-xs="12" vs-sm="6">
+                    <vs-col vs-type="flex" vs-align="center" vs-lg="4">
                         <vs-row vs-type="flex" vs-w="12">
                             <vs-col
                                 class="justify-end"
                                 vs-type="flex"
                                 vs-align="center"
-                                vs-lg="3" vs-xs="5"
+                                vs-lg="3"
                             >
                                 <span>{{ __("Hospital") }}</span>
                             </vs-col>
-                            <vs-col vs-type="flex" vs-align="center" vs-lg="9" vs-xs="7">
+                            <vs-col vs-type="flex" vs-align="center" vs-lg="9">
                                 <vs-input v-model="form.hospital" class="w-full" name="hospital" type="text" />
                             </vs-col>
                         </vs-row>
                     </vs-col>
-                    <vs-col class="m-mt-1" vs-type="flex" vs-align="center" vs-lg="4" vs-xs="12" vs-sm="6">
+                    <vs-col vs-type="flex" vs-align="center" vs-lg="4">
                         <vs-row vs-type="flex" vs-w="12">
                             <vs-col
                                 class="justify-end"
                                 vs-type="flex"
                                 vs-align="center"
-                                vs-lg="3" vs-xs="5"
+                                vs-lg="3"
                             >
                                 <span>{{ __("Age") }}</span>
                             </vs-col>
-                            <vs-col vs-type="flex" vs-align="center" vs-lg="9" vs-xs="7">
+                            <vs-col vs-type="flex" vs-align="center" vs-lg="9">
                                 <vs-input v-model="form.age" class="w-full" name="age" type="number" />
                             </vs-col>
                         </vs-row>
                     </vs-col>
 
-                    <vs-col class="m-mt-1" vs-type="flex" vs-align="center" vs-lg="4" vs-xs="12" vs-sm="6">
+                    <vs-col vs-type="flex" vs-align="center" vs-lg="4">
                         <vs-row vs-type="flex" vs-w="12">
                             <vs-col
                                 class="justify-end"
                                 vs-type="flex"
                                 vs-align="center"
-                                vs-lg="3" vs-xs="5"
+                                vs-lg="3"
                             >
                                 <span>{{ __("Mobile") }}</span>
                             </vs-col>
-                            <vs-col vs-type="flex" vs-align="center" vs-lg="9" vs-xs="7">
+                            <vs-col vs-type="flex" vs-align="center" vs-lg="9">
                                 <vs-input v-model="form.phone" class="w-full" name="phone" type="text" />
                             </vs-col>
                         </vs-row>
                     </vs-col>
                     <vs-col
-                    vs-type="flex" class="m-mt-1" vs-align="center" vs-lg="4" vs-xs="12" vs-sm="6"
+                    vs-type="flex" vs-align="center" vs-lg="4"
               >
               <vs-row vs-type="flex" vs-w="12" class="mt-4">
                             <vs-col
                                 class="justify-end"
                                 vs-type="flex"
                                 vs-align="center"
-                                vs-lg="3" vs-xs="5"
+                                vs-lg="3"
                             >
                                 <span>{{ __("Procedure") }}</span>
                             </vs-col>
-                            <vs-col vs-type="flex" vs-align="center" vs-lg="9" vs-xs="7">
+                            <vs-col vs-type="flex" vs-align="center" vs-lg="9">
                                 <v-select
                                     v-model="form.patient_procedure"
                                     style="width:100%"
@@ -177,9 +177,7 @@ export default {
                 hospital:"",
                 phone:"",
                 patient_procedure:""
-            }, {
-    resetOnSuccess: false,
-}),
+            }),
             procedures:[
             "Angio NIFFR",
             "CT Angio NIFFR",
@@ -297,30 +295,17 @@ export default {
     methods: {
         async onSubmit(action) {
             Iracode.loading();
-            const computeForm={
-                patient_procedure:this.form.patient_procedure,
-                patient_id:"",
-                physician:this.form.physician
-            };
-            const patient = await  this.form.post("/user/api/patients")
-            console.log(patient)
-            computeForm.patient_id=patient.data.id;
-            const {data} = await this.$http.post("/user/api/computation_center",computeForm);
+            const {data:patient} = await this.$http.post("/user/api/patients",this.form);
+            // this.patientResult=patient;
+
+            this.form.patient_id=patient.data.id;
+            const data = await this.form.post("/user/api/computation_center");
             Iracode.close_loading();
-            if (data.success) {
+            if (data.ok) {
                 Iracode.success(this.__("Your request sent successfully"));
+                this.form.reset();
             }
         }
     }
 };
 </script>
-<style>
-@media(max-width:768px){
-    .m-flex{
-        display: flex !important;
-    }
-    .m-mt-1{
-        margin-top: 1rem !important;
-    }
-}
-</style>
