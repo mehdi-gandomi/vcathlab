@@ -1,1 +1,511 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[76],{679:function(e,t,a){"use strict";a.r(t);var n=a(62),s=a.n(n),i=a(791),o=a.n(i),r=a(779),l=a(782),c=a(780),u=a(781),d=a(778),p=a(785),m={name:"AddUsers",props:[]},h=a(53),f=Object(h.a)(m,(function(){var e=this.$createElement,t=this._self._c||e;return t("vx-tooltip",{staticClass:"mx-1 larger-icon",attrs:{text:this.__("Add Users")}},[t("vs-button",{attrs:{color:"success",to:"#",type:"filled",icon:"icon-check-circle","icon-pack":"feather"}})],1)}),[],!1,null,null,null).exports;function b(e,t,a,n,s,i,o){try{var r=e[i](o),l=r.value}catch(e){return void a(e)}r.done?t(l):Promise.resolve(l).then(n,s)}function g(e){return function(){var t=this,a=arguments;return new Promise((function(n,s){var i=e.apply(t,a);function o(e){b(i,n,s,o,r,"next",e)}function r(e){b(i,n,s,o,r,"throw",e)}o(void 0)}))}}window.XjQuery=o.a;var v=window.Vue,w={mixins:[r.a,l.a,c.a,u.a,p.a],data:function(){return{searchQuery:"",baseUrl:"/accesslevel/api/role_outusers/?role_id=".concat(this.$route.params.id),model:"User",module:"AccessLevel",showCreateButton:!1,columnDefs:[{headerName:this.__("Email"),field:"email",resizable:!0,minWidth:250,checkboxSelection:!0,filter:"agTextColumnFilter"},{headerName:this.__("Username"),field:"username",resizable:!0,filter:"agTextColumnFilter"},{headerName:this.__("Name"),field:"name",resizable:!0,filter:"agTextColumnFilter"},{headerName:this.__("State"),field:"state",resizable:!0,valueFormatter:d.a.checkboxFormatter,cellRenderer:"checkboxCellRenderer",filter:"agSelectColumnFilter",filterParams:{buttons:["apply"],closeOnApply:!0,type:"select",module:"AccessLevel",model:"User"}},{headerName:this.__("Actions"),field:"action",filter:!1,minWidth:150,cellRenderer:"tableActionsRenderer",cellRendererParams:{model:"User",baseRoutePath:"accesslevel/role_outusers",modelPlural:"role_outusers",baseApiPath:"/accesslevel/api",exposeRowId:!0,buttons:[{text:function(){return this.__("Show ".concat(this.params.model))},link:function(){return this.params.data?"/".concat(this.params.baseRoutePath,"/").concat(this.params.data.id):""},color:"primary",icon:"eye"},{text:function(){return this.__("Edit ".concat(this.params.model))},link:function(){return this.params.data?"/".concat(this.params.baseRoutePath,"/").concat(this.params.data.id,"/edit"):""},color:"warning",icon:"edit"}]}}],items:[],selectedUserIds:[]}},mounted:function(){var e=this;window.defFuncs={add:function(){alert("Add();")}};var t=new(v.extend(f));t.$mount(),o()(".ag-grid-table-actions-right").prepend(t.$el),o()(t.$el).click(g(s.a.mark((function t(){var a;return s.a.wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return console.log("added"),e.findUsers(),t.next=4,e.sendUsers();case 4:(a=t.sent)&&a.data.success&&(Iracode.success(e.__("User Added Successfully")),e.$router.push("/accesslevel/roles/".concat(e.$route.params.id,"/users")));case 6:case"end":return t.stop()}}),t)}))))},methods:{findUsers:function(){var e=this;this.selectedUserIds=[],o()('[ref="eCenterContainer"] > .ag-row').each((function(t,a){o()(a).find(".ag-checkbox-input-wrapper.ag-checked").length&&e.selectedUserIds.push(o()(a).find(".row-id").data("id"))}))},sendUsers:function(){return this.selectedUserIds.length?this.$http.post("/accesslevel/api/role_outusers/assign",{role_id:this.$route.params.id,users:this.selectedUserIds}):null}}},x=Object(h.a)(w,(function(){var e=this,t=e.$createElement,a=e._self._c||t;return a("div",{staticClass:"mb-base index-page",attrs:{id:"ag-grid-demo"}},[a("vx-card",[e.shouldShowToolbar?a("IndexToolbar",{attrs:{showCreateButton:!1,parent:this}}):e._e(),e._v(" "),a("ag-grid-vue",{ref:"agGridTable",staticClass:"ag-theme-material w-100 my-4 ag-grid-table",attrs:{gridOptions:e.gridOptions,columnDefs:e.columnDefs,defaultColDef:e.defaultColDef,rowSelection:"multiple",colResizeDefault:"shift",domLayout:"autoHeight",animateRows:!0,modules:e.modules,localeText:e.translations,cacheBlockSize:e.paginationData.limit,rowModelType:e.rowModelType,pagination:!0,paginationPageSize:e.paginationData.limit,suppressPaginationPanel:!0,frameworkComponents:e.frameworkComponents,enableRtl:e.$vs.rtl,overlayLoadingTemplate:e.__("loading")+"..."},on:{"grid-ready":e.onGridReady}}),e._v(" "),e.paginationData.totalPages>1?a("div",{staticClass:"pagination-wrap vs-pagination-primary"},[a("button",{staticClass:"vs-pagination--buttons mx-2",on:{click:e.gotoFirstPage}},[a("vs-icon",{attrs:{"icon-pack":"feather",icon:"icon-chevrons-right"}})],1),e._v(" "),a("vs-pagination",{staticClass:"pagination",attrs:{goto:"",total:e.paginationData.totalPages,max:e.paginationData.maxPageNumbers},on:{change:e.loadPage},model:{value:e.paginationData.currentPage,callback:function(t){e.$set(e.paginationData,"currentPage",t)},expression:"paginationData.currentPage"}}),e._v(" "),a("button",{staticClass:"vs-pagination--buttons mx-2",on:{click:e.gotoLastPage}},[a("vs-icon",{attrs:{"icon-pack":"feather",icon:"icon-chevrons-left"}})],1)],1):e._e()],1)],1)}),[],!1,null,null,null);t.default=x.exports},785:function(e,t,a){"use strict";var n=window.Vue.extend({template:'\n    <td class="pr-6 align-middle block w-full">\n\t<span v-if="params.exposeRowId" class="row-id" :data-id="params.data.id"/>\n        <div class="inline-flex items-center justify-center w-full" >\n            <vx-tooltip v-for="(button, i) in params.buttons" v-if="!handleCallbackOrValue(button.disable)" :key="i" :text="handleCallbackOrValue(button.text)">\n\t\t<vs-button :href="isHref(button.link) && button.link" :to="button.link && button.link.call(getInstance())" @click="button.callback && button.callback.call(getInstance())" :color="handleCallbackOrValue(button.color)" type="relief" style="margin:0 0.2rem" size="small" v-bind="button.$attrs && button.$attrs"><i v-if="button.class || button.icon" :class="button.class ? handleCallbackOrValue(button.class) : \'far fa-lg fa-\'+handleCallbackOrValue(button.icon)"/></vs-button>\n\t</vx-tooltip>\n        </div>\n    </td>\n    ',data:function(){return{value:null}},methods:{getInstance:function(){return this},handleCallbackOrValue:function(e){return"function"==typeof e?e.call(this):e},isHref:function(e){return"function"==typeof e&&(e=e.call(this)),!!e&&("//"==(e=(e+"").trim().toLowerCase()).substr(0,2)||"www."==e.substr(0,4)||~e.indexOf("http:")||~e.indexOf("https:"))}}});t.a={data:function(){return{frameworkComponents:{tableActionsRenderer:n}}},mounted:function(){var e,t;e="\n\t    \t[dir] .vs-button.small:not(.includeIconOnly) { padding: 7px}\n\t    ",(t=window.document).head.appendChild(t.createElement("style")).innerHTML=e}}}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[76],{
+
+/***/ "../User/Resources/js/abpm_calculations/Index.vue":
+/*!********************************************************!*\
+  !*** ../User/Resources/js/abpm_calculations/Index.vue ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Index_vue_vue_type_template_id_3db7b090___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=3db7b090& */ "../User/Resources/js/abpm_calculations/Index.vue?vue&type=template&id=3db7b090&");
+/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "../User/Resources/js/abpm_calculations/Index.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Index_vue_vue_type_template_id_3db7b090___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Index_vue_vue_type_template_id_3db7b090___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "User/Resources/js/abpm_calculations/Index.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "../User/Resources/js/abpm_calculations/Index.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ../User/Resources/js/abpm_calculations/Index.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/abpm_calculations/Index.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "../User/Resources/js/abpm_calculations/Index.vue?vue&type=template&id=3db7b090&":
+/*!***************************************************************************************!*\
+  !*** ../User/Resources/js/abpm_calculations/Index.vue?vue&type=template&id=3db7b090& ***!
+  \***************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_3db7b090___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=template&id=3db7b090& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/abpm_calculations/Index.vue?vue&type=template&id=3db7b090&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_3db7b090___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_3db7b090___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./Resources/js/src/mixins/Sortable.js":
+/*!*********************************************!*\
+  !*** ./Resources/js/src/mixins/Sortable.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  computed: {
+    from: function from() {
+      return (this.paginationData.currentPage - 1) * this.paginationData.limit + 1;
+    }
+  },
+  methods: {
+    createSortParams: function createSortParams(request) {
+      var sorts = request.sortModel.map(function (sort) {
+        if (sort.sort == "asc") {
+          return sort.colId;
+        } else if (sort.sort == "desc") {
+          return "-".concat(sort.colId);
+        }
+      });
+
+      if (sorts.length > 0) {
+        return {
+          sort: sorts.join(",")
+        };
+      }
+
+      return {};
+    },
+    setSortQuery: function setSortQuery(sorts) {
+      if (_typeof(sorts) == "object") {
+        var query = _objectSpread(_objectSpread({}, this.$route.query), sorts);
+
+        if (new URLSearchParams(query).toString() == location.search.replace("?", "")) return;
+
+        try {
+          this.$router.push({
+            query: query
+          });
+        } catch (e) {}
+      }
+    }
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+      var query, sorts;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              query = _this.$route.query;
+
+              if (query.sort) {
+                sorts = [];
+                sorts = query.sort.split(",");
+                sorts = sorts.map(function (sort) {
+                  if (sort.indexOf("-") > -1) return {
+                    colId: sort.replace("-", ""),
+                    sort: "desc"
+                  };
+                  return {
+                    colId: sort,
+                    sort: "asc"
+                  };
+                });
+
+                _this.gridOptions.columnApi.applyColumnState({
+                  state: sorts
+                }); // this.gridApi.setSortModel(sorts)
+                // console.log(sorts,this.gridApi)
+
+              } // await this.getPaginationData();
+
+
+            case 2:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }))();
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/abpm_calculations/Index.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/abpm_calculations/Index.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _mixins_HasFilter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/mixins/HasFilter */ "./Resources/js/src/mixins/HasFilter.js");
+/* harmony import */ var _mixins_IndexPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/mixins/IndexPage */ "./Resources/js/src/mixins/IndexPage.js");
+/* harmony import */ var _mixins_Paginable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/mixins/Paginable */ "./Resources/js/src/mixins/Paginable.js");
+/* harmony import */ var _mixins_Sortable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/mixins/Sortable */ "./Resources/js/src/mixins/Sortable.js");
+/* harmony import */ var _mixins_InteractsWithQueryString__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/mixins/InteractsWithQueryString */ "./Resources/js/src/mixins/InteractsWithQueryString.js");
+/* harmony import */ var _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/components/aggrid-table/Formatters */ "./Resources/js/src/components/aggrid-table/Formatters.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mixins: [_mixins_HasFilter__WEBPACK_IMPORTED_MODULE_1__["default"], _mixins_IndexPage__WEBPACK_IMPORTED_MODULE_2__["default"], _mixins_Paginable__WEBPACK_IMPORTED_MODULE_3__["default"], _mixins_InteractsWithQueryString__WEBPACK_IMPORTED_MODULE_5__["default"], _mixins_Sortable__WEBPACK_IMPORTED_MODULE_4__["default"]],
+  data: function data() {
+    return {
+      searchQuery: "",
+      baseUrl: "/user/api/abpm_calculations",
+      model: "ABPMCalculation",
+      module: "User",
+      createButtonText: this.__("Create ABPMcalculation"),
+      createButtonLink: "/user/abpm_calculations/create",
+      printButtonLink: "/user/abpm_calculations/print",
+      columnDefs: [{
+        headerName: this.__("Row"),
+        width: 80,
+        minWidth: 80,
+        valueGetter: "node.rowIndex + 1",
+        valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_6__["default"].rowNumberFormatter
+      }, // {
+      //     headerName: this.__("Sys"),
+      //     field: "sys",
+      //     resizable: true,
+      //     filter: "agTextColumnFilter",
+      // },
+      // {
+      //     headerName: this.__("Dia"),
+      //     field: "dia",
+      //     resizable: true,
+      //     filter: "agTextColumnFilter",
+      // },
+      // {
+      //     headerName: this.__("Hr"),
+      //     field: "hr",
+      //     resizable: true,
+      //     filter: "agTextColumnFilter",
+      // },
+      {
+        headerName: this.__("patient"),
+        field: "patient.name",
+        resizable: true,
+        filter: false
+      }, {
+        headerName: this.__("Age"),
+        field: "patient.age",
+        resizable: true,
+        filter: false
+      }, {
+        headerName: this.__("Sex"),
+        field: "patient.sex",
+        valueFormatter: function valueFormatter(params) {
+          return params.value == 1 ? "Male" : "Female";
+        },
+        resizable: true,
+        filter: false
+      }, {
+        headerName: this.__("Created At"),
+        field: "created_at",
+        resizable: true,
+        valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_6__["default"].dateFormatter,
+        filter: "agTextColumnFilter"
+      }, {
+        headerName: this.__("user"),
+        field: "user.email",
+        resizable: true,
+        filter: false
+      }, {
+        headerName: this.__("Actions"),
+        field: "action",
+        filter: false,
+        cellRenderer: "tableActionsRenderer",
+        cellRendererParams: {
+          model: "ABPMcalculation",
+          baseRoutePath: "user/abpm_calculations",
+          modelPlural: "abpm_calculations",
+          baseApiPath: "/user/api",
+          showEditButton: false,
+          showDetailButton: false,
+          showDeleteButton: false,
+          buttons: [{
+            text: function text() {
+              return this.__("Show Result");
+            },
+            "class": "includeIcon includeIconOnly",
+            callback: function callback() {
+              var _this = this;
+
+              return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+                return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+                  while (1) {
+                    switch (_context.prev = _context.next) {
+                      case 0:
+                        location.href = "/user/abpm/result/".concat(_this.params.data.id);
+
+                      case 1:
+                      case "end":
+                        return _context.stop();
+                    }
+                  }
+                }, _callee);
+              }))();
+            },
+            color: "success",
+            icon: "eye"
+          }]
+        }
+      }],
+      items: []
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/abpm_calculations/Index.vue?vue&type=template&id=3db7b090&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/abpm_calculations/Index.vue?vue&type=template&id=3db7b090& ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "mb-base index-page", attrs: { id: "ag-grid-demo" } },
+    [
+      _c(
+        "vx-card",
+        [
+          _vm.shouldShowToolbar
+            ? _c("IndexToolbar", {
+                attrs: { showCreateButton: false, parent: this }
+              })
+            : _vm._e(),
+          _vm._v(" "),
+          _c("ag-grid-vue", {
+            ref: "agGridTable",
+            staticClass: "ag-theme-material w-100 my-4 ag-grid-table",
+            attrs: {
+              gridOptions: _vm.gridOptions,
+              columnDefs: _vm.columnDefs,
+              defaultColDef: _vm.defaultColDef,
+              rowSelection: "multiple",
+              colResizeDefault: "shift",
+              domLayout: "autoHeight",
+              animateRows: true,
+              modules: _vm.modules,
+              localeText: _vm.translations,
+              cacheBlockSize: _vm.paginationData.limit,
+              rowModelType: _vm.rowModelType,
+              pagination: true,
+              paginationPageSize: _vm.paginationData.limit,
+              suppressPaginationPanel: true,
+              frameworkComponents: _vm.frameworkComponents,
+              enableRtl: _vm.$vs.rtl,
+              overlayLoadingTemplate: _vm.__("loading") + "..."
+            },
+            on: { "grid-ready": _vm.onGridReady }
+          }),
+          _vm._v(" "),
+          _vm.paginationData.totalPages > 1
+            ? _c(
+                "div",
+                { staticClass: "pagination-wrap vs-pagination-primary" },
+                [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "vs-pagination--buttons mx-2",
+                      on: { click: _vm.gotoFirstPage }
+                    },
+                    [
+                      _c("vs-icon", {
+                        attrs: {
+                          "icon-pack": "feather",
+                          icon: "icon-chevrons-right"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("vs-pagination", {
+                    staticClass: "pagination",
+                    attrs: {
+                      goto: "",
+                      total: _vm.paginationData.totalPages,
+                      max: _vm.paginationData.maxPageNumbers
+                    },
+                    on: { change: _vm.loadPage },
+                    model: {
+                      value: _vm.paginationData.currentPage,
+                      callback: function($$v) {
+                        _vm.$set(_vm.paginationData, "currentPage", $$v)
+                      },
+                      expression: "paginationData.currentPage"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "vs-pagination--buttons mx-2",
+                      on: { click: _vm.gotoLastPage }
+                    },
+                    [
+                      _c("vs-icon", {
+                        attrs: {
+                          "icon-pack": "feather",
+                          icon: "icon-chevrons-left"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            : _vm._e()
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+}]);

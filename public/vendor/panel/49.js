@@ -1,1 +1,1411 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[49],{1016:function(t,e,n){"use strict";n(846)},1017:function(t,e,n){(t.exports=n(72)(!1)).push([t.i,'\n.share-network-list {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n    justify-content: center;\n    max-width: 1000px;\n    margin: auto;\n}\na[class^="share-network-"] i{\n    font-size: 1.2rem;\n    margin-right: 0.5rem;\n}\na[class^="share-network-"] .fah {\n    background-color: rgba(0, 0, 0, 0.2);\n    padding: 10px;\n    flex: 0 1 auto;\n}\na[class^="share-network-"] span {\n    padding: 0 10px;\n    flex: 1 1 0%;\n    font-weight: 500;\n}\n',""])},728:function(t,e,n){"use strict";n.r(e);var i=n(62),a=n.n(i),s=n(779),r=n(782),o=n(780),u=n(781),c=(n(778),n(792)),p=n.n(c),l=n(790);function h(t,e,n,i,a,s,r){try{var o=t[s](r),u=o.value}catch(t){return void n(t)}o.done?e(u):Promise.resolve(u).then(i,a)}Vue.use(p.a);var d={mixins:[s.a,r.a,o.a,u.a],data:function(){return{searchQuery:"",baseUrl:"/user/api/niffr_cases",model:"NIFFRCase",module:"User",createButtonText:this.__("Create NiFFR Case"),createButtonLink:"/user/niffr_cases/create",printButtonLink:"/user/niffr_cases/print",columnDefs:[{headerName:this.__("Physician"),field:"physician",resizable:!0,filter:"agTextColumnFilter"},{headerName:this.__("Patient"),field:"patient.name",resizable:!0,filter:"agTextColumnFilter"},{headerName:this.__("Age"),field:"patient.age",resizable:!0,filter:"agTextColumnFilter"},{headerName:this.__("Hospital"),field:"patient.hospital",resizable:!0,filter:"agTextColumnFilter"},{headerName:this.__("Created At"),field:"created_at",resizable:!0,valueFormatter:function(t){return t.data.created_at_fa},filter:"agDateColumnFilter",filterParams:{buttons:["apply"],suppressFilterButton:!0,suppressAndOrCondition:!0,defaultOption:"inRange",suppressMenu:!0,closeOnApply:!0,suppressFilterOptions:!0,type:"datetime"}},{headerName:this.__("Actions"),field:"action",filter:!1,minWidth:150,cellRenderer:"tableActionsRenderer",cellRendererParams:{model:"Niffrcase",baseRoutePath:"user/niffr_cases",modelPlural:"niffr_cases",baseApiPath:"/user/api",showEditButton:!1,buttons:[{text:function(){return this.__("Share to social media")},class:"includeIcon includeIconOnly",callback:function(){var t,e=this;return(t=a.a.mark((function t(){return a.a.wrap((function(t){for(;;)switch(t.prev=t.next){case 0:e.params.context.componentParent.sharePopupActive=!0,e.params.context.componentParent.selectedResource=e.params.data;case 2:case"end":return t.stop()}}),t)})),function(){var e=this,n=arguments;return new Promise((function(i,a){var s=t.apply(e,n);function r(t){h(s,i,a,r,o,"next",t)}function o(t){h(s,i,a,r,o,"throw",t)}r(void 0)}))})()},color:"success",icon:"share"}]}}],selectedResource:{},sharePopupActive:!1,title:"NIFFR Case Result",networks:[{network:"twitter",class:"vs-button vs-button-primary vs-button-relief text-white my-2 mx-1",hashtags:"vcathlab,ffr_ct_case",icon:"fab fa-twitter",text:"Share on twitter"},{network:"whatsapp",class:"vs-button vs-button-success vs-button-relief text-white my-2 mx-1",hashtags:"vcathlab,ffr_ct_case",icon:"fab fa-whatsapp",text:"Share on whatsapp"},{network:"linkedin",class:"vs-button vs-button-primary vs-button-relief text-white my-2 mx-1",hashtags:"vcathlab,ffr_ct_case",icon:"fab fa-linkedin",text:"Share on linkedin"},{network:"email",class:"vs-button vs-button-danger vs-button-relief text-white my-2 mx-1",hashtags:"vcathlab,ffr_ct_case",icon:"fa fa-envelope",text:"Share on email"},{network:"telegram",class:"vs-button vs-button-primary vs-button-relief text-white my-2 mx-1",hashtags:"vcathlab,ffr_ct_case",icon:"fab fa-telegram",text:"Share on telegram"}],items:[]}},computed:{shareLink:function(){return this.url(this.selectedResource.result_file)},description:function(){return Object.keys(this.selectedResource).length?"\nPatient: ".concat(this.selectedResource.patient.name,"\nAge: ").concat(this.selectedResource.patient.age,"\nSex: ").concat(this.selectedResource.patient.computed_sex,"\nHospital: ").concat(this.selectedResource.patient.hospital,"\nPhysician: ").concat(this.selectedResource.user.name,"\nResult: ").concat(this.url(this.selectedResource.result_file),"\nDate: ").concat(new Date(this.selectedResource.created_at).toLocaleDateString(),"\nTime: ").concat(new Date(this.selectedResource.created_at).toLocaleTimeString(),"\n                "):""}},methods:{onGridReady:function(t){t.api.setServerSideDatasource(new l.a(this)),this.columnDefs.length<8?this.gridApi.sizeColumnsToFit():this.gridOptions.columnApi.autoSizeAllColumns(),this.gridOptions.columnApi.applyColumnState({state:[{colId:"patient.hospital",sort:"desc"}],defaultState:{sort:null}})}}},f=(n(1016),n(53)),m=Object(f.a)(d,(function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"mb-base index-page",attrs:{id:"ag-grid-demo"}},[n("vx-card",[t.shouldShowToolbar?n("IndexToolbar",{attrs:{showPrintButton:!0,parent:this}}):t._e(),t._v(" "),n("ag-grid-vue",{ref:"agGridTable",staticClass:"ag-theme-material w-100 my-4 ag-grid-table",attrs:{gridOptions:t.gridOptions,columnDefs:t.columnDefs,defaultColDef:t.defaultColDef,rowSelection:"multiple",colResizeDefault:"shift",domLayout:"autoHeight",animateRows:!0,modules:t.modules,localeText:t.translations,cacheBlockSize:t.paginationData.limit,rowModelType:t.rowModelType,pagination:!0,paginationPageSize:t.paginationData.limit,suppressPaginationPanel:!0,frameworkComponents:t.frameworkComponents,enableRtl:t.$vs.rtl,overlayLoadingTemplate:t.__("loading")+"..."},on:{"grid-ready":t.onGridReady}}),t._v(" "),t.paginationData.totalPages>1?n("div",{staticClass:"pagination-wrap vs-pagination-primary"},[n("button",{staticClass:"vs-pagination--buttons mx-2",on:{click:t.gotoFirstPage}},[n("vs-icon",{attrs:{"icon-pack":"feather",icon:"icon-chevrons-right"}})],1),t._v(" "),n("vs-pagination",{staticClass:"pagination",attrs:{goto:"",total:t.paginationData.totalPages,max:t.paginationData.maxPageNumbers},on:{change:t.loadPage},model:{value:t.paginationData.currentPage,callback:function(e){t.$set(t.paginationData,"currentPage",e)},expression:"paginationData.currentPage"}}),t._v(" "),n("button",{staticClass:"vs-pagination--buttons mx-2",on:{click:t.gotoLastPage}},[n("vs-icon",{attrs:{"icon-pack":"feather",icon:"icon-chevrons-left"}})],1)],1):t._e()],1),t._v(" "),n("vs-popup",{staticClass:"holamundo",attrs:{title:"ُShare to social",active:t.sharePopupActive},on:{"update:active":function(e){t.sharePopupActive=e}}},[n("div",{staticClass:"share-network-list vs-row"},t._l(t.networks,(function(e,i){return n("ShareNetwork",{key:i,class:e.class,attrs:{url:"telegram"==e.network?t.shareLink:"",quote:"",network:e.network,title:t.title,description:t.description,hashtags:e.hashtags}},[n("i",{class:e.icon}),t._v("\n                "+t._s(e.text)+"\n            ")])})),1)])],1)}),[],!1,null,null,null);e.default=m.exports},792:function(t,e,n){"undefined"!=typeof self&&self,t.exports=function(t){var e={};function n(i){if(e[i])return e[i].exports;var a=e[i]={i:i,l:!1,exports:{}};return t[i].call(a.exports,a,a.exports,n),a.l=!0,a.exports}return n.m=t,n.c=e,n.d=function(t,e,i){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:i})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var i=Object.create(null);if(n.r(i),Object.defineProperty(i,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var a in t)n.d(i,a,function(e){return t[e]}.bind(null,a));return i},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=0)}([function(t,e,n){t.exports=n(1)},function(t,e,n){"use strict";n.r(e),n.d(e,"ShareNetwork",(function(){return s}));var i={baidu:"http://cang.baidu.com/do/add?iu=@u&it=@t",buffer:"https://bufferapp.com/add?text=@t&url=@u",email:"mailto:?subject=@t&body=@u%0D%0A@d",evernote:"https://www.evernote.com/clip.action?url=@u&title=@t",facebook:"https://www.facebook.com/sharer/sharer.php?u=@u&title=@t&description=@d&quote=@q&hashtag=@h",flipboard:"https://share.flipboard.com/bookmarklet/popout?v=2&url=@u&title=@t",hackernews:"https://news.ycombinator.com/submitlink?u=@u&t=@t",instapaper:"http://www.instapaper.com/edit?url=@u&title=@t&description=@d",line:"http://line.me/R/msg/text/?@t%0D%0A@u%0D%0A@d",linkedin:"https://www.linkedin.com/sharing/share-offsite/?url=@u",odnoklassniki:"https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=@u&st.comments=@t",pinterest:"https://pinterest.com/pin/create/button/?url=@u&media=@m&description=@t",pocket:"https://getpocket.com/save?url=@u&title=@t",quora:"https://www.quora.com/share?url=@u&title=@t",reddit:"https://www.reddit.com/submit?url=@u&title=@t",skype:"https://web.skype.com/share?url=@t%0D%0A@u%0D%0A@d",sms:"sms:?body=@t%0D%0A@u%0D%0A@d",stumbleupon:"https://www.stumbleupon.com/submit?url=@u&title=@t",telegram:"https://t.me/share/url?url=@u&text=@t%0D%0A@d",tumblr:"https://www.tumblr.com/share/link?url=@u&name=@t&description=@d",twitter:"https://twitter.com/intent/tweet?text=@t&url=@u&hashtags=@h@tu",viber:"viber://forward?text=@t%0D%0A@u%0D%0A@d",vk:"https://vk.com/share.php?url=@u&title=@t&description=@d&image=@m&noparse=true",weibo:"http://service.weibo.com/share/share.php?url=@u&title=@t&pic=@m",whatsapp:"https://api.whatsapp.com/send?text=@t%0D%0A@u%0D%0A@d",wordpress:"https://wordpress.com/press-this.php?u=@u&t=@t&s=@d&i=@m",xing:"https://www.xing.com/social/share/spi?op=share&url=@u&title=@t",yammer:"https://www.yammer.com/messages/new?login=true&status=@t%0D%0A@u%0D%0A@d"},a="undefined"!=typeof window?window:null,s={name:"ShareNetwork",props:{network:{type:String,required:!0},url:{type:String,required:!0},title:{type:String,required:!0},description:{type:String,default:""},quote:{type:String,default:""},hashtags:{type:String,default:""},twitterUser:{type:String,default:""},media:{type:String,default:""},tag:{type:String,default:"a"},popup:{type:Object,default:function(){return{width:626,height:436}}}},data:function(){return{popupTop:0,popupLeft:0,popupWindow:void 0,popupInterval:null}},computed:{networks:function(){return this.$SocialSharing?this.$SocialSharing.options.networks:i},key:function(){return this.network.toLowerCase()},rawLink:function(){var t=navigator.userAgent.toLowerCase();return"sms"===this.key&&(t.indexOf("iphone")>-1||t.indexOf("ipad")>-1)?this.networks[this.key].replace(":?",":&"):this.networks[this.key]},shareLink:function(){var t=this.rawLink;return"twitter"===this.key&&(this.hashtags.length||(t=t.replace("&hashtags=@h","")),this.twitterUser.length||(t=t.replace("@tu",""))),t.replace(/@tu/g,"&via="+encodeURIComponent(this.twitterUser)).replace(/@u/g,encodeURIComponent(this.url)).replace(/@t/g,encodeURIComponent(this.title)).replace(/@d/g,encodeURIComponent(this.description)).replace(/@q/g,encodeURIComponent(this.quote)).replace(/@h/g,this.encodedHashtags).replace(/@m/g,encodeURIComponent(this.media))},encodedHashtags:function(){return"facebook"===this.key&&this.hashtags.length?"%23"+this.hashtags.split(",")[0]:this.hashtags}},render:function(t){var e=this;if(!this.networks.hasOwnProperty(this.key))throw new Error("Network "+this.key+" does not exist");var n={class:"share-network-"+this.key,on:{click:function(){return e["http"===e.rawLink.substring(0,4)?"share":"touch"]()}}};return"a"===this.tag&&(n.attrs={href:"#"}),t(this.tag,n,this.$slots.default)},methods:{resizePopup:function(){var t=a.innerWidth||document.documentElement.clientWidth||a.screenX,e=a.innerHeight||document.documentElement.clientHeight||a.screenY,n=t/a.screen.availWidth;this.popupLeft=(t-this.popup.width)/2/n+(void 0!==a.screenLeft?a.screenLeft:a.screenX),this.popupTop=(e-this.popup.height)/2/n+(void 0!==a.screenTop?a.screenTop:a.screenY)},share:function(){var t=this;this.resizePopup(),this.popupWindow&&this.popupInterval&&(clearInterval(this.popupInterval),this.popupWindow.close(),this.emit("change")),this.popupWindow=a.open(this.shareLink,"sharer-"+this.key,",height="+this.popup.height+",width="+this.popup.width+",left="+this.popupLeft+",top="+this.popupTop+",screenX="+this.popupLeft+",screenY="+this.popupTop),this.popupWindow&&(this.popupWindow.focus(),this.popupInterval=setInterval((function(){t.popupWindow&&!t.popupWindow.closed||(clearInterval(t.popupInterval),t.popupWindow=null,t.emit("close"))}),500),this.emit("open"))},touch:function(){window.open(this.shareLink,"_blank"),this.emit("open")},emit:function(t){this.$root.$emit("share_network_"+t,this.key,this.url),this.$emit(t,this.key,this.url)}}};e.default={install:function(t,e){t.component(s.name,s),t.prototype.$SocialSharing={options:{networks:e&&e.hasOwnProperty("networks")?Object.assign(i,e.networks):i}}}}}])},846:function(t,e,n){var i=n(1017);"string"==typeof i&&(i=[[t.i,i,""]]);var a={hmr:!0,transform:void 0,insertInto:void 0};n(73)(i,a);i.locals&&(t.exports=i.locals)}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[49],{
+
+/***/ "../User/Resources/js/BodyAnalyzer.vue":
+/*!*********************************************!*\
+  !*** ../User/Resources/js/BodyAnalyzer.vue ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _BodyAnalyzer_vue_vue_type_template_id_c87bf924___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BodyAnalyzer.vue?vue&type=template&id=c87bf924& */ "../User/Resources/js/BodyAnalyzer.vue?vue&type=template&id=c87bf924&");
+/* harmony import */ var _BodyAnalyzer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BodyAnalyzer.vue?vue&type=script&lang=js& */ "../User/Resources/js/BodyAnalyzer.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _BodyAnalyzer_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BodyAnalyzer.vue?vue&type=style&index=0&lang=css& */ "../User/Resources/js/BodyAnalyzer.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _BodyAnalyzer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _BodyAnalyzer_vue_vue_type_template_id_c87bf924___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _BodyAnalyzer_vue_vue_type_template_id_c87bf924___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "User/Resources/js/BodyAnalyzer.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "../User/Resources/js/BodyAnalyzer.vue?vue&type=script&lang=js&":
+/*!**********************************************************************!*\
+  !*** ../User/Resources/js/BodyAnalyzer.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_BodyAnalyzer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./BodyAnalyzer.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/BodyAnalyzer.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_BodyAnalyzer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "../User/Resources/js/BodyAnalyzer.vue?vue&type=style&index=0&lang=css&":
+/*!******************************************************************************!*\
+  !*** ../User/Resources/js/BodyAnalyzer.vue?vue&type=style&index=0&lang=css& ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_BodyAnalyzer_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../Panel/node_modules/style-loader!../../../Panel/node_modules/css-loader??ref--5-1!../../../Panel/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../Panel/node_modules/postcss-loader/src??ref--5-2!../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./BodyAnalyzer.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/BodyAnalyzer.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_BodyAnalyzer_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_BodyAnalyzer_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_BodyAnalyzer_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_BodyAnalyzer_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "../User/Resources/js/BodyAnalyzer.vue?vue&type=template&id=c87bf924&":
+/*!****************************************************************************!*\
+  !*** ../User/Resources/js/BodyAnalyzer.vue?vue&type=template&id=c87bf924& ***!
+  \****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_BodyAnalyzer_vue_vue_type_template_id_c87bf924___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./BodyAnalyzer.vue?vue&type=template&id=c87bf924& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/BodyAnalyzer.vue?vue&type=template&id=c87bf924&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_BodyAnalyzer_vue_vue_type_template_id_c87bf924___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_BodyAnalyzer_vue_vue_type_template_id_c87bf924___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/BodyAnalyzer.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/BodyAnalyzer.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Form */ "./Resources/js/src/Form.js");
+/* harmony import */ var _mixins_HasForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/mixins/HasForm */ "./Resources/js/src/mixins/HasForm.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {},
+  mixins: [_mixins_HasForm__WEBPACK_IMPORTED_MODULE_2__["default"]],
+  data: function data() {
+    return {
+      form: {
+        Waist: "",
+        SMM: "",
+        VFP: "",
+        Hip: "",
+        BFMP: "",
+        Age: "",
+        Height: 180,
+        Weight: 80,
+        patient_id: 0,
+        Sex: 1
+      },
+      patient: {
+        name: "",
+        code: "1136"
+      },
+      result: {},
+      body: {},
+      downloadBtnKey: 0,
+      patientResult: {},
+      model: "Modules\\User\\Models\\CtCase",
+      locale: Iracode.$i18n.locale,
+      inputs: {
+        Weight: {
+          type: "vs-input"
+        },
+        Height: {
+          type: "vs-input"
+        },
+        Waist: {
+          type: "vs-input"
+        },
+        SMM: {
+          type: "vs-input"
+        },
+        VFP: {
+          type: "vs-input"
+        },
+        Hip: {
+          type: "vs-input"
+        },
+        BFMP: {
+          type: "vs-input"
+        },
+        name: {
+          type: "vs-input"
+        },
+        physician: {
+          type: "vs-input"
+        },
+        Age: {
+          type: "vs-input"
+        },
+        Sex: {
+          type: "vs-radio"
+        },
+        code: {
+          type: "vs-input"
+        },
+        file: {
+          type: "vs-input"
+        },
+        patient_id: {
+          field_type: "text",
+          type: "vs-input",
+          options: [],
+          selected: {},
+          foreign_key: "patient_id",
+          relation_name: "patient",
+          searchUrl: "/user/api/patients",
+          titleField: "name"
+        }
+      }
+    };
+  },
+  props: {//
+  },
+  computed: {//
+  },
+  created: function created() {//
+  },
+  mounted: function mounted() {//
+  },
+  methods: {
+    calculate: function calculate() {
+      var _this = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var patientForm, _yield$_this$$http$po, patient, _yield$_this$$http$po2, data;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _this.body = {};
+                patientForm = _this.patient;
+                patientForm.age = _this.form.Age;
+                patientForm.sex = _this.form.Sex;
+                patientForm.hospital = ""; // Iracode.loading();
+
+                _context.next = 7;
+                return _this.$http.post("/user/api/patients", patientForm);
+
+              case 7:
+                _yield$_this$$http$po = _context.sent;
+                patient = _yield$_this$$http$po.data;
+                _this.patientResult = patient;
+                _this.form.patient_id = patient.data.id;
+                _context.next = 13;
+                return _this.$http.post("/user/api/body_composition", _this.form);
+
+              case 13:
+                _yield$_this$$http$po2 = _context.sent;
+                data = _yield$_this$$http$po2.data;
+                // Iracode.close_loading();
+                _this.body = data.data;
+                setTimeout(function () {
+                  _this.result.data = data;
+
+                  _this.$forceUpdate();
+
+                  _this.downloadBtnKey++;
+                }, 500);
+
+              case 17:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
+    },
+    onSubmit: function onSubmit(action) {
+      var _this2 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+        var data;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return _this2.form.post("/user/api/ct_cases");
+
+              case 2:
+                data = _context2.sent;
+
+                if (data.success) {
+                  Iracode.success(_this2.__("Ctcase Created Successfully"));
+                  if (action == "close") _this2.$router.push("/user/ct_cases");else _this2.form.reset();
+                }
+
+              case 4:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }))();
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/BodyAnalyzer.vue?vue&type=style&index=0&lang=css&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/BodyAnalyzer.vue?vue&type=style&index=0&lang=css& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../Panel/node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.gray {\n    color: #b5b2b2;\n    margin: 1.5rem 0;\n}\n.styled-fieldset {\n    padding: 2rem 1rem;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/BodyAnalyzer.vue?vue&type=style&index=0&lang=css&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--5-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/BodyAnalyzer.vue?vue&type=style&index=0&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../Panel/node_modules/css-loader??ref--5-1!../../../Panel/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../Panel/node_modules/postcss-loader/src??ref--5-2!../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./BodyAnalyzer.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/BodyAnalyzer.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../Panel/node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/BodyAnalyzer.vue?vue&type=template&id=c87bf924&":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/BodyAnalyzer.vue?vue&type=template&id=c87bf924& ***!
+  \**********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "mb-base" },
+    [
+      _c("vx-card", [
+        _c(
+          "h2",
+          {
+            staticStyle: {
+              "text-align": "center",
+              padding: "2rem",
+              border: "1px solid #000"
+            }
+          },
+          [_vm._v("Body Composition")]
+        ),
+        _vm._v(" "),
+        _c("form", { on: { submit: _vm.onSubmit } }, [
+          _c(
+            "div",
+            [
+              _c("h4", { staticClass: "gray" }, [
+                _vm._v("Patient Information:")
+              ]),
+              _vm._v(" "),
+              _c(
+                "vs-row",
+                {
+                  staticClass: "mb-6 m-0",
+                  attrs: { "vs-type": "flex", "vs-w": "12" }
+                },
+                [
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "4",
+                        "vs-sm": "6",
+                        "vs-xs": "12"
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: "flex text-left" }, [
+                        _c("span", [_vm._v(_vm._s(_vm.__("Name")))]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "ml-1 text-red" }, [
+                          _vm._v("*")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c(_vm.inputs.name.type, {
+                        tag: "component",
+                        staticStyle: { width: "250px", "margin-left": "1rem" },
+                        attrs: {
+                          danger: _vm.hasValidationError("name"),
+                          "danger-text": _vm.validationError("name"),
+                          name: "name",
+                          type: "text"
+                        },
+                        model: {
+                          value: _vm.patient.name,
+                          callback: function($$v) {
+                            _vm.$set(_vm.patient, "name", $$v)
+                          },
+                          expression: "patient.name"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "2",
+                        "vs-sm": "6",
+                        "vs-xs": "12"
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: "flex text-left" }, [
+                        _c("span", [_vm._v(_vm._s(_vm.__("Code")))]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "ml-1 text-red" }, [
+                          _vm._v("*")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c(_vm.inputs.code.type, {
+                        tag: "component",
+                        staticStyle: { width: "120px", "margin-left": "1rem" },
+                        attrs: {
+                          danger: _vm.hasValidationError("code"),
+                          "danger-text": _vm.validationError("code"),
+                          name: "code",
+                          type: "text"
+                        },
+                        model: {
+                          value: _vm.patient.code,
+                          callback: function($$v) {
+                            _vm.$set(_vm.patient, "code", $$v)
+                          },
+                          expression: "patient.code"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "3",
+                        "vs-sm": "6",
+                        "vs-xs": "6"
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: "flex text-left" }, [
+                        _c("span", [_vm._v(_vm._s(_vm.__("Age")))]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "ml-1 text-red" }, [
+                          _vm._v("*")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c(_vm.inputs.Age.type, {
+                        tag: "component",
+                        staticStyle: { width: "80px", "margin-left": "1rem" },
+                        attrs: {
+                          danger: _vm.hasValidationError("Age"),
+                          "danger-text": _vm.validationError("Age"),
+                          name: "Age",
+                          type: "number"
+                        },
+                        model: {
+                          value: _vm.form.Age,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "Age", $$v)
+                          },
+                          expression: "form.Age"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "3",
+                        "vs-sm": "6",
+                        "vs-xs": "12"
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: "flex text-left" }, [
+                        _c("span", [_vm._v(_vm._s(_vm.__("Sex")))]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "ml-1 text-red" }, [
+                          _vm._v("*")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticStyle: {
+                            display: "flex",
+                            "justify-content": "space-around",
+                            width: "100%",
+                            "margin-top": "0.5rem",
+                            "margin-left": "1.5rem"
+                          }
+                        },
+                        [
+                          _c(
+                            "vs-radio",
+                            {
+                              attrs: { "vs-name": "Sex", "vs-value": "1" },
+                              model: {
+                                value: _vm.form.Sex,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "Sex", $$v)
+                                },
+                                expression: "form.Sex"
+                              }
+                            },
+                            [_vm._v("Male")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-radio",
+                            {
+                              staticClass: "ml-4",
+                              attrs: { "vs-name": "Sex", "vs-value": "0" },
+                              model: {
+                                value: _vm.form.Sex,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "Sex", $$v)
+                                },
+                                expression: "form.Sex"
+                              }
+                            },
+                            [_vm._v("Female")]
+                          )
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            [
+              _c(
+                "vs-row",
+                {
+                  staticClass: "mb-6 m-0",
+                  attrs: { "vs-type": "flex", "vs-w": "12" }
+                },
+                [
+                  _c(
+                    "vs-col",
+                    { attrs: { "vs-lg": "7", "vs-sm": "7", "vs-xs": "7" } },
+                    [
+                      _c("h4", { staticClass: "gray" }, [
+                        _vm._v("Anthropometry Parameters")
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "vs-row",
+                        {
+                          staticClass: "mb-6 m-0",
+                          attrs: { "vs-type": "flex", "vs-w": "12" }
+                        },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "6",
+                                "vs-sm": "6",
+                                "vs-xs": "12"
+                              }
+                            },
+                            [
+                              _c("div", { staticClass: "flex text-left" }, [
+                                _c("span", [_vm._v(_vm._s(_vm.__("Weight")))]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "ml-1 text-red" }, [
+                                  _vm._v("*")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "flex",
+                                  staticStyle: { "align-items": "center" }
+                                },
+                                [
+                                  _c(_vm.inputs.Weight.type, {
+                                    tag: "component",
+                                    staticStyle: {
+                                      width: "100px",
+                                      "margin-left": "1rem"
+                                    },
+                                    attrs: {
+                                      danger: _vm.hasValidationError("Weight"),
+                                      "danger-text": _vm.validationError(
+                                        "Weight"
+                                      ),
+                                      name: "Weight",
+                                      type: "text"
+                                    },
+                                    model: {
+                                      value: _vm.form.Weight,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "Weight", $$v)
+                                      },
+                                      expression: "form.Weight"
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "ml-2" }, [
+                                    _vm._v(
+                                      "\n                                        kg\n                                    "
+                                    )
+                                  ])
+                                ],
+                                1
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "6",
+                                "vs-sm": "6",
+                                "vs-xs": "12"
+                              }
+                            },
+                            [
+                              _c("div", { staticClass: "flex text-left" }, [
+                                _c("span", [_vm._v(_vm._s(_vm.__("Height")))]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "ml-1 text-red" }, [
+                                  _vm._v("*")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "flex",
+                                  staticStyle: { "align-items": "center" }
+                                },
+                                [
+                                  _c(_vm.inputs.Height.type, {
+                                    tag: "component",
+                                    staticStyle: {
+                                      width: "100px",
+                                      "margin-left": "1rem"
+                                    },
+                                    attrs: {
+                                      danger: _vm.hasValidationError("Height"),
+                                      "danger-text": _vm.validationError(
+                                        "Height"
+                                      ),
+                                      name: "Height",
+                                      type: "text"
+                                    },
+                                    model: {
+                                      value: _vm.form.Height,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "Height", $$v)
+                                      },
+                                      expression: "form.Height"
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "ml-2" }, [
+                                    _vm._v(
+                                      "\n                                        cm\n                                    "
+                                    )
+                                  ])
+                                ],
+                                1
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "vs-row",
+                        {
+                          staticClass: "mb-6 m-0",
+                          attrs: { "vs-type": "flex", "vs-w": "12" }
+                        },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "6",
+                                "vs-sm": "6",
+                                "vs-xs": "12"
+                              }
+                            },
+                            [
+                              _c("div", { staticClass: "flex text-left" }, [
+                                _c("span", [_vm._v(_vm._s(_vm.__("Waist")))]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "ml-1 text-red" }, [
+                                  _vm._v("*")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "flex",
+                                  staticStyle: { "align-items": "center" }
+                                },
+                                [
+                                  _c(_vm.inputs.Waist.type, {
+                                    tag: "component",
+                                    staticStyle: {
+                                      width: "100px",
+                                      "margin-left": "1rem"
+                                    },
+                                    attrs: {
+                                      danger: _vm.hasValidationError("Waist"),
+                                      "danger-text": _vm.validationError(
+                                        "Waist"
+                                      ),
+                                      name: "Waist",
+                                      type: "text"
+                                    },
+                                    model: {
+                                      value: _vm.form.Waist,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "Waist", $$v)
+                                      },
+                                      expression: "form.Waist"
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "ml-2" }, [
+                                    _vm._v(
+                                      "\n                                        cm\n                                    "
+                                    )
+                                  ])
+                                ],
+                                1
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "6",
+                                "vs-sm": "6",
+                                "vs-xs": "12"
+                              }
+                            },
+                            [
+                              _c("div", { staticClass: "flex text-left" }, [
+                                _c("span", [_vm._v(_vm._s(_vm.__("Hip")))]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "ml-1 text-red" }, [
+                                  _vm._v("*")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "flex",
+                                  staticStyle: { "align-items": "center" }
+                                },
+                                [
+                                  _c(_vm.inputs.Hip.type, {
+                                    tag: "component",
+                                    staticStyle: {
+                                      width: "100px",
+                                      "margin-left": "1rem"
+                                    },
+                                    attrs: {
+                                      danger: _vm.hasValidationError("Hip"),
+                                      "danger-text": _vm.validationError("Hip"),
+                                      name: "Hip",
+                                      type: "text"
+                                    },
+                                    model: {
+                                      value: _vm.form.Hip,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "Hip", $$v)
+                                      },
+                                      expression: "form.Hip"
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "ml-2" }, [
+                                    _vm._v(
+                                      "\n                                        cm\n                                    "
+                                    )
+                                  ])
+                                ],
+                                1
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "vs-row",
+                        {
+                          staticClass: "mb-6 m-0",
+                          attrs: { "vs-type": "flex", "vs-w": "12" }
+                        },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "12",
+                                "vs-sm": "12",
+                                "vs-xs": "12"
+                              }
+                            },
+                            [
+                              _c("div", { staticClass: "flex text-left" }, [
+                                _c("span", [_vm._v(_vm._s(_vm.__("BFMP")))]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "ml-1 text-red" }, [
+                                  _vm._v("*")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "flex",
+                                  staticStyle: { "align-items": "center" }
+                                },
+                                [
+                                  _c(_vm.inputs.BFMP.type, {
+                                    tag: "component",
+                                    staticStyle: {
+                                      width: "100px",
+                                      "margin-left": "1rem"
+                                    },
+                                    attrs: {
+                                      danger: _vm.hasValidationError("BFMP"),
+                                      "danger-text": _vm.validationError(
+                                        "BFMP"
+                                      ),
+                                      name: "BFMP",
+                                      type: "text"
+                                    },
+                                    model: {
+                                      value: _vm.form.BFMP,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "BFMP", $$v)
+                                      },
+                                      expression: "form.BFMP"
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "ml-2" }, [
+                                    _vm._v(
+                                      "\n                                        %\n                                    "
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "ml-2" }, [
+                                    _vm._v(
+                                      "\n                                        Body Fat Percentage\n                                    "
+                                    )
+                                  ])
+                                ],
+                                1
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "vs-row",
+                        {
+                          staticClass: "mb-6 m-0",
+                          attrs: { "vs-type": "flex", "vs-w": "12" }
+                        },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "12",
+                                "vs-sm": "12",
+                                "vs-xs": "12"
+                              }
+                            },
+                            [
+                              _c("div", { staticClass: "flex text-left" }, [
+                                _c("span", [_vm._v(_vm._s(_vm.__("SMM")))]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "ml-1 text-red" }, [
+                                  _vm._v("*")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "flex",
+                                  staticStyle: { "align-items": "center" }
+                                },
+                                [
+                                  _c(_vm.inputs.SMM.type, {
+                                    tag: "component",
+                                    staticStyle: {
+                                      width: "100px",
+                                      "margin-left": "1rem"
+                                    },
+                                    attrs: {
+                                      danger: _vm.hasValidationError("SMM"),
+                                      "danger-text": _vm.validationError("SMM"),
+                                      name: "SMM",
+                                      type: "text"
+                                    },
+                                    model: {
+                                      value: _vm.form.SMM,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "SMM", $$v)
+                                      },
+                                      expression: "form.SMM"
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "ml-2" }, [
+                                    _vm._v(
+                                      "\n                                        %\n                                    "
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "ml-2" }, [
+                                    _vm._v(
+                                      "\n                                        Skeletal Muscle Mass\n                                    "
+                                    )
+                                  ])
+                                ],
+                                1
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "vs-row",
+                        {
+                          staticClass: "mb-6 m-0",
+                          attrs: { "vs-type": "flex", "vs-w": "12" }
+                        },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "12",
+                                "vs-sm": "12",
+                                "vs-xs": "12"
+                              }
+                            },
+                            [
+                              _c("div", { staticClass: "flex text-left" }, [
+                                _c("span", [_vm._v(_vm._s(_vm.__("VFP")))]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "ml-1 text-red" }, [
+                                  _vm._v("*")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "flex",
+                                  staticStyle: { "align-items": "center" }
+                                },
+                                [
+                                  _c(_vm.inputs.VFP.type, {
+                                    tag: "component",
+                                    staticStyle: {
+                                      width: "100px",
+                                      "margin-left": "1rem"
+                                    },
+                                    attrs: {
+                                      danger: _vm.hasValidationError("VFP"),
+                                      "danger-text": _vm.validationError("VFP"),
+                                      name: "VFP",
+                                      type: "text"
+                                    },
+                                    model: {
+                                      value: _vm.form.VFP,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "VFP", $$v)
+                                      },
+                                      expression: "form.VFP"
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "ml-2" }, [
+                                    _vm._v(
+                                      "\n                                        %\n                                    "
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "ml-2" }, [
+                                    _vm._v(
+                                      "\n                                        Visceral Fat\n                                    "
+                                    )
+                                  ])
+                                ],
+                                1
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("vs-col", { attrs: { "vs-lg": "5" } }, [
+                    _c("img", {
+                      staticStyle: { width: "400px" },
+                      attrs: { src: "/images/body-outline.jpg", alt: "" }
+                    })
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("div", [
+            _c(
+              "div",
+              {
+                staticClass: "flex align-items-center justify-content-center",
+                staticStyle: { "justify-content": "center" }
+              },
+              [
+                _c(
+                  "vs-button",
+                  {
+                    staticClass: "mr-3 mb-2",
+                    staticStyle: { "font-size": "20px" },
+                    attrs: { color: "success" },
+                    on: { click: _vm.calculate }
+                  },
+                  [_vm._v(_vm._s(_vm.__("Calculate")))]
+                ),
+                _vm._v(" "),
+                _vm.body.link
+                  ? _c("div", { staticClass: "mt-2" }, [
+                      _c(
+                        "a",
+                        {
+                          key: _vm.downloadBtnKey,
+                          staticClass:
+                            "mr-3  vs-component vs-button vs-button-success vs-button-filled download-btn",
+                          staticStyle: { "font-size": "20px" },
+                          attrs: {
+                            target: "_blank",
+                            rel: "noopener",
+                            href: _vm.body.link
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                            " +
+                              _vm._s(_vm.__("Export PDF")) +
+                              "\n                        "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        {
+                          key: _vm.downloadBtnKey,
+                          staticClass:
+                            "mr-3  vs-component vs-button vs-button-success vs-button-filled download-btn",
+                          staticStyle: { "font-size": "20px" },
+                          attrs: {
+                            target: "_blank",
+                            rel: "noopener",
+                            href: _vm.body.word_link
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                            " +
+                              _vm._s(_vm.__("Export Word")) +
+                              "\n                        "
+                          )
+                        ]
+                      )
+                    ])
+                  : _vm._e()
+              ],
+              1
+            )
+          ])
+        ])
+      ])
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+}]);

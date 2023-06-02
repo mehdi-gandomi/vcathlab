@@ -1,1 +1,331 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[20],{1063:function(t,e,s){"use strict";s.r(e);var a=s(62),n=s.n(a);s(774);function r(t,e,s,a,n,r,i){try{var l=t[r](i),o=l.value}catch(t){return void s(t)}l.done?e(o):Promise.resolve(o).then(a,n)}function i(t){return function(){var e=this,s=arguments;return new Promise((function(a,n){var i=t.apply(e,s);function l(t){r(i,a,n,l,o,"next",t)}function o(t){r(i,a,n,l,o,"throw",t)}l(void 0)}))}}function l(t,e,s){return e in t?Object.defineProperty(t,e,{value:s,enumerable:!0,configurable:!0,writable:!0}):t[e]=s,t}var o={components:{},mixins:[s(775).a],data:function(){var t;return{form:(t={HbA1C:"",patient_id:"",LDL_cholesterol:"",HDL_cholesterol:"",Age:"",SBP:"",Triglycerides:"",DBP:"",LeftAnklebrachialIndex:"",RightAnklebrachialIndex:"",Heigth:"",Weigth:""},l(t,"patient_id",0),l(t,"Sex",1),l(t,"Smoker",0),l(t,"TBP",0),l(t,"MI",0),l(t,"Diabetes",0),l(t,"FH",0),l(t,"THL",0),t),patient:{name:"",code:""},result:{PWV:"",ASI:""},model:"Modules\\User\\Models\\CtCase",locale:Iracode.$i18n.locale,inputs:{name:{type:"vs-input"},physician:{type:"vs-input"},Age:{type:"vs-input"},Sex:{type:"vs-radio"},code:{type:"vs-input"},file:{type:"vs-input"},patient_id:{field_type:"relation",options:[],selected:{},foreign_key:"patient_id",relation_name:"patient",searchUrl:"/user/api/patients",titleField:"name"},Smoker:{type:"vs-radio"},TBP:{type:"vs-radio"},MI:{type:"vs-radio"},Diabetes:{type:"vs-radio"},FH:{type:"vs-radio"},THL:{type:"vs-radio"},HbA1C:{type:"vs-input"},LDL_cholesterol:{type:"vs-input"},HDL_cholesterol:{type:"vs-input"},SBP:{type:"vs-input"},Triglycerides:{type:"vs-input"},DBP:{type:"vs-input"},LeftAnklebrachialIndex:{type:"vs-input"},RightAnklebrachialIndex:{type:"vs-input"},Heigth:{type:"vs-input"},Weigth:{type:"vs-input"}}}},props:{},computed:{},created:function(){},mounted:function(){},methods:{calculate:function(){var t=this;return i(n.a.mark((function e(){var s,a,r,i,l,o,c,v,m,p,d,f,u,_,x,g,h,y,b,k,C,S,w,H,A,P,L,I,D,T,M,$,E,B,R,j,F,O,V,W,N;return n.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return s=t.form,a=s.HbA1C,r=s.LDL_cholesterol,i=s.HDL_cholesterol,l=s.Age,o=s.SBP,c=s.Triglycerides,v=s.DBP,m=s.LeftAnklebrachialIndex,p=s.RightAnklebrachialIndex,s.Heigth,d=s.Weigth,f=s.Sex,u=s.Smoker,_=s.TBP,x=s.MI,g=s.Diabetes,h=s.FH,y=s.THL,k=(m+p)/2,C=.0455*l+.7496*f-.5055+.5168*g+.4732*u+.0053*(b=r+i+c/5)-.014*i+.2473*y+.0085*o+.3381*_+.4522*h,S=100*(1-Math.pow(.99963,Math.exp(C))),w=.0455*l+.7496*f-.5055+.5168*g+0+.795-.77+.2473+1.02+.3381+.4522*h,100*(1-Math.pow(.99963,Math.exp(w))),H=.0799*l+3.137*Math.log(o)+.18*Math.log(.1)+1.382*Math.log(b),A=-1.172*Math.log(i)+.134*a+.818*u+.438*x,P=H+A,L=100*(1-Math.pow(.98634,Math.exp(P-22.325))),I=.0799*l+3.137*Math.log(120)+.18*Math.log(.1)+1.382*Math.log(150),D=-1.172*Math.log(55)+.67+0+.438*x,T=I+D,M=100*(1-Math.pow(.98634,Math.exp(T-22.325))),$=100*(.12*l+8)/50*(v/70)*(k/.8),console.log(M),R="",(E=S+(.035*d-1.4)+(.175*$-7.65))<5?R="Low risk":E<20&&E>5?R="Moderate risk":E>20&&(R="High risk"),j="",(B=L+(.035*d-1.4)+(.175*$-7.65))<5?j="Low risk":B<20&&B>5?j="Moderate risk":B>20&&(j="High risk"),Iracode.loading(),(F=t.patient).age=t.form.Age,F.sex=t.form.Sex,F.hospital="",e.next=31,t.$http.post("/user/api/patients",F);case 31:return O=e.sent,V=O.data,console.log(V),t.form.patient_id=V.data.id,e.next=37,t.$http.post("/user/api/mace_assesment",t.form);case 37:W=e.sent,N=W.data,Iracode.close_loading(),console.log(N),t.result=N.data.result,console.log(E),console.log(B),console.log(R),console.log(j);case 46:case"end":return e.stop()}}),e)})))()},onSubmit:function(t){var e=this;return i(n.a.mark((function s(){return n.a.wrap((function(s){for(;;)switch(s.prev=s.next){case 0:return s.next=2,e.form.post("/user/api/ct_cases");case 2:s.sent.success&&(Iracode.success(e.__("Ctcase Created Successfully")),"close"==t?e.$router.push("/user/ct_cases"):e.form.reset());case 4:case"end":return s.stop()}}),s)})))()}}},c=(s(926),s(53)),v=Object(c.a)(o,(function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("div",{staticClass:"mb-base"},[s("vx-card",[s("h2",{staticStyle:{"text-align":"center",padding:"2rem",border:"1px solid #000"}},[t._v("MACE Risk Assesment")]),t._v(" "),s("img",{staticStyle:{margin:"auto",display:"block",height:"400px"},attrs:{src:"/assets/images/mace_cover.png",alt:""}}),t._v(" "),s("vs-table",{attrs:{stripe:"",noDataText:""},scopedSlots:t._u([{key:"default",fn:function(e){e.data;return[s("vs-tr",[s("vs-th",[t._v("\n                      Name\n                  ")]),t._v(" "),s("vs-td",[s(t.inputs.name.type,{tag:"component",staticStyle:{width:"250px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("name"),"danger-text":t.validationError("name"),name:"name",type:"text"},model:{value:t.patient.name,callback:function(e){t.$set(t.patient,"name",e)},expression:"patient.name"}})],1),t._v(" "),s("vs-th",[t._v("\n                      Name\n                  ")]),t._v(" "),s("vs-td",[s(t.inputs.name.type,{tag:"component",staticStyle:{width:"250px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("name"),"danger-text":t.validationError("name"),name:"name",type:"text"},model:{value:t.patient.name,callback:function(e){t.$set(t.patient,"name",e)},expression:"patient.name"}})],1)],1)]}}])}),t._v(" "),s("form",{on:{submit:t.onSubmit}},[s("div",[s("h4",{staticClass:"gray"},[t._v("Patient Information:")]),t._v(" "),s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Name")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"2","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Code")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s(t.inputs.code.type,{tag:"component",staticStyle:{width:"120px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("code"),"danger-text":t.validationError("code"),name:"code",type:"text"},model:{value:t.patient.code,callback:function(e){t.$set(t.patient,"code",e)},expression:"patient.code"}})],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"6"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Age")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s(t.inputs.Age.type,{tag:"component",staticStyle:{width:"80px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("Age"),"danger-text":t.validationError("Age"),name:"Age",type:"number"},model:{value:t.form.Age,callback:function(e){t.$set(t.form,"Age",e)},expression:"form.Age"}})],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Sex")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem","margin-left":"1.5rem"}},[s("vs-radio",{attrs:{"vs-name":"Sex","vs-value":"1"},model:{value:t.form.Sex,callback:function(e){t.$set(t.form,"Sex",e)},expression:"form.Sex"}},[t._v("Male")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"Sex","vs-value":"0"},model:{value:t.form.Sex,callback:function(e){t.$set(t.form,"Sex",e)},expression:"form.Sex"}},[t._v("Female")])],1)])],1)],1),t._v(" "),s("div",[s("h4",{staticClass:"gray"},[t._v("Medical Treatment:")]),t._v(" "),s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticStyle:{"flex-direction":"column"},attrs:{"vs-type":"flex","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset"},[s("legend",[t._v(t._s(t.__("Treatment for Hypertension")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("vs-radio",{attrs:{"vs-name":"TBP","vs-value":"1"},model:{value:t.form.TBP,callback:function(e){t.$set(t.form,"TBP",e)},expression:"form.TBP"}},[t._v("Yes")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"TBP","vs-value":"0"},model:{value:t.form.TBP,callback:function(e){t.$set(t.form,"TBP",e)},expression:"form.TBP"}},[t._v("No")])],1)])]),t._v(" "),s("vs-col",{staticStyle:{"flex-direction":"column"},attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset"},[s("legend",[t._v(t._s(t.__("Treatment for Hyperlipidemia")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("vs-radio",{attrs:{"vs-name":"THL","vs-value":"1"},model:{value:t.form.THL,callback:function(e){t.$set(t.form,"THL",e)},expression:"form.THL"}},[t._v("Yes")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"THL","vs-value":"0"},model:{value:t.form.THL,callback:function(e){t.$set(t.form,"THL",e)},expression:"form.THL"}},[t._v("No")])],1)])]),t._v(" "),s("vs-col",{staticStyle:{"flex-direction":"column"},attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset"},[s("legend",[t._v(t._s(t.__("Treatment for MI History")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("vs-radio",{attrs:{"vs-name":"MI","vs-value":"1"},model:{value:t.form.MI,callback:function(e){t.$set(t.form,"MI",e)},expression:"form.MI"}},[t._v("Yes")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"MI","vs-value":"0"},model:{value:t.form.MI,callback:function(e){t.$set(t.form,"MI",e)},expression:"form.MI"}},[t._v("No")])],1)])])],1)],1),t._v(" "),s("div",[s("h4",{staticClass:"gray"},[t._v("Risk Factors:")]),t._v(" "),s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticStyle:{"flex-direction":"column"},attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset"},[s("legend",[t._v(t._s(t.__("Smoker")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("vs-radio",{attrs:{"vs-name":"Smoker","vs-value":"1"},model:{value:t.form.Smoker,callback:function(e){t.$set(t.form,"Smoker",e)},expression:"form.Smoker"}},[t._v("Yes")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"Smoker","vs-value":"0"},model:{value:t.form.Smoker,callback:function(e){t.$set(t.form,"Smoker",e)},expression:"form.Smoker"}},[t._v("No")])],1)])]),t._v(" "),s("vs-col",{staticStyle:{"flex-direction":"column"},attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset"},[s("legend",[t._v(t._s(t.__("Family History")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("vs-radio",{attrs:{"vs-name":"FH","vs-value":"1"},model:{value:t.form.FH,callback:function(e){t.$set(t.form,"FH",e)},expression:"form.FH"}},[t._v("Yes")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"FH","vs-value":"0"},model:{value:t.form.FH,callback:function(e){t.$set(t.form,"FH",e)},expression:"form.FH"}},[t._v("No")])],1)])]),t._v(" "),s("vs-col",{staticStyle:{"flex-direction":"column"},attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset"},[s("legend",[t._v(t._s(t.__("Diabetes")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("vs-radio",{attrs:{"vs-name":"Diabetes","vs-value":"1"},model:{value:t.form.Diabetes,callback:function(e){t.$set(t.form,"Diabetes",e)},expression:"form.Diabetes"}},[t._v("Yes")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"Diabetes","vs-value":"0"},model:{value:t.form.Diabetes,callback:function(e){t.$set(t.form,"Diabetes",e)},expression:"form.Diabetes"}},[t._v("No")])],1)])])],1)],1),t._v(" "),s("div",[s("h4",{staticClass:"gray"},[t._v("Hemodynamic Parameters:")]),t._v(" "),s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("LDL")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.LDL_cholesterol.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("LDL_cholesterol"),"danger-text":t.validationError("LDL_cholesterol"),name:"LDL_cholesterol",type:"text"},model:{value:t.form.LDL_cholesterol,callback:function(e){t.$set(t.form,"LDL_cholesterol",e)},expression:"form.LDL_cholesterol"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                      mg/dl\n                  ")])],1)]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("HDL")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.HDL_cholesterol.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("HDL_cholesterol"),"danger-text":t.validationError("HDL_cholesterol"),name:"HDL_cholesterol",type:"text"},model:{value:t.form.HDL_cholesterol,callback:function(e){t.$set(t.form,"HDL_cholesterol",e)},expression:"form.HDL_cholesterol"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                      mg/dl\n                  ")])],1)]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("TG")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.Triglycerides.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("Triglycerides"),"danger-text":t.validationError("Triglycerides"),name:"Triglycerides",type:"text"},model:{value:t.form.Triglycerides,callback:function(e){t.$set(t.form,"Triglycerides",e)},expression:"form.Triglycerides"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                      mg/dl\n                  ")])],1)]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("HbA1C")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.HbA1C.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("HbA1C"),"danger-text":t.validationError("HbA1C"),name:"HbA1C",type:"text"},model:{value:t.form.HbA1C,callback:function(e){t.$set(t.form,"HbA1C",e)},expression:"form.HbA1C"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                      %\n                  ")])],1)])],1)],1),t._v(" "),s("div",[s("h4",{staticClass:"gray"},[t._v("Blood Pressure & Anthropometry:")]),t._v(" "),s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("DBP")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.DBP.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("DBP"),"danger-text":t.validationError("DBP"),name:"DBP",type:"text"},model:{value:t.form.DBP,callback:function(e){t.$set(t.form,"DBP",e)},expression:"form.DBP"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                      mmHg\n                  ")])],1)]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("SBP")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.SBP.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("SBP"),"danger-text":t.validationError("SBP"),name:"SBP",type:"text"},model:{value:t.form.SBP,callback:function(e){t.$set(t.form,"SBP",e)},expression:"form.SBP"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                      mmHg\n                  ")])],1)]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Weight")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.Weigth.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("Weigth"),"danger-text":t.validationError("Weigth"),name:"Weigth",type:"text"},model:{value:t.form.Weigth,callback:function(e){t.$set(t.form,"Weigth",e)},expression:"form.Weigth"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                      kg\n                  ")])],1)]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Height")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.Heigth.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("Heigth"),"danger-text":t.validationError("Heigth"),name:"Heigth",type:"text"},model:{value:t.form.Heigth,callback:function(e){t.$set(t.form,"Heigth",e)},expression:"form.Heigth"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                      cm\n                  ")])],1)])],1)],1),t._v(" "),s("div",[s("h4",{staticClass:"gray"},[t._v("Ankle-brachial index:")]),t._v(" "),s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-align":"center","vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"2","vs-sm":"2","vs-xs":"2"}}),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Left Ankle-brachial Index")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s(t.inputs.LeftAnklebrachialIndex.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("LeftAnklebrachialIndex"),"danger-text":t.validationError("LeftAnklebrachialIndex"),name:"LeftAnklebrachialIndex",type:"text"},model:{value:t.form.LeftAnklebrachialIndex,callback:function(e){t.$set(t.form,"LeftAnklebrachialIndex",e)},expression:"form.LeftAnklebrachialIndex"}})],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Right Ankle-brachial Index")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s(t.inputs.RightAnklebrachialIndex.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("RightAnklebrachialIndex"),"danger-text":t.validationError("RightAnklebrachialIndex"),name:"RightAnklebrachialIndex",type:"text"},model:{value:t.form.RightAnklebrachialIndex,callback:function(e){t.$set(t.form,"RightAnklebrachialIndex",e)},expression:"form.RightAnklebrachialIndex"}})],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"2","vs-sm":"2","vs-xs":"2"}})],1)],1),t._v(" "),s("div",[s("h4",{staticClass:"gray"},[t._v("Result of Assesment:")]),t._v(" "),s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Pulse Wave Velocity (PWV)")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s("strong",{staticStyle:{"margin-left":"1rem"}},[t._v("\n                  "+t._s(t.result.PWV?t.result.PWV.toFixed(2):t.result.PWV)+"\n                ")]),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                      cm/s\n                  ")])])]),t._v(" "),s("vs-col",{staticStyle:{"flex-direction":"column","justify-content":"center"},attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex mx-2 mt-3 text-left w-100 mb-3"},[s("strong",[t._v(t._s(t.__("PWV")))]),t._v(" "),s("span",{staticClass:"ml-1"},[t._v(t._s(t.__("higher than cut off > 1650 cm/s")))])])])],1),t._v(" "),s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Arterial Stiffness Index (ASI)")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("strong",{staticStyle:{"margin-left":"1rem"}},[t._v("\n                "+t._s(t.result.ASI?t.result.ASI.toFixed(2):t.result.ASI)+"\n            ")])]),t._v(" "),s("vs-col",{staticStyle:{"flex-direction":"column","justify-content":"center"},attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex mx-2 mt-3 text-left w-100 mb-3"},[s("strong",[t._v(t._s(t.__("ASI")))]),t._v(" "),s("span",{staticClass:"ml-1"},[t._v(t._s(t.__("higher than cut off > 60")))])])])],1),t._v(" "),t.result&&t.result.msg?s("vs-row",[s("vs-col",{attrs:{"vs-lg":"12"}},[s("h3",{staticClass:"my-4"},[s("strong",[t._v("\n                        Atherosclerosis plaque progress:\n                    ")])]),t._v(" "),s("p",[t._v("\n                    \tRisk of plaque progress with current risk factors  =  "),s("strong",[t._v(t._s(t.result.Risk1.toFixed(2)))]),t._v(" %  ("+t._s(t.result.msg)+")\n                ")]),t._v(" "),s("p",[t._v("\n                    \tRisk of plaque progress with optimal risk factors  = "),s("strong",[t._v(t._s(t.result.OMen.toFixed(2)))]),t._v(" %  (optimal risk)\n                ")])]),t._v(" "),s("vs-col",{attrs:{"vs-lg":"12"}},[s("h3",{staticClass:"my-4"},[s("strong",[t._v("\n                        \tMI and CVA risk assessment:\n                    ")])]),t._v(" "),s("p",[t._v("\n                    \tRisk of MI and stroke with current risk factors  =  "),s("strong",[t._v(t._s(t.result.Risk2.toFixed(2)))]),t._v(" %  ("+t._s(t.result.msg2)+")\n                ")]),t._v(" "),s("p",[t._v("\n                    \tRisk of MI and stroke with optimal risk factors  = "),s("strong",[t._v(t._s(t.result.RSK1.toFixed(2)))]),t._v(" %  (optimal risk)\n                ")])]),t._v(" "),s("vs-col",{attrs:{"vs-lg":"12"}},[s("h3",{staticClass:"my-4"},[s("strong",[t._v("\n                        Conclusion:\n                    ")])]),t._v(" "),s("p",[t._v("\n                    \tThe patient is "+t._s(t.result.msg)+" for atherosclerosis plaque progress.\n                ")]),t._v(" "),s("p",[t._v("\n                    \tThe patient is "+t._s(t.result.msg2)+" for MI and stroke event.\n                ")])])],1):t._e()],1),t._v(" "),s("div",{staticClass:"flex justify-center mt-16"},[s("div",{staticClass:"flex"},[s("vs-button",{staticClass:"mr-3 mb-2",staticStyle:{"font-size":"30px"},attrs:{color:"success"},on:{click:t.calculate}},[t._v(t._s(t.__("MACE Risk Calculation")))])],1)])])],1)],1)}),[],!1,null,null,null);e.default=v.exports},774:function(t,e,s){"use strict";var a=s(536),n=s.n(a);function r(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}e.a=function t(e){return r(this,t),new n.a(e,{http:window.Iracode.getHttp()})}},775:function(t,e,s){"use strict";var a=s(62),n=s.n(a);function r(t,e){var s=Object.keys(t);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(t);e&&(a=a.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),s.push.apply(s,a)}return s}function i(t){for(var e=1;e<arguments.length;e++){var s=null!=arguments[e]?arguments[e]:{};e%2?r(Object(s),!0).forEach((function(e){l(t,e,s[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(s)):r(Object(s)).forEach((function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(s,e))}))}return t}function l(t,e,s){return e in t?Object.defineProperty(t,e,{value:s,enumerable:!0,configurable:!0,writable:!0}):t[e]=s,t}function o(t,e,s,a,n,r,i){try{var l=t[r](i),o=l.value}catch(t){return void s(t)}l.done?e(o):Promise.resolve(o).then(a,n)}function c(t){return function(){var e=this,s=arguments;return new Promise((function(a,n){var r=t.apply(e,s);function i(t){o(r,a,n,i,l,"next",t)}function l(t){o(r,a,n,i,l,"throw",t)}i(void 0)}))}}function v(t){return(v="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}e.a={data:function(){var t=this;return{uploadServer:{url:window.config.uploadBasePath,timeout:36e6,load:function(t,e,s,a,n,r){t.indexOf("/null")>-1&&(console.log("source",t),n());var i=new Request(t);fetch(i).then((function(t){t.blob().then((function(t){e(t)}))}))},process:{url:"/process",method:"POST",headers:{Authorization:"Bearer ".concat(this.$store.state.auth.accessToken),"X-CSRF-TOKEN":document.querySelector('meta[name="csrf-token"]').content},withCredentials:!1,onload:function(e){return"object"!=v(e)&&(e=JSON.parse(e)),console.log(t.inputs[e.field_name],e.field_name),t.inputs[e.field_name].filepond_options["allow-multiple"]?t.form[e.field_name].push(e.key):t.form[e.field_name]=e.key,e.key},onerror:function(t){return t.data},ondata:function(e){return e.append("model",t.model),t.$route.params.id&&e.append("model_id",t.$route.params.id),e}},revert:"revert",restore:"restore",fetch:"fetch"}}},methods:{getRelationLabel:function(){for(var t=arguments.length,e=new Array(t),s=0;s<t;s++)e[s]=arguments[s];console.log(this,e)},onRelationSelect:function(t,e){var s=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"id";this.inputs[t].selected=e,this.form[t]=e[s]},handleFilePondInit:function(){console.log("FilePond has initialized")},onSelect:function(t,e){this.inputs[t].selected=e,this.form[t]=e.value},onRelationSearch:function(t,e,s){var a=this;return c(n.a.mark((function r(){var i,l,o,c;return n.a.wrap((function(n){for(;;)switch(n.prev=n.next){case 0:if(""!=e){n.next=2;break}return n.abrupt("return");case 2:return s(!0),i=a.inputs[t],l={},i&&(l["filter[".concat(i.titleField,"]")]=e),n.next=8,a.$http.get(a.inputs[t].searchUrl,{params:l});case 8:if(o=n.sent,!(c=o.data).success){n.next=13;break}return a.inputs[t].options=c.data.items,n.abrupt("return",s(!1));case 13:a.inputs[t].options=[];case 14:case"end":return n.stop()}}),r)})))()},hasValidationError:function(t){return!(!this.form.errors||!this.form.errors.has(t))||void 0},validationError:function(t){return this.form.errors?this.form.errors.first(t):void 0},onSelectTableSearch:function(t,e){var s=this;return c(n.a.mark((function a(){var r,l;return n.a.wrap((function(a){for(;;)switch(a.prev=a.next){case 0:if(!e.length){a.next=6;break}return a.next=3,s.$http.post("".concat(window.config.path_prefix,"/api/get_select_table"),i(i({},s.inputs[t].select_table_options),{},{search:e}));case 3:r=a.sent,l=r.data,s.inputs[t].options=l.data;case 6:case"end":return a.stop()}}),a)})))()}},created:function(){var t=this;return c(n.a.mark((function e(){var s,a,r;return n.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:console.log("before create called"),e.t0=n.a.keys(t.inputs);case 2:if((e.t1=e.t0()).done){e.next=14;break}if(s=e.t1.value,"relation"!==t.inputs[s].field_type){e.next=12;break}return console.log(t.inputs[s]),e.next=8,t.$http.get(t.inputs[s].searchUrl);case 8:a=e.sent,(r=a.data).success&&(t.inputs[s].options=r.data.items),t.inputs[s].options.length&&(Array.isArray(t.inputs[s].selected)||(t.form[s]=t.inputs[s].options[0].id,t.inputs[s].selected=t.inputs[s].options[0]));case 12:e.next=2;break;case 14:case"end":return e.stop()}}),e)})))()}}},813:function(t,e,s){var a=s(927);"string"==typeof a&&(a=[[t.i,a,""]]);var n={hmr:!0,transform:void 0,insertInto:void 0};s(73)(a,n);a.locals&&(t.exports=a.locals)},926:function(t,e,s){"use strict";s(813)},927:function(t,e,s){(t.exports=s(72)(!1)).push([t.i,"\n.gray{\n    color: #b5b2b2;\n    margin: 1.5rem 0;\n}\n.styled-fieldset{\n    padding: 2rem 1rem;\n}\n",""])}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[20],{
+
+/***/ "./Resources/assets/images/elements/decore-left.png":
+/*!**********************************************************!*\
+  !*** ./Resources/assets/images/elements/decore-left.png ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/decore-left.png?2d9d23e097d9118c0aa4cc074b6c5b22";
+
+/***/ }),
+
+/***/ "./Resources/assets/images/elements/decore-right.png":
+/*!***********************************************************!*\
+  !*** ./Resources/assets/images/elements/decore-right.png ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/decore-right.png?da0ab5cda39e974268cbe4da64f597b6";
+
+/***/ }),
+
+/***/ "./Resources/js/src/views/DashboardAnalytics.vue":
+/*!*******************************************************!*\
+  !*** ./Resources/js/src/views/DashboardAnalytics.vue ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _DashboardAnalytics_vue_vue_type_template_id_055602dc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DashboardAnalytics.vue?vue&type=template&id=055602dc& */ "./Resources/js/src/views/DashboardAnalytics.vue?vue&type=template&id=055602dc&");
+/* harmony import */ var _DashboardAnalytics_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DashboardAnalytics.vue?vue&type=script&lang=js& */ "./Resources/js/src/views/DashboardAnalytics.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _DashboardAnalytics_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DashboardAnalytics.vue?vue&type=style&index=0&lang=scss& */ "./Resources/js/src/views/DashboardAnalytics.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _DashboardAnalytics_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _DashboardAnalytics_vue_vue_type_template_id_055602dc___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _DashboardAnalytics_vue_vue_type_template_id_055602dc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "Resources/js/src/views/DashboardAnalytics.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./Resources/js/src/views/DashboardAnalytics.vue?vue&type=script&lang=js&":
+/*!********************************************************************************!*\
+  !*** ./Resources/js/src/views/DashboardAnalytics.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DashboardAnalytics_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./DashboardAnalytics.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./Resources/js/src/views/DashboardAnalytics.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DashboardAnalytics_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./Resources/js/src/views/DashboardAnalytics.vue?vue&type=style&index=0&lang=scss&":
+/*!*****************************************************************************************!*\
+  !*** ./Resources/js/src/views/DashboardAnalytics.vue?vue&type=style&index=0&lang=scss& ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DashboardAnalytics_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./DashboardAnalytics.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./Resources/js/src/views/DashboardAnalytics.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DashboardAnalytics_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DashboardAnalytics_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DashboardAnalytics_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DashboardAnalytics_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./Resources/js/src/views/DashboardAnalytics.vue?vue&type=template&id=055602dc&":
+/*!**************************************************************************************!*\
+  !*** ./Resources/js/src/views/DashboardAnalytics.vue?vue&type=template&id=055602dc& ***!
+  \**************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DashboardAnalytics_vue_vue_type_template_id_055602dc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./DashboardAnalytics.vue?vue&type=template&id=055602dc& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./Resources/js/src/views/DashboardAnalytics.vue?vue&type=template&id=055602dc&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DashboardAnalytics_vue_vue_type_template_id_055602dc___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DashboardAnalytics_vue_vue_type_template_id_055602dc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./Resources/js/src/views/DashboardAnalytics.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./Resources/js/src/views/DashboardAnalytics.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// import VueApexCharts from 'vue-apexcharts'
+// import StatisticsCardLine from '@/components/statistics-cards/StatisticsCardLine.vue'
+// import analyticsData from './ui-elements/card/analyticsData.js'
+// import ChangeTimeDurationDropdown from '@/components/ChangeTimeDurationDropdown.vue'
+// import VxTimeline from "@/components/timeline/VxTimeline"
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      checkpointReward: {},
+      subscribersGained: {},
+      ordersRecevied: {},
+      salesBarSession: {},
+      supportTracker: {},
+      productsOrder: {},
+      salesRadar: {},
+      timelineData: [{
+        color: "primary",
+        icon: "PlusIcon",
+        title: "Client Meeting",
+        desc: "Bonbon macaroon jelly beans gummi bears jelly lollipop apple",
+        time: "25 mins Ago"
+      }, {
+        color: "warning",
+        icon: "MailIcon",
+        title: "Email Newsletter",
+        desc: "Cupcake gummi bears soufflé caramels candy",
+        time: "15 Days Ago"
+      }, {
+        color: "danger",
+        icon: "UsersIcon",
+        title: "Plan Webinar",
+        desc: "Candy ice cream cake. Halvah gummi bears",
+        time: "20 days ago"
+      }, {
+        color: "success",
+        icon: "LayoutIcon",
+        title: "Launch Website",
+        desc: "Candy ice cream cake. Halvah gummi bears Cupcake gummi bears soufflé caramels candy.",
+        time: "25 days ago"
+      }, {
+        color: "primary",
+        icon: "TvIcon",
+        title: "Marketing",
+        desc: "Candy ice cream cake. Halvah gummi bears Cupcake gummi bears.",
+        time: "28 days ago"
+      }],
+      analyticsData: [],
+      dispatchedOrders: []
+    };
+  },
+  components: {// VueApexCharts,
+    // StatisticsCardLine,
+    // ChangeTimeDurationDropdown,
+    // VxTimeline
+  },
+  created: function created() {}
+});
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./Resources/js/src/views/DashboardAnalytics.vue?vue&type=style&index=0&lang=scss&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./Resources/js/src/views/DashboardAnalytics.vue?vue&type=style&index=0&lang=scss& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*! rtl:begin:ignore */\n#dashboard-analytics .greet-user {\n  position: relative;\n}\n#dashboard-analytics .greet-user .decore-left {\n  position: absolute;\n  left: 0;\n  top: 0;\n}\n#dashboard-analytics .greet-user .decore-right {\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n@media (max-width: 576px) {\n#dashboard-analytics .decore-left, #dashboard-analytics .decore-right {\n    width: 140px;\n}\n}\n\n/*! rtl:end:ignore */", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./Resources/js/src/views/DashboardAnalytics.vue?vue&type=style&index=0&lang=scss&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./Resources/js/src/views/DashboardAnalytics.vue?vue&type=style&index=0&lang=scss& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./DashboardAnalytics.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./Resources/js/src/views/DashboardAnalytics.vue?vue&type=style&index=0&lang=scss&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./Resources/js/src/views/DashboardAnalytics.vue?vue&type=template&id=055602dc&":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./Resources/js/src/views/DashboardAnalytics.vue?vue&type=template&id=055602dc& ***!
+  \********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "dashboard-analytics" } }, [
+    _c("div", { staticClass: "vx-row" }, [
+      _c(
+        "div",
+        { staticClass: "vx-col w-full mb-base" },
+        [
+          _c(
+            "vx-card",
+            {
+              staticClass: "text-center bg-primary-gradient greet-user",
+              attrs: { slot: "no-body" },
+              slot: "no-body"
+            },
+            [
+              _c("img", {
+                staticClass: "decore-left",
+                attrs: {
+                  src: __webpack_require__(/*! @assets/images/elements/decore-left.png */ "./Resources/assets/images/elements/decore-left.png"),
+                  alt: "Decore Left",
+                  width: "200"
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                staticClass: "decore-right",
+                attrs: {
+                  src: __webpack_require__(/*! @assets/images/elements/decore-right.png */ "./Resources/assets/images/elements/decore-right.png"),
+                  alt: "Decore Right",
+                  width: "175"
+                }
+              }),
+              _vm._v(" "),
+              _c("feather-icon", {
+                staticClass:
+                  "p-6 mb-8 bg-primary inline-flex rounded-full text-white shadow",
+                attrs: { icon: "AwardIcon", svgClasses: "h-8 w-8" }
+              }),
+              _vm._v(" "),
+              _c("h1", { staticClass: "mb-6 text-white" }, [
+                _vm._v("خوش آمدید")
+              ])
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+}]);
