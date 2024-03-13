@@ -123,7 +123,9 @@
                     </div>
                 </vs-col>
             </vs-row>
+            <vs-button style="width:100%" class="mt-3" @click="()=>exportAsDocx(point.name)" color="success" type="filled">Export as Word</vs-button>
             <vs-button style="width:100%" class="mt-3" @click="()=>exportAsWord(point.name)" color="success" type="filled">Export as PDF</vs-button>
+
     </div>
 </template>
 <script>
@@ -181,6 +183,16 @@ export default {
         }
     },
     methods: {
+            async exportAsDocx(name){
+                try{
+                    console.log(name,this.ctCaseResults[name],this.ctCaseResults)
+                    const point=this.ctCaseResults[name];
+                    if(!point.result_file) return;
+                    window.open(this.url(point.result_file), "_blank");
+                }catch(e){
+
+                }
+            },
             async exportAsWord(name){
                 try{
                     console.log(name,this.ctCaseResults[name],this.ctCaseResults)
@@ -237,7 +249,7 @@ export default {
           renderStatus(point,type){
               if(!point) return;
               console.log(point,this.scores,type,"point")
-            return this.scores[type]?.validationFn(point[type]);
+            return this.scores[type] ? this.scores[type].validationFn(point[type]):null;
         },
         renderFFRClass(point){
 
