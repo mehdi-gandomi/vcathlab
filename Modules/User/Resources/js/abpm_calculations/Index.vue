@@ -137,7 +137,7 @@ export default {
                 },
                 {
                     headerName: this.__("Created At"),
-                    field: "created_at",
+                    field: "created_at_fa",
                     resizable: true,
                     valueFormatter: Formatters.dateFormatter,
 

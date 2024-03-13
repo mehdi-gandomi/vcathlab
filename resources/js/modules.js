@@ -81,4 +81,5 @@ export default [
     ...require('@external_modules/User/Resources/js/angiographies/routes.js').default,
     ...require('@external_modules/User/Resources/js/aobp_calculations/routes.js').default,
     ...require('@external_modules/User/Resources/js/abpm_calculations/routes.js').default,
+	...require('@external_modules/User/Resources/js/imt_calculations/routes.js').default,
 ];

@@ -93,7 +93,7 @@
                                                     <vs-radio
                                                         v-model="form.sex"
                                                         vs-name="sex"
-                                                        vs-value="2"
+                                                        vs-value="0"
                                                         class="ml-4"
                                                         >Female</vs-radio
                                                     >
@@ -516,12 +516,22 @@ export default {
                 if(data.success){
                     Iracode.success(data.message)
                     // Iracode.close_loading();
-                    this.ctCaseResults=data.data.points;
-                    this.niffr_case_id=data.data.case.id;
-                    return this.isLoading=false;
+                    setTimeout(()=>{
+
+                        try{
+                            this.ctCaseResults=data.data.points;
+                            this.niffr_case_id=data.data.case.id;
+                        }catch(e){
+                            console.log(data,e)
+                        }
+                    this.isLoading=false;
+                    },500)
+
+                }else{
+                    Iracode.error(data.message)
                 }
 
-                Iracode.error(data.message)
+
             }catch(e){
                 if(e.response){
                     Iracode.error(e.response.data.message)

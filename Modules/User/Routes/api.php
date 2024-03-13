@@ -58,3 +58,6 @@ Route::crud('body_compositions', 'BodyCompositionAPIController');
 
 Route::crud('aobp_calculations', 'AobpCalculationAPIController');
 Route::crud('abpm_calculations', 'ABPMCalculationAPIController');
+
+
+Route::crud('imt_calculations', 'ImtCalculationAPIController');

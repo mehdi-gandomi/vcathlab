@@ -1,7 +1,7 @@
 <template>
     <div class="mb-base">
         <vx-card>
-            <h2 style="text-align: center;padding: 2rem;border: 1px solid #000;">Automatic Office Blood Pressure (AOBP)</h2>
+            <h2 style="text-align: center;padding: 2rem;border: 1px solid #000;">Carotid IMT Scan (CIMT)</h2>
 
             <form @submit="onSubmit">
                 <div>
@@ -64,12 +64,12 @@
                             <div class="plaque-form">
                                 <vs-row vs-type="flex" vs-w="12" class="mt-10 m-0">
 
-                                    <vs-col vs-lg="7">
+                                    <vs-col vs-lg="5">
                                         <strong>Intima-Media Thickness:</strong>
                                     </vs-col>
                                     <vs-col vs-lg="5">
                                         <div class="input flex">
-                                            <vs-input />
+                                            <vs-input  v-model="form.LCIMT" />
                                             <strong style="width:40px;display: inline-block;" class="ml-2">mm</strong>
                                         </div>
                                     </vs-col>
@@ -77,12 +77,12 @@
                                 </vs-row>
                                 <vs-row vs-type="flex" vs-w="12" class="mt-6 m-0">
 
-                                    <vs-col vs-lg="7">
+                                    <vs-col vs-lg="5">
                                         <strong>Internal Carotid Artery:</strong>
                                     </vs-col>
                                     <vs-col vs-lg="5">
                                         <div class="input flex">
-                                            <vs-input />
+                                            <vs-input v-model="form.LICA" />
                                             <strong style="width:40px;display:inline-block;flex:1" class="ml-2">%</strong>
                                         </div>
                                     </vs-col>
@@ -90,12 +90,12 @@
                                 </vs-row>
                                 <vs-row vs-type="flex" vs-w="12" class="mt-6 m-0">
 
-                                    <vs-col vs-lg="7">
+                                    <vs-col vs-lg="5">
                                         <strong>External Carotid Artery:</strong>
                                     </vs-col>
                                     <vs-col vs-lg="5">
                                         <div class="input flex">
-                                            <vs-input />
+                                            <vs-input v-model="form.LECA" />
                                             <strong style="width:40px;display:inline-block;flex:1" class="ml-2">%</strong>
                                         </div>
                                     </vs-col>
@@ -103,12 +103,12 @@
                                 </vs-row>
                                 <vs-row vs-type="flex" vs-w="12" class="mt-6 m-0">
 
-                                    <vs-col vs-lg="7">
+                                    <vs-col vs-lg="5">
                                         <strong>Common Carotid Artery:</strong>
                                     </vs-col>
                                     <vs-col vs-lg="5">
                                         <div class="input flex">
-                                            <vs-input />
+                                            <vs-input v-model="form.LCCA" />
                                             <strong style="width:40px;display:inline-block;flex:1" class="ml-2">%</strong>
                                         </div>
                                     </vs-col>
@@ -126,12 +126,12 @@
                             <div class="plaque-form">
                                 <vs-row vs-type="flex" vs-w="12" class="mt-10 m-0">
 
-                                    <vs-col vs-lg="7">
+                                    <vs-col vs-lg="5">
                                         <strong>Intima-Media Thickness:</strong>
                                     </vs-col>
                                     <vs-col vs-lg="5">
                                         <div class="input flex">
-                                            <vs-input />
+                                            <vs-input v-model="form.RCIMT" />
                                             <strong style="width:40px;display: inline-block;" class="ml-2">mm</strong>
                                         </div>
                                     </vs-col>
@@ -139,12 +139,12 @@
                                 </vs-row>
                                 <vs-row vs-type="flex" vs-w="12" class="mt-6 m-0">
 
-                                    <vs-col vs-lg="7">
+                                    <vs-col vs-lg="5">
                                         <strong>Internal Carotid Artery:</strong>
                                     </vs-col>
                                     <vs-col vs-lg="5">
                                         <div class="input flex">
-                                            <vs-input />
+                                            <vs-input v-model="form.RICA" />
                                             <strong style="width:40px;display:inline-block;flex:1" class="ml-2">%</strong>
                                         </div>
                                     </vs-col>
@@ -152,12 +152,12 @@
                                 </vs-row>
                                 <vs-row vs-type="flex" vs-w="12" class="mt-6 m-0">
 
-                                    <vs-col vs-lg="7">
+                                    <vs-col vs-lg="5">
                                         <strong>External Carotid Artery:</strong>
                                     </vs-col>
                                     <vs-col vs-lg="5">
                                         <div class="input flex">
-                                            <vs-input />
+                                            <vs-input v-model="form.RECA" />
                                             <strong style="width:40px;display:inline-block;flex:1" class="ml-2">%</strong>
                                         </div>
                                     </vs-col>
@@ -165,12 +165,12 @@
                                 </vs-row>
                                 <vs-row vs-type="flex" vs-w="12" class="mt-6 m-0">
 
-                                    <vs-col vs-lg="7">
+                                    <vs-col vs-lg="5">
                                         <strong>Common Carotid Artery:</strong>
                                     </vs-col>
                                     <vs-col vs-lg="5">
                                         <div class="input flex">
-                                            <vs-input />
+                                            <vs-input v-model="form.RCCA" />
                                             <strong style="width:40px;display:inline-block;flex:1" class="ml-2">%</strong>
                                         </div>
                                     </vs-col>
@@ -228,13 +228,16 @@ export default {
             tableKey: 0,
             form: {
                 patient_id: 0,
-                dia: [],
-                hr: [],
-                sys: [],
                 Age: "",
                 Sex: 1,
-                height: 180,
-                weight: 80,
+                LCIMT:"400",
+                LICA:"0",
+                LECA:"0",
+                LCCA:"0",
+                RCIMT:"450",
+                RICA:"0",
+                RECA:"0",
+                RCCA:"0",
             },
             patient: {
                 name: "",
@@ -247,12 +250,7 @@ export default {
             model: "Modules\\User\\Models\\CtCase",
             locale: Iracode.$i18n.locale,
             inputs: {
-                Weight: {
-                    type: "vs-input"
-                },
-                Height: {
-                    type: "vs-input"
-                },
+
                 code: {
                     type: "vs-input"
                 },
@@ -289,13 +287,7 @@ export default {
     computed: {
         //
     },
-    created() {
-        for (let index = 0; index < 14; index++) {
-            this.form.dia[index] = "";
-            this.form.sys[index] = "";
-            this.form.hr[index] = "";
-        }
-    },
+
     mounted() {
         //
     },
@@ -305,8 +297,6 @@ export default {
             let patientForm = this.patient;
             patientForm.age = this.form.Age;
             patientForm.sex = this.form.Sex;
-            patientForm.weight = this.form.weight;
-            patientForm.height = this.form.height;
             patientForm.hospital = "";
             Iracode.loading();
             const { data: patient } = await this.$http.post("/user/api/patients", patientForm);
@@ -314,43 +304,18 @@ export default {
 
             this.form.patient_id = patient.data.id;
 
-            const { data } = await this.$http.post("/user/api/aobp_calculations", this.form);
+            const { data } = await this.$http.post("/user/api/imt_calculations", this.form);
             Iracode.close_loading();
-
+            this.body=data.data;
             console.log(data)
-            location.href = "/user/aobp/result/" + data.data.id;
-        },
-        onPaste(row, index, e) {
-            e.preventDefault(); // do not paste the contents into the first cell ...
-            // convert TSV from clipboard into a 2D array:
-            let vals = e.clipboardData.getData('text').trim().split(/\r?\n */).map(r => r.split(/\t/));
 
-            if (vals.length > 1) {
-                console.log(vals)
-                for (let key = 0; key < 14; key++) {
-                    if (vals[key] != undefined) {
-                        this.form[row][key] = vals[key][0]
-                    }
-                }
-                this.tableKey++;
-            } else {
-                this.form[row][index] = e.clipboardData.getData('text').trim();
-                this.tableKey++;
-            }
-            // let td=$(this).closest('.contTD'); // closest  container TD and work from there
-
-            // let col=td.index(), row=td.parent().index(), tbdy=td.closest('tbody');
-            // // modify input fields of rows >= row and columns >= col:
-            // tbdy.children('tr').slice(row).each((i,tr)=>{
-            //     $(tr).find('td input:text').slice(col).each((j,ti)=>{
-            //     if(vals[i]&&vals[i][j]!=null) ti.value=vals[i][j] }
-            // )});
         },
+
         async onSubmit(action) {
-            const data = await this.form.post("/user/api/ct_cases");
+            const data = await this.form.post("/user/api/imt_calculations");
             if (data.success) {
                 Iracode.success(this.__("Ctcase Created Successfully"));
-                if (action == "close") this.$router.push("/user/ct_cases");
+                if (action == "close") this.$router.push("/user/imt_calculations");
                 else this.form.reset();
             }
         },

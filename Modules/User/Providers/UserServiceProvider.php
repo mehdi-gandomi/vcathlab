@@ -96,7 +96,7 @@ class UserServiceProvider extends ServiceProvider
                                 ],
 
                                 [
-                                    'url'=>"/user/imt_scans",
+                                    'url'=>"/user/imt_calculations",
                                     'name'=>"List",
                                     'slug'=>'imt-list'
                                 ],
@@ -386,7 +386,7 @@ class UserServiceProvider extends ServiceProvider
                                 ],
 
                                 [
-                                    'url'=>"/user/imt_scans",
+                                    'url'=>"/user/imt_calculations",
                                     'name'=>"List",
                                     'slug'=>'imt-list'
                                 ],
