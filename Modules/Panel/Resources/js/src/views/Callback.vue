@@ -18,7 +18,7 @@ export default {
       this.$store.dispatch('updateUserInfo', {
         displayName: data.profile.name,
         email: data.profile.email,
-        photoURL: data.profile.picture,
+        photoURL: data.profile.avatar_url,
         // providerId: data.profile.sub.substr(0, data.profile.sub.indexOf('|')),
         // uid: data.profile.sub
       })

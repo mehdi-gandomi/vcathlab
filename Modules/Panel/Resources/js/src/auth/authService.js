@@ -39,7 +39,7 @@ class AuthService extends EventEmitter {
                     ...data.userData,
                     displayName: data.userData.name,
                     email: data.userData.email,
-                    photoURL:data.userData.avatar ? data.userData.avatar:"/images/avatar_generic_118.png", // From Auth
+                    photoURL:data.userData.avatar_url ? data.userData.avatar_url:"/images/avatar_generic_118.png", // From Auth
                     status: "online"
 
                     // providerId: this.profile.sub.substr(0, this.profile.sub.indexOf('|')),
