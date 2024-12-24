@@ -1,1 +1,5125 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{730:function(t,e,s){"use strict";s.r(e);var a=s(62),n=s.n(a);s(757);function r(t,e,s,a,n,r,i){try{var l=t[r](i),o=l.value}catch(t){return void s(t)}l.done?e(o):Promise.resolve(o).then(a,n)}function i(t){return function(){var e=this,s=arguments;return new Promise((function(a,n){var i=t.apply(e,s);function l(t){r(i,a,n,l,o,"next",t)}function o(t){r(i,a,n,l,o,"throw",t)}l(void 0)}))}}function l(t,e){var s=Object.keys(t);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(t);e&&(a=a.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),s.push.apply(s,a)}return s}function o(t){for(var e=1;e<arguments.length;e++){var s=null!=arguments[e]?arguments[e]:{};e%2?l(Object(s),!0).forEach((function(e){v(t,e,s[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(s)):l(Object(s)).forEach((function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(s,e))}))}return t}function v(t,e,s){return e in t?Object.defineProperty(t,e,{value:s,enumerable:!0,configurable:!0,writable:!0}):t[e]=s,t}var c={components:{},mixins:[s(758).a],data:function(){var t;return{mace:{},loading:!0,symptoms:["No angina (Asymptomatic)","Atypical Chest Pain","Typical Chest Pain","Dyspnea"],userInfo:o({},this.$store.state.auth.userInfo),patientResult:{},selectedDrug:"",downloadBtnKey:1,form:(t={Parental_hypertension:"0",physical_activity:"Normal level",risk_factors:[],drug_information:[],history:[],chief_complaint:[],HbA1C:"",patient_id:"",LDL_cholesterol:"",HDL_cholesterol:"",Age:"",SBP:"",Triglycerides:"",DBP:"",LeftAnklePressure:"",RightAnklePressure:"",Heigth:"",Weigth:""},v(t,"patient_id",0),v(t,"Sex",1),v(t,"Smoker",0),v(t,"TBP",0),v(t,"MI",0),v(t,"Diabetes",0),v(t,"FH",0),v(t,"THL",0),v(t,"symptom",""),t),patient:{name:"",code:"1136"},result:{msg:"",msg2:"",Risk1:"",OMen:"",Risk2:"",RSK1:"",ASI:"",PWV:"",data:{}},model:"Modules\\User\\Models\\CtCase",locale:Iracode.$i18n.locale,drugs:[{text:"Abciximab",value:"Abciximab"},{text:"Acebutolol",value:"Acebutolol"},{text:"Aspirin",value:"Aspirin"},{text:"Adenosine",value:"Adenosine"},{text:"Epinephrine",value:"Epinephrine"},{text:"Alteplase",value:"Alteplase"},{text:"Amiloride",value:"Amiloride"},{text:"Amiodarone",value:"Amiodarone"},{text:"Amlodipine",value:"Amlodipine"},{text:"Amrinone",value:"Amrinone"},{text:"Argatroban",value:"Argatroban"},{text:"Atenolol",value:"Atenolol"},{text:"Atorvastatin",value:"Atorvastatin"},{text:"Benazepril",value:"Benazepril"},{text:"Bisoprolol",value:"Bisoprolol"},{text:"Bivalirudin",value:"Bivalirudin"},{text:"Bosentan",value:"Bosentan"},{text:"Bretylium",value:"Bretylium"},{text:"Bumetanide",value:"Bumetanide"},{text:"Candesartan",value:"Candesartan"},{text:"Captopril",value:"Captopril"},{text:"Carvedilol",value:"Carvedilol"},{text:"Chlorothiazide",value:"Chlorothiazide"},{text:"Chlortalidone",value:"Chlortalidone"},{text:"Cilostazol",value:"Cilostazol"},{text:"Clofibrate",value:"Clofibrate"},{text:"Clonidine",value:"Clonidine"},{text:"Clopidogrel",value:"Clopidogrel"},{text:"Colesevelam",value:"Colesevelam"},{text:"Colestipol",value:"Colestipol"},{text:"Colestyramine",value:"Colestyramine"},{text:"Dalteparin",value:"Dalteparin"},{text:"Desirudin",value:"Desirudin"},{text:"Diazoxide-Oral",value:"Diazoxide-Oral"},{text:"Digoxin",value:"Digoxin"},{text:"Diltiazem",value:"Diltiazem"},{text:"Dipyridamole",value:"Dipyridamole"},{text:"Disopyramide",value:"Disopyramide"},{text:"Dobutamine",value:"Dobutamine"},{text:"Dofetilide",value:"Dofetilide"},{text:"Dopamine",value:"Dopamine"},{text:"Doxazosin",value:"Doxazosin"},{text:"Enalapril",value:"Enalapril"},{text:"Enoxaparin Sodium",value:"Enoxaparin Sodium"},{text:"Eplerenone",value:"Eplerenone"},{text:"Eprosartan",value:"Eprosartan"},{text:"Eptifibatide",value:"Eptifibatide"},{text:"Esmolol",value:"Esmolol"},{text:"Etacrynic Acid",value:"Etacrynic Acid"},{text:"Ezetimibe",value:"Ezetimibe"},{text:"Felodipine",value:"Felodipine"},{text:"Fenofibrate",value:"Fenofibrate"},{text:"Fenoldopam Mesilate",value:"Fenoldopam Mesilate"},{text:"Fibrinolysin",value:"Fibrinolysin"},{text:"Flecainide",value:"Flecainide"},{text:"Fluvastatin",value:"Fluvastatin"},{text:"Fondaparinux",value:"Fondaparinux"},{text:"Fosinopril",value:"Fosinopril"},{text:"Furosemide",value:"Furosemide"},{text:"Gemfibrozil",value:"Gemfibrozil"},{text:"Nitroglycerin",value:"Nitroglycerin"},{text:"Hydrochloride",value:"Hydrochloride"},{text:"Heparin",value:"Heparin"},{text:"Hydralazine",value:"Hydralazine"},{text:"Hydrochlorothiazide",value:"Hydrochlorothiazide"},{text:"Ibutilide Fumarate",value:"Ibutilide Fumarate"},{text:"Indapamide",value:"Indapamide"},{text:"Irbesartan",value:"Irbesartan"},{text:"Isoproterenol",value:"Isoproterenol"},{text:"Isosorbide Dinitrate",value:"Isosorbide Dinitrate"},{text:"Isosorbide Mononitrate",value:"Isosorbide Mononitrate"},{text:"Isradipine",value:"Isradipine"},{text:"Labetalol",value:"Labetalol"},{text:"Lepirudin",value:"Lepirudin"},{text:"Lisinopril",value:"Lisinopril"},{text:"Losartan",value:"Losartan"},{text:"Lovastatin",value:"Lovastatin"},{text:"Mannitol",value:"Mannitol"},{text:"Methyldopa",value:"Methyldopa"},{text:"Metolazone",value:"Metolazone"},{text:"Metoprolol",value:"Metoprolol"},{text:"Mexiletine",value:"Mexiletine"},{text:"Midodrine",value:"Midodrine"},{text:"Milrinone",value:"Milrinone"},{text:"Minoxidil",value:"Minoxidil"},{text:"Moexipril",value:"Moexipril"},{text:"Nadolol",value:"Nadolol"},{text:"Nebivolol",value:"Nebivolol"},{text:"Nesiritide Citrate",value:"Nesiritide Citrate"},{text:"Nicardipine",value:"Nicardipine"},{text:"Nicorandil",value:"Nicorandil"},{text:"Nifedipine",value:"Nifedipine"},{text:"Nimodipine",value:"Nimodipine"},{text:"Nisoldipine",value:"Nisoldipine"},{text:"Nitric Oxide",value:"Nitric Oxide"},{text:"Norepinephrine",value:"Norepinephrine"},{text:"Olmesartan",value:"Olmesartan"},{text:"Omega-3 Triglycerides",value:"Omega-3 Triglycerides"},{text:"Pentosan Polysulfate Sodium",value:"Pentosan Polysulfate Sodium"},{text:"Pentoxifylline",value:"Pentoxifylline"},{text:"Perindopril",value:"Perindopril"},{text:"Phenoxybenzamine",value:"Phenoxybenzamine"},{text:"Phentolamine",value:"Phentolamine"},{text:"Pindolol",value:"Pindolol"},{text:"Pitavastatin",value:"Pitavastatin"},{text:"Pravastatin",value:"Pravastatin"},{text:"Prazosin",value:"Prazosin"},{text:"Procainamide",value:"Procainamide"},{text:"Propafenone",value:"Propafenone"},{text:"Propranolol",value:"Propranolol"},{text:"Quinapril",value:"Quinapril"},{text:"Quinidine",value:"Quinidine"},{text:"Ramipril",value:"Ramipril"},{text:"Ranolazine",value:"Ranolazine"},{text:"Reteplase",value:"Reteplase"},{text:"Rosuvastatin",value:"Rosuvastatin"},{text:"Simvastatin",value:"Simvastatin"},{text:"Sodium Nitroprusside",value:"Sodium Nitroprusside"},{text:"Sotalol",value:"Sotalol"},{text:"Spironolactone",value:"Spironolactone"},{text:"Streptokinase",value:"Streptokinase"},{text:"Telmisartan",value:"Telmisartan"},{text:"Tenecteplase",value:"Tenecteplase"},{text:"Teprotide",value:"Teprotide"},{text:"Terazosin",value:"Terazosin"},{text:"Ticlopidine",value:"Ticlopidine"},{text:"Tinzaparin",value:"Tinzaparin"},{text:"Tirofiban",value:"Tirofiban"},{text:"Torasemide",value:"Torasemide"},{text:"Trandolapril",value:"Trandolapril"},{text:"Urokinase",value:"Urokinase"},{text:"Valsartan",value:"Valsartan"},{text:"Verapamil",value:"Verapamil"},{text:"Warfarin",value:"Warfarin"},{text:"Ephedrine",value:"Ephedrine"},{text:"Anagrelide",value:"Anagrelide"},{text:"Acetylsalicylic Acid+Atorvastatin+Hydrochlorthiazide+Valsartan",value:"Acetylsalicylic Acid+Atorvastatin+Hydrochlorthiazide+Valsartan"},{text:"Amiloride-H",value:"Amiloride-H"},{text:"Triamterene-H",value:"Triamterene-H"},{text:"Lidocaine-Systemic",value:"Lidocaine-Systemic"},{text:"Epinephrin-Ophthalmic",value:"Epinephrin-Ophthalmic"},{text:"Amlodipine+Atorvastatin",value:"Amlodipine+Atorvastatin"},{text:"Losartan+Hydrochlorothiazide",value:"Losartan+Hydrochlorothiazide"},{text:"Lisinopril+Hydrochlorothiazide",value:"Lisinopril+Hydrochlorothiazide"},{text:"Amlodipine+Benazepril",value:"Amlodipine+Benazepril"},{text:"Amlodipine+Valsartan",value:"Amlodipine+Valsartan"},{text:"Bisoprolol+Hydrochlorothiazide",value:"Bisoprolol+Hydrochlorothiazide"},{text:"Telmisartan+Hydrochlorothiazide",value:"Telmisartan+Hydrochlorothiazide"},{text:"Ticagrelor",value:"Ticagrelor"},{text:"Dabigatran",value:"Dabigatran"},{text:"Dipyridamol+ASA",value:"Dipyridamol+ASA"},{text:"Dronedarone",value:"Dronedarone"},{text:"Prasugrel",value:"Prasugrel"},{text:"Ezetimibe+Simvastatin",value:"Ezetimibe+Simvastatin"},{text:"Ivabradine",value:"Ivabradine"},{text:"Ixabepilone",value:"Ixabepilone"},{text:"Nicotinic Acid+Laropiprant",value:"Nicotinic Acid+Laropiprant"},{text:"Rivaroxaban",value:"Rivaroxaban"},{text:"Sacubitril+Valsartan",value:"Sacubitril+Valsartan"},{text:"Ambrisentan",value:"Ambrisentan"},{text:"Aliskiren",value:"Aliskiren"},{text:"Betaxolol-Systemic",value:"Betaxolol-Systemic"},{text:"Apixaban",value:"Apixaban"}],inputs:{name:{type:"vs-input"},physician:{type:"vs-input"},Age:{type:"vs-input"},Sex:{type:"vs-radio"},code:{type:"vs-input"},file:{type:"vs-input"},patient_id:{field_type:"text",type:"vs-input",options:[],selected:{},foreign_key:"patient_id",relation_name:"patient",searchUrl:"/user/api/patients",titleField:"name"},Smoker:{type:"vs-radio"},TBP:{type:"vs-radio"},MI:{type:"vs-radio"},Diabetes:{type:"vs-radio"},FH:{type:"vs-radio"},THL:{type:"vs-radio"},HbA1C:{type:"vs-input"},LDL_cholesterol:{type:"vs-input"},HDL_cholesterol:{type:"vs-input"},SBP:{type:"vs-input"},Triglycerides:{type:"vs-input"},DBP:{type:"vs-input"},LeftAnklePressure:{type:"vs-input"},RightAnklePressure:{type:"vs-input"},Heigth:{type:"vs-input"},Weigth:{type:"vs-input"}}}},props:{},computed:{},created:function(){var t=this;return i(n.a.mark((function e(){var s,a,r,i;return n.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,t.$http.get("/user/api/mace_assesments/".concat(t.$route.params.id));case 2:if(s=e.sent,(a=s.data).success){for(i in r=a.data,t.form)t.form[i]=r[i];t.patient.name=r.patient.name}t.loading=!1;case 6:case"end":return e.stop()}}),e)})))()},mounted:function(){},methods:{download:function(t,e){var s=this;return i(n.a.mark((function a(){return n.a.wrap((function(a){for(;;)switch(a.prev=a.next){case 0:setTimeout(i(n.a.mark((function a(){var r,i;return n.a.wrap((function(a){for(;;)switch(a.prev=a.next){case 0:return a.prev=0,a.next=3,s.$http.put("/user/api/mace_assesments/"+s.mace.id,v({},e,1));case 3:r=a.sent,i=r.data,console.log(i),a.next=11;break;case 8:a.prev=8,a.t0=a.catch(0),console.log(a.t0);case 11:return a.prev=11,location.href=t,a.finish(11);case 14:case"end":return a.stop()}}),a,null,[[0,8,11,14]])}))),500);case 1:case"end":return a.stop()}}),a)})))()},autoCompleteFunc:function(t){console.log(t)},addDrug:function(){this.form.drug_information.push(this.selectedDrug),this.selectedDrug=""},calculate:function(){var t=this;return i(n.a.mark((function e(){var s,a,r,i,l,v,c,d,p,u,m,f,_,x,y,g,h,b,k,w,C,S,P,A,D,H,L,T,E,B,I,M,z,R,F,O,j,$,N,V,W,K;return n.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return t.result={msg:"",msg2:"",Risk1:"",OMen:"",Risk2:"",RSK1:"",ASI:"",PWV:"",data:{}},s=t.form,a=s.HbA1C,r=s.LDL_cholesterol,i=s.HDL_cholesterol,l=s.Age,v=s.SBP,c=s.Triglycerides,d=s.DBP,p=s.LeftAnklePressure,u=s.RightAnklePressure,s.Heigth,s.Weigth,m=s.Sex,f=s.Smoker,_=s.TBP,x=s.MI,y=s.Diabetes,g=s.FH,h=s.THL,k=(+p+ +u)/2,w=.0455*l+.7496*m-.5055+.5168*y+.4732*f+.0053*(b=+r+ +i+ +c/5)-.014*i+.2473*h+.0085*v+.3381*_+.4522*g,C=100*(1-Math.pow(.99963,Math.exp(w))),S=.0455*l+.7496*m-.5055+.5168*y+0+.583-.77+.2473+1.02+.3381+.4522*g,P=100*(1-Math.pow(.99963,Math.exp(S))),A=.0799*l+3.137*Math.log(v)+.18*Math.log(.1)+1.382*Math.log(b),D=-1.172*Math.log(i)+.134*a+.818*f+.438*x,H=A+D,L=100*(1-Math.pow(.98634,Math.exp(H-22.325))),T=.0799*l+3.137*Math.log(120)+.18*Math.log(.1)+1.382*Math.log(150),E=-1.172*Math.log(40)+.804+0+.438*x,B=T+E,I=100*(1-Math.pow(.98634,Math.exp(B-22.325))),z=(M=100*(.12*l+8))/50*(d/70)*(k/.8),console.log(I),O="",(R=C)<5?O="Low risk":R<20&&R>5?O="Moderate risk":R>20&&(O="High risk"),j="",(F=L)<5?j="Low risk":F<20&&F>5?j="Moderate risk":F>20&&(j="High risk"),t.result.Risk1=R,t.result.Risk2=F,t.result.RSK1=I,t.result.RSK1=I,t.result.PWV=M,t.result.ASI=z,t.result.OMen=P,t.result.msg=O,t.result.msg2=j,($=t.patient).age=t.form.Age,$.sex=t.form.Sex,$.hospital="",e.next=40,t.$http.post("/user/api/patients",$);case 40:return N=e.sent,V=N.data,t.patientResult=V,t.form.patient_id=V.data.id,t.form.risk_factors=[],"1"==t.form.Smoker&&t.form.risk_factors.push("Smoker"),"1"==t.form.FH&&t.form.risk_factors.push("Family History"),"1"==t.form.Diabetes&&t.form.risk_factors.push("Diabetes"),"1"==t.form.THL&&t.form.risk_factors.push("Hyperlipidemia"),"1"==t.form.TBP&&t.form.risk_factors.push("Hypertension"),"1"==t.form.MI&&t.form.risk_factors.push("MI History"),e.next=53,t.$http.post("/user/api/mace_assesment",o(o({},t.form),{},{id:t.mace.id}));case 53:W=e.sent,K=W.data,t.mace=K.data.mace,setTimeout((function(){t.result.data=K,t.$forceUpdate(),t.downloadBtnKey++}),500);case 57:case"end":return e.stop()}}),e)})))()},onSubmit:function(t){var e=this;return i(n.a.mark((function s(){return n.a.wrap((function(s){for(;;)switch(s.prev=s.next){case 0:return s.next=2,e.form.post("/user/api/ct_cases");case 2:s.sent.success&&(Iracode.success(e.__("Ctcase Created Successfully")),"close"==t?e.$router.push("/user/ct_cases"):e.form.reset());case 4:case"end":return s.stop()}}),s)})))()}}},d=(s(954),s(956),s(53)),p=Object(d.a)(c,(function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("loading-view",{attrs:{loading:t.loading}},[s("vx-card",[s("h2",{staticStyle:{"text-align":"center",padding:"2rem",border:"1px solid #000"}},[t._v("MACE Risk Assesment")]),t._v(" "),s("form",{on:{submit:t.onSubmit}},[s("div",[s("h4",{staticClass:"gray"},[t._v("Patient Information:")]),t._v(" "),s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Name")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s(t.inputs.name.type,{tag:"component",staticStyle:{width:"250px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("name"),"danger-text":t.validationError("name"),name:"name",type:"text"},model:{value:t.patient.name,callback:function(e){t.$set(t.patient,"name",e)},expression:"patient.name"}})],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"2","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Code")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s(t.inputs.code.type,{tag:"component",staticStyle:{width:"120px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("code"),"danger-text":t.validationError("code"),name:"code",type:"text"},model:{value:t.patient.code,callback:function(e){t.$set(t.patient,"code",e)},expression:"patient.code"}})],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"6"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Age")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s(t.inputs.Age.type,{tag:"component",staticStyle:{width:"80px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("Age"),"danger-text":t.validationError("Age"),name:"Age",type:"number"},model:{value:t.form.Age,callback:function(e){t.$set(t.form,"Age",e)},expression:"form.Age"}})],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Sex")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem","margin-left":"1.5rem"}},[s("vs-radio",{attrs:{"vs-name":"Sex","vs-value":"1"},model:{value:t.form.Sex,callback:function(e){t.$set(t.form,"Sex",e)},expression:"form.Sex"}},[t._v("Male")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"Sex","vs-value":"0"},model:{value:t.form.Sex,callback:function(e){t.$set(t.form,"Sex",e)},expression:"form.Sex"}},[t._v("Female")])],1)])],1)],1),t._v(" "),s("div",[s("h4",{staticClass:"gray"},[t._v("Medical Treatment:")]),t._v(" "),s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticStyle:{"flex-direction":"column"},attrs:{"vs-type":"flex","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset"},[s("legend",[t._v(t._s(t.__("Treatment for Hypertension")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("vs-radio",{attrs:{"vs-name":"TBP","vs-value":"1"},model:{value:t.form.TBP,callback:function(e){t.$set(t.form,"TBP",e)},expression:"form.TBP"}},[t._v("Yes")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"TBP","vs-value":"0"},model:{value:t.form.TBP,callback:function(e){t.$set(t.form,"TBP",e)},expression:"form.TBP"}},[t._v("No")])],1)])]),t._v(" "),s("vs-col",{staticStyle:{"flex-direction":"column"},attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset"},[s("legend",[t._v(t._s(t.__("Treatment for Hyperlipidemia")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("vs-radio",{attrs:{"vs-name":"THL","vs-value":"1"},model:{value:t.form.THL,callback:function(e){t.$set(t.form,"THL",e)},expression:"form.THL"}},[t._v("Yes")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"THL","vs-value":"0"},model:{value:t.form.THL,callback:function(e){t.$set(t.form,"THL",e)},expression:"form.THL"}},[t._v("No")])],1)])]),t._v(" "),s("vs-col",{staticStyle:{"flex-direction":"column"},attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset"},[s("legend",[t._v(t._s(t.__("Treatment for MI History")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("vs-radio",{attrs:{"vs-name":"MI","vs-value":"1"},model:{value:t.form.MI,callback:function(e){t.$set(t.form,"MI",e)},expression:"form.MI"}},[t._v("Yes")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"MI","vs-value":"0"},model:{value:t.form.MI,callback:function(e){t.$set(t.form,"MI",e)},expression:"form.MI"}},[t._v("No")])],1)])])],1)],1),t._v(" "),s("div",[s("h4",{staticClass:"gray"},[t._v("Risk Factors:")]),t._v(" "),s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticStyle:{"flex-direction":"column"},attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset"},[s("legend",[t._v(t._s(t.__("Smoker")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("vs-radio",{attrs:{"vs-name":"Smoker","vs-value":"1"},model:{value:t.form.Smoker,callback:function(e){t.$set(t.form,"Smoker",e)},expression:"form.Smoker"}},[t._v("Yes")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"Smoker","vs-value":"0"},model:{value:t.form.Smoker,callback:function(e){t.$set(t.form,"Smoker",e)},expression:"form.Smoker"}},[t._v("No")])],1)])]),t._v(" "),s("vs-col",{staticStyle:{"flex-direction":"column"},attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset"},[s("legend",[t._v(t._s(t.__("Family History")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("vs-radio",{attrs:{"vs-name":"FH","vs-value":"1"},model:{value:t.form.FH,callback:function(e){t.$set(t.form,"FH",e)},expression:"form.FH"}},[t._v("Yes")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"FH","vs-value":"0"},model:{value:t.form.FH,callback:function(e){t.$set(t.form,"FH",e)},expression:"form.FH"}},[t._v("No")])],1)])]),t._v(" "),s("vs-col",{staticStyle:{"flex-direction":"column"},attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset"},[s("legend",[t._v(t._s(t.__("Diabetes")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("vs-radio",{attrs:{"vs-name":"Diabetes","vs-value":"1"},model:{value:t.form.Diabetes,callback:function(e){t.$set(t.form,"Diabetes",e)},expression:"form.Diabetes"}},[t._v("Yes")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"Diabetes","vs-value":"0"},model:{value:t.form.Diabetes,callback:function(e){t.$set(t.form,"Diabetes",e)},expression:"form.Diabetes"}},[t._v("No")])],1)])])],1)],1),t._v(" "),s("div",[s("h4",{staticClass:"gray"},[t._v("Hemodynamic Parameters:")]),t._v(" "),s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("LDL")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.LDL_cholesterol.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("LDL_cholesterol"),"danger-text":t.validationError("LDL_cholesterol"),name:"LDL_cholesterol",type:"text"},model:{value:t.form.LDL_cholesterol,callback:function(e){t.$set(t.form,"LDL_cholesterol",e)},expression:"form.LDL_cholesterol"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                        mg/dl\n                    ")])],1)]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("HDL")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.HDL_cholesterol.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("HDL_cholesterol"),"danger-text":t.validationError("HDL_cholesterol"),name:"HDL_cholesterol",type:"text"},model:{value:t.form.HDL_cholesterol,callback:function(e){t.$set(t.form,"HDL_cholesterol",e)},expression:"form.HDL_cholesterol"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                        mg/dl\n                    ")])],1)]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("TG")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.Triglycerides.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("Triglycerides"),"danger-text":t.validationError("Triglycerides"),name:"Triglycerides",type:"text"},model:{value:t.form.Triglycerides,callback:function(e){t.$set(t.form,"Triglycerides",e)},expression:"form.Triglycerides"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                        mg/dl\n                    ")])],1)]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("HbA1C")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.HbA1C.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("HbA1C"),"danger-text":t.validationError("HbA1C"),name:"HbA1C",type:"text"},model:{value:t.form.HbA1C,callback:function(e){t.$set(t.form,"HbA1C",e)},expression:"form.HbA1C"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                        %\n                    ")])],1)])],1)],1),t._v(" "),s("div",[s("h4",{staticClass:"gray"},[t._v("Blood Pressure & Anthropometry:")]),t._v(" "),s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("DBP")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.DBP.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("DBP"),"danger-text":t.validationError("DBP"),name:"DBP",type:"text"},model:{value:t.form.DBP,callback:function(e){t.$set(t.form,"DBP",e)},expression:"form.DBP"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                        mmHg\n                    ")])],1)]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("SBP")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.SBP.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("SBP"),"danger-text":t.validationError("SBP"),name:"SBP",type:"text"},model:{value:t.form.SBP,callback:function(e){t.$set(t.form,"SBP",e)},expression:"form.SBP"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                        mmHg\n                    ")])],1)]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Weight")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.Weigth.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("Weigth"),"danger-text":t.validationError("Weigth"),name:"Weigth",type:"text"},model:{value:t.form.Weigth,callback:function(e){t.$set(t.form,"Weigth",e)},expression:"form.Weigth"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                        kg\n                    ")])],1)]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Height")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s(t.inputs.Heigth.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("Heigth"),"danger-text":t.validationError("Heigth"),name:"Heigth",type:"text"},model:{value:t.form.Heigth,callback:function(e){t.$set(t.form,"Heigth",e)},expression:"form.Heigth"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                        cm\n                    ")])],1)])],1)],1),t._v(" "),s("div",[s("h4",{staticClass:"gray"},[t._v("Ankle-brachial index:")]),t._v(" "),6==t.userInfo.panel_type?s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-align":"center","vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("div",{staticStyle:{display:"flex","align-items":"center"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Left Ankle Pressure")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s(t.inputs.LeftAnklePressure.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1.8rem"},attrs:{danger:t.hasValidationError("LeftAnklePressure"),"danger-text":t.validationError("LeftAnklePressure"),name:"LeftAnklePressure",type:"text"},model:{value:t.form.LeftAnklePressure,callback:function(e){t.$set(t.form,"LeftAnklePressure",e)},expression:"form.LeftAnklePressure"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                        mmHg\n                    ")])],1),t._v(" "),s("div",{staticStyle:{display:"flex","align-items":"center","margin-top":"2rem"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Right Ankle Pressure")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s(t.inputs.RightAnklePressure.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("RightAnklePressure"),"danger-text":t.validationError("RightAnklePressure"),name:"RightAnklePressure",type:"text"},model:{value:t.form.RightAnklePressure,callback:function(e){t.$set(t.form,"RightAnklePressure",e)},expression:"form.RightAnklePressure"}}),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                        mmHg\n                    ")])],1)]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset",staticStyle:{height:"120px"}},[s("legend",[t._v(t._s(t.__("Parental HTN")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("vs-radio",{attrs:{"vs-name":"Parental_hypertension","vs-value":"1"},model:{value:t.form.Parental_hypertension,callback:function(e){t.$set(t.form,"Parental_hypertension",e)},expression:"form.Parental_hypertension"}},[t._v("Yes")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"Parental_hypertension","vs-value":"0"},model:{value:t.form.Parental_hypertension,callback:function(e){t.$set(t.form,"Parental_hypertension",e)},expression:"form.Parental_hypertension"}},[t._v("No")])],1)])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset"},[s("legend",[t._v(t._s(t.__("Symptom")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("v-select",{staticStyle:{width:"100%"},attrs:{options:t.symptoms},model:{value:t.form.symptom,callback:function(e){t.$set(t.form,"symptom",e)},expression:"form.symptom"}})],1)])])],1):s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-align":"center","vs-type":"flex","vs-w":"12"}},[5!=t.userInfo.panel_type?s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"2","vs-sm":"6","vs-xs":"12"}}):t._e(),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Left Ankle-brachial Index")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s(t.inputs.LeftAnklePressure.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("LeftAnklePressure"),"danger-text":t.validationError("LeftAnklePressure"),name:"LeftAnklePressure",type:"text"},model:{value:t.form.LeftAnklePressure,callback:function(e){t.$set(t.form,"LeftAnklePressure",e)},expression:"form.LeftAnklePressure"}})],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Right Ankle-brachial Index")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s(t.inputs.RightAnklePressure.type,{tag:"component",staticStyle:{width:"100px","margin-left":"1rem"},attrs:{danger:t.hasValidationError("RightAnklePressure"),"danger-text":t.validationError("RightAnklePressure"),name:"RightAnklePressure",type:"text"},model:{value:t.form.RightAnklePressure,callback:function(e){t.$set(t.form,"RightAnklePressure",e)},expression:"form.RightAnklePressure"}})],1),t._v(" "),6==t.userInfo.panel_type?s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset"},[s("legend",[t._v(t._s(t.__("Symptom")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("v-select",{staticStyle:{width:"100%"},attrs:{options:t.symptoms},model:{value:t.form.symptom,callback:function(e){t.$set(t.form,"symptom",e)},expression:"form.symptom"}})],1)])]):t._e(),t._v(" "),5==t.userInfo.panel_type?s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"4","vs-sm":"6","vs-xs":"12"}},[s("fieldset",{staticClass:"w-100 styled-fieldset"},[s("legend",[t._v(t._s(t.__("Parental HTN")))]),t._v(" "),s("div",{staticStyle:{display:"flex","justify-content":"space-around",width:"100%","margin-top":"0.5rem"}},[s("vs-radio",{attrs:{"vs-name":"Parental_hypertension","vs-value":"1"},model:{value:t.form.Parental_hypertension,callback:function(e){t.$set(t.form,"Parental_hypertension",e)},expression:"form.Parental_hypertension"}},[t._v("Yes")]),t._v(" "),s("vs-radio",{staticClass:"ml-4",attrs:{"vs-name":"Parental_hypertension","vs-value":"0"},model:{value:t.form.Parental_hypertension,callback:function(e){t.$set(t.form,"Parental_hypertension",e)},expression:"form.Parental_hypertension"}},[t._v("No")])],1)])]):t._e()],1)],1),t._v(" "),t._e(),t._v(" "),t._e(),t._v(" "),s("div",[5!=t.userInfo.panel_type&&6!=t.userInfo.panel_type?s("div",[s("h4",{staticClass:"gray"},[t._v("Result of Assesment:")]),t._v(" "),s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Pulse Wave Velocity (PWV)")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("div",{staticClass:"flex",staticStyle:{"align-items":"center"}},[s("strong",{staticStyle:{"margin-left":"1rem"}},[t._v("\n                    "+t._s(t.result.PWV?t.result.PWV.toFixed(2):t.result.PWV)+"\n                  ")]),t._v(" "),s("span",{staticClass:"ml-2"},[t._v("\n                        cm/s\n                    ")])])]),t._v(" "),s("vs-col",{staticStyle:{"flex-direction":"column","justify-content":"center"},attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex mx-2 mt-3 text-left w-100 mb-3"},[s("strong",[t._v(t._s(t.__("PWV")))]),t._v(" "),s("span",{staticClass:"ml-1"},[t._v(t._s(t.__("higher than cut off > 1650 cm/s")))])])])],1),t._v(" "),s("vs-row",{staticClass:"mb-6 m-0",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex text-left"},[s("span",[t._v(t._s(t.__("Arterial Stiffness Index (ASI)")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("strong",{staticStyle:{"margin-left":"1rem"}},[t._v("\n                  "+t._s(t.result.ASI?t.result.ASI.toFixed(2):t.result.ASI)+"\n              ")])]),t._v(" "),s("vs-col",{staticStyle:{"flex-direction":"column","justify-content":"center"},attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6","vs-sm":"6","vs-xs":"12"}},[s("div",{staticClass:"flex mx-2 mt-3 text-left w-100 mb-3"},[s("strong",[t._v(t._s(t.__("ASI")))]),t._v(" "),s("span",{staticClass:"ml-1"},[t._v(t._s(t.__("higher than cut off > 60")))])])])],1),t._v(" "),t.result&&t.result.msg?s("vs-row",[s("vs-col",{attrs:{"vs-lg":"12"}},[s("h3",{staticClass:"my-4"},[s("strong",[t._v("\n                          Atherosclerosis plaque progress:\n                      ")])]),t._v(" "),s("p",[t._v("\n                      \tRisk of plaque progress with current risk factors  =  "),s("strong",[t._v(t._s(t.result.Risk1.toFixed(2)))]),t._v(" %  ("+t._s(t.result.msg)+")\n                  ")]),t._v(" "),s("p",[t._v("\n                      \tRisk of plaque progress with optimal risk factors  = "),s("strong",[t._v(t._s(t.result.OMen.toFixed(2)))]),t._v(" %  (optimal risk)\n                  ")])]),t._v(" "),s("vs-col",{attrs:{"vs-lg":"12"}},[s("h3",{staticClass:"my-4"},[s("strong",[t._v("\n                          \tMI and CVA risk assessment:\n                      ")])]),t._v(" "),s("p",[t._v("\n                      \tRisk of MI and stroke with current risk factors  =  "),s("strong",[t._v(t._s(t.result.Risk2.toFixed(2)))]),t._v(" %  ("+t._s(t.result.msg2)+")\n                  ")]),t._v(" "),s("p",[t._v("\n                      \tRisk of MI and stroke with optimal risk factors  = "),s("strong",[t._v(t._s(t.result.RSK1.toFixed(2)))]),t._v(" %  (optimal risk)\n                  ")])]),t._v(" "),s("vs-col",{attrs:{"vs-lg":"12"}},[s("h3",{staticClass:"my-4"},[s("strong",[t._v("\n                          Conclusion:\n                      ")])]),t._v(" "),s("p",[t._v("\n                      \tThe patient is "+t._s(t.result.msg)+" for atherosclerosis plaque progress.\n                  ")]),t._v(" "),s("p",[t._v("\n                      \tThe patient is "+t._s(t.result.msg2)+" for MI and stroke event.\n                  ")])])],1):t._e()],1):t._e()]),t._v(" "),s("div",{staticClass:"flex justify-center mt-16"},[s("div",{staticClass:"flex align-items-center"},[s("vs-button",{staticClass:"mr-3 mb-2",staticStyle:{"font-size":"20px"},attrs:{color:"success"},on:{click:t.calculate}},[t._v(t._s(t.__("MACE Risk Calculation")))]),t._v(" "),"najafi@vcathlab.com"!=t.userInfo.email&&"mghasemi@vcathlab.com"!=t.userInfo.email||!t.result.data.data?t.result.data.data&&6!=t.userInfo.panel_type?s("div",[t.result.data.data&&t.result.data.data.link?s("a",{key:t.downloadBtnKey,staticClass:"mr-3 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",staticStyle:{"font-size":"30px"},attrs:{target:"_blank",rel:"noopener",href:t.result.data.data.link}},[t._v("\n                    "+t._s(t.__("Export PDF"))+"\n                ")]):t._e(),t._v(" "),t.result.data.data&&t.result.data.data.word_link?s("a",{key:t.downloadBtnKey,staticClass:"mr-3 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",staticStyle:{"font-size":"30px"},attrs:{target:"_blank",rel:"noopener",href:t.result.data.data.word_link}},[t._v("\n                        "+t._s(t.__("Export Word"))+"\n                ")]):t._e()]):t._e():s("div",{staticStyle:{width:"80%"}},[s("vs-row",[s("vs-col",{attrs:{"vs-lg":"4"}},[s("p",{staticClass:"col-lg-3"},[t._v("Body and BP Triage:")])]),t._v(" "),s("vs-col",{attrs:{"vs-lg":"8"}},[s("a",{key:t.downloadBtnKey,staticClass:"mr-2 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",staticStyle:{"font-size":"12px"},attrs:{target:"_blank",rel:"noopener",href:t.result.data.data.links.bp_triage.link}},[t._v("\n                                            "+t._s(t.__("Export PDF"))+"\n                                    ")]),t._v(" "),s("a",{key:t.downloadBtnKey,staticClass:"mr-2 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",staticStyle:{"font-size":"12px"},attrs:{target:"_blank",rel:"noopener",href:t.result.data.data.links.bp_triage.word_link}},[t._v("\n                                "+t._s(t.__("Export Word")))])])],1),t._v(" "),s("vs-row",[s("vs-col",{attrs:{"vs-lg":"4"}},[s("p",{staticClass:"col-lg-3"},[t._v("PTP of CAD Results:")])]),t._v(" "),s("vs-col",{attrs:{"vs-lg":"8"}},[s("a",{key:t.downloadBtnKey,staticClass:"mr-2 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",staticStyle:{"font-size":"12px"},attrs:{target:"_blank",rel:"noopener",href:t.result.data.data.links.ptp_cad.link}},[t._v("\n                                            "+t._s(t.__("Export PDF"))+"\n                                    ")]),t._v(" "),s("a",{key:t.downloadBtnKey,staticClass:"mr-2 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",staticStyle:{"font-size":"12px"},attrs:{target:"_blank",rel:"noopener",href:t.result.data.data.links.ptp_cad.word_link}},[t._v("\n                                "+t._s(t.__("Export Word")))])])],1),t._v(" "),s("vs-row",[s("vs-col",{attrs:{"vs-lg":"4"}},[s("p",{staticClass:"col-lg-3"},[t._v("Total results:")])]),t._v(" "),s("vs-col",{attrs:{"vs-lg":"8"}},[s("a",{key:t.downloadBtnKey,staticClass:"mr-2 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",staticStyle:{"font-size":"12px"},attrs:{target:"_blank",rel:"noopener",href:t.result.data.data.link}},[t._v("\n                                            "+t._s(t.__("Export PDF"))+"\n                                    ")]),t._v(" "),s("a",{key:t.downloadBtnKey,staticClass:"mr-2 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",staticStyle:{"font-size":"12px"},attrs:{target:"_blank",rel:"noopener",href:t.result.data.data.word_link}},[t._v("\n                                "+t._s(t.__("Export Word")))])])],1)],1)],1)]),t._v(" "),"najafi@vcathlab.com"!=t.userInfo.email&&"mghasemi@vcathlab.com"!=t.userInfo.email&&6==t.userInfo.panel_type&&t.result.data.data?s("div",{staticClass:"result",staticStyle:{display:"flex","justify-content":"center","margin-top":"1rem"}},[s("div",{staticClass:"examplex"},[s("vs-button",{staticClass:"btnx",attrs:{type:"filled",color:"success"}},[t._v("Ankle Brachial Index")]),t._v(" "),s("vs-dropdown",{attrs:{"vs-trigger-click":""}},[s("vs-button",{staticClass:"btn-drop",attrs:{color:"success",type:"filled",icon:"expand_more"}}),t._v(" "),s("vs-dropdown-menu",[s("vs-dropdown-item",[s("a",{key:t.downloadBtnKey,staticStyle:{"font-size":"12px"},attrs:{rel:"noopener"},on:{click:function(e){return t.download(t.result.data.data.links.bp_triage.link,"abi_clicked")}}},[t._v("\n                                            "+t._s(t.__("Export PDF"))+"\n                                    ")])]),t._v(" "),s("vs-dropdown-item",[s("a",{key:t.downloadBtnKey,staticStyle:{"font-size":"12px"},attrs:{rel:"noopener"},on:{click:function(e){return t.download(t.result.data.data.links.bp_triage.word_link,"abi_clicked")}}},[t._v("\n                                "+t._s(t.__("Export Word")))])])],1)],1)],1),t._v(" "),s("div",{staticClass:"examplex"},[s("vs-button",{staticClass:"btnx",attrs:{type:"filled",color:"success"}},[t._v("Screening Test")]),t._v(" "),s("vs-dropdown",{attrs:{"vs-trigger-click":""}},[s("vs-button",{staticClass:"btn-drop",attrs:{color:"success",type:"filled",icon:"expand_more"}}),t._v(" "),s("vs-dropdown-menu",[s("vs-dropdown-item",[s("a",{key:t.downloadBtnKey,staticStyle:{"font-size":"12px"},attrs:{rel:"noopener",href:"javascript:void(0)"},on:{click:function(e){return t.download(t.result.data.data.links.ptp_cad.link,"screening_test_clicked")}}},[t._v("\n                                            "+t._s(t.__("Export PDF"))+"\n                                    ")])]),t._v(" "),s("vs-dropdown-item",[s("a",{key:t.downloadBtnKey,staticStyle:{"font-size":"12px"},attrs:{rel:"noopener",href:"javascript:void(0)"},on:{click:function(e){return t.download(t.result.data.data.links.ptp_cad.word_link,"screening_test_clicked")}}},[t._v("\n                                "+t._s(t.__("Export Word")))])])],1)],1)],1),t._v(" "),s("div",{staticClass:"examplex"},[s("vs-button",{staticClass:"btnx",attrs:{type:"filled",color:"success"}},[t._v("PTP of CAD")]),t._v(" "),s("vs-dropdown",{attrs:{"vs-trigger-click":""}},[s("vs-button",{staticClass:"btn-drop",attrs:{color:"success",type:"filled",icon:"expand_more"}}),t._v(" "),s("vs-dropdown-menu",[s("vs-dropdown-item",[s("a",{key:t.downloadBtnKey,staticStyle:{"font-size":"12px"},attrs:{rel:"noopener",href:"javascript:void(0)"},on:{click:function(){return t.download(t.result.data.data.links.ClinicallikelihoodofCAD.link,"ptp_of_cad_clicked")}}},[t._v("\n                                            "+t._s(t.__("Export PDF"))+"\n                                    ")])]),t._v(" "),s("vs-dropdown-item",[s("a",{key:t.downloadBtnKey,staticStyle:{"font-size":"12px"},attrs:{rel:"noopener",href:"javascript:void(0)"},on:{click:function(){return t.download(t.result.data.data.links.ClinicallikelihoodofCAD.word_link,"ptp_of_cad_clicked")}}},[t._v("\n                                "+t._s(t.__("Export Word")))])])],1)],1)],1),t._v(" "),s("div",{staticClass:"examplex"},[s("vs-button",{staticClass:"btnx",attrs:{type:"filled",color:"success"}},[t._v("Total Result")]),t._v(" "),s("vs-dropdown",{attrs:{"vs-trigger-click":""}},[s("vs-button",{staticClass:"btn-drop",attrs:{color:"success",type:"filled",icon:"expand_more"}}),t._v(" "),s("vs-dropdown-menu",[s("vs-dropdown-item",[s("a",{key:t.downloadBtnKey,staticStyle:{"font-size":"12px"},attrs:{rel:"noopener",href:"javascript:void(0)"},on:{click:function(e){return t.download(t.result.data.data.link,"total_clicked")}}},[t._v("\n                                            "+t._s(t.__("Export PDF"))+"\n                                    ")])]),t._v(" "),s("vs-dropdown-item",[s("a",{key:t.downloadBtnKey,staticStyle:{"font-size":"12px"},attrs:{rel:"noopener",href:"javascript:void(0)"},on:{click:function(e){return t.download(t.result.data.data.word_link,"total_clicked")}}},[t._v("\n                                "+t._s(t.__("Export Word")))])])],1)],1)],1)]):t._e()],1)])],1)}),[],!1,null,null,null);e.default=p.exports},757:function(t,e,s){"use strict";var a=s(536),n=s.n(a);function r(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}e.a=function t(e){return r(this,t),new n.a(e,{http:window.Iracode.getHttp()})}},758:function(t,e,s){"use strict";var a=s(62),n=s.n(a);function r(t,e){var s=Object.keys(t);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(t);e&&(a=a.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),s.push.apply(s,a)}return s}function i(t){for(var e=1;e<arguments.length;e++){var s=null!=arguments[e]?arguments[e]:{};e%2?r(Object(s),!0).forEach((function(e){l(t,e,s[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(s)):r(Object(s)).forEach((function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(s,e))}))}return t}function l(t,e,s){return e in t?Object.defineProperty(t,e,{value:s,enumerable:!0,configurable:!0,writable:!0}):t[e]=s,t}function o(t,e,s,a,n,r,i){try{var l=t[r](i),o=l.value}catch(t){return void s(t)}l.done?e(o):Promise.resolve(o).then(a,n)}function v(t){return function(){var e=this,s=arguments;return new Promise((function(a,n){var r=t.apply(e,s);function i(t){o(r,a,n,i,l,"next",t)}function l(t){o(r,a,n,i,l,"throw",t)}i(void 0)}))}}function c(t){return(c="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}e.a={data:function(){var t=this;return{uploadServer:{url:window.config.uploadBasePath,timeout:36e6,load:function(t,e,s,a,n,r){t.indexOf("/null")>-1&&(console.log("source",t),n());var i=new Request(t);fetch(i).then((function(t){t.blob().then((function(t){e(t)}))}))},process:{url:"/process",method:"POST",headers:{Authorization:"Bearer ".concat(this.$store.state.auth.accessToken),"X-CSRF-TOKEN":document.querySelector('meta[name="csrf-token"]').content},withCredentials:!1,onload:function(e){return"object"!=c(e)&&(e=JSON.parse(e)),console.log(t.inputs[e.field_name],e.field_name),t.inputs[e.field_name].filepond_options["allow-multiple"]?t.form[e.field_name].push(e.key):t.form[e.field_name]=e.key,e.key},onerror:function(t){return t.data},ondata:function(e){return e.append("model",t.model),t.$route.params.id&&e.append("model_id",t.$route.params.id),e}},revert:"revert",restore:"restore",fetch:"fetch"}}},methods:{getRelationLabel:function(){for(var t=arguments.length,e=new Array(t),s=0;s<t;s++)e[s]=arguments[s];console.log(this,e)},onRelationSelect:function(t,e){var s=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"id";this.inputs[t].selected=e,this.form[t]=e[s]},handleFilePondInit:function(){console.log("FilePond has initialized")},onSelect:function(t,e){this.inputs[t].selected=e,this.form[t]=e.value},onRelationSearch:function(t,e,s){var a=this;return v(n.a.mark((function r(){var i,l,o,v;return n.a.wrap((function(n){for(;;)switch(n.prev=n.next){case 0:if(""!=e){n.next=2;break}return n.abrupt("return");case 2:return s(!0),i=a.inputs[t],l={},i&&(l["filter[".concat(i.titleField,"]")]=e),n.next=8,a.$http.get(a.inputs[t].searchUrl,{params:l});case 8:if(o=n.sent,!(v=o.data).success){n.next=13;break}return a.inputs[t].options=v.data.items,n.abrupt("return",s(!1));case 13:a.inputs[t].options=[];case 14:case"end":return n.stop()}}),r)})))()},hasValidationError:function(t){return!(!this.form.errors||!this.form.errors.has(t))||void 0},validationError:function(t){return this.form.errors?this.form.errors.first(t):void 0},onSelectTableSearch:function(t,e){var s=this;return v(n.a.mark((function a(){var r,l;return n.a.wrap((function(a){for(;;)switch(a.prev=a.next){case 0:if(!e.length){a.next=6;break}return a.next=3,s.$http.post("".concat(window.config.path_prefix,"/api/get_select_table"),i(i({},s.inputs[t].select_table_options),{},{search:e}));case 3:r=a.sent,l=r.data,s.inputs[t].options=l.data;case 6:case"end":return a.stop()}}),a)})))()}},created:function(){var t=this;return v(n.a.mark((function e(){var s,a,r;return n.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:console.log("before create called"),e.t0=n.a.keys(t.inputs);case 2:if((e.t1=e.t0()).done){e.next=14;break}if(s=e.t1.value,"relation"!==t.inputs[s].field_type){e.next=12;break}return console.log(t.inputs[s]),e.next=8,t.$http.get(t.inputs[s].searchUrl);case 8:a=e.sent,(r=a.data).success&&(t.inputs[s].options=r.data.items),t.inputs[s].options.length&&(Array.isArray(t.inputs[s].selected)||(t.form[s]=t.inputs[s].options[0].id,t.inputs[s].selected=t.inputs[s].options[0]));case 12:e.next=2;break;case 14:case"end":return e.stop()}}),e)})))()}}},822:function(t,e,s){var a=s(955);"string"==typeof a&&(a=[[t.i,a,""]]);var n={hmr:!0,transform:void 0,insertInto:void 0};s(73)(a,n);a.locals&&(t.exports=a.locals)},823:function(t,e,s){var a=s(957);"string"==typeof a&&(a=[[t.i,a,""]]);var n={hmr:!0,transform:void 0,insertInto:void 0};s(73)(a,n);a.locals&&(t.exports=a.locals)},954:function(t,e,s){"use strict";s(822)},955:function(t,e,s){(t.exports=s(72)(!1)).push([t.i,"\n.gray{\n    color: #b5b2b2;\n    margin: 1.5rem 0;\n}\n.styled-fieldset{\n    padding: 2rem 1rem;\n}\n",""])},956:function(t,e,s){"use strict";s(823)},957:function(t,e,s){(t.exports=s(72)(!1)).push([t.i,"\n.download-btn:hover{\n    color: #fff;\n}\n.examplex {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin: 0 0.5rem;\n}\n.examplex .a-icon {\n  outline: none;\n  text-decoration: none !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.examplex .a-icon i {\n  font-size: 18px;\n}\n\n",""])}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[13],{
+
+/***/ "../User/Resources/js/mace_assesments/Update.vue":
+/*!*******************************************************!*\
+  !*** ../User/Resources/js/mace_assesments/Update.vue ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Update_vue_vue_type_template_id_785858a2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Update.vue?vue&type=template&id=785858a2& */ "../User/Resources/js/mace_assesments/Update.vue?vue&type=template&id=785858a2&");
+/* harmony import */ var _Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Update.vue?vue&type=script&lang=js& */ "../User/Resources/js/mace_assesments/Update.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Update_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Update.vue?vue&type=style&index=0&lang=css& */ "../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _Update_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Update.vue?vue&type=style&index=1&lang=css& */ "../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=1&lang=css&");
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__["default"])(
+  _Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Update_vue_vue_type_template_id_785858a2___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Update_vue_vue_type_template_id_785858a2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "User/Resources/js/mace_assesments/Update.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "../User/Resources/js/mace_assesments/Update.vue?vue&type=script&lang=js&":
+/*!********************************************************************************!*\
+  !*** ../User/Resources/js/mace_assesments/Update.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Update.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/mace_assesments/Update.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=0&lang=css&":
+/*!****************************************************************************************!*\
+  !*** ../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=0&lang=css& ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/style-loader!../../../../Panel/node_modules/css-loader??ref--5-1!../../../../Panel/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../Panel/node_modules/postcss-loader/src??ref--5-2!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Update.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=1&lang=css&":
+/*!****************************************************************************************!*\
+  !*** ../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=1&lang=css& ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/style-loader!../../../../Panel/node_modules/css-loader??ref--5-1!../../../../Panel/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../Panel/node_modules/postcss-loader/src??ref--5-2!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Update.vue?vue&type=style&index=1&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=1&lang=css&");
+/* harmony import */ var _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Panel_node_modules_style_loader_index_js_Panel_node_modules_css_loader_index_js_ref_5_1_Panel_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Panel_node_modules_postcss_loader_src_index_js_ref_5_2_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "../User/Resources/js/mace_assesments/Update.vue?vue&type=template&id=785858a2&":
+/*!**************************************************************************************!*\
+  !*** ../User/Resources/js/mace_assesments/Update.vue?vue&type=template&id=785858a2& ***!
+  \**************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_template_id_785858a2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Update.vue?vue&type=template&id=785858a2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/mace_assesments/Update.vue?vue&type=template&id=785858a2&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_template_id_785858a2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_template_id_785858a2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/mace_assesments/Update.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/mace_assesments/Update.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Form */ "./Resources/js/src/Form.js");
+/* harmony import */ var _mixins_HasForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/mixins/HasForm */ "./Resources/js/src/mixins/HasForm.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {},
+  mixins: [_mixins_HasForm__WEBPACK_IMPORTED_MODULE_2__["default"]],
+  data: function data() {
+    var _form;
+
+    var userInfo = _objectSpread({}, this.$store.state.auth.userInfo);
+
+    return {
+      // symptoms:[
+      //     {
+      //         label:"No angina (Asymptomatic)",
+      //         value:"No angina (Asymptomatic)"
+      //     }
+      // ],
+      mace: {},
+      loading: true,
+      symptoms: ["No angina (Asymptomatic)", "Atypical Chest Pain", "Typical Chest Pain", "Dyspnea"],
+      userInfo: userInfo,
+      patientResult: {},
+      selectedDrug: "",
+      downloadBtnKey: 1,
+      form: (_form = {
+        Parental_hypertension: "0",
+        physical_activity: "Normal level",
+        risk_factors: [],
+        drug_information: [],
+        history: [],
+        chief_complaint: [],
+        HbA1C: "",
+        patient_id: "",
+        LDL_cholesterol: "",
+        HDL_cholesterol: "",
+        Age: "",
+        SBP: "",
+        Triglycerides: "",
+        DBP: "",
+        LeftAnklePressure: "",
+        RightAnklePressure: "",
+        Heigth: "",
+        Weigth: ""
+      }, _defineProperty(_form, "patient_id", 0), _defineProperty(_form, "Sex", 1), _defineProperty(_form, "Smoker", 0), _defineProperty(_form, "TBP", 0), _defineProperty(_form, "MI", 0), _defineProperty(_form, "Diabetes", 0), _defineProperty(_form, "FH", 0), _defineProperty(_form, "THL", 0), _defineProperty(_form, "symptom", ""), _form),
+      patient: {
+        name: "",
+        code: "1136"
+      },
+      result: {
+        'msg': "",
+        'msg2': "",
+        'Risk1': "",
+        'OMen': "",
+        'Risk2': "",
+        'RSK1': "",
+        'ASI': "",
+        'PWV': "",
+        data: {}
+      },
+      model: "Modules\\User\\Models\\CtCase",
+      locale: Iracode.$i18n.locale,
+      drugs: [{
+        text: "Abciximab",
+        value: "Abciximab"
+      }, {
+        text: "Acebutolol",
+        value: "Acebutolol"
+      }, {
+        text: "Aspirin",
+        value: "Aspirin"
+      }, {
+        text: "Adenosine",
+        value: "Adenosine"
+      }, {
+        text: "Epinephrine",
+        value: "Epinephrine"
+      }, {
+        text: "Alteplase",
+        value: "Alteplase"
+      }, {
+        text: "Amiloride",
+        value: "Amiloride"
+      }, {
+        text: "Amiodarone",
+        value: "Amiodarone"
+      }, {
+        text: "Amlodipine",
+        value: "Amlodipine"
+      }, {
+        text: "Amrinone",
+        value: "Amrinone"
+      }, {
+        text: "Argatroban",
+        value: "Argatroban"
+      }, {
+        text: "Atenolol",
+        value: "Atenolol"
+      }, {
+        text: "Atorvastatin",
+        value: "Atorvastatin"
+      }, {
+        text: "Benazepril",
+        value: "Benazepril"
+      }, {
+        text: "Bisoprolol",
+        value: "Bisoprolol"
+      }, {
+        text: "Bivalirudin",
+        value: "Bivalirudin"
+      }, {
+        text: "Bosentan",
+        value: "Bosentan"
+      }, {
+        text: "Bretylium",
+        value: "Bretylium"
+      }, {
+        text: "Bumetanide",
+        value: "Bumetanide"
+      }, {
+        text: "Candesartan",
+        value: "Candesartan"
+      }, {
+        text: "Captopril",
+        value: "Captopril"
+      }, {
+        text: "Carvedilol",
+        value: "Carvedilol"
+      }, {
+        text: "Chlorothiazide",
+        value: "Chlorothiazide"
+      }, {
+        text: "Chlortalidone",
+        value: "Chlortalidone"
+      }, {
+        text: "Cilostazol",
+        value: "Cilostazol"
+      }, {
+        text: "Clofibrate",
+        value: "Clofibrate"
+      }, {
+        text: "Clonidine",
+        value: "Clonidine"
+      }, {
+        text: "Clopidogrel",
+        value: "Clopidogrel"
+      }, {
+        text: "Colesevelam",
+        value: "Colesevelam"
+      }, {
+        text: "Colestipol",
+        value: "Colestipol"
+      }, {
+        text: "Colestyramine",
+        value: "Colestyramine"
+      }, {
+        text: "Dalteparin",
+        value: "Dalteparin"
+      }, {
+        text: "Desirudin",
+        value: "Desirudin"
+      }, {
+        text: "Diazoxide-Oral",
+        value: "Diazoxide-Oral"
+      }, {
+        text: "Digoxin",
+        value: "Digoxin"
+      }, {
+        text: "Diltiazem",
+        value: "Diltiazem"
+      }, {
+        text: "Dipyridamole",
+        value: "Dipyridamole"
+      }, {
+        text: "Disopyramide",
+        value: "Disopyramide"
+      }, {
+        text: "Dobutamine",
+        value: "Dobutamine"
+      }, {
+        text: "Dofetilide",
+        value: "Dofetilide"
+      }, {
+        text: "Dopamine",
+        value: "Dopamine"
+      }, {
+        text: "Doxazosin",
+        value: "Doxazosin"
+      }, {
+        text: "Enalapril",
+        value: "Enalapril"
+      }, {
+        text: "Enoxaparin Sodium",
+        value: "Enoxaparin Sodium"
+      }, {
+        text: "Eplerenone",
+        value: "Eplerenone"
+      }, {
+        text: "Eprosartan",
+        value: "Eprosartan"
+      }, {
+        text: "Eptifibatide",
+        value: "Eptifibatide"
+      }, {
+        text: "Esmolol",
+        value: "Esmolol"
+      }, {
+        text: "Etacrynic Acid",
+        value: "Etacrynic Acid"
+      }, {
+        text: "Ezetimibe",
+        value: "Ezetimibe"
+      }, {
+        text: "Felodipine",
+        value: "Felodipine"
+      }, {
+        text: "Fenofibrate",
+        value: "Fenofibrate"
+      }, {
+        text: "Fenoldopam Mesilate",
+        value: "Fenoldopam Mesilate"
+      }, {
+        text: "Fibrinolysin",
+        value: "Fibrinolysin"
+      }, {
+        text: "Flecainide",
+        value: "Flecainide"
+      }, {
+        text: "Fluvastatin",
+        value: "Fluvastatin"
+      }, {
+        text: "Fondaparinux",
+        value: "Fondaparinux"
+      }, {
+        text: "Fosinopril",
+        value: "Fosinopril"
+      }, {
+        text: "Furosemide",
+        value: "Furosemide"
+      }, {
+        text: "Gemfibrozil",
+        value: "Gemfibrozil"
+      }, {
+        text: "Nitroglycerin",
+        value: "Nitroglycerin"
+      }, {
+        text: "Hydrochloride",
+        value: "Hydrochloride"
+      }, {
+        text: "Heparin",
+        value: "Heparin"
+      }, {
+        text: "Hydralazine",
+        value: "Hydralazine"
+      }, {
+        text: "Hydrochlorothiazide",
+        value: "Hydrochlorothiazide"
+      }, {
+        text: "Ibutilide Fumarate",
+        value: "Ibutilide Fumarate"
+      }, {
+        text: "Indapamide",
+        value: "Indapamide"
+      }, {
+        text: "Irbesartan",
+        value: "Irbesartan"
+      }, {
+        text: "Isoproterenol",
+        value: "Isoproterenol"
+      }, {
+        text: "Isosorbide Dinitrate",
+        value: "Isosorbide Dinitrate"
+      }, {
+        text: "Isosorbide Mononitrate",
+        value: "Isosorbide Mononitrate"
+      }, {
+        text: "Isradipine",
+        value: "Isradipine"
+      }, {
+        text: "Labetalol",
+        value: "Labetalol"
+      }, {
+        text: "Lepirudin",
+        value: "Lepirudin"
+      }, {
+        text: "Lisinopril",
+        value: "Lisinopril"
+      }, {
+        text: "Losartan",
+        value: "Losartan"
+      }, {
+        text: "Lovastatin",
+        value: "Lovastatin"
+      }, {
+        text: "Mannitol",
+        value: "Mannitol"
+      }, {
+        text: "Methyldopa",
+        value: "Methyldopa"
+      }, {
+        text: "Metolazone",
+        value: "Metolazone"
+      }, {
+        text: "Metoprolol",
+        value: "Metoprolol"
+      }, {
+        text: "Mexiletine",
+        value: "Mexiletine"
+      }, {
+        text: "Midodrine",
+        value: "Midodrine"
+      }, {
+        text: "Milrinone",
+        value: "Milrinone"
+      }, {
+        text: "Minoxidil",
+        value: "Minoxidil"
+      }, {
+        text: "Moexipril",
+        value: "Moexipril"
+      }, {
+        text: "Nadolol",
+        value: "Nadolol"
+      }, {
+        text: "Nebivolol",
+        value: "Nebivolol"
+      }, {
+        text: "Nesiritide Citrate",
+        value: "Nesiritide Citrate"
+      }, {
+        text: "Nicardipine",
+        value: "Nicardipine"
+      }, {
+        text: "Nicorandil",
+        value: "Nicorandil"
+      }, {
+        text: "Nifedipine",
+        value: "Nifedipine"
+      }, {
+        text: "Nimodipine",
+        value: "Nimodipine"
+      }, {
+        text: "Nisoldipine",
+        value: "Nisoldipine"
+      }, {
+        text: "Nitric Oxide",
+        value: "Nitric Oxide"
+      }, {
+        text: "Norepinephrine",
+        value: "Norepinephrine"
+      }, {
+        text: "Olmesartan",
+        value: "Olmesartan"
+      }, {
+        text: "Omega-3 Triglycerides",
+        value: "Omega-3 Triglycerides"
+      }, {
+        text: "Pentosan Polysulfate Sodium",
+        value: "Pentosan Polysulfate Sodium"
+      }, {
+        text: "Pentoxifylline",
+        value: "Pentoxifylline"
+      }, {
+        text: "Perindopril",
+        value: "Perindopril"
+      }, {
+        text: "Phenoxybenzamine",
+        value: "Phenoxybenzamine"
+      }, {
+        text: "Phentolamine",
+        value: "Phentolamine"
+      }, {
+        text: "Pindolol",
+        value: "Pindolol"
+      }, {
+        text: "Pitavastatin",
+        value: "Pitavastatin"
+      }, {
+        text: "Pravastatin",
+        value: "Pravastatin"
+      }, {
+        text: "Prazosin",
+        value: "Prazosin"
+      }, {
+        text: "Procainamide",
+        value: "Procainamide"
+      }, {
+        text: "Propafenone",
+        value: "Propafenone"
+      }, {
+        text: "Propranolol",
+        value: "Propranolol"
+      }, {
+        text: "Quinapril",
+        value: "Quinapril"
+      }, {
+        text: "Quinidine",
+        value: "Quinidine"
+      }, {
+        text: "Ramipril",
+        value: "Ramipril"
+      }, {
+        text: "Ranolazine",
+        value: "Ranolazine"
+      }, {
+        text: "Reteplase",
+        value: "Reteplase"
+      }, {
+        text: "Rosuvastatin",
+        value: "Rosuvastatin"
+      }, {
+        text: "Simvastatin",
+        value: "Simvastatin"
+      }, {
+        text: "Sodium Nitroprusside",
+        value: "Sodium Nitroprusside"
+      }, {
+        text: "Sotalol",
+        value: "Sotalol"
+      }, {
+        text: "Spironolactone",
+        value: "Spironolactone"
+      }, {
+        text: "Streptokinase",
+        value: "Streptokinase"
+      }, {
+        text: "Telmisartan",
+        value: "Telmisartan"
+      }, {
+        text: "Tenecteplase",
+        value: "Tenecteplase"
+      }, {
+        text: "Teprotide",
+        value: "Teprotide"
+      }, {
+        text: "Terazosin",
+        value: "Terazosin"
+      }, {
+        text: "Ticlopidine",
+        value: "Ticlopidine"
+      }, {
+        text: "Tinzaparin",
+        value: "Tinzaparin"
+      }, {
+        text: "Tirofiban",
+        value: "Tirofiban"
+      }, {
+        text: "Torasemide",
+        value: "Torasemide"
+      }, {
+        text: "Trandolapril",
+        value: "Trandolapril"
+      }, {
+        text: "Urokinase",
+        value: "Urokinase"
+      }, {
+        text: "Valsartan",
+        value: "Valsartan"
+      }, {
+        text: "Verapamil",
+        value: "Verapamil"
+      }, {
+        text: "Warfarin",
+        value: "Warfarin"
+      }, {
+        text: "Ephedrine",
+        value: "Ephedrine"
+      }, {
+        text: "Anagrelide",
+        value: "Anagrelide"
+      }, {
+        text: "Acetylsalicylic Acid+Atorvastatin+Hydrochlorthiazide+Valsartan",
+        value: "Acetylsalicylic Acid+Atorvastatin+Hydrochlorthiazide+Valsartan"
+      }, {
+        text: "Amiloride-H",
+        value: "Amiloride-H"
+      }, {
+        text: "Triamterene-H",
+        value: "Triamterene-H"
+      }, {
+        text: "Lidocaine-Systemic",
+        value: "Lidocaine-Systemic"
+      }, {
+        text: "Epinephrin-Ophthalmic",
+        value: "Epinephrin-Ophthalmic"
+      }, {
+        text: "Amlodipine+Atorvastatin",
+        value: "Amlodipine+Atorvastatin"
+      }, {
+        text: "Losartan+Hydrochlorothiazide",
+        value: "Losartan+Hydrochlorothiazide"
+      }, {
+        text: "Lisinopril+Hydrochlorothiazide",
+        value: "Lisinopril+Hydrochlorothiazide"
+      }, {
+        text: "Amlodipine+Benazepril",
+        value: "Amlodipine+Benazepril"
+      }, {
+        text: "Amlodipine+Valsartan",
+        value: "Amlodipine+Valsartan"
+      }, {
+        text: "Bisoprolol+Hydrochlorothiazide",
+        value: "Bisoprolol+Hydrochlorothiazide"
+      }, {
+        text: "Telmisartan+Hydrochlorothiazide",
+        value: "Telmisartan+Hydrochlorothiazide"
+      }, {
+        text: "Ticagrelor",
+        value: "Ticagrelor"
+      }, {
+        text: "Dabigatran",
+        value: "Dabigatran"
+      }, {
+        text: "Dipyridamol+ASA",
+        value: "Dipyridamol+ASA"
+      }, {
+        text: "Dronedarone",
+        value: "Dronedarone"
+      }, {
+        text: "Prasugrel",
+        value: "Prasugrel"
+      }, {
+        text: "Ezetimibe+Simvastatin",
+        value: "Ezetimibe+Simvastatin"
+      }, {
+        text: "Ivabradine",
+        value: "Ivabradine"
+      }, {
+        text: "Ixabepilone",
+        value: "Ixabepilone"
+      }, {
+        text: "Nicotinic Acid+Laropiprant",
+        value: "Nicotinic Acid+Laropiprant"
+      }, {
+        text: "Rivaroxaban",
+        value: "Rivaroxaban"
+      }, {
+        text: "Sacubitril+Valsartan",
+        value: "Sacubitril+Valsartan"
+      }, {
+        text: "Ambrisentan",
+        value: "Ambrisentan"
+      }, {
+        text: "Aliskiren",
+        value: "Aliskiren"
+      }, {
+        text: "Betaxolol-Systemic",
+        value: "Betaxolol-Systemic"
+      }, {
+        text: "Apixaban",
+        value: "Apixaban"
+      }],
+      inputs: {
+        name: {
+          type: "vs-input"
+        },
+        physician: {
+          type: "vs-input"
+        },
+        Age: {
+          type: "vs-input"
+        },
+        Sex: {
+          type: "vs-radio"
+        },
+        code: {
+          type: "vs-input"
+        },
+        file: {
+          type: "vs-input"
+        },
+        patient_id: {
+          field_type: "text",
+          type: "vs-input",
+          options: [],
+          selected: {},
+          foreign_key: "patient_id",
+          relation_name: "patient",
+          searchUrl: "/user/api/patients",
+          titleField: "name"
+        },
+        Smoker: {
+          type: "vs-radio"
+        },
+        TBP: {
+          type: "vs-radio"
+        },
+        MI: {
+          type: "vs-radio"
+        },
+        Diabetes: {
+          type: "vs-radio"
+        },
+        FH: {
+          type: "vs-radio"
+        },
+        THL: {
+          type: "vs-radio"
+        },
+        HbA1C: {
+          type: "vs-input"
+        },
+        LDL_cholesterol: {
+          type: "vs-input"
+        },
+        HDL_cholesterol: {
+          type: "vs-input"
+        },
+        SBP: {
+          type: "vs-input"
+        },
+        Triglycerides: {
+          type: "vs-input"
+        },
+        DBP: {
+          type: "vs-input"
+        },
+        LeftAnklePressure: {
+          type: "vs-input"
+        },
+        RightAnklePressure: {
+          type: "vs-input"
+        },
+        Heigth: {
+          type: "vs-input"
+        },
+        Weigth: {
+          type: "vs-input"
+        }
+      }
+    };
+  },
+  props: {//
+  },
+  computed: {//
+  },
+  created: function created() {
+    var _this = this;
+
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+      var _yield$_this$$http$ge, response, data, key;
+
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.next = 2;
+              return _this.$http.get("/user/api/mace_assesments/".concat(_this.$route.params.id));
+
+            case 2:
+              _yield$_this$$http$ge = _context.sent;
+              response = _yield$_this$$http$ge.data;
+
+              if (response.success) {
+                data = response.data;
+
+                for (key in _this.form) {
+                  _this.form[key] = data[key];
+                }
+
+                _this.patient.name = data.patient.name;
+              }
+
+              _this.loading = false;
+
+            case 6:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }))();
+  },
+  mounted: function mounted() {//
+  },
+  methods: {
+    download: function download(link, maceType) {
+      var _this2 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3() {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                setTimeout( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+                  var _yield$_this2$$http$p, data;
+
+                  return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+                    while (1) {
+                      switch (_context2.prev = _context2.next) {
+                        case 0:
+                          _context2.prev = 0;
+                          _context2.next = 3;
+                          return _this2.$http.put("/user/api/mace_assesments/" + _this2.mace.id, _defineProperty({}, maceType, 1));
+
+                        case 3:
+                          _yield$_this2$$http$p = _context2.sent;
+                          data = _yield$_this2$$http$p.data;
+                          console.log(data);
+                          _context2.next = 11;
+                          break;
+
+                        case 8:
+                          _context2.prev = 8;
+                          _context2.t0 = _context2["catch"](0);
+                          console.log(_context2.t0);
+
+                        case 11:
+                          _context2.prev = 11;
+                          location.href = link;
+                          return _context2.finish(11);
+
+                        case 14:
+                        case "end":
+                          return _context2.stop();
+                      }
+                    }
+                  }, _callee2, null, [[0, 8, 11, 14]]);
+                })), 500);
+
+              case 1:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3);
+      }))();
+    },
+    autoCompleteFunc: function autoCompleteFunc(event) {
+      console.log(event);
+    },
+    addDrug: function addDrug() {
+      this.form.drug_information.push(this.selectedDrug);
+      this.selectedDrug = "";
+    },
+    calculate: function calculate() {
+      var _this3 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4() {
+        var _this3$form, HbA1C, LDL_cholesterol, HDL_cholesterol, Age, SBP, Triglycerides, DBP, LeftAnklePressure, RightAnklePressure, Heigth, Weigth, Sex, Smoker, TBP, MI, Diabetes, FH, THL, Total_cholesterol, ABI, Ken, Kmen, Wen, OMen, B1, B2, B, RSK, c1, c2, c, RSK1, PWV, ASI, Risk1, Risk2, msg, msg2, patientForm, _yield$_this3$$http$p, patient, _yield$_this3$$http$p2, data;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee4$(_context4) {
+          while (1) {
+            switch (_context4.prev = _context4.next) {
+              case 0:
+                _this3.result = {
+                  'msg': "",
+                  'msg2': "",
+                  'Risk1': "",
+                  'OMen': "",
+                  'Risk2': "",
+                  'RSK1': "",
+                  'ASI': "",
+                  'PWV': "",
+                  data: {}
+                };
+                _this3$form = _this3.form, HbA1C = _this3$form.HbA1C, LDL_cholesterol = _this3$form.LDL_cholesterol, HDL_cholesterol = _this3$form.HDL_cholesterol, Age = _this3$form.Age, SBP = _this3$form.SBP, Triglycerides = _this3$form.Triglycerides, DBP = _this3$form.DBP, LeftAnklePressure = _this3$form.LeftAnklePressure, RightAnklePressure = _this3$form.RightAnklePressure, Heigth = _this3$form.Heigth, Weigth = _this3$form.Weigth, Sex = _this3$form.Sex, Smoker = _this3$form.Smoker, TBP = _this3$form.TBP, MI = _this3$form.MI, Diabetes = _this3$form.Diabetes, FH = _this3$form.FH, THL = _this3$form.THL;
+                Total_cholesterol = +LDL_cholesterol + +HDL_cholesterol + +Triglycerides / 5;
+                ABI = (+LeftAnklePressure + +RightAnklePressure) / 2;
+                Ken = Age * 0.0455 + Sex * 0.7496 - 1 * 0.5055 + Diabetes * 0.5168 + Smoker * 0.4732 + Total_cholesterol * 0.0053 - HDL_cholesterol * 0.0140 + THL * 0.2473 + SBP * 0.0085 + TBP * 0.3381 + FH * 0.4522;
+                Kmen = (1 - Math.pow(0.99963, Math.exp(Ken))) * 100;
+                Wen = Age * 0.0455 + Sex * 0.7496 - 1 * 0.5055 + Diabetes * 0.5168 + 0 * 0.4732 + 110 * 0.0053 - 55 * 0.0140 + 1 * 0.2473 + 120 * 0.0085 + 1 * 0.3381 + FH * 0.4522;
+                OMen = (1 - Math.pow(0.99963, Math.exp(Wen))) * 100;
+                B1 = 0.0799 * Age + 3.137 * Math.log(SBP) + 0.180 * Math.log(0.1) + 1.382 * Math.log(Total_cholesterol);
+                B2 = -1.172 * Math.log(HDL_cholesterol) + 0.134 * HbA1C + 0.818 * Smoker + 0.438 * MI;
+                B = B1 + B2;
+                RSK = (1 - Math.pow(0.98634, Math.exp(B - 22.325))) * 100; // const c1 = 0.0799 * Age + 3.137 * Math.log(120) + 0.180 * Math.log(0.1) + 1.382 * Math.log(150);
+                // const c2 = -1.172 * Math.log(55) + 0.134 * 5 + 0.818 * 0 + 0.438 * MI;
+                // const c = c1 + c2;
+
+                c1 = 0.0799 * Age + 3.137 * Math.log(120) + 0.180 * Math.log(0.1) + 1.382 * Math.log(150);
+                c2 = -1.172 * Math.log(40) + 0.134 * 6 + 0.818 * 0 + 0.438 * MI;
+                c = c1 + c2;
+                RSK1 = (1 - Math.pow(0.98634, Math.exp(c - 22.325))) * 100;
+                PWV = (0.12 * Age + 8) * 100;
+                ASI = PWV / 50 * (DBP / 70) * (ABI / 0.8); //Arterial Stiffness Index (ASI)
+
+                console.log(RSK1); // let Risk1 = +Kmen + ((0.035*Weigth)-1.4)+((0.175*ASI)-7.65)
+                // let Risk2 = +RSK + ((0.035*Weigth)-1.4)+((0.175*ASI)-7.65)
+
+                Risk1 = Kmen;
+                Risk2 = RSK;
+                msg = "";
+
+                if (Risk1 < 5) {
+                  msg = "Low risk";
+                } else if (Risk1 < 20 && Risk1 > 5) {
+                  msg = "Moderate risk";
+                } else if (Risk1 > 20) {
+                  msg = "High risk";
+                }
+
+                msg2 = "";
+
+                if (Risk2 < 5) {
+                  msg2 = "Low risk";
+                } else if (Risk2 < 20 && Risk2 > 5) {
+                  msg2 = "Moderate risk";
+                } else if (Risk2 > 20) {
+                  msg2 = "High risk";
+                } // Iracode.loading()
+                // Iracode.close_loading();
+
+
+                _this3.result.Risk1 = Risk1;
+                _this3.result.Risk2 = Risk2;
+                _this3.result.RSK1 = RSK1;
+                _this3.result.RSK1 = RSK1;
+                _this3.result.PWV = PWV;
+                _this3.result.ASI = ASI;
+                _this3.result.OMen = OMen;
+                _this3.result.msg = msg;
+                _this3.result.msg2 = msg2;
+                patientForm = _this3.patient;
+                patientForm.age = _this3.form.Age;
+                patientForm.sex = _this3.form.Sex;
+                patientForm.hospital = "";
+                _context4.next = 40;
+                return _this3.$http.post("/user/api/patients", patientForm);
+
+              case 40:
+                _yield$_this3$$http$p = _context4.sent;
+                patient = _yield$_this3$$http$p.data;
+                _this3.patientResult = patient;
+                _this3.form.patient_id = patient.data.id;
+                _this3.form.risk_factors = [];
+                if (_this3.form.Smoker == "1") _this3.form.risk_factors.push("Smoker");
+                if (_this3.form.FH == "1") _this3.form.risk_factors.push("Family History");
+                if (_this3.form.Diabetes == "1") _this3.form.risk_factors.push("Diabetes");
+                if (_this3.form.THL == "1") _this3.form.risk_factors.push("Hyperlipidemia");
+                if (_this3.form.TBP == "1") _this3.form.risk_factors.push("Hypertension");
+                if (_this3.form.MI == "1") _this3.form.risk_factors.push("MI History");
+                _context4.next = 53;
+                return _this3.$http.post("/user/api/mace_assesment", _objectSpread(_objectSpread({}, _this3.form), {}, {
+                  id: _this3.mace.id
+                }));
+
+              case 53:
+                _yield$_this3$$http$p2 = _context4.sent;
+                data = _yield$_this3$$http$p2.data;
+                _this3.mace = data.data.mace;
+                setTimeout(function () {
+                  _this3.result.data = data;
+
+                  _this3.$forceUpdate();
+
+                  _this3.downloadBtnKey++;
+                }, 500);
+
+              case 57:
+              case "end":
+                return _context4.stop();
+            }
+          }
+        }, _callee4);
+      }))();
+    },
+    onSubmit: function onSubmit(action) {
+      var _this4 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee5() {
+        var data;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee5$(_context5) {
+          while (1) {
+            switch (_context5.prev = _context5.next) {
+              case 0:
+                _context5.next = 2;
+                return _this4.form.post("/user/api/ct_cases");
+
+              case 2:
+                data = _context5.sent;
+
+                if (data.success) {
+                  Iracode.success(_this4.__("Ctcase Created Successfully"));
+                  if (action == "close") _this4.$router.push("/user/ct_cases");else _this4.form.reset();
+                }
+
+              case 4:
+              case "end":
+                return _context5.stop();
+            }
+          }
+        }, _callee5);
+      }))();
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=0&lang=css&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=0&lang=css& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../Panel/node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.gray{\n    color: #b5b2b2;\n    margin: 1.5rem 0;\n}\n.styled-fieldset{\n    padding: 2rem 1rem;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=1&lang=css&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=1&lang=css& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../Panel/node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.download-btn:hover{\n    color: #fff;\n}\n.examplex {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin: 0 0.5rem;\n}\n.examplex .a-icon {\n  outline: none;\n  text-decoration: none !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.examplex .a-icon i {\n  font-size: 18px;\n}\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=0&lang=css&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--5-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=0&lang=css& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../Panel/node_modules/css-loader??ref--5-1!../../../../Panel/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../Panel/node_modules/postcss-loader/src??ref--5-2!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Update.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../Panel/node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=1&lang=css&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--5-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=1&lang=css& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../Panel/node_modules/css-loader??ref--5-1!../../../../Panel/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../Panel/node_modules/postcss-loader/src??ref--5-2!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Update.vue?vue&type=style&index=1&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/mace_assesments/Update.vue?vue&type=style&index=1&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../Panel/node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/mace_assesments/Update.vue?vue&type=template&id=785858a2&":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/mace_assesments/Update.vue?vue&type=template&id=785858a2& ***!
+  \********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "loading-view",
+    { attrs: { loading: _vm.loading } },
+    [
+      _c("vx-card", [
+        _c(
+          "h2",
+          {
+            staticStyle: {
+              "text-align": "center",
+              padding: "2rem",
+              border: "1px solid #000"
+            }
+          },
+          [_vm._v("MACE Risk Assesment")]
+        ),
+        _vm._v(" "),
+        _c(
+          "form",
+          { on: { submit: _vm.onSubmit } },
+          [
+            _c(
+              "div",
+              [
+                _c("h4", { staticClass: "gray" }, [
+                  _vm._v("Patient Information:")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "vs-row",
+                  {
+                    staticClass: "mb-6 m-0",
+                    attrs: { "vs-type": "flex", "vs-w": "12" }
+                  },
+                  [
+                    _c(
+                      "vs-col",
+                      {
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "4",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "flex text-left" }, [
+                          _c("span", [_vm._v(_vm._s(_vm.__("Name")))]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "ml-1 text-red" }, [
+                            _vm._v("*")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(_vm.inputs.name.type, {
+                          tag: "component",
+                          staticStyle: {
+                            width: "250px",
+                            "margin-left": "1rem"
+                          },
+                          attrs: {
+                            danger: _vm.hasValidationError("name"),
+                            "danger-text": _vm.validationError("name"),
+                            name: "name",
+                            type: "text"
+                          },
+                          model: {
+                            value: _vm.patient.name,
+                            callback: function($$v) {
+                              _vm.$set(_vm.patient, "name", $$v)
+                            },
+                            expression: "patient.name"
+                          }
+                        })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "vs-col",
+                      {
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "2",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "flex text-left" }, [
+                          _c("span", [_vm._v(_vm._s(_vm.__("Code")))]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "ml-1 text-red" }, [
+                            _vm._v("*")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(_vm.inputs.code.type, {
+                          tag: "component",
+                          staticStyle: {
+                            width: "120px",
+                            "margin-left": "1rem"
+                          },
+                          attrs: {
+                            danger: _vm.hasValidationError("code"),
+                            "danger-text": _vm.validationError("code"),
+                            name: "code",
+                            type: "text"
+                          },
+                          model: {
+                            value: _vm.patient.code,
+                            callback: function($$v) {
+                              _vm.$set(_vm.patient, "code", $$v)
+                            },
+                            expression: "patient.code"
+                          }
+                        })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "vs-col",
+                      {
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "3",
+                          "vs-sm": "6",
+                          "vs-xs": "6"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "flex text-left" }, [
+                          _c("span", [_vm._v(_vm._s(_vm.__("Age")))]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "ml-1 text-red" }, [
+                            _vm._v("*")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(_vm.inputs.Age.type, {
+                          tag: "component",
+                          staticStyle: { width: "80px", "margin-left": "1rem" },
+                          attrs: {
+                            danger: _vm.hasValidationError("Age"),
+                            "danger-text": _vm.validationError("Age"),
+                            name: "Age",
+                            type: "number"
+                          },
+                          model: {
+                            value: _vm.form.Age,
+                            callback: function($$v) {
+                              _vm.$set(_vm.form, "Age", $$v)
+                            },
+                            expression: "form.Age"
+                          }
+                        })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "vs-col",
+                      {
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "3",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "flex text-left" }, [
+                          _c("span", [_vm._v(_vm._s(_vm.__("Sex")))]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "ml-1 text-red" }, [
+                            _vm._v("*")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticStyle: {
+                              display: "flex",
+                              "justify-content": "space-around",
+                              width: "100%",
+                              "margin-top": "0.5rem",
+                              "margin-left": "1.5rem"
+                            }
+                          },
+                          [
+                            _c(
+                              "vs-radio",
+                              {
+                                attrs: { "vs-name": "Sex", "vs-value": "1" },
+                                model: {
+                                  value: _vm.form.Sex,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "Sex", $$v)
+                                  },
+                                  expression: "form.Sex"
+                                }
+                              },
+                              [_vm._v("Male")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "vs-radio",
+                              {
+                                staticClass: "ml-4",
+                                attrs: { "vs-name": "Sex", "vs-value": "0" },
+                                model: {
+                                  value: _vm.form.Sex,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "Sex", $$v)
+                                  },
+                                  expression: "form.Sex"
+                                }
+                              },
+                              [_vm._v("Female")]
+                            )
+                          ],
+                          1
+                        )
+                      ]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              [
+                _c("h4", { staticClass: "gray" }, [
+                  _vm._v("Medical Treatment:")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "vs-row",
+                  {
+                    staticClass: "mb-6 m-0",
+                    attrs: { "vs-type": "flex", "vs-w": "12" }
+                  },
+                  [
+                    _c(
+                      "vs-col",
+                      {
+                        staticStyle: { "flex-direction": "column" },
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-lg": "4",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c(
+                          "fieldset",
+                          { staticClass: "w-100 styled-fieldset" },
+                          [
+                            _c("legend", [
+                              _vm._v(
+                                _vm._s(_vm.__("Treatment for Hypertension"))
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticStyle: {
+                                  display: "flex",
+                                  "justify-content": "space-around",
+                                  width: "100%",
+                                  "margin-top": "0.5rem"
+                                }
+                              },
+                              [
+                                _c(
+                                  "vs-radio",
+                                  {
+                                    attrs: {
+                                      "vs-name": "TBP",
+                                      "vs-value": "1"
+                                    },
+                                    model: {
+                                      value: _vm.form.TBP,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "TBP", $$v)
+                                      },
+                                      expression: "form.TBP"
+                                    }
+                                  },
+                                  [_vm._v("Yes")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "vs-radio",
+                                  {
+                                    staticClass: "ml-4",
+                                    attrs: {
+                                      "vs-name": "TBP",
+                                      "vs-value": "0"
+                                    },
+                                    model: {
+                                      value: _vm.form.TBP,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "TBP", $$v)
+                                      },
+                                      expression: "form.TBP"
+                                    }
+                                  },
+                                  [_vm._v("No")]
+                                )
+                              ],
+                              1
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "vs-col",
+                      {
+                        staticStyle: { "flex-direction": "column" },
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "4",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c(
+                          "fieldset",
+                          { staticClass: "w-100 styled-fieldset" },
+                          [
+                            _c("legend", [
+                              _vm._v(
+                                _vm._s(_vm.__("Treatment for Hyperlipidemia"))
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticStyle: {
+                                  display: "flex",
+                                  "justify-content": "space-around",
+                                  width: "100%",
+                                  "margin-top": "0.5rem"
+                                }
+                              },
+                              [
+                                _c(
+                                  "vs-radio",
+                                  {
+                                    attrs: {
+                                      "vs-name": "THL",
+                                      "vs-value": "1"
+                                    },
+                                    model: {
+                                      value: _vm.form.THL,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "THL", $$v)
+                                      },
+                                      expression: "form.THL"
+                                    }
+                                  },
+                                  [_vm._v("Yes")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "vs-radio",
+                                  {
+                                    staticClass: "ml-4",
+                                    attrs: {
+                                      "vs-name": "THL",
+                                      "vs-value": "0"
+                                    },
+                                    model: {
+                                      value: _vm.form.THL,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "THL", $$v)
+                                      },
+                                      expression: "form.THL"
+                                    }
+                                  },
+                                  [_vm._v("No")]
+                                )
+                              ],
+                              1
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "vs-col",
+                      {
+                        staticStyle: { "flex-direction": "column" },
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "4",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c(
+                          "fieldset",
+                          { staticClass: "w-100 styled-fieldset" },
+                          [
+                            _c("legend", [
+                              _vm._v(_vm._s(_vm.__("Treatment for MI History")))
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticStyle: {
+                                  display: "flex",
+                                  "justify-content": "space-around",
+                                  width: "100%",
+                                  "margin-top": "0.5rem"
+                                }
+                              },
+                              [
+                                _c(
+                                  "vs-radio",
+                                  {
+                                    attrs: { "vs-name": "MI", "vs-value": "1" },
+                                    model: {
+                                      value: _vm.form.MI,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "MI", $$v)
+                                      },
+                                      expression: "form.MI"
+                                    }
+                                  },
+                                  [_vm._v("Yes")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "vs-radio",
+                                  {
+                                    staticClass: "ml-4",
+                                    attrs: { "vs-name": "MI", "vs-value": "0" },
+                                    model: {
+                                      value: _vm.form.MI,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "MI", $$v)
+                                      },
+                                      expression: "form.MI"
+                                    }
+                                  },
+                                  [_vm._v("No")]
+                                )
+                              ],
+                              1
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              [
+                _c("h4", { staticClass: "gray" }, [_vm._v("Risk Factors:")]),
+                _vm._v(" "),
+                _c(
+                  "vs-row",
+                  {
+                    staticClass: "mb-6 m-0",
+                    attrs: { "vs-type": "flex", "vs-w": "12" }
+                  },
+                  [
+                    _c(
+                      "vs-col",
+                      {
+                        staticStyle: { "flex-direction": "column" },
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "4",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c(
+                          "fieldset",
+                          { staticClass: "w-100 styled-fieldset" },
+                          [
+                            _c("legend", [_vm._v(_vm._s(_vm.__("Smoker")))]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticStyle: {
+                                  display: "flex",
+                                  "justify-content": "space-around",
+                                  width: "100%",
+                                  "margin-top": "0.5rem"
+                                }
+                              },
+                              [
+                                _c(
+                                  "vs-radio",
+                                  {
+                                    attrs: {
+                                      "vs-name": "Smoker",
+                                      "vs-value": "1"
+                                    },
+                                    model: {
+                                      value: _vm.form.Smoker,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "Smoker", $$v)
+                                      },
+                                      expression: "form.Smoker"
+                                    }
+                                  },
+                                  [_vm._v("Yes")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "vs-radio",
+                                  {
+                                    staticClass: "ml-4",
+                                    attrs: {
+                                      "vs-name": "Smoker",
+                                      "vs-value": "0"
+                                    },
+                                    model: {
+                                      value: _vm.form.Smoker,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "Smoker", $$v)
+                                      },
+                                      expression: "form.Smoker"
+                                    }
+                                  },
+                                  [_vm._v("No")]
+                                )
+                              ],
+                              1
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "vs-col",
+                      {
+                        staticStyle: { "flex-direction": "column" },
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "4",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c(
+                          "fieldset",
+                          { staticClass: "w-100 styled-fieldset" },
+                          [
+                            _c("legend", [
+                              _vm._v(_vm._s(_vm.__("Family History")))
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticStyle: {
+                                  display: "flex",
+                                  "justify-content": "space-around",
+                                  width: "100%",
+                                  "margin-top": "0.5rem"
+                                }
+                              },
+                              [
+                                _c(
+                                  "vs-radio",
+                                  {
+                                    attrs: { "vs-name": "FH", "vs-value": "1" },
+                                    model: {
+                                      value: _vm.form.FH,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "FH", $$v)
+                                      },
+                                      expression: "form.FH"
+                                    }
+                                  },
+                                  [_vm._v("Yes")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "vs-radio",
+                                  {
+                                    staticClass: "ml-4",
+                                    attrs: { "vs-name": "FH", "vs-value": "0" },
+                                    model: {
+                                      value: _vm.form.FH,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "FH", $$v)
+                                      },
+                                      expression: "form.FH"
+                                    }
+                                  },
+                                  [_vm._v("No")]
+                                )
+                              ],
+                              1
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "vs-col",
+                      {
+                        staticStyle: { "flex-direction": "column" },
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "4",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c(
+                          "fieldset",
+                          { staticClass: "w-100 styled-fieldset" },
+                          [
+                            _c("legend", [_vm._v(_vm._s(_vm.__("Diabetes")))]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticStyle: {
+                                  display: "flex",
+                                  "justify-content": "space-around",
+                                  width: "100%",
+                                  "margin-top": "0.5rem"
+                                }
+                              },
+                              [
+                                _c(
+                                  "vs-radio",
+                                  {
+                                    attrs: {
+                                      "vs-name": "Diabetes",
+                                      "vs-value": "1"
+                                    },
+                                    model: {
+                                      value: _vm.form.Diabetes,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "Diabetes", $$v)
+                                      },
+                                      expression: "form.Diabetes"
+                                    }
+                                  },
+                                  [_vm._v("Yes")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "vs-radio",
+                                  {
+                                    staticClass: "ml-4",
+                                    attrs: {
+                                      "vs-name": "Diabetes",
+                                      "vs-value": "0"
+                                    },
+                                    model: {
+                                      value: _vm.form.Diabetes,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.form, "Diabetes", $$v)
+                                      },
+                                      expression: "form.Diabetes"
+                                    }
+                                  },
+                                  [_vm._v("No")]
+                                )
+                              ],
+                              1
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              [
+                _c("h4", { staticClass: "gray" }, [
+                  _vm._v("Hemodynamic Parameters:")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "vs-row",
+                  {
+                    staticClass: "mb-6 m-0",
+                    attrs: { "vs-type": "flex", "vs-w": "12" }
+                  },
+                  [
+                    _c(
+                      "vs-col",
+                      {
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "3",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "flex text-left" }, [
+                          _c("span", [_vm._v(_vm._s(_vm.__("LDL")))]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "ml-1 text-red" }, [
+                            _vm._v("*")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "flex",
+                            staticStyle: { "align-items": "center" }
+                          },
+                          [
+                            _c(_vm.inputs.LDL_cholesterol.type, {
+                              tag: "component",
+                              staticStyle: {
+                                width: "100px",
+                                "margin-left": "1rem"
+                              },
+                              attrs: {
+                                danger: _vm.hasValidationError(
+                                  "LDL_cholesterol"
+                                ),
+                                "danger-text": _vm.validationError(
+                                  "LDL_cholesterol"
+                                ),
+                                name: "LDL_cholesterol",
+                                type: "text"
+                              },
+                              model: {
+                                value: _vm.form.LDL_cholesterol,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "LDL_cholesterol", $$v)
+                                },
+                                expression: "form.LDL_cholesterol"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "ml-2" }, [
+                              _vm._v(
+                                "\n                        mg/dl\n                    "
+                              )
+                            ])
+                          ],
+                          1
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "vs-col",
+                      {
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "3",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "flex text-left" }, [
+                          _c("span", [_vm._v(_vm._s(_vm.__("HDL")))]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "ml-1 text-red" }, [
+                            _vm._v("*")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "flex",
+                            staticStyle: { "align-items": "center" }
+                          },
+                          [
+                            _c(_vm.inputs.HDL_cholesterol.type, {
+                              tag: "component",
+                              staticStyle: {
+                                width: "100px",
+                                "margin-left": "1rem"
+                              },
+                              attrs: {
+                                danger: _vm.hasValidationError(
+                                  "HDL_cholesterol"
+                                ),
+                                "danger-text": _vm.validationError(
+                                  "HDL_cholesterol"
+                                ),
+                                name: "HDL_cholesterol",
+                                type: "text"
+                              },
+                              model: {
+                                value: _vm.form.HDL_cholesterol,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "HDL_cholesterol", $$v)
+                                },
+                                expression: "form.HDL_cholesterol"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "ml-2" }, [
+                              _vm._v(
+                                "\n                        mg/dl\n                    "
+                              )
+                            ])
+                          ],
+                          1
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "vs-col",
+                      {
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "3",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "flex text-left" }, [
+                          _c("span", [_vm._v(_vm._s(_vm.__("TG")))]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "ml-1 text-red" }, [
+                            _vm._v("*")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "flex",
+                            staticStyle: { "align-items": "center" }
+                          },
+                          [
+                            _c(_vm.inputs.Triglycerides.type, {
+                              tag: "component",
+                              staticStyle: {
+                                width: "100px",
+                                "margin-left": "1rem"
+                              },
+                              attrs: {
+                                danger: _vm.hasValidationError("Triglycerides"),
+                                "danger-text": _vm.validationError(
+                                  "Triglycerides"
+                                ),
+                                name: "Triglycerides",
+                                type: "text"
+                              },
+                              model: {
+                                value: _vm.form.Triglycerides,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "Triglycerides", $$v)
+                                },
+                                expression: "form.Triglycerides"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "ml-2" }, [
+                              _vm._v(
+                                "\n                        mg/dl\n                    "
+                              )
+                            ])
+                          ],
+                          1
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "vs-col",
+                      {
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "3",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "flex text-left" }, [
+                          _c("span", [_vm._v(_vm._s(_vm.__("HbA1C")))]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "ml-1 text-red" }, [
+                            _vm._v("*")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "flex",
+                            staticStyle: { "align-items": "center" }
+                          },
+                          [
+                            _c(_vm.inputs.HbA1C.type, {
+                              tag: "component",
+                              staticStyle: {
+                                width: "100px",
+                                "margin-left": "1rem"
+                              },
+                              attrs: {
+                                danger: _vm.hasValidationError("HbA1C"),
+                                "danger-text": _vm.validationError("HbA1C"),
+                                name: "HbA1C",
+                                type: "text"
+                              },
+                              model: {
+                                value: _vm.form.HbA1C,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "HbA1C", $$v)
+                                },
+                                expression: "form.HbA1C"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "ml-2" }, [
+                              _vm._v(
+                                "\n                        %\n                    "
+                              )
+                            ])
+                          ],
+                          1
+                        )
+                      ]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              [
+                _c("h4", { staticClass: "gray" }, [
+                  _vm._v("Blood Pressure & Anthropometry:")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "vs-row",
+                  {
+                    staticClass: "mb-6 m-0",
+                    attrs: { "vs-type": "flex", "vs-w": "12" }
+                  },
+                  [
+                    _c(
+                      "vs-col",
+                      {
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "3",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "flex text-left" }, [
+                          _c("span", [_vm._v(_vm._s(_vm.__("DBP")))]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "ml-1 text-red" }, [
+                            _vm._v("*")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "flex",
+                            staticStyle: { "align-items": "center" }
+                          },
+                          [
+                            _c(_vm.inputs.DBP.type, {
+                              tag: "component",
+                              staticStyle: {
+                                width: "100px",
+                                "margin-left": "1rem"
+                              },
+                              attrs: {
+                                danger: _vm.hasValidationError("DBP"),
+                                "danger-text": _vm.validationError("DBP"),
+                                name: "DBP",
+                                type: "text"
+                              },
+                              model: {
+                                value: _vm.form.DBP,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "DBP", $$v)
+                                },
+                                expression: "form.DBP"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "ml-2" }, [
+                              _vm._v(
+                                "\n                        mmHg\n                    "
+                              )
+                            ])
+                          ],
+                          1
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "vs-col",
+                      {
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "3",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "flex text-left" }, [
+                          _c("span", [_vm._v(_vm._s(_vm.__("SBP")))]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "ml-1 text-red" }, [
+                            _vm._v("*")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "flex",
+                            staticStyle: { "align-items": "center" }
+                          },
+                          [
+                            _c(_vm.inputs.SBP.type, {
+                              tag: "component",
+                              staticStyle: {
+                                width: "100px",
+                                "margin-left": "1rem"
+                              },
+                              attrs: {
+                                danger: _vm.hasValidationError("SBP"),
+                                "danger-text": _vm.validationError("SBP"),
+                                name: "SBP",
+                                type: "text"
+                              },
+                              model: {
+                                value: _vm.form.SBP,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "SBP", $$v)
+                                },
+                                expression: "form.SBP"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "ml-2" }, [
+                              _vm._v(
+                                "\n                        mmHg\n                    "
+                              )
+                            ])
+                          ],
+                          1
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "vs-col",
+                      {
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "3",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "flex text-left" }, [
+                          _c("span", [_vm._v(_vm._s(_vm.__("Weight")))]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "ml-1 text-red" }, [
+                            _vm._v("*")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "flex",
+                            staticStyle: { "align-items": "center" }
+                          },
+                          [
+                            _c(_vm.inputs.Weigth.type, {
+                              tag: "component",
+                              staticStyle: {
+                                width: "100px",
+                                "margin-left": "1rem"
+                              },
+                              attrs: {
+                                danger: _vm.hasValidationError("Weigth"),
+                                "danger-text": _vm.validationError("Weigth"),
+                                name: "Weigth",
+                                type: "text"
+                              },
+                              model: {
+                                value: _vm.form.Weigth,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "Weigth", $$v)
+                                },
+                                expression: "form.Weigth"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "ml-2" }, [
+                              _vm._v(
+                                "\n                        kg\n                    "
+                              )
+                            ])
+                          ],
+                          1
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "vs-col",
+                      {
+                        attrs: {
+                          "vs-type": "flex",
+                          "vs-align": "center",
+                          "vs-lg": "3",
+                          "vs-sm": "6",
+                          "vs-xs": "12"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "flex text-left" }, [
+                          _c("span", [_vm._v(_vm._s(_vm.__("Height")))]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "ml-1 text-red" }, [
+                            _vm._v("*")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "flex",
+                            staticStyle: { "align-items": "center" }
+                          },
+                          [
+                            _c(_vm.inputs.Heigth.type, {
+                              tag: "component",
+                              staticStyle: {
+                                width: "100px",
+                                "margin-left": "1rem"
+                              },
+                              attrs: {
+                                danger: _vm.hasValidationError("Heigth"),
+                                "danger-text": _vm.validationError("Heigth"),
+                                name: "Heigth",
+                                type: "text"
+                              },
+                              model: {
+                                value: _vm.form.Heigth,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "Heigth", $$v)
+                                },
+                                expression: "form.Heigth"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "ml-2" }, [
+                              _vm._v(
+                                "\n                        cm\n                    "
+                              )
+                            ])
+                          ],
+                          1
+                        )
+                      ]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              [
+                _c("h4", { staticClass: "gray" }, [
+                  _vm._v("Ankle-brachial index:")
+                ]),
+                _vm._v(" "),
+                _vm.userInfo.panel_type == 6
+                  ? _c(
+                      "vs-row",
+                      {
+                        staticClass: "mb-6 m-0",
+                        attrs: {
+                          "vs-align": "center",
+                          "vs-type": "flex",
+                          "vs-w": "12"
+                        }
+                      },
+                      [
+                        _c(
+                          "vs-col",
+                          {
+                            attrs: { "vs-lg": "4", "vs-sm": "6", "vs-xs": "12" }
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticStyle: {
+                                  display: "flex",
+                                  "align-items": "center"
+                                }
+                              },
+                              [
+                                _c("div", { staticClass: "flex text-left" }, [
+                                  _c("span", [
+                                    _vm._v(
+                                      _vm._s(_vm.__("Left Ankle Pressure"))
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "ml-1 text-red" }, [
+                                    _vm._v("*")
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c(_vm.inputs.LeftAnklePressure.type, {
+                                  tag: "component",
+                                  staticStyle: {
+                                    width: "100px",
+                                    "margin-left": "1.8rem"
+                                  },
+                                  attrs: {
+                                    danger: _vm.hasValidationError(
+                                      "LeftAnklePressure"
+                                    ),
+                                    "danger-text": _vm.validationError(
+                                      "LeftAnklePressure"
+                                    ),
+                                    name: "LeftAnklePressure",
+                                    type: "text"
+                                  },
+                                  model: {
+                                    value: _vm.form.LeftAnklePressure,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "LeftAnklePressure",
+                                        $$v
+                                      )
+                                    },
+                                    expression: "form.LeftAnklePressure"
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "ml-2" }, [
+                                  _vm._v(
+                                    "\n                        mmHg\n                    "
+                                  )
+                                ])
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticStyle: {
+                                  display: "flex",
+                                  "align-items": "center",
+                                  "margin-top": "2rem"
+                                }
+                              },
+                              [
+                                _c("div", { staticClass: "flex text-left" }, [
+                                  _c("span", [
+                                    _vm._v(
+                                      _vm._s(_vm.__("Right Ankle Pressure"))
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "ml-1 text-red" }, [
+                                    _vm._v("*")
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c(_vm.inputs.RightAnklePressure.type, {
+                                  tag: "component",
+                                  staticStyle: {
+                                    width: "100px",
+                                    "margin-left": "1rem"
+                                  },
+                                  attrs: {
+                                    danger: _vm.hasValidationError(
+                                      "RightAnklePressure"
+                                    ),
+                                    "danger-text": _vm.validationError(
+                                      "RightAnklePressure"
+                                    ),
+                                    name: "RightAnklePressure",
+                                    type: "text"
+                                  },
+                                  model: {
+                                    value: _vm.form.RightAnklePressure,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "RightAnklePressure",
+                                        $$v
+                                      )
+                                    },
+                                    expression: "form.RightAnklePressure"
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "ml-2" }, [
+                                  _vm._v(
+                                    "\n                        mmHg\n                    "
+                                  )
+                                ])
+                              ],
+                              1
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "vs-col",
+                          {
+                            attrs: {
+                              "vs-type": "flex",
+                              "vs-align": "center",
+                              "vs-lg": "4",
+                              "vs-sm": "6",
+                              "vs-xs": "12"
+                            }
+                          },
+                          [
+                            _c(
+                              "fieldset",
+                              {
+                                staticClass: "w-100 styled-fieldset",
+                                staticStyle: { height: "120px" }
+                              },
+                              [
+                                _c("legend", [
+                                  _vm._v(_vm._s(_vm.__("Parental HTN")))
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticStyle: {
+                                      display: "flex",
+                                      "justify-content": "space-around",
+                                      width: "100%",
+                                      "margin-top": "0.5rem"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "vs-radio",
+                                      {
+                                        attrs: {
+                                          "vs-name": "Parental_hypertension",
+                                          "vs-value": "1"
+                                        },
+                                        model: {
+                                          value: _vm.form.Parental_hypertension,
+                                          callback: function($$v) {
+                                            _vm.$set(
+                                              _vm.form,
+                                              "Parental_hypertension",
+                                              $$v
+                                            )
+                                          },
+                                          expression:
+                                            "form.Parental_hypertension"
+                                        }
+                                      },
+                                      [_vm._v("Yes")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "vs-radio",
+                                      {
+                                        staticClass: "ml-4",
+                                        attrs: {
+                                          "vs-name": "Parental_hypertension",
+                                          "vs-value": "0"
+                                        },
+                                        model: {
+                                          value: _vm.form.Parental_hypertension,
+                                          callback: function($$v) {
+                                            _vm.$set(
+                                              _vm.form,
+                                              "Parental_hypertension",
+                                              $$v
+                                            )
+                                          },
+                                          expression:
+                                            "form.Parental_hypertension"
+                                        }
+                                      },
+                                      [_vm._v("No")]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "vs-col",
+                          {
+                            attrs: {
+                              "vs-type": "flex",
+                              "vs-align": "center",
+                              "vs-lg": "4",
+                              "vs-sm": "6",
+                              "vs-xs": "12"
+                            }
+                          },
+                          [
+                            _c(
+                              "fieldset",
+                              { staticClass: "w-100 styled-fieldset" },
+                              [
+                                _c("legend", [
+                                  _vm._v(_vm._s(_vm.__("Symptom")))
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticStyle: {
+                                      display: "flex",
+                                      "justify-content": "space-around",
+                                      width: "100%",
+                                      "margin-top": "0.5rem"
+                                    }
+                                  },
+                                  [
+                                    _c("v-select", {
+                                      staticStyle: { width: "100%" },
+                                      attrs: { options: _vm.symptoms },
+                                      model: {
+                                        value: _vm.form.symptom,
+                                        callback: function($$v) {
+                                          _vm.$set(_vm.form, "symptom", $$v)
+                                        },
+                                        expression: "form.symptom"
+                                      }
+                                    })
+                                  ],
+                                  1
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  : _c(
+                      "vs-row",
+                      {
+                        staticClass: "mb-6 m-0",
+                        attrs: {
+                          "vs-align": "center",
+                          "vs-type": "flex",
+                          "vs-w": "12"
+                        }
+                      },
+                      [
+                        _vm.userInfo.panel_type != 5
+                          ? _c("vs-col", {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "2",
+                                "vs-sm": "6",
+                                "vs-xs": "12"
+                              }
+                            })
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _c(
+                          "vs-col",
+                          {
+                            attrs: {
+                              "vs-type": "flex",
+                              "vs-align": "center",
+                              "vs-lg": "4",
+                              "vs-sm": "6",
+                              "vs-xs": "12"
+                            }
+                          },
+                          [
+                            _c("div", { staticClass: "flex text-left" }, [
+                              _c("span", [
+                                _vm._v(
+                                  _vm._s(_vm.__("Left Ankle-brachial Index"))
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(_vm.inputs.LeftAnklePressure.type, {
+                              tag: "component",
+                              staticStyle: {
+                                width: "100px",
+                                "margin-left": "1rem"
+                              },
+                              attrs: {
+                                danger: _vm.hasValidationError(
+                                  "LeftAnklePressure"
+                                ),
+                                "danger-text": _vm.validationError(
+                                  "LeftAnklePressure"
+                                ),
+                                name: "LeftAnklePressure",
+                                type: "text"
+                              },
+                              model: {
+                                value: _vm.form.LeftAnklePressure,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "LeftAnklePressure", $$v)
+                                },
+                                expression: "form.LeftAnklePressure"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "vs-col",
+                          {
+                            attrs: {
+                              "vs-type": "flex",
+                              "vs-align": "center",
+                              "vs-lg": "4",
+                              "vs-sm": "6",
+                              "vs-xs": "12"
+                            }
+                          },
+                          [
+                            _c("div", { staticClass: "flex text-left" }, [
+                              _c("span", [
+                                _vm._v(
+                                  _vm._s(_vm.__("Right Ankle-brachial Index"))
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(_vm.inputs.RightAnklePressure.type, {
+                              tag: "component",
+                              staticStyle: {
+                                width: "100px",
+                                "margin-left": "1rem"
+                              },
+                              attrs: {
+                                danger: _vm.hasValidationError(
+                                  "RightAnklePressure"
+                                ),
+                                "danger-text": _vm.validationError(
+                                  "RightAnklePressure"
+                                ),
+                                name: "RightAnklePressure",
+                                type: "text"
+                              },
+                              model: {
+                                value: _vm.form.RightAnklePressure,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "RightAnklePressure", $$v)
+                                },
+                                expression: "form.RightAnklePressure"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _vm.userInfo.panel_type == 6
+                          ? _c(
+                              "vs-col",
+                              {
+                                attrs: {
+                                  "vs-type": "flex",
+                                  "vs-align": "center",
+                                  "vs-lg": "4",
+                                  "vs-sm": "6",
+                                  "vs-xs": "12"
+                                }
+                              },
+                              [
+                                _c(
+                                  "fieldset",
+                                  { staticClass: "w-100 styled-fieldset" },
+                                  [
+                                    _c("legend", [
+                                      _vm._v(_vm._s(_vm.__("Symptom")))
+                                    ]),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticStyle: {
+                                          display: "flex",
+                                          "justify-content": "space-around",
+                                          width: "100%",
+                                          "margin-top": "0.5rem"
+                                        }
+                                      },
+                                      [
+                                        _c("v-select", {
+                                          staticStyle: { width: "100%" },
+                                          attrs: { options: _vm.symptoms },
+                                          model: {
+                                            value: _vm.form.symptom,
+                                            callback: function($$v) {
+                                              _vm.$set(_vm.form, "symptom", $$v)
+                                            },
+                                            expression: "form.symptom"
+                                          }
+                                        })
+                                      ],
+                                      1
+                                    )
+                                  ]
+                                )
+                              ]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.userInfo.panel_type == 5
+                          ? _c(
+                              "vs-col",
+                              {
+                                attrs: {
+                                  "vs-type": "flex",
+                                  "vs-align": "center",
+                                  "vs-lg": "4",
+                                  "vs-sm": "6",
+                                  "vs-xs": "12"
+                                }
+                              },
+                              [
+                                _c(
+                                  "fieldset",
+                                  { staticClass: "w-100 styled-fieldset" },
+                                  [
+                                    _c("legend", [
+                                      _vm._v(_vm._s(_vm.__("Parental HTN")))
+                                    ]),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticStyle: {
+                                          display: "flex",
+                                          "justify-content": "space-around",
+                                          width: "100%",
+                                          "margin-top": "0.5rem"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "vs-radio",
+                                          {
+                                            attrs: {
+                                              "vs-name":
+                                                "Parental_hypertension",
+                                              "vs-value": "1"
+                                            },
+                                            model: {
+                                              value:
+                                                _vm.form.Parental_hypertension,
+                                              callback: function($$v) {
+                                                _vm.$set(
+                                                  _vm.form,
+                                                  "Parental_hypertension",
+                                                  $$v
+                                                )
+                                              },
+                                              expression:
+                                                "form.Parental_hypertension"
+                                            }
+                                          },
+                                          [_vm._v("Yes")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "vs-radio",
+                                          {
+                                            staticClass: "ml-4",
+                                            attrs: {
+                                              "vs-name":
+                                                "Parental_hypertension",
+                                              "vs-value": "0"
+                                            },
+                                            model: {
+                                              value:
+                                                _vm.form.Parental_hypertension,
+                                              callback: function($$v) {
+                                                _vm.$set(
+                                                  _vm.form,
+                                                  "Parental_hypertension",
+                                                  $$v
+                                                )
+                                              },
+                                              expression:
+                                                "form.Parental_hypertension"
+                                            }
+                                          },
+                                          [_vm._v("No")]
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ]
+                                )
+                              ]
+                            )
+                          : _vm._e()
+                      ],
+                      1
+                    )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            false
+              ? undefined
+              : _vm._e(),
+            _vm._v(" "),
+            false
+              ? undefined
+              : _vm._e(),
+            _vm._v(" "),
+            _c("div", [
+              _vm.userInfo.panel_type != 5 && _vm.userInfo.panel_type != 6
+                ? _c(
+                    "div",
+                    [
+                      _c("h4", { staticClass: "gray" }, [
+                        _vm._v("Result of Assesment:")
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "vs-row",
+                        {
+                          staticClass: "mb-6 m-0",
+                          attrs: { "vs-type": "flex", "vs-w": "12" }
+                        },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "6",
+                                "vs-sm": "6",
+                                "vs-xs": "12"
+                              }
+                            },
+                            [
+                              _c("div", { staticClass: "flex text-left" }, [
+                                _c("span", [
+                                  _vm._v(
+                                    _vm._s(_vm.__("Pulse Wave Velocity (PWV)"))
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "ml-1 text-red" }, [
+                                  _vm._v("*")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "flex",
+                                  staticStyle: { "align-items": "center" }
+                                },
+                                [
+                                  _c(
+                                    "strong",
+                                    { staticStyle: { "margin-left": "1rem" } },
+                                    [
+                                      _vm._v(
+                                        "\n                    " +
+                                          _vm._s(
+                                            _vm.result.PWV
+                                              ? _vm.result.PWV.toFixed(2)
+                                              : _vm.result.PWV
+                                          ) +
+                                          "\n                  "
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "ml-2" }, [
+                                    _vm._v(
+                                      "\n                        cm/s\n                    "
+                                    )
+                                  ])
+                                ]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              staticStyle: {
+                                "flex-direction": "column",
+                                "justify-content": "center"
+                              },
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "6",
+                                "vs-sm": "6",
+                                "vs-xs": "12"
+                              }
+                            },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "flex mx-2 mt-3 text-left w-100 mb-3"
+                                },
+                                [
+                                  _c("strong", [_vm._v(_vm._s(_vm.__("PWV")))]),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "ml-1" }, [
+                                    _vm._v(
+                                      _vm._s(
+                                        _vm.__(
+                                          "higher than cut off > 1650 cm/s"
+                                        )
+                                      )
+                                    )
+                                  ])
+                                ]
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "vs-row",
+                        {
+                          staticClass: "mb-6 m-0",
+                          attrs: { "vs-type": "flex", "vs-w": "12" }
+                        },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "6",
+                                "vs-sm": "6",
+                                "vs-xs": "12"
+                              }
+                            },
+                            [
+                              _c("div", { staticClass: "flex text-left" }, [
+                                _c("span", [
+                                  _vm._v(
+                                    _vm._s(
+                                      _vm.__("Arterial Stiffness Index (ASI)")
+                                    )
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "ml-1 text-red" }, [
+                                  _vm._v("*")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "strong",
+                                { staticStyle: { "margin-left": "1rem" } },
+                                [
+                                  _vm._v(
+                                    "\n                  " +
+                                      _vm._s(
+                                        _vm.result.ASI
+                                          ? _vm.result.ASI.toFixed(2)
+                                          : _vm.result.ASI
+                                      ) +
+                                      "\n              "
+                                  )
+                                ]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              staticStyle: {
+                                "flex-direction": "column",
+                                "justify-content": "center"
+                              },
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "6",
+                                "vs-sm": "6",
+                                "vs-xs": "12"
+                              }
+                            },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "flex mx-2 mt-3 text-left w-100 mb-3"
+                                },
+                                [
+                                  _c("strong", [_vm._v(_vm._s(_vm.__("ASI")))]),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "ml-1" }, [
+                                    _vm._v(
+                                      _vm._s(_vm.__("higher than cut off > 60"))
+                                    )
+                                  ])
+                                ]
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _vm.result && _vm.result.msg
+                        ? _c(
+                            "vs-row",
+                            [
+                              _c("vs-col", { attrs: { "vs-lg": "12" } }, [
+                                _c("h3", { staticClass: "my-4" }, [
+                                  _c("strong", [
+                                    _vm._v(
+                                      "\n                          Atherosclerosis plaque progress:\n                      "
+                                    )
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c("p", [
+                                  _vm._v(
+                                    "\n                      \tRisk of plaque progress with current risk factors  =  "
+                                  ),
+                                  _c("strong", [
+                                    _vm._v(_vm._s(_vm.result.Risk1.toFixed(2)))
+                                  ]),
+                                  _vm._v(
+                                    " %  (" +
+                                      _vm._s(_vm.result.msg) +
+                                      ")\n                  "
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("p", [
+                                  _vm._v(
+                                    "\n                      \tRisk of plaque progress with optimal risk factors  = "
+                                  ),
+                                  _c("strong", [
+                                    _vm._v(_vm._s(_vm.result.OMen.toFixed(2)))
+                                  ]),
+                                  _vm._v(
+                                    " %  (optimal risk)\n                  "
+                                  )
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("vs-col", { attrs: { "vs-lg": "12" } }, [
+                                _c("h3", { staticClass: "my-4" }, [
+                                  _c("strong", [
+                                    _vm._v(
+                                      "\n                          \tMI and CVA risk assessment:\n                      "
+                                    )
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c("p", [
+                                  _vm._v(
+                                    "\n                      \tRisk of MI and stroke with current risk factors  =  "
+                                  ),
+                                  _c("strong", [
+                                    _vm._v(_vm._s(_vm.result.Risk2.toFixed(2)))
+                                  ]),
+                                  _vm._v(
+                                    " %  (" +
+                                      _vm._s(_vm.result.msg2) +
+                                      ")\n                  "
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("p", [
+                                  _vm._v(
+                                    "\n                      \tRisk of MI and stroke with optimal risk factors  = "
+                                  ),
+                                  _c("strong", [
+                                    _vm._v(_vm._s(_vm.result.RSK1.toFixed(2)))
+                                  ]),
+                                  _vm._v(
+                                    " %  (optimal risk)\n                  "
+                                  )
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("vs-col", { attrs: { "vs-lg": "12" } }, [
+                                _c("h3", { staticClass: "my-4" }, [
+                                  _c("strong", [
+                                    _vm._v(
+                                      "\n                          Conclusion:\n                      "
+                                    )
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c("p", [
+                                  _vm._v(
+                                    "\n                      \tThe patient is " +
+                                      _vm._s(_vm.result.msg) +
+                                      " for atherosclerosis plaque progress.\n                  "
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("p", [
+                                  _vm._v(
+                                    "\n                      \tThe patient is " +
+                                      _vm._s(_vm.result.msg2) +
+                                      " for MI and stroke event.\n                  "
+                                  )
+                                ])
+                              ])
+                            ],
+                            1
+                          )
+                        : _vm._e()
+                    ],
+                    1
+                  )
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex justify-center mt-16" }, [
+              _c(
+                "div",
+                { staticClass: "flex align-items-center" },
+                [
+                  _c(
+                    "vs-button",
+                    {
+                      staticClass: "mr-3 mb-2",
+                      staticStyle: { "font-size": "20px" },
+                      attrs: { color: "success" },
+                      on: { click: _vm.calculate }
+                    },
+                    [_vm._v(_vm._s(_vm.__("MACE Risk Calculation")))]
+                  ),
+                  _vm._v(" "),
+                  (_vm.userInfo.email == "najafi@vcathlab.com" ||
+                    _vm.userInfo.email == "mghasemi@vcathlab.com") &&
+                  _vm.result.data.data
+                    ? _c(
+                        "div",
+                        { staticStyle: { width: "80%" } },
+                        [
+                          _c(
+                            "vs-row",
+                            [
+                              _c("vs-col", { attrs: { "vs-lg": "4" } }, [
+                                _c("p", { staticClass: "col-lg-3" }, [
+                                  _vm._v("Body and BP Triage:")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("vs-col", { attrs: { "vs-lg": "8" } }, [
+                                _c(
+                                  "a",
+                                  {
+                                    key: _vm.downloadBtnKey,
+                                    staticClass:
+                                      "mr-2 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",
+                                    staticStyle: { "font-size": "12px" },
+                                    attrs: {
+                                      target: "_blank",
+                                      rel: "noopener",
+                                      href:
+                                        _vm.result.data.data.links.bp_triage
+                                          .link
+                                    }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                                            " +
+                                        _vm._s(_vm.__("Export PDF")) +
+                                        "\n                                    "
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    key: _vm.downloadBtnKey,
+                                    staticClass:
+                                      "mr-2 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",
+                                    staticStyle: { "font-size": "12px" },
+                                    attrs: {
+                                      target: "_blank",
+                                      rel: "noopener",
+                                      href:
+                                        _vm.result.data.data.links.bp_triage
+                                          .word_link
+                                    }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                                " +
+                                        _vm._s(_vm.__("Export Word"))
+                                    )
+                                  ]
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-row",
+                            [
+                              _c("vs-col", { attrs: { "vs-lg": "4" } }, [
+                                _c("p", { staticClass: "col-lg-3" }, [
+                                  _vm._v("PTP of CAD Results:")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("vs-col", { attrs: { "vs-lg": "8" } }, [
+                                _c(
+                                  "a",
+                                  {
+                                    key: _vm.downloadBtnKey,
+                                    staticClass:
+                                      "mr-2 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",
+                                    staticStyle: { "font-size": "12px" },
+                                    attrs: {
+                                      target: "_blank",
+                                      rel: "noopener",
+                                      href:
+                                        _vm.result.data.data.links.ptp_cad.link
+                                    }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                                            " +
+                                        _vm._s(_vm.__("Export PDF")) +
+                                        "\n                                    "
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    key: _vm.downloadBtnKey,
+                                    staticClass:
+                                      "mr-2 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",
+                                    staticStyle: { "font-size": "12px" },
+                                    attrs: {
+                                      target: "_blank",
+                                      rel: "noopener",
+                                      href:
+                                        _vm.result.data.data.links.ptp_cad
+                                          .word_link
+                                    }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                                " +
+                                        _vm._s(_vm.__("Export Word"))
+                                    )
+                                  ]
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-row",
+                            [
+                              _c("vs-col", { attrs: { "vs-lg": "4" } }, [
+                                _c("p", { staticClass: "col-lg-3" }, [
+                                  _vm._v("Total results:")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("vs-col", { attrs: { "vs-lg": "8" } }, [
+                                _c(
+                                  "a",
+                                  {
+                                    key: _vm.downloadBtnKey,
+                                    staticClass:
+                                      "mr-2 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",
+                                    staticStyle: { "font-size": "12px" },
+                                    attrs: {
+                                      target: "_blank",
+                                      rel: "noopener",
+                                      href: _vm.result.data.data.link
+                                    }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                                            " +
+                                        _vm._s(_vm.__("Export PDF")) +
+                                        "\n                                    "
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "a",
+                                  {
+                                    key: _vm.downloadBtnKey,
+                                    staticClass:
+                                      "mr-2 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",
+                                    staticStyle: { "font-size": "12px" },
+                                    attrs: {
+                                      target: "_blank",
+                                      rel: "noopener",
+                                      href: _vm.result.data.data.word_link
+                                    }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                                " +
+                                        _vm._s(_vm.__("Export Word"))
+                                    )
+                                  ]
+                                )
+                              ])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    : _vm.result.data.data && _vm.userInfo.panel_type != 6
+                    ? _c("div", [
+                        _vm.result.data.data && _vm.result.data.data.link
+                          ? _c(
+                              "a",
+                              {
+                                key: _vm.downloadBtnKey,
+                                staticClass:
+                                  "mr-3 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",
+                                staticStyle: { "font-size": "30px" },
+                                attrs: {
+                                  target: "_blank",
+                                  rel: "noopener",
+                                  href: _vm.result.data.data.link
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                    " +
+                                    _vm._s(_vm.__("Export PDF")) +
+                                    "\n                "
+                                )
+                              ]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.result.data.data && _vm.result.data.data.word_link
+                          ? _c(
+                              "a",
+                              {
+                                key: _vm.downloadBtnKey,
+                                staticClass:
+                                  "mr-3 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",
+                                staticStyle: { "font-size": "30px" },
+                                attrs: {
+                                  target: "_blank",
+                                  rel: "noopener",
+                                  href: _vm.result.data.data.word_link
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                        " +
+                                    _vm._s(_vm.__("Export Word")) +
+                                    "\n                "
+                                )
+                              ]
+                            )
+                          : _vm._e()
+                      ])
+                    : _vm._e()
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _vm.userInfo.email != "najafi@vcathlab.com" &&
+            _vm.userInfo.email != "mghasemi@vcathlab.com" &&
+            _vm.userInfo.panel_type == 6 &&
+            _vm.result.data.data
+              ? _c(
+                  "div",
+                  {
+                    staticClass: "result",
+                    staticStyle: {
+                      display: "flex",
+                      "justify-content": "center",
+                      "margin-top": "1rem"
+                    }
+                  },
+                  [
+                    _c(
+                      "div",
+                      { staticClass: "examplex" },
+                      [
+                        _c(
+                          "vs-button",
+                          {
+                            staticClass: "btnx",
+                            attrs: { type: "filled", color: "success" }
+                          },
+                          [_vm._v("Ankle Brachial Index")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "vs-dropdown",
+                          { attrs: { "vs-trigger-click": "" } },
+                          [
+                            _c("vs-button", {
+                              staticClass: "btn-drop",
+                              attrs: {
+                                color: "success",
+                                type: "filled",
+                                icon: "expand_more"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "vs-dropdown-menu",
+                              [
+                                _c("vs-dropdown-item", [
+                                  _c(
+                                    "a",
+                                    {
+                                      key: _vm.downloadBtnKey,
+                                      staticStyle: { "font-size": "12px" },
+                                      attrs: { rel: "noopener" },
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.download(
+                                            _vm.result.data.data.links.bp_triage
+                                              .link,
+                                            "abi_clicked"
+                                          )
+                                        }
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                            " +
+                                          _vm._s(_vm.__("Export PDF")) +
+                                          "\n                                    "
+                                      )
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("vs-dropdown-item", [
+                                  _c(
+                                    "a",
+                                    {
+                                      key: _vm.downloadBtnKey,
+                                      staticStyle: { "font-size": "12px" },
+                                      attrs: { rel: "noopener" },
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.download(
+                                            _vm.result.data.data.links.bp_triage
+                                              .word_link,
+                                            "abi_clicked"
+                                          )
+                                        }
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                " +
+                                          _vm._s(_vm.__("Export Word"))
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "examplex" },
+                      [
+                        _c(
+                          "vs-button",
+                          {
+                            staticClass: "btnx",
+                            attrs: { type: "filled", color: "success" }
+                          },
+                          [_vm._v("Screening Test")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "vs-dropdown",
+                          { attrs: { "vs-trigger-click": "" } },
+                          [
+                            _c("vs-button", {
+                              staticClass: "btn-drop",
+                              attrs: {
+                                color: "success",
+                                type: "filled",
+                                icon: "expand_more"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "vs-dropdown-menu",
+                              [
+                                _c("vs-dropdown-item", [
+                                  _c(
+                                    "a",
+                                    {
+                                      key: _vm.downloadBtnKey,
+                                      staticStyle: { "font-size": "12px" },
+                                      attrs: {
+                                        rel: "noopener",
+                                        href: "javascript:void(0)"
+                                      },
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.download(
+                                            _vm.result.data.data.links.ptp_cad
+                                              .link,
+                                            "screening_test_clicked"
+                                          )
+                                        }
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                            " +
+                                          _vm._s(_vm.__("Export PDF")) +
+                                          "\n                                    "
+                                      )
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("vs-dropdown-item", [
+                                  _c(
+                                    "a",
+                                    {
+                                      key: _vm.downloadBtnKey,
+                                      staticStyle: { "font-size": "12px" },
+                                      attrs: {
+                                        rel: "noopener",
+                                        href: "javascript:void(0)"
+                                      },
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.download(
+                                            _vm.result.data.data.links.ptp_cad
+                                              .word_link,
+                                            "screening_test_clicked"
+                                          )
+                                        }
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                " +
+                                          _vm._s(_vm.__("Export Word"))
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "examplex" },
+                      [
+                        _c(
+                          "vs-button",
+                          {
+                            staticClass: "btnx",
+                            attrs: { type: "filled", color: "success" }
+                          },
+                          [_vm._v("PTP of CAD")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "vs-dropdown",
+                          { attrs: { "vs-trigger-click": "" } },
+                          [
+                            _c("vs-button", {
+                              staticClass: "btn-drop",
+                              attrs: {
+                                color: "success",
+                                type: "filled",
+                                icon: "expand_more"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "vs-dropdown-menu",
+                              [
+                                _c("vs-dropdown-item", [
+                                  _c(
+                                    "a",
+                                    {
+                                      key: _vm.downloadBtnKey,
+                                      staticStyle: { "font-size": "12px" },
+                                      attrs: {
+                                        rel: "noopener",
+                                        href: "javascript:void(0)"
+                                      },
+                                      on: {
+                                        click: function() {
+                                          return _vm.download(
+                                            _vm.result.data.data.links
+                                              .ClinicallikelihoodofCAD.link,
+                                            "ptp_of_cad_clicked"
+                                          )
+                                        }
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                            " +
+                                          _vm._s(_vm.__("Export PDF")) +
+                                          "\n                                    "
+                                      )
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("vs-dropdown-item", [
+                                  _c(
+                                    "a",
+                                    {
+                                      key: _vm.downloadBtnKey,
+                                      staticStyle: { "font-size": "12px" },
+                                      attrs: {
+                                        rel: "noopener",
+                                        href: "javascript:void(0)"
+                                      },
+                                      on: {
+                                        click: function() {
+                                          return _vm.download(
+                                            _vm.result.data.data.links
+                                              .ClinicallikelihoodofCAD
+                                              .word_link,
+                                            "ptp_of_cad_clicked"
+                                          )
+                                        }
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                " +
+                                          _vm._s(_vm.__("Export Word"))
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "examplex" },
+                      [
+                        _c(
+                          "vs-button",
+                          {
+                            staticClass: "btnx",
+                            attrs: { type: "filled", color: "success" }
+                          },
+                          [_vm._v("Total Result")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "vs-dropdown",
+                          { attrs: { "vs-trigger-click": "" } },
+                          [
+                            _c("vs-button", {
+                              staticClass: "btn-drop",
+                              attrs: {
+                                color: "success",
+                                type: "filled",
+                                icon: "expand_more"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "vs-dropdown-menu",
+                              [
+                                _c("vs-dropdown-item", [
+                                  _c(
+                                    "a",
+                                    {
+                                      key: _vm.downloadBtnKey,
+                                      staticStyle: { "font-size": "12px" },
+                                      attrs: {
+                                        rel: "noopener",
+                                        href: "javascript:void(0)"
+                                      },
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.download(
+                                            _vm.result.data.data.link,
+                                            "total_clicked"
+                                          )
+                                        }
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                            " +
+                                          _vm._s(_vm.__("Export PDF")) +
+                                          "\n                                    "
+                                      )
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("vs-dropdown-item", [
+                                  _c(
+                                    "a",
+                                    {
+                                      key: _vm.downloadBtnKey,
+                                      staticStyle: { "font-size": "12px" },
+                                      attrs: {
+                                        rel: "noopener",
+                                        href: "javascript:void(0)"
+                                      },
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.download(
+                                            _vm.result.data.data.word_link,
+                                            "total_clicked"
+                                          )
+                                        }
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                " +
+                                          _vm._s(_vm.__("Export Word"))
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                )
+              : _vm._e()
+          ],
+          1
+        )
+      ])
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+}]);

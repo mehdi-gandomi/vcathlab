@@ -67,7 +67,8 @@ class EchoCalculation extends Model
         'updated_at'
     ];
     public $with = [
-        'user'
+        'user',
+        'patient'
     ];
     public $appends = [
 

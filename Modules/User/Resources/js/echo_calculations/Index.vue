@@ -102,6 +102,12 @@ export default {
                     filter: false
                 },
                 {
+                    headerName: this.__("patient"),
+                    field: "patient.name",
+                    resizable: true,
+                    filter: true
+                },
+                {
                     headerName: this.__("Weight"),
                     field: "Weight",
                     resizable: true,

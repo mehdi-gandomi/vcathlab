@@ -1,1 +1,607 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[48],{743:function(t,e,s){"use strict";s.r(e);var r=s(62),a=s.n(r),n=s(757),l=s(758),i=s(762);function o(t,e,s,r,a,n,l){try{var i=t[n](l),o=i.value}catch(t){return void s(t)}i.done?e(o):Promise.resolve(o).then(r,a)}function v(t){return function(){var e=this,s=arguments;return new Promise((function(r,a){var n=t.apply(e,s);function l(t){o(n,r,a,l,i,"next",t)}function i(t){o(n,r,a,l,i,"throw",t)}l(void 0)}))}}var c={components:{},mixins:[l.a,i.a],data:function(){return{form:new n.a({Cr:"",Ht:"",LVEF:"",HR:"",Contrast:"",Hb:"",PTP:"",CAVI:"",WBC:"",PriorCABG:"",PriorPCI:"",HbA1C:"",Age:"",SBP:"",DBP:"",Heigth:"",Weigth:"",Sex:"",pribleed:"",Hypotension:"",heart_failure:"",Diabet:"",Acute_MI:"",IABP:"",Smoker:"",user_id:"",patient_id:""}),model:"Modules\\User\\Models\\Angiography",inputs:{Cr:{type:"vs-input",field_type:"text"},Ht:{type:"vs-input",field_type:"text"},LVEF:{type:"vs-input",field_type:"text"},HR:{type:"vs-input",field_type:"text"},Contrast:{type:"vs-input",field_type:"text"},Hb:{type:"vs-input",field_type:"text"},PTP:{type:"vs-input",field_type:"text"},CAVI:{type:"vs-input",field_type:"text"},WBC:{type:"vs-input",field_type:"text"},PriorCABG:{type:"vs-input",field_type:"text"},PriorPCI:{type:"vs-input",field_type:"text"},HbA1C:{type:"vs-input",field_type:"text"},Age:{type:"vs-input",field_type:"text"},SBP:{type:"vs-input",field_type:"text"},DBP:{type:"vs-input",field_type:"text"},Heigth:{type:"vs-input",field_type:"text"},Weigth:{type:"vs-input",field_type:"text"},Sex:{type:"vs-radio",field_type:"radio"},pribleed:{type:"vs-input",field_type:"text"},Hypotension:{type:"vs-input",field_type:"text"},heart_failure:{type:"vs-input",field_type:"text"},Diabet:{type:"vs-input",field_type:"text"},Acute_MI:{type:"vs-input",field_type:"text"},IABP:{type:"vs-input",field_type:"text"},Smoker:{type:"vs-input",field_type:"text"},user_id:{field_type:"relation",foreign_key:"user_id",relation_name:"user",options:[],selected:{},searchUrl:"/panel/api/users",titleField:"email"},patient_id:{field_type:"relation",foreign_key:"patient_id",relation_name:"patient",options:[],selected:{},searchUrl:"/user/api/patients",titleField:"name"}}}},props:{},computed:{},created:function(){var t=this;return v(a.a.mark((function e(){var s,r,n;return a.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,t.$http.get("/user/api/angiographies/".concat(t.$route.params.id));case 2:s=e.sent,(r=s.data).success&&(n=r.data,t.$store.dispatch("setCurrentResource",n),t.populateFormFields(n));case 5:case"end":return e.stop()}}),e)})))()},mounted:function(){},methods:{onSubmit:function(t){var e=this;return v(a.a.mark((function s(){return a.a.wrap((function(s){for(;;)switch(s.prev=s.next){case 0:return s.next=2,e.form.put("/user/api/angiographies/".concat(e.$route.params.id));case 2:s.sent.success&&Iracode.success(e.__("Angiography Updated Successfully")),"close"==t?e.$router.push("/user/angiographies"):e.form.reset();case 5:case"end":return s.stop()}}),s)})))()}}},p=s(53),f=Object(p.a)(c,(function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("div",{staticClass:"mb-base"},[s("vx-card",{scopedSlots:t._u([{key:"actions",fn:function(){return[s("vs-button",{attrs:{color:"primary",to:"/user/angiographies",type:"filled"}},[t._v(t._s(t.__("Back")))])]},proxy:!0}])},[t._v(" "),s("form",{on:{submit:t.onSubmit}},[s("vs-row",{staticClass:"mb-6",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Cr")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.Cr.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("Cr"),"danger-text":t.validationError("Cr"),name:"Cr",type:"text"},model:{value:t.form.Cr,callback:function(e){t.$set(t.form,"Cr",e)},expression:"form.Cr"}})],1)],1)],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Ht")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.Ht.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("Ht"),"danger-text":t.validationError("Ht"),name:"Ht",type:"text"},model:{value:t.form.Ht,callback:function(e){t.$set(t.form,"Ht",e)},expression:"form.Ht"}})],1)],1)],1)],1),t._v(" "),s("vs-row",{staticClass:"mb-6",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("L V E F")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.LVEF.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("LVEF"),"danger-text":t.validationError("LVEF"),name:"LVEF",type:"text"},model:{value:t.form.LVEF,callback:function(e){t.$set(t.form,"LVEF",e)},expression:"form.LVEF"}})],1)],1)],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("H R")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.HR.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("HR"),"danger-text":t.validationError("HR"),name:"HR",type:"text"},model:{value:t.form.HR,callback:function(e){t.$set(t.form,"HR",e)},expression:"form.HR"}})],1)],1)],1)],1),t._v(" "),s("vs-row",{staticClass:"mb-6",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Contrast")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.Contrast.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("Contrast"),"danger-text":t.validationError("Contrast"),name:"Contrast",type:"text"},model:{value:t.form.Contrast,callback:function(e){t.$set(t.form,"Contrast",e)},expression:"form.Contrast"}})],1)],1)],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Hb")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.Hb.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("Hb"),"danger-text":t.validationError("Hb"),name:"Hb",type:"text"},model:{value:t.form.Hb,callback:function(e){t.$set(t.form,"Hb",e)},expression:"form.Hb"}})],1)],1)],1)],1),t._v(" "),s("vs-row",{staticClass:"mb-6",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("P T P")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.PTP.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("PTP"),"danger-text":t.validationError("PTP"),name:"PTP",type:"text"},model:{value:t.form.PTP,callback:function(e){t.$set(t.form,"PTP",e)},expression:"form.PTP"}})],1)],1)],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("C A V I")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.CAVI.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("CAVI"),"danger-text":t.validationError("CAVI"),name:"CAVI",type:"text"},model:{value:t.form.CAVI,callback:function(e){t.$set(t.form,"CAVI",e)},expression:"form.CAVI"}})],1)],1)],1)],1),t._v(" "),s("vs-row",{staticClass:"mb-6",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("W B C")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.WBC.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("WBC"),"danger-text":t.validationError("WBC"),name:"WBC",type:"text"},model:{value:t.form.WBC,callback:function(e){t.$set(t.form,"WBC",e)},expression:"form.WBC"}})],1)],1)],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Prior C A B G")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.PriorCABG.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("PriorCABG"),"danger-text":t.validationError("PriorCABG"),name:"PriorCABG",type:"text"},model:{value:t.form.PriorCABG,callback:function(e){t.$set(t.form,"PriorCABG",e)},expression:"form.PriorCABG"}})],1)],1)],1)],1),t._v(" "),s("vs-row",{staticClass:"mb-6",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Prior P C I")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.PriorPCI.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("PriorPCI"),"danger-text":t.validationError("PriorPCI"),name:"PriorPCI",type:"text"},model:{value:t.form.PriorPCI,callback:function(e){t.$set(t.form,"PriorPCI",e)},expression:"form.PriorPCI"}})],1)],1)],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Hb A1 C")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.HbA1C.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("HbA1C"),"danger-text":t.validationError("HbA1C"),name:"HbA1C",type:"text"},model:{value:t.form.HbA1C,callback:function(e){t.$set(t.form,"HbA1C",e)},expression:"form.HbA1C"}})],1)],1)],1)],1),t._v(" "),s("vs-row",{staticClass:"mb-6",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("patient")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s("v-select",{staticStyle:{width:"100%"},attrs:{dir:t.$vs.rtl?"rtl":"ltr",value:t.inputs.patient_id.selected,label:"name",filterable:!1,options:t.inputs.patient_id.options},on:{input:function(e){return t.onRelationSelect("patient_id",e)},search:function(e,s){return t.onRelationSearch("patient_id",e,s)}}},[s("template",{slot:"no-options"},[t._v("\n                                    "+t._s(t.__("Type to search"))+"\n                                ")])],2)],1)],1)],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("user")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s("v-select",{staticStyle:{width:"100%"},attrs:{dir:t.$vs.rtl?"rtl":"ltr",value:t.inputs.user_id.selected,label:"email",filterable:!1,options:t.inputs.user_id.options},on:{input:function(e){return t.onRelationSelect("user_id",e)},search:function(e,s){return t.onRelationSearch("user_id",e,s)}}},[s("template",{slot:"no-options"},[t._v("\n                                    "+t._s(t.__("Type to search"))+"\n                                ")])],2)],1)],1)],1)],1),t._v(" "),s("vs-row",{staticClass:"mb-6",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Age")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.Age.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("Age"),"danger-text":t.validationError("Age"),name:"Age",type:"text"},model:{value:t.form.Age,callback:function(e){t.$set(t.form,"Age",e)},expression:"form.Age"}})],1)],1)],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("S B P")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.SBP.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("SBP"),"danger-text":t.validationError("SBP"),name:"SBP",type:"text"},model:{value:t.form.SBP,callback:function(e){t.$set(t.form,"SBP",e)},expression:"form.SBP"}})],1)],1)],1)],1),t._v(" "),s("vs-row",{staticClass:"mb-6",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("D B P")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.DBP.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("DBP"),"danger-text":t.validationError("DBP"),name:"DBP",type:"text"},model:{value:t.form.DBP,callback:function(e){t.$set(t.form,"DBP",e)},expression:"form.DBP"}})],1)],1)],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Heigth")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.Heigth.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("Heigth"),"danger-text":t.validationError("Heigth"),name:"Heigth",type:"text"},model:{value:t.form.Heigth,callback:function(e){t.$set(t.form,"Heigth",e)},expression:"form.Heigth"}})],1)],1)],1)],1),t._v(" "),s("vs-row",{staticClass:"mb-6",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Weigth")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.Weigth.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("Weigth"),"danger-text":t.validationError("Weigth"),name:"Weigth",type:"text"},model:{value:t.form.Weigth,callback:function(e){t.$set(t.form,"Weigth",e)},expression:"form.Weigth"}})],1)],1)],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Sex")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.Sex.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("Sex"),"danger-text":t.validationError("Sex"),name:"Sex",type:"radio"},model:{value:t.form.Sex,callback:function(e){t.$set(t.form,"Sex",e)},expression:"form.Sex"}})],1)],1)],1)],1),t._v(" "),s("vs-row",{staticClass:"mb-6",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Pribleed")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.pribleed.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("pribleed"),"danger-text":t.validationError("pribleed"),name:"pribleed",type:"text"},model:{value:t.form.pribleed,callback:function(e){t.$set(t.form,"pribleed",e)},expression:"form.pribleed"}})],1)],1)],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Hypotension")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.Hypotension.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("Hypotension"),"danger-text":t.validationError("Hypotension"),name:"Hypotension",type:"text"},model:{value:t.form.Hypotension,callback:function(e){t.$set(t.form,"Hypotension",e)},expression:"form.Hypotension"}})],1)],1)],1)],1),t._v(" "),s("vs-row",{staticClass:"mb-6",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Heart Failure")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.heart_failure.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("heart_failure"),"danger-text":t.validationError("heart_failure"),name:"heart_failure",type:"text"},model:{value:t.form.heart_failure,callback:function(e){t.$set(t.form,"heart_failure",e)},expression:"form.heart_failure"}})],1)],1)],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Diabet")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.Diabet.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("Diabet"),"danger-text":t.validationError("Diabet"),name:"Diabet",type:"text"},model:{value:t.form.Diabet,callback:function(e){t.$set(t.form,"Diabet",e)},expression:"form.Diabet"}})],1)],1)],1)],1),t._v(" "),s("vs-row",{staticClass:"mb-6",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Acute  M I")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.Acute_MI.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("Acute_MI"),"danger-text":t.validationError("Acute_MI"),name:"Acute_MI",type:"text"},model:{value:t.form.Acute_MI,callback:function(e){t.$set(t.form,"Acute_MI",e)},expression:"form.Acute_MI"}})],1)],1)],1),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("I A B P")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.IABP.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("IABP"),"danger-text":t.validationError("IABP"),name:"IABP",type:"text"},model:{value:t.form.IABP,callback:function(e){t.$set(t.form,"IABP",e)},expression:"form.IABP"}})],1)],1)],1)],1),t._v(" "),s("vs-row",{staticClass:"mb-6",attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"6"}},[s("vs-row",{attrs:{"vs-type":"flex","vs-w":"12"}},[s("vs-col",{staticClass:"justify-end pr-5",attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"3"}},[s("span",[t._v(t._s(t.__("Smoker")))]),t._v(" "),s("span",{staticClass:"ml-1 text-red"},[t._v("*")])]),t._v(" "),s("vs-col",{attrs:{"vs-type":"flex","vs-align":"center","vs-lg":"9"}},[s(t.inputs.Smoker.type,{tag:"component",staticClass:"w-full",attrs:{danger:t.hasValidationError("Smoker"),"danger-text":t.validationError("Smoker"),name:"Smoker",type:"text"},model:{value:t.form.Smoker,callback:function(e){t.$set(t.form,"Smoker",e)},expression:"form.Smoker"}})],1)],1)],1)],1),t._v(" "),s("vs-row",{staticClass:"mb-6",attrs:{"vs-type":"flex","vs-w":"12"}}),t._v(" "),s("div",{staticClass:"flex justify-end mt-16"},[s("div",{staticClass:"flex"},[s("vs-button",{staticClass:"mr-3 mb-2",attrs:{color:"success"},on:{click:function(){return t.onSubmit("close")}}},[t._v(t._s(t.__("Save")))]),t._v(" "),s("vs-button",{staticClass:"mb-2",attrs:{color:"warning"},on:{click:function(e){return t.form.reset()}}},[t._v(t._s(t.__("Clear")))])],1)])],1)])],1)}),[],!1,null,null,null);e.default=f.exports},757:function(t,e,s){"use strict";var r=s(536),a=s.n(r);function n(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}e.a=function t(e){return n(this,t),new a.a(e,{http:window.Iracode.getHttp()})}},758:function(t,e,s){"use strict";var r=s(62),a=s.n(r);function n(t,e){var s=Object.keys(t);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(t);e&&(r=r.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),s.push.apply(s,r)}return s}function l(t){for(var e=1;e<arguments.length;e++){var s=null!=arguments[e]?arguments[e]:{};e%2?n(Object(s),!0).forEach((function(e){i(t,e,s[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(s)):n(Object(s)).forEach((function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(s,e))}))}return t}function i(t,e,s){return e in t?Object.defineProperty(t,e,{value:s,enumerable:!0,configurable:!0,writable:!0}):t[e]=s,t}function o(t,e,s,r,a,n,l){try{var i=t[n](l),o=i.value}catch(t){return void s(t)}i.done?e(o):Promise.resolve(o).then(r,a)}function v(t){return function(){var e=this,s=arguments;return new Promise((function(r,a){var n=t.apply(e,s);function l(t){o(n,r,a,l,i,"next",t)}function i(t){o(n,r,a,l,i,"throw",t)}l(void 0)}))}}function c(t){return(c="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}e.a={data:function(){var t=this;return{uploadServer:{url:window.config.uploadBasePath,timeout:36e6,load:function(t,e,s,r,a,n){t.indexOf("/null")>-1&&(console.log("source",t),a());var l=new Request(t);fetch(l).then((function(t){t.blob().then((function(t){e(t)}))}))},process:{url:"/process",method:"POST",headers:{Authorization:"Bearer ".concat(this.$store.state.auth.accessToken),"X-CSRF-TOKEN":document.querySelector('meta[name="csrf-token"]').content},withCredentials:!1,onload:function(e){return"object"!=c(e)&&(e=JSON.parse(e)),console.log(t.inputs[e.field_name],e.field_name),t.inputs[e.field_name].filepond_options["allow-multiple"]?t.form[e.field_name].push(e.key):t.form[e.field_name]=e.key,e.key},onerror:function(t){return t.data},ondata:function(e){return e.append("model",t.model),t.$route.params.id&&e.append("model_id",t.$route.params.id),e}},revert:"revert",restore:"restore",fetch:"fetch"}}},methods:{getRelationLabel:function(){for(var t=arguments.length,e=new Array(t),s=0;s<t;s++)e[s]=arguments[s];console.log(this,e)},onRelationSelect:function(t,e){var s=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"id";this.inputs[t].selected=e,this.form[t]=e[s]},handleFilePondInit:function(){console.log("FilePond has initialized")},onSelect:function(t,e){this.inputs[t].selected=e,this.form[t]=e.value},onRelationSearch:function(t,e,s){var r=this;return v(a.a.mark((function n(){var l,i,o,v;return a.a.wrap((function(a){for(;;)switch(a.prev=a.next){case 0:if(""!=e){a.next=2;break}return a.abrupt("return");case 2:return s(!0),l=r.inputs[t],i={},l&&(i["filter[".concat(l.titleField,"]")]=e),a.next=8,r.$http.get(r.inputs[t].searchUrl,{params:i});case 8:if(o=a.sent,!(v=o.data).success){a.next=13;break}return r.inputs[t].options=v.data.items,a.abrupt("return",s(!1));case 13:r.inputs[t].options=[];case 14:case"end":return a.stop()}}),n)})))()},hasValidationError:function(t){return!(!this.form.errors||!this.form.errors.has(t))||void 0},validationError:function(t){return this.form.errors?this.form.errors.first(t):void 0},onSelectTableSearch:function(t,e){var s=this;return v(a.a.mark((function r(){var n,i;return a.a.wrap((function(r){for(;;)switch(r.prev=r.next){case 0:if(!e.length){r.next=6;break}return r.next=3,s.$http.post("".concat(window.config.path_prefix,"/api/get_select_table"),l(l({},s.inputs[t].select_table_options),{},{search:e}));case 3:n=r.sent,i=n.data,s.inputs[t].options=i.data;case 6:case"end":return r.stop()}}),r)})))()}},created:function(){var t=this;return v(a.a.mark((function e(){var s,r,n;return a.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:console.log("before create called"),e.t0=a.a.keys(t.inputs);case 2:if((e.t1=e.t0()).done){e.next=14;break}if(s=e.t1.value,"relation"!==t.inputs[s].field_type){e.next=12;break}return console.log(t.inputs[s]),e.next=8,t.$http.get(t.inputs[s].searchUrl);case 8:r=e.sent,(n=r.data).success&&(t.inputs[s].options=n.data.items),t.inputs[s].options.length&&(Array.isArray(t.inputs[s].selected)||(t.form[s]=t.inputs[s].options[0].id,t.inputs[s].selected=t.inputs[s].options[0]));case 12:e.next=2;break;case 14:case"end":return e.stop()}}),e)})))()}}},762:function(t,e,s){"use strict";var r=s(62),a=s.n(r);function n(t,e){var s=Object.keys(t);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(t);e&&(r=r.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),s.push.apply(s,r)}return s}function l(t,e,s){return e in t?Object.defineProperty(t,e,{value:s,enumerable:!0,configurable:!0,writable:!0}):t[e]=s,t}function i(t,e,s,r,a,n,l){try{var i=t[n](l),o=i.value}catch(t){return void s(t)}i.done?e(o):Promise.resolve(o).then(r,a)}e.a={created:function(){var t,e=this;return(t=a.a.mark((function t(){var s,r,n;return a.a.wrap((function(t){for(;;)switch(t.prev=t.next){case 0:t.t0=a.a.keys(e.inputs);case 1:if((t.t1=t.t0()).done){t.next=12;break}if(s=t.t1.value,"relation"!==e.inputs[s].field_type){t.next=10;break}return console.log(e.inputs[s]),t.next=7,e.$http.get(e.inputs[s].searchUrl);case 7:r=t.sent,(n=r.data).success&&(e.inputs[s].options=n.data.items);case 10:t.next=1;break;case 12:case"end":return t.stop()}}),t)})),function(){var e=this,s=arguments;return new Promise((function(r,a){var n=t.apply(e,s);function l(t){i(n,r,a,l,o,"next",t)}function o(t){i(n,r,a,l,o,"throw",t)}l(void 0)}))})()},methods:{populateFormFields:function(t){var e=this,s={},r=function(t){for(var e=1;e<arguments.length;e++){var s=null!=arguments[e]?arguments[e]:{};e%2?n(Object(s),!0).forEach((function(e){l(t,e,s[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(s)):n(Object(s)).forEach((function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(s,e))}))}return t}({},this.form);console.log("populating",r,t);var a=function(a){if(e.inputs[a])if("relation"==e.inputs[a].field_type){s[a]=void 0!==t[a]?t[a]:"",console.log(s[a]);var n=e.inputs[a].options.findIndex((function(e){return e.id==t[a]}));console.log("district",n,t[a],e.inputs[a].options),n>-1&&(e.inputs[a].selected=e.inputs[a].options[n])}else if("select"==e.inputs[a].field_type){s[a]=void 0!==t[a]?t[a]:"";var l=e.inputs[a].options.findIndex((function(e){return e.value==t[a]}));l>-1&&(e.inputs[a].selected=e.inputs[a].options[l])}else["filepond","filepond_image"].includes(e.inputs[a].field_type)?(e.inputs[a].files&&Array.isArray(e.inputs[a].files)&&(Array.isArray(t[a])?(console.log(t[a]),t[a].forEach((function(t){e.inputs[a].files.push({source:e.serverUrl(t),options:{type:"local",load:!1}})}))):e.inputs[a].files.push({source:e.serverUrl(t[a]),options:{type:"local",load:!1}})),Array.isArray(r[a])?s[a]=void 0!==t[a]?Array.isArray(t[a])?t[a]:[]:"":s[a]=void 0!==t[a]?t[a]:""):"password"!=e.inputs[a].field_type&&(s[a]=void 0!==t[a]?t[a]:"")};for(var i in r)a(i);this.form.populate(s)}}}}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[48],{
+
+/***/ "../Admin/Resources/js/niffr_cases/Detail.vue":
+/*!****************************************************!*\
+  !*** ../Admin/Resources/js/niffr_cases/Detail.vue ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Detail_vue_vue_type_template_id_534cfc3a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Detail.vue?vue&type=template&id=534cfc3a& */ "../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=template&id=534cfc3a&");
+/* harmony import */ var _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Detail.vue?vue&type=script&lang=js& */ "../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Detail_vue_vue_type_template_id_534cfc3a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Detail_vue_vue_type_template_id_534cfc3a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "Admin/Resources/js/niffr_cases/Detail.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=template&id=534cfc3a&":
+/*!***********************************************************************************!*\
+  !*** ../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=template&id=534cfc3a& ***!
+  \***********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_534cfc3a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=template&id=534cfc3a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=template&id=534cfc3a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_534cfc3a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_534cfc3a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./Resources/js/src/mixins/DetailPage.js":
+/*!***********************************************!*\
+  !*** ./Resources/js/src/mixins/DetailPage.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      fields: [],
+      loading: true
+    };
+  },
+  created: function created() {
+    var _this = this;
+
+    this.$http.post("".concat(window.config.path_prefix, "/api/get-model-fields"), {
+      model: this.model,
+      module: this.module
+    }).then(function (_ref) {
+      var data = _ref.data;
+      _this.fields = data.data;
+    });
+  },
+  methods: {
+    getRelation: function getRelation(relation) {
+      return this.__(Iracode.getByDotNotation(this.details, relation, "-"));
+    },
+    dateFormat: function dateFormat(field) {
+      var localedParam = "".concat(field, "_").concat(window.Iracode.$i18n.locale);
+      if (!this.details[localedParam]) return this.details[field];
+      return this.details[localedParam];
+    },
+    populateFormFields: function populateFormFields(data) {
+      this.details = data;
+    },
+    radioFormat: function radioFormat(field) {
+      var definedField = this.fields[field];
+      var value = this.details[field];
+      value = typeof value == "boolean" ? +value : value;
+
+      if (definedField && definedField.options && definedField.options.length) {
+        return definedField.options[value] ? this.__(definedField.options[value]) : this.__(value);
+      }
+
+      return this.__(value);
+    },
+    checkboxFormat: function checkboxFormat() {},
+    selectFormat: function selectFormat(field) {
+      var definedField = this.fields[field];
+      var value = this.details[field];
+      value = typeof value == "boolean" ? +value : value;
+
+      if (definedField && definedField.options && definedField.options.length) {
+        return definedField.options[value] ? this.__(definedField.options[value]) : this.__(value);
+      }
+
+      return this.__(value);
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _mixins_DetailPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/mixins/DetailPage */ "./Resources/js/src/mixins/DetailPage.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {},
+  mixins: [_mixins_DetailPage__WEBPACK_IMPORTED_MODULE_1__["default"]],
+  data: function data() {
+    return {
+      details: _defineProperty({
+        file: "",
+        created_at: "",
+        updated_at: "",
+        "patient.name": "",
+        "patient.age": "",
+        "patient.hospital": "",
+        patient: ""
+      }, "patient", {}),
+      formTypes: {
+        file: "text",
+        created_at: "text",
+        updated_at: "text",
+        "patient.name": "text",
+        "patient.age": "text",
+        "patient.hospital": "text",
+        patient: "text"
+      },
+      module: "User",
+      model: "NIFFRCase"
+    };
+  },
+  props: {//
+  },
+  computed: {//
+  },
+  created: function created() {
+    var _this = this;
+
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+      var _yield$_this$$http$ge, response, data;
+
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.next = 2;
+              return _this.$http.get("/user/api/niffr_cases/".concat(_this.$route.params.id));
+
+            case 2:
+              _yield$_this$$http$ge = _context.sent;
+              response = _yield$_this$$http$ge.data;
+
+              if (response.success) {
+                data = response.data;
+
+                _this.$store.dispatch("setCurrentResource", data);
+
+                _this.populateFormFields(data);
+              }
+
+              _this.loading = false;
+
+            case 6:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }))();
+  },
+  mounted: function mounted() {//
+  },
+  methods: {}
+});
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=template&id=534cfc3a&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=template&id=534cfc3a& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("loading-view", { attrs: { loading: _vm.loading } }, [
+    _c("div", { staticClass: "vx-row" }, [
+      _c(
+        "div",
+        { staticClass: "vx-col w-full" },
+        [
+          _c(
+            "vx-card",
+            {
+              staticClass: "mb-base",
+              scopedSlots: _vm._u([
+                {
+                  key: "actions",
+                  fn: function() {
+                    return [
+                      _c(
+                        "vs-button",
+                        {
+                          attrs: {
+                            color: "primary",
+                            to: "/user/niffr_cases",
+                            type: "filled"
+                          }
+                        },
+                        [_vm._v("Back")]
+                      )
+                    ]
+                  },
+                  proxy: true
+                }
+              ])
+            },
+            [
+              _vm._v(" "),
+              _c("div", { staticClass: "vx-row mb-6" }, [
+                _c("div", { staticClass: "vx-col w-1/2" }, [
+                  _c("div", { staticClass: "row flex" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
+                      },
+                      [
+                        _c("p", { staticClass: "font-semibold" }, [
+                          _vm._v(_vm._s(_vm.__("File")))
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "vx-col w-3/4" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.details.file) +
+                          "\n                            "
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "vx-col w-1/2" }, [
+                  _c("div", { staticClass: "row flex" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
+                      },
+                      [
+                        _c("p", { staticClass: "font-semibold" }, [
+                          _vm._v(
+                            "\n                                    " +
+                              _vm._s(_vm.__("Created At")) +
+                              "\n                                "
+                          )
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "vx-col w-3/4" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.dateFormat("created_at")) +
+                          "\n                            "
+                      )
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "vx-row mb-6" }, [
+                _c("div", { staticClass: "vx-col w-1/2" }, [
+                  _c("div", { staticClass: "row flex" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
+                      },
+                      [
+                        _c("p", { staticClass: "font-semibold" }, [
+                          _vm._v(
+                            "\n                                    " +
+                              _vm._s(_vm.__("Updated At")) +
+                              "\n                                "
+                          )
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "vx-col w-3/4" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.dateFormat("updated_at")) +
+                          "\n                            "
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "vx-col w-1/2" }, [
+                  _c("div", { staticClass: "row flex" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
+                      },
+                      [
+                        _c("p", { staticClass: "font-semibold" }, [
+                          _vm._v(_vm._s(_vm.__("Patient")))
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "vx-col w-3/4" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.details.patient.name) +
+                          "\n                            "
+                      )
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "vx-row mb-6" }, [
+                _c("div", { staticClass: "vx-col w-1/2" }, [
+                  _c("div", { staticClass: "row flex" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
+                      },
+                      [
+                        _c("p", { staticClass: "font-semibold" }, [
+                          _vm._v(_vm._s(_vm.__("Age")))
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "vx-col w-3/4" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.details.patient.age) +
+                          "\n                            "
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "vx-col w-1/2" }, [
+                  _c("div", { staticClass: "row flex" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
+                      },
+                      [
+                        _c("p", { staticClass: "font-semibold" }, [
+                          _vm._v(
+                            "\n                                    " +
+                              _vm._s(_vm.__("Hospital")) +
+                              "\n                                "
+                          )
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "vx-col w-3/4" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.details.patient.hospital) +
+                          "\n                            "
+                      )
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "vx-row mb-6" }, [
+                _c("div", { staticClass: "vx-col w-1/2" }, [
+                  _c("div", { staticClass: "row flex" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
+                      },
+                      [
+                        _c("p", { staticClass: "font-semibold" }, [
+                          _vm._v(_vm._s(_vm.__("patient")))
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "vx-col w-3/4" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.details.patient) +
+                          "\n                            "
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+}]);
