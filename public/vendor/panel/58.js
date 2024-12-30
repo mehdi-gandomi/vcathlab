@@ -1,16 +1,16 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[58],{
 
-/***/ "../User/Resources/js/imt_calculations/Detail.vue":
-/*!********************************************************!*\
-  !*** ../User/Resources/js/imt_calculations/Detail.vue ***!
-  \********************************************************/
+/***/ "../User/Resources/js/ct_cases/Detail.vue":
+/*!************************************************!*\
+  !*** ../User/Resources/js/ct_cases/Detail.vue ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Detail_vue_vue_type_template_id_e02f3b1e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Detail.vue?vue&type=template&id=e02f3b1e& */ "../User/Resources/js/imt_calculations/Detail.vue?vue&type=template&id=e02f3b1e&");
-/* harmony import */ var _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Detail.vue?vue&type=script&lang=js& */ "../User/Resources/js/imt_calculations/Detail.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Detail_vue_vue_type_template_id_606e27d5___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Detail.vue?vue&type=template&id=606e27d5& */ "../User/Resources/js/ct_cases/Detail.vue?vue&type=template&id=606e27d5&");
+/* harmony import */ var _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Detail.vue?vue&type=script&lang=js& */ "../User/Resources/js/ct_cases/Detail.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -21,8 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Detail_vue_vue_type_template_id_e02f3b1e___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Detail_vue_vue_type_template_id_e02f3b1e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Detail_vue_vue_type_template_id_606e27d5___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Detail_vue_vue_type_template_id_606e27d5___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -32,38 +32,38 @@ var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNorma
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "User/Resources/js/imt_calculations/Detail.vue"
+component.options.__file = "User/Resources/js/ct_cases/Detail.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "../User/Resources/js/imt_calculations/Detail.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************!*\
-  !*** ../User/Resources/js/imt_calculations/Detail.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************/
+/***/ "../User/Resources/js/ct_cases/Detail.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ../User/Resources/js/ct_cases/Detail.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Detail.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/ct_cases/Detail.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "../User/Resources/js/imt_calculations/Detail.vue?vue&type=template&id=e02f3b1e&":
-/*!***************************************************************************************!*\
-  !*** ../User/Resources/js/imt_calculations/Detail.vue?vue&type=template&id=e02f3b1e& ***!
-  \***************************************************************************************/
+/***/ "../User/Resources/js/ct_cases/Detail.vue?vue&type=template&id=606e27d5&":
+/*!*******************************************************************************!*\
+  !*** ../User/Resources/js/ct_cases/Detail.vue?vue&type=template&id=606e27d5& ***!
+  \*******************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_e02f3b1e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=template&id=e02f3b1e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Detail.vue?vue&type=template&id=e02f3b1e&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_e02f3b1e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_606e27d5___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=template&id=606e27d5& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/ct_cases/Detail.vue?vue&type=template&id=606e27d5&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_606e27d5___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_e02f3b1e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_606e27d5___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -136,10 +136,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Detail.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/imt_calculations/Detail.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/ct_cases/Detail.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/ct_cases/Detail.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -154,8 +154,10 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
+//
+//
+//
+//
 //
 //
 //
@@ -285,28 +287,30 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   components: {},
   mixins: [_mixins_DetailPage__WEBPACK_IMPORTED_MODULE_1__["default"]],
   data: function data() {
-    var _details;
-
     return {
-      downloadBtnKey: 1,
-      details: (_details = {
-        LCIMT: "",
-        RCIMT: "",
+      uploadModalActive: false,
+      details: {
+        ct_file: "",
+        result_file: "",
         created_at: "",
         updated_at: "",
-        user: "",
+        "patient.name": "",
+        "patient.age": "",
+        "patient.hospital": "",
         patient: ""
-      }, _defineProperty(_details, "user", {}), _defineProperty(_details, "patient", {}), _defineProperty(_details, "result", {}), _details),
+      },
       formTypes: {
-        LCIMT: "text",
-        RCIMT: "text",
+        ct_file: "text",
+        result_file: "text",
         created_at: "text",
         updated_at: "text",
-        user: "text",
+        "patient.name": "text",
+        "patient.age": "text",
+        "patient.hospital": "text",
         patient: "text"
       },
       module: "User",
-      model: "ImtCalculation"
+      model: "CtCase"
     };
   },
   props: {//
@@ -327,7 +331,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return _this.$http.get("/user/api/imt_calculations/".concat(_this.$route.params.id));
+              return _this.$http.get("/user/api/ct_cases/".concat(_this.$route.params.id));
 
             case 2:
               _yield$_this$$http$ge = _context.sent;
@@ -339,8 +343,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 _this.$store.dispatch("setCurrentResource", data);
 
                 _this.populateFormFields(data);
-
-                _this.downloadBtnKey++;
               }
 
               _this.loading = false;
@@ -354,15 +356,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }))();
   },
   mounted: function mounted() {//
-  }
+  },
+  methods: {}
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Detail.vue?vue&type=template&id=e02f3b1e&":
-/*!*********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/imt_calculations/Detail.vue?vue&type=template&id=e02f3b1e& ***!
-  \*********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/ct_cases/Detail.vue?vue&type=template&id=606e27d5&":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/ct_cases/Detail.vue?vue&type=template&id=606e27d5& ***!
+  \*************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -394,7 +397,7 @@ var render = function() {
                         {
                           attrs: {
                             color: "primary",
-                            to: "/user/imt_calculations",
+                            to: "/user/ct_cases",
                             type: "filled"
                           }
                         },
@@ -415,25 +418,42 @@ var render = function() {
                       "div",
                       {
                         staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("LCIMT")) +
-                              "\n                                "
-                          )
+                          _vm._v(_vm._s(_vm.__("Ct File")))
                         ])
                       ]
                     ),
                     _vm._v(" "),
                     _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.LCIMT) +
-                          "\n                            "
-                      )
+                      _vm.details.ct_file
+                        ? _c(
+                            "a",
+                            {
+                              attrs: {
+                                href: _vm.url(_vm.details.ct_file),
+                                download: _vm.Iracode.basename(
+                                  _vm.details.ct_file
+                                )
+                              }
+                            },
+                            [
+                              _vm._v(
+                                _vm._s(
+                                  _vm.Iracode.basename(_vm.details.ct_file)
+                                )
+                              )
+                            ]
+                          )
+                        : _c("p", [
+                            _vm._v(
+                              "\n                                    " +
+                                _vm._s(_vm.__("No file uploaded yet")) +
+                                "\n                                "
+                            )
+                          ])
                     ])
                   ])
                 ]),
@@ -444,25 +464,46 @@ var render = function() {
                       "div",
                       {
                         staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
                           _vm._v(
                             "\n                                    " +
-                              _vm._s(_vm.__("RCIMT")) +
+                              _vm._s(_vm.__("Result File")) +
                               "\n                                "
                           )
                         ])
                       ]
                     ),
                     _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.RCIMT) +
-                          "\n                            "
-                      )
+                    _c("div", { staticClass: "vx-col w-3/4 flex" }, [
+                      _vm.details.result_file
+                        ? _c(
+                            "a",
+                            {
+                              attrs: {
+                                href: _vm.url(_vm.details.result_file),
+                                download: _vm.Iracode.basename(
+                                  _vm.details.result_file
+                                )
+                              }
+                            },
+                            [
+                              _vm._v(
+                                _vm._s(
+                                  _vm.Iracode.basename(_vm.details.result_file)
+                                )
+                              )
+                            ]
+                          )
+                        : _c("p", [
+                            _vm._v(
+                              "\n                                    " +
+                                _vm._s(_vm.__("No file uploaded yet")) +
+                                "\n\n                                "
+                            )
+                          ])
                     ])
                   ])
                 ])
@@ -475,7 +516,7 @@ var render = function() {
                       "div",
                       {
                         staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
@@ -504,7 +545,7 @@ var render = function() {
                       "div",
                       {
                         staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
@@ -535,44 +576,11 @@ var render = function() {
                       "div",
                       {
                         staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("user")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.user.name) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("patient")) +
-                              "\n                                "
-                          )
+                          _vm._v(_vm._s(_vm.__("Patient")))
                         ])
                       ]
                     ),
@@ -585,75 +593,66 @@ var render = function() {
                       )
                     ])
                   ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "vx-col w-1/2" }, [
+                  _c("div", { staticClass: "row flex" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
+                      },
+                      [
+                        _c("p", { staticClass: "font-semibold" }, [
+                          _vm._v(_vm._s(_vm.__("Age")))
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "vx-col w-3/4" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.details.patient.age) +
+                          "\n                            "
+                      )
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "vx-row mb-6" }, [
+                _c("div", { staticClass: "vx-col w-1/2" }, [
+                  _c("div", { staticClass: "row flex" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
+                      },
+                      [
+                        _c("p", { staticClass: "font-semibold" }, [
+                          _vm._v(
+                            "\n                                    " +
+                              _vm._s(_vm.__("Hospital")) +
+                              "\n                                "
+                          )
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "vx-col w-3/4" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.details.patient.hospital) +
+                          "\n                            "
+                      )
+                    ])
+                  ])
                 ])
               ])
             ]
           )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "vx-row" }, [
-      _c(
-        "div",
-        { staticClass: "vx-col w-full" },
-        [
-          _c("vx-card", { staticClass: "mb-base" }, [
-            _c("div", [
-              _vm.details.result && _vm.details.result.link
-                ? _c(
-                    "a",
-                    {
-                      key: _vm.downloadBtnKey,
-                      staticClass:
-                        "mr-3 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",
-                      staticStyle: { "font-size": "30px" },
-                      attrs: { rel: "noopener", href: "javascript:void(0)" },
-                      on: {
-                        click: function($event) {
-                          return _vm.download(
-                            _vm.details.result.link,
-                            "total_clicked"
-                          )
-                        }
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                    " +
-                          _vm._s(_vm.__("Export PDF")) +
-                          "\n                "
-                      )
-                    ]
-                  )
-                : _vm._e(),
-              _vm._v(" "),
-              _vm.details.result && _vm.details.result.word_link
-                ? _c(
-                    "a",
-                    {
-                      key: _vm.downloadBtnKey,
-                      staticClass:
-                        "mr-3 mb-2 vs-component vs-button vs-button-success vs-button-filled download-btn",
-                      staticStyle: { "font-size": "30px" },
-                      attrs: {
-                        target: "_blank",
-                        rel: "noopener",
-                        href: _vm.details.result.word_link
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        " +
-                          _vm._s(_vm.__("Export Word")) +
-                          "\n                "
-                      )
-                    ]
-                  )
-                : _vm._e()
-            ])
-          ])
         ],
         1
       )

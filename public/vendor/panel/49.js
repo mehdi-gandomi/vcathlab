@@ -1,16 +1,16 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[49],{
 
-/***/ "../Admin/Resources/js/physicians/Detail.vue":
-/*!***************************************************!*\
-  !*** ../Admin/Resources/js/physicians/Detail.vue ***!
-  \***************************************************/
+/***/ "../Admin/Resources/js/niffr_cases/Detail.vue":
+/*!****************************************************!*\
+  !*** ../Admin/Resources/js/niffr_cases/Detail.vue ***!
+  \****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Detail_vue_vue_type_template_id_73f47b29___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Detail.vue?vue&type=template&id=73f47b29& */ "../Admin/Resources/js/physicians/Detail.vue?vue&type=template&id=73f47b29&");
-/* harmony import */ var _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Detail.vue?vue&type=script&lang=js& */ "../Admin/Resources/js/physicians/Detail.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Detail_vue_vue_type_template_id_534cfc3a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Detail.vue?vue&type=template&id=534cfc3a& */ "../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=template&id=534cfc3a&");
+/* harmony import */ var _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Detail.vue?vue&type=script&lang=js& */ "../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -21,8 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Detail_vue_vue_type_template_id_73f47b29___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Detail_vue_vue_type_template_id_73f47b29___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Detail_vue_vue_type_template_id_534cfc3a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Detail_vue_vue_type_template_id_534cfc3a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -32,38 +32,38 @@ var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNorma
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "Admin/Resources/js/physicians/Detail.vue"
+component.options.__file = "Admin/Resources/js/niffr_cases/Detail.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "../Admin/Resources/js/physicians/Detail.vue?vue&type=script&lang=js&":
-/*!****************************************************************************!*\
-  !*** ../Admin/Resources/js/physicians/Detail.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************/
+/***/ "../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Detail.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "../Admin/Resources/js/physicians/Detail.vue?vue&type=template&id=73f47b29&":
-/*!**********************************************************************************!*\
-  !*** ../Admin/Resources/js/physicians/Detail.vue?vue&type=template&id=73f47b29& ***!
-  \**********************************************************************************/
+/***/ "../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=template&id=534cfc3a&":
+/*!***********************************************************************************!*\
+  !*** ../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=template&id=534cfc3a& ***!
+  \***********************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_73f47b29___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=template&id=73f47b29& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Detail.vue?vue&type=template&id=73f47b29&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_73f47b29___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_534cfc3a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=template&id=534cfc3a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=template&id=534cfc3a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_534cfc3a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_73f47b29___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_534cfc3a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -136,10 +136,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Detail.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/physicians/Detail.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -272,58 +272,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
@@ -331,39 +279,30 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   data: function data() {
     return {
       details: _defineProperty({
-        first_name: "",
-        last_name: "",
-        profession: "",
-        specialty: "",
-        hostpital: "",
-        cover: "",
-        avatar: "",
+        file: "",
         created_at: "",
         updated_at: "",
-        user: ""
-      }, "user", {}),
+        "patient.name": "",
+        "patient.age": "",
+        "patient.hospital": "",
+        patient: ""
+      }, "patient", {}),
       formTypes: {
-        first_name: "text",
-        last_name: "text",
-        profession: "text",
-        specialty: "text",
-        hostpital: "text",
-        cover: "text",
-        avatar: "text",
+        file: "text",
         created_at: "text",
         updated_at: "text",
-        user: "text"
+        "patient.name": "text",
+        "patient.age": "text",
+        "patient.hospital": "text",
+        patient: "text"
       },
-      module: "Admin",
-      model: "Physician"
+      module: "User",
+      model: "NIFFRCase"
     };
   },
   props: {//
   },
-  computed: {
-    Iracode: function Iracode() {
-      return window.Iracode;
-    }
+  computed: {//
   },
   created: function created() {
     var _this = this;
@@ -376,7 +315,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return _this.$http.get("/admin/api/physicians/".concat(_this.$route.params.id));
+              return _this.$http.get("/user/api/niffr_cases/".concat(_this.$route.params.id));
 
             case 2:
               _yield$_this$$http$ge = _context.sent;
@@ -401,15 +340,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }))();
   },
   mounted: function mounted() {//
-  }
+  },
+  methods: {}
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Detail.vue?vue&type=template&id=73f47b29&":
-/*!****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/physicians/Detail.vue?vue&type=template&id=73f47b29& ***!
-  \****************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=template&id=534cfc3a&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/niffr_cases/Detail.vue?vue&type=template&id=534cfc3a& ***!
+  \*****************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -441,7 +381,7 @@ var render = function() {
                         {
                           attrs: {
                             color: "primary",
-                            to: "/admin/physicians",
+                            to: "/user/niffr_cases",
                             type: "filled"
                           }
                         },
@@ -466,11 +406,7 @@ var render = function() {
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("First Name")) +
-                              "\n                                "
-                          )
+                          _vm._v(_vm._s(_vm.__("File")))
                         ])
                       ]
                     ),
@@ -478,187 +414,7 @@ var render = function() {
                     _c("div", { staticClass: "vx-col w-3/4" }, [
                       _vm._v(
                         "\n                                " +
-                          _vm._s(_vm.details.first_name) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center "
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Last Name")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.last_name) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center "
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Profession")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.selectFormat("profession")) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center "
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Specialty")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.selectFormat("specialty")) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center "
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Hospital")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.hostpital) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center "
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Cover")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.cover) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center "
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Avatar")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.avatar) +
+                          _vm._s(_vm.details.file) +
                           "\n                            "
                       )
                     ])
@@ -735,9 +491,61 @@ var render = function() {
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
+                          _vm._v(_vm._s(_vm.__("Patient")))
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "vx-col w-3/4" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.details.patient.name) +
+                          "\n                            "
+                      )
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "vx-row mb-6" }, [
+                _c("div", { staticClass: "vx-col w-1/2" }, [
+                  _c("div", { staticClass: "row flex" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
+                      },
+                      [
+                        _c("p", { staticClass: "font-semibold" }, [
+                          _vm._v(_vm._s(_vm.__("Age")))
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "vx-col w-3/4" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.details.patient.age) +
+                          "\n                            "
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "vx-col w-1/2" }, [
+                  _c("div", { staticClass: "row flex" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
+                      },
+                      [
+                        _c("p", { staticClass: "font-semibold" }, [
                           _vm._v(
                             "\n                                    " +
-                              _vm._s(_vm.__("user")) +
+                              _vm._s(_vm.__("Hospital")) +
                               "\n                                "
                           )
                         ])
@@ -747,7 +555,34 @@ var render = function() {
                     _c("div", { staticClass: "vx-col w-3/4" }, [
                       _vm._v(
                         "\n                                " +
-                          _vm._s(_vm.details.user) +
+                          _vm._s(_vm.details.patient.hospital) +
+                          "\n                            "
+                      )
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "vx-row mb-6" }, [
+                _c("div", { staticClass: "vx-col w-1/2" }, [
+                  _c("div", { staticClass: "row flex" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "vx-col w-1/4 pr-5 flex justify-end items-center "
+                      },
+                      [
+                        _c("p", { staticClass: "font-semibold" }, [
+                          _vm._v(_vm._s(_vm.__("patient")))
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "vx-col w-3/4" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.details.patient) +
                           "\n                            "
                       )
                     ])

@@ -1,16 +1,16 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[82],{
 
-/***/ "../User/Resources/js/niffr_cases/Update.vue":
-/*!***************************************************!*\
-  !*** ../User/Resources/js/niffr_cases/Update.vue ***!
-  \***************************************************/
+/***/ "../User/Resources/js/imt_calculations/Update.vue":
+/*!********************************************************!*\
+  !*** ../User/Resources/js/imt_calculations/Update.vue ***!
+  \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Update_vue_vue_type_template_id_431f4243___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Update.vue?vue&type=template&id=431f4243& */ "../User/Resources/js/niffr_cases/Update.vue?vue&type=template&id=431f4243&");
-/* harmony import */ var _Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Update.vue?vue&type=script&lang=js& */ "../User/Resources/js/niffr_cases/Update.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Update_vue_vue_type_template_id_87ecf22e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Update.vue?vue&type=template&id=87ecf22e& */ "../User/Resources/js/imt_calculations/Update.vue?vue&type=template&id=87ecf22e&");
+/* harmony import */ var _Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Update.vue?vue&type=script&lang=js& */ "../User/Resources/js/imt_calculations/Update.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -21,8 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Update_vue_vue_type_template_id_431f4243___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Update_vue_vue_type_template_id_431f4243___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Update_vue_vue_type_template_id_87ecf22e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Update_vue_vue_type_template_id_87ecf22e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -32,38 +32,38 @@ var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNorma
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "User/Resources/js/niffr_cases/Update.vue"
+component.options.__file = "User/Resources/js/imt_calculations/Update.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "../User/Resources/js/niffr_cases/Update.vue?vue&type=script&lang=js&":
-/*!****************************************************************************!*\
-  !*** ../User/Resources/js/niffr_cases/Update.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************/
+/***/ "../User/Resources/js/imt_calculations/Update.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ../User/Resources/js/imt_calculations/Update.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Update.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/niffr_cases/Update.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Update.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Update.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "../User/Resources/js/niffr_cases/Update.vue?vue&type=template&id=431f4243&":
-/*!**********************************************************************************!*\
-  !*** ../User/Resources/js/niffr_cases/Update.vue?vue&type=template&id=431f4243& ***!
-  \**********************************************************************************/
+/***/ "../User/Resources/js/imt_calculations/Update.vue?vue&type=template&id=87ecf22e&":
+/*!***************************************************************************************!*\
+  !*** ../User/Resources/js/imt_calculations/Update.vue?vue&type=template&id=87ecf22e& ***!
+  \***************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_template_id_431f4243___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Update.vue?vue&type=template&id=431f4243& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/niffr_cases/Update.vue?vue&type=template&id=431f4243&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_template_id_431f4243___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_template_id_87ecf22e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Update.vue?vue&type=template&id=87ecf22e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Update.vue?vue&type=template&id=87ecf22e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_template_id_87ecf22e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_template_id_431f4243___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_template_id_87ecf22e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -228,10 +228,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/niffr_cases/Update.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/niffr_cases/Update.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Update.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/imt_calculations/Update.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -345,6 +345,71 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -354,14 +419,29 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   data: function data() {
     return {
       form: new _Form__WEBPACK_IMPORTED_MODULE_1__["default"]({
-        file: "",
+        LCIMT: "",
+        RCIMT: "",
+        user_id: "",
         patient_id: ""
       }),
-      model: "Modules\\User\\Models\\NIFFRCase",
+      model: "Modules\\User\\Models\\ImtCalculation",
       inputs: {
-        file: {
+        LCIMT: {
           type: "vs-input",
           field_type: "text"
+        },
+        RCIMT: {
+          type: "vs-input",
+          field_type: "text"
+        },
+        user_id: {
+          field_type: "relation",
+          foreign_key: "user_id",
+          relation_name: "user",
+          options: [],
+          selected: {},
+          searchUrl: "/panel/api/users",
+          titleField: "email"
         },
         patient_id: {
           field_type: "relation",
@@ -390,7 +470,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return _this.$http.get("/user/api/niffr_cases/".concat(_this.$route.params.id));
+              return _this.$http.get("/user/api/imt_calculations/".concat(_this.$route.params.id));
 
             case 2:
               _yield$_this$$http$ge = _context.sent;
@@ -404,9 +484,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _this.populateFormFields(data);
               }
 
-              _this.loading = false;
-
-            case 6:
+            case 5:
             case "end":
               return _context.stop();
           }
@@ -427,16 +505,16 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.next = 2;
-                return _this2.form.put("/user/api/niffr_cases/".concat(_this2.$route.params.id));
+                return _this2.form.put("/user/api/imt_calculations/".concat(_this2.$route.params.id));
 
               case 2:
                 data = _context2.sent;
 
                 if (data.success) {
-                  Iracode.success(_this2.__("Niffrcase Updated Successfully"));
+                  Iracode.success(_this2.__("Imtcalculation Updated Successfully"));
                 }
 
-                if (action == "close") _this2.$router.push("/user/niffr_cases");else _this2.form.reset();
+                if (action == "close") _this2.$router.push("/user/imt_calculations");else _this2.form.reset();
 
               case 5:
               case "end":
@@ -451,10 +529,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/niffr_cases/Update.vue?vue&type=template&id=431f4243&":
-/*!****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/niffr_cases/Update.vue?vue&type=template&id=431f4243& ***!
-  \****************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Update.vue?vue&type=template&id=87ecf22e&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/imt_calculations/Update.vue?vue&type=template&id=87ecf22e& ***!
+  \*********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -483,7 +561,7 @@ var render = function() {
                     {
                       attrs: {
                         color: "primary",
-                        to: "/user/niffr_cases",
+                        to: "/user/imt_calculations",
                         type: "filled"
                       }
                     },
@@ -532,7 +610,7 @@ var render = function() {
                                 "vs-lg": "3"
                               }
                             },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("patient")))])]
+                            [_c("span", [_vm._v(_vm._s(_vm.__("user")))])]
                           ),
                           _vm._v(" "),
                           _c(
@@ -548,23 +626,21 @@ var render = function() {
                               _c(
                                 "v-select",
                                 {
+                                  staticStyle: { width: "100%" },
                                   attrs: {
                                     dir: _vm.$vs.rtl ? "rtl" : "ltr",
-                                    value: _vm.inputs.patient_id.selected,
-                                    label: "name",
+                                    value: _vm.inputs.user_id.selected,
+                                    label: "email",
                                     filterable: false,
-                                    options: _vm.inputs.patient_id.options
+                                    options: _vm.inputs.user_id.options
                                   },
                                   on: {
                                     input: function(op) {
-                                      return _vm.onRelationSelect(
-                                        "patient_id",
-                                        op
-                                      )
+                                      return _vm.onRelationSelect("user_id", op)
                                     },
                                     search: function(search, loading) {
                                       return _vm.onRelationSearch(
-                                        "patient_id",
+                                        "user_id",
                                         search,
                                         loading
                                       )
@@ -609,6 +685,101 @@ var render = function() {
                           _c(
                             "vs-col",
                             {
+                              staticClass: "justify-end",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [_c("span", [_vm._v(_vm._s(_vm.__("patient")))])]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(
+                                "v-select",
+                                {
+                                  staticStyle: { width: "100%" },
+                                  attrs: {
+                                    dir: _vm.$vs.rtl ? "rtl" : "ltr",
+                                    value: _vm.inputs.patient_id.selected,
+                                    label: "name",
+                                    filterable: false,
+                                    options: _vm.inputs.patient_id.options
+                                  },
+                                  on: {
+                                    input: function(op) {
+                                      return _vm.onRelationSelect(
+                                        "patient_id",
+                                        op
+                                      )
+                                    },
+                                    search: function(search, loading) {
+                                      return _vm.onRelationSearch(
+                                        "patient_id",
+                                        search,
+                                        loading
+                                      )
+                                    }
+                                  }
+                                },
+                                [
+                                  _c("template", { slot: "no-options" }, [
+                                    _vm._v(
+                                      "\n                                    " +
+                                        _vm._s(_vm.__("Type to search")) +
+                                        "\n                                "
+                                    )
+                                  ])
+                                ],
+                                2
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "vs-row",
+                {
+                  staticClass: "mb-6",
+                  attrs: { "vs-type": "flex", "vs-w": "12" }
+                },
+                [
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
                               staticClass: "justify-end pr-5",
                               attrs: {
                                 "vs-type": "flex",
@@ -617,7 +788,7 @@ var render = function() {
                               }
                             },
                             [
-                              _c("span", [_vm._v(_vm._s(_vm.__("File")))]),
+                              _c("span", [_vm._v(_vm._s(_vm.__("L C I M T")))]),
                               _vm._v(" "),
                               _c("span", { staticClass: "ml-1 text-red" }, [
                                 _vm._v("*")
@@ -635,21 +806,91 @@ var render = function() {
                               }
                             },
                             [
-                              _c(_vm.inputs.file.type, {
+                              _c(_vm.inputs.LCIMT.type, {
                                 tag: "component",
                                 staticClass: "w-full",
                                 attrs: {
-                                  danger: _vm.hasValidationError("file"),
-                                  "danger-text": _vm.validationError("file"),
-                                  name: "file",
+                                  danger: _vm.hasValidationError("LCIMT"),
+                                  "danger-text": _vm.validationError("LCIMT"),
+                                  name: "LCIMT",
                                   type: "text"
                                 },
                                 model: {
-                                  value: _vm.form.file,
+                                  value: _vm.form.LCIMT,
                                   callback: function($$v) {
-                                    _vm.$set(_vm.form, "file", $$v)
+                                    _vm.$set(_vm.form, "LCIMT", $$v)
                                   },
-                                  expression: "form.file"
+                                  expression: "form.LCIMT"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vs-col",
+                    {
+                      attrs: {
+                        "vs-type": "flex",
+                        "vs-align": "center",
+                        "vs-lg": "6"
+                      }
+                    },
+                    [
+                      _c(
+                        "vs-row",
+                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
+                        [
+                          _c(
+                            "vs-col",
+                            {
+                              staticClass: "justify-end pr-5",
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "3"
+                              }
+                            },
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("R C I M T")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "vs-col",
+                            {
+                              attrs: {
+                                "vs-type": "flex",
+                                "vs-align": "center",
+                                "vs-lg": "9"
+                              }
+                            },
+                            [
+                              _c(_vm.inputs.RCIMT.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  danger: _vm.hasValidationError("RCIMT"),
+                                  "danger-text": _vm.validationError("RCIMT"),
+                                  name: "RCIMT",
+                                  type: "text"
+                                },
+                                model: {
+                                  value: _vm.form.RCIMT,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "RCIMT", $$v)
+                                  },
+                                  expression: "form.RCIMT"
                                 }
                               })
                             ],

@@ -1,16 +1,16 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[52],{
 
-/***/ "../User/Resources/js/angiographies/Detail.vue":
-/*!*****************************************************!*\
-  !*** ../User/Resources/js/angiographies/Detail.vue ***!
-  \*****************************************************/
+/***/ "../User/Resources/js/abpm_calculations/Detail.vue":
+/*!*********************************************************!*\
+  !*** ../User/Resources/js/abpm_calculations/Detail.vue ***!
+  \*********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Detail_vue_vue_type_template_id_45309146___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Detail.vue?vue&type=template&id=45309146& */ "../User/Resources/js/angiographies/Detail.vue?vue&type=template&id=45309146&");
-/* harmony import */ var _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Detail.vue?vue&type=script&lang=js& */ "../User/Resources/js/angiographies/Detail.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Detail_vue_vue_type_template_id_4898424a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Detail.vue?vue&type=template&id=4898424a& */ "../User/Resources/js/abpm_calculations/Detail.vue?vue&type=template&id=4898424a&");
+/* harmony import */ var _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Detail.vue?vue&type=script&lang=js& */ "../User/Resources/js/abpm_calculations/Detail.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -21,8 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Detail_vue_vue_type_template_id_45309146___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Detail_vue_vue_type_template_id_45309146___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Detail_vue_vue_type_template_id_4898424a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Detail_vue_vue_type_template_id_4898424a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -32,38 +32,38 @@ var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNorma
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "User/Resources/js/angiographies/Detail.vue"
+component.options.__file = "User/Resources/js/abpm_calculations/Detail.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "../User/Resources/js/angiographies/Detail.vue?vue&type=script&lang=js&":
-/*!******************************************************************************!*\
-  !*** ../User/Resources/js/angiographies/Detail.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************/
+/***/ "../User/Resources/js/abpm_calculations/Detail.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************!*\
+  !*** ../User/Resources/js/abpm_calculations/Detail.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/angiographies/Detail.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/abpm_calculations/Detail.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "../User/Resources/js/angiographies/Detail.vue?vue&type=template&id=45309146&":
-/*!************************************************************************************!*\
-  !*** ../User/Resources/js/angiographies/Detail.vue?vue&type=template&id=45309146& ***!
-  \************************************************************************************/
+/***/ "../User/Resources/js/abpm_calculations/Detail.vue?vue&type=template&id=4898424a&":
+/*!****************************************************************************************!*\
+  !*** ../User/Resources/js/abpm_calculations/Detail.vue?vue&type=template&id=4898424a& ***!
+  \****************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_45309146___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=template&id=45309146& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/angiographies/Detail.vue?vue&type=template&id=45309146&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_45309146___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_4898424a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=template&id=4898424a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/abpm_calculations/Detail.vue?vue&type=template&id=4898424a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_4898424a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_45309146___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_4898424a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -136,10 +136,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/angiographies/Detail.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/angiographies/Detail.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/abpm_calculations/Detail.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/abpm_calculations/Detail.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -274,330 +274,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
@@ -607,69 +283,25 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
     return {
       details: (_details = {
-        Cr: "",
-        Ht: "",
-        LVEF: "",
-        HR: "",
-        Contrast: "",
-        Hb: "",
-        PTP: "",
-        CAVI: "",
-        WBC: "",
-        PriorCABG: "",
-        PriorPCI: "",
-        HbA1C: "",
-        Age: "",
-        SBP: "",
-        DBP: "",
-        Height: "",
-        Weight: "",
-        Sex: "",
-        pribleed: "",
-        Hypotension: "",
-        heart_failure: "",
-        Diabet: "",
-        Acute_MI: "",
-        IABP: "",
-        Smoker: "",
+        sys: "",
+        dia: "",
+        hr: "",
         created_at: "",
         updated_at: "",
         user: "",
         patient: ""
       }, _defineProperty(_details, "user", {}), _defineProperty(_details, "patient", {}), _details),
       formTypes: {
-        Cr: "text",
-        Ht: "text",
-        LVEF: "text",
-        HR: "text",
-        Contrast: "text",
-        Hb: "text",
-        PTP: "text",
-        CAVI: "text",
-        WBC: "text",
-        PriorCABG: "text",
-        PriorPCI: "text",
-        HbA1C: "text",
-        Age: "text",
-        SBP: "text",
-        DBP: "text",
-        Height: "text",
-        Weight: "text",
-        Sex: "text",
-        pribleed: "text",
-        Hypotension: "text",
-        heart_failure: "text",
-        Diabet: "text",
-        Acute_MI: "text",
-        IABP: "text",
-        Smoker: "text",
+        sys: "text",
+        dia: "text",
+        hr: "text",
         created_at: "text",
         updated_at: "text",
         user: "text",
         patient: "text"
       },
       module: "User",
-      model: "Angiography"
+      model: "ABPMCalculation"
     };
   },
   props: {//
@@ -690,7 +322,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return _this.$http.get("/user/api/angiographies/".concat(_this.$route.params.id));
+              return _this.$http.get("/user/api/abpm_calculations/".concat(_this.$route.params.id));
 
             case 2:
               _yield$_this$$http$ge = _context.sent;
@@ -720,10 +352,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/angiographies/Detail.vue?vue&type=template&id=45309146&":
-/*!******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/angiographies/Detail.vue?vue&type=template&id=45309146& ***!
-  \******************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/abpm_calculations/Detail.vue?vue&type=template&id=4898424a&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/abpm_calculations/Detail.vue?vue&type=template&id=4898424a& ***!
+  \**********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -755,7 +387,7 @@ var render = function() {
                         {
                           attrs: {
                             color: "primary",
-                            to: "/user/angiographies",
+                            to: "/user/abpm_calculations",
                             type: "filled"
                           }
                         },
@@ -780,7 +412,7 @@ var render = function() {
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(_vm._s(_vm.__("Cr")))
+                          _vm._v(_vm._s(_vm.__("Sys")))
                         ])
                       ]
                     ),
@@ -788,7 +420,7 @@ var render = function() {
                     _c("div", { staticClass: "vx-col w-3/4" }, [
                       _vm._v(
                         "\n                                " +
-                          _vm._s(_vm.details.Cr) +
+                          _vm._s(_vm.details.sys) +
                           "\n                            "
                       )
                     ])
@@ -805,7 +437,7 @@ var render = function() {
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(_vm._s(_vm.__("Ht")))
+                          _vm._v(_vm._s(_vm.__("Dia")))
                         ])
                       ]
                     ),
@@ -813,7 +445,7 @@ var render = function() {
                     _c("div", { staticClass: "vx-col w-3/4" }, [
                       _vm._v(
                         "\n                                " +
-                          _vm._s(_vm.details.Ht) +
+                          _vm._s(_vm.details.dia) +
                           "\n                            "
                       )
                     ])
@@ -832,11 +464,7 @@ var render = function() {
                       },
                       [
                         _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("L V E F")) +
-                              "\n                                "
-                          )
+                          _vm._v(_vm._s(_vm.__("Hr")))
                         ])
                       ]
                     ),
@@ -844,651 +472,7 @@ var render = function() {
                     _c("div", { staticClass: "vx-col w-3/4" }, [
                       _vm._v(
                         "\n                                " +
-                          _vm._s(_vm.details.LVEF) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(_vm._s(_vm.__("H R")))
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.HR) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Contrast")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.Contrast) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(_vm._s(_vm.__("Hb")))
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.Hb) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("P T P")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.PTP) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("C A V I")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.CAVI) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("W B C")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.WBC) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Prior C A B G")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.PriorCABG) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Prior P C I")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.PriorPCI) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Hb A1 C")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.HbA1C) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(_vm._s(_vm.__("Age")))
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.Age) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("S B P")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.SBP) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("D B P")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.DBP) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Height")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.Height) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Weight")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.Weight) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(_vm._s(_vm.__("Sex")))
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.radioFormat("Sex")) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Pribleed")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.pribleed) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Hypotension")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.Hypotension) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Heart Failure")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.heart_failure) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Diabet")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.Diabet) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Acute  M I")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.Acute_MI) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("I A B P")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.IABP) +
-                          "\n                            "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-row mb-6" }, [
-                _c("div", { staticClass: "vx-col w-1/2" }, [
-                  _c("div", { staticClass: "row flex" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "vx-col w-1/4 pr-5 flex justify-end items-center"
-                      },
-                      [
-                        _c("p", { staticClass: "font-semibold" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.__("Smoker")) +
-                              "\n                                "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "vx-col w-3/4" }, [
-                      _vm._v(
-                        "\n                                " +
-                          _vm._s(_vm.details.Smoker) +
+                          _vm._s(_vm.details.hr) +
                           "\n                            "
                       )
                     ])

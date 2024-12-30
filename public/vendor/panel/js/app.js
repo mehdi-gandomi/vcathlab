@@ -25,13 +25,13 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   path: '/computation_center/assesment',
   name: 'computation_center-assesment',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(43)]).then(__webpack_require__.bind(null, /*! @external_modules/User/Resources/js/computation_center/New.vue */ "../User/Resources/js/computation_center/New.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(44)]).then(__webpack_require__.bind(null, /*! @external_modules/User/Resources/js/computation_center/New.vue */ "../User/Resources/js/computation_center/New.vue"));
   }
 }, {
   path: '/computation_center/list',
   name: 'computation_center-list',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(69)]).then(__webpack_require__.bind(null, /*! @external_modules/User/Resources/js/computation_center/List.vue */ "../User/Resources/js/computation_center/List.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(70)]).then(__webpack_require__.bind(null, /*! @external_modules/User/Resources/js/computation_center/List.vue */ "../User/Resources/js/computation_center/List.vue"));
   }
 }, {
   path: '/mace_assesment',
@@ -43,7 +43,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   path: '/mace_ghasemi',
   name: 'mace-ghasemi',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(42)]).then(__webpack_require__.bind(null, /*! @external_modules/User/Resources/js/mace_ghasemi.vue */ "../User/Resources/js/mace_ghasemi.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(43)]).then(__webpack_require__.bind(null, /*! @external_modules/User/Resources/js/mace_ghasemi.vue */ "../User/Resources/js/mace_ghasemi.vue"));
   }
 }, {
   path: '/echocardiography',
@@ -85,13 +85,13 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   path: '/admin/report',
   name: 'report',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 112).then(__webpack_require__.bind(null, /*! @external_modules/Admin/Resources/js/Report.vue */ "../Admin/Resources/js/Report.vue"));
+    return __webpack_require__.e(/*! import() */ 113).then(__webpack_require__.bind(null, /*! @external_modules/Admin/Resources/js/Report.vue */ "../Admin/Resources/js/Report.vue"));
   }
 }, {
   path: '/anatomicalangio/assesment',
   name: 'anatomicalangio-assesment',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 113).then(__webpack_require__.bind(null, /*! @external_modules/User/Resources/js/anatomicalangio/New.vue */ "../User/Resources/js/anatomicalangio/New.vue"));
+    return __webpack_require__.e(/*! import() */ 42).then(__webpack_require__.bind(null, /*! @external_modules/User/Resources/js/anatomicalangio/New.vue */ "../User/Resources/js/anatomicalangio/New.vue"));
   }
 }], _toConsumableArray(__webpack_require__(/*! @external_modules/User/Resources/js/mace_assesments/routes.js */ "../User/Resources/js/mace_assesments/routes.js")["default"]), _toConsumableArray(__webpack_require__(/*! @external_modules/User/Resources/js/echo_calculations/routes.js */ "../User/Resources/js/echo_calculations/routes.js")["default"]), _toConsumableArray(__webpack_require__(/*! @external_modules/User/Resources/js/body_compositions/routes.js */ "../User/Resources/js/body_compositions/routes.js")["default"]), _toConsumableArray(__webpack_require__(/*! @external_modules/User/Resources/js/angiographies/routes.js */ "../User/Resources/js/angiographies/routes.js")["default"]), _toConsumableArray(__webpack_require__(/*! @external_modules/User/Resources/js/aobp_calculations/routes.js */ "../User/Resources/js/aobp_calculations/routes.js")["default"]), _toConsumableArray(__webpack_require__(/*! @external_modules/User/Resources/js/abpm_calculations/routes.js */ "../User/Resources/js/abpm_calculations/routes.js")["default"]), _toConsumableArray(__webpack_require__(/*! @external_modules/User/Resources/js/imt_calculations/routes.js */ "../User/Resources/js/imt_calculations/routes.js")["default"])));
 
@@ -132,7 +132,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "admin/complex_case/comments",
   name: "admin-comments-index",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(61)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../Admin/Resources/js/comments/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(62)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../Admin/Resources/js/comments/Index.vue"));
   },
   meta: {
     isCrud: "1",
@@ -151,7 +151,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "admin/complex_case/comments/:id",
   name: "admin-comments-detail",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 44).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../Admin/Resources/js/comments/Detail.vue"));
+    return __webpack_require__.e(/*! import() */ 45).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../Admin/Resources/js/comments/Detail.vue"));
   },
   meta: {
     isCrud: "1",
@@ -211,7 +211,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPrefetch: true */
-      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(89)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../Admin/Resources/js/complex_case_categories/Create.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(90)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../Admin/Resources/js/complex_case_categories/Create.vue"))
     );
   },
   meta: {
@@ -233,7 +233,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPrefetch: true */
-      Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(90)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../Admin/Resources/js/complex_case_categories/Index.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(91)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../Admin/Resources/js/complex_case_categories/Index.vue"))
     );
   },
   meta: {
@@ -252,7 +252,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPrefetch: true */
-      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(73)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../Admin/Resources/js/complex_case_categories/Update.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(74)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../Admin/Resources/js/complex_case_categories/Update.vue"))
     );
   },
   meta: {
@@ -275,7 +275,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPrefetch: true */
-      __webpack_require__.e(/*! import() */ 45).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../Admin/Resources/js/complex_case_categories/Detail.vue"))
+      __webpack_require__.e(/*! import() */ 46).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../Admin/Resources/js/complex_case_categories/Detail.vue"))
     );
   },
   meta: {
@@ -332,7 +332,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "admin/complex_cases/create",
   name: "admin-complex_cases-create-form",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(91)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../Admin/Resources/js/complex_cases/Create.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(92)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../Admin/Resources/js/complex_cases/Create.vue"));
   },
   meta: {
     isCrud: "1",
@@ -355,7 +355,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "admin/complex_cases",
   name: "admin-complex_cases-index",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(62)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../Admin/Resources/js/complex_cases/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(63)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../Admin/Resources/js/complex_cases/Index.vue"));
   },
   meta: {
     isCrud: "1",
@@ -375,7 +375,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "admin/complex_cases/:id/edit",
   name: "admin-complex_cases-update-form",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(74)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../Admin/Resources/js/complex_cases/Update.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(75)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../Admin/Resources/js/complex_cases/Update.vue"));
   },
   meta: {
     isCrud: "1",
@@ -399,7 +399,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "admin/complex_cases/:id",
   name: "admin-complex_cases-detail",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 46).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../Admin/Resources/js/complex_cases/Detail.vue"));
+    return __webpack_require__.e(/*! import() */ 47).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../Admin/Resources/js/complex_cases/Detail.vue"));
   },
   meta: {
     isCrud: "1",
@@ -460,7 +460,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPrefetch: true */
-      Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(92)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../Admin/Resources/js/ct_cases/Index.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(93)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../Admin/Resources/js/ct_cases/Index.vue"))
     );
   },
   meta: {
@@ -479,7 +479,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPrefetch: true */
-      __webpack_require__.e(/*! import() */ 47).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../Admin/Resources/js/ct_cases/Detail.vue"))
+      __webpack_require__.e(/*! import() */ 48).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../Admin/Resources/js/ct_cases/Detail.vue"))
     );
   },
   meta: {
@@ -537,7 +537,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPreload: true */
-      Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(93)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../Admin/Resources/js/niffr_cases/Index.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(94)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../Admin/Resources/js/niffr_cases/Index.vue"))
     );
   },
   meta: {
@@ -556,7 +556,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPrefetch: true */
-      __webpack_require__.e(/*! import() */ 48).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../Admin/Resources/js/niffr_cases/Detail.vue"))
+      __webpack_require__.e(/*! import() */ 49).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../Admin/Resources/js/niffr_cases/Detail.vue"))
     );
   },
   meta: {
@@ -612,7 +612,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "admin/physicians/create",
   name: "admin-physicians-create-form",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(94)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../Admin/Resources/js/physicians/Create.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(95)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../Admin/Resources/js/physicians/Create.vue"));
   },
   meta: {
     isCrud: "1",
@@ -634,7 +634,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "admin/physicians",
   name: "admin-physicians-index",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(63)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../Admin/Resources/js/physicians/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(64)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../Admin/Resources/js/physicians/Index.vue"));
   },
   meta: {
     isCrud: "1",
@@ -653,7 +653,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "admin/physicians/:id/edit",
   name: "admin-physicians-update-form",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(75)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../Admin/Resources/js/physicians/Update.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(76)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../Admin/Resources/js/physicians/Update.vue"));
   },
   meta: {
     isCrud: "1",
@@ -676,7 +676,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "admin/physicians/:id",
   name: "admin-physicians-detail",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 49).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../Admin/Resources/js/physicians/Detail.vue"));
+    return __webpack_require__.e(/*! import() */ 50).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../Admin/Resources/js/physicians/Detail.vue"));
   },
   meta: {
     isCrud: "1",
@@ -736,7 +736,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPrefetch: true */
-      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(95)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../Admin/Resources/js/users/Create.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(96)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../Admin/Resources/js/users/Create.vue"))
     );
   },
   meta: {
@@ -758,7 +758,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPrefetch: true */
-      Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(96)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../Admin/Resources/js/users/Index.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(97)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../Admin/Resources/js/users/Index.vue"))
     );
   },
   meta: {
@@ -777,7 +777,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPrefetch: true */
-      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(76)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../Admin/Resources/js/users/Update.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(77)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../Admin/Resources/js/users/Update.vue"))
     );
   },
   meta: {
@@ -800,7 +800,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPrefetch: true */
-      __webpack_require__.e(/*! import() */ 50).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../Admin/Resources/js/users/Detail.vue"))
+      __webpack_require__.e(/*! import() */ 51).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../Admin/Resources/js/users/Detail.vue"))
     );
   },
   meta: {
@@ -856,7 +856,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/abpm_calculations",
   name: "user-abpm_calculations-index",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(64)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/abpm_calculations/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(65)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/abpm_calculations/Index.vue"));
   },
   meta: {
     isCrud: "1",
@@ -875,7 +875,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/abpm_calculations/:id",
   name: "user-abpm_calculations-detail",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 51).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/abpm_calculations/Detail.vue"));
+    return __webpack_require__.e(/*! import() */ 52).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/abpm_calculations/Detail.vue"));
   },
   meta: {
     isCrud: "1",
@@ -933,7 +933,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/angiographies/create",
   name: "user-angiographies-create-form",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(97)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/angiographies/Create.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(98)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/angiographies/Create.vue"));
   },
   meta: {
     isCrud: "1",
@@ -955,7 +955,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/angiographies",
   name: "user-angiographies-index",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(65)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/angiographies/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(66)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/angiographies/Index.vue"));
   },
   meta: {
     isCrud: "1",
@@ -974,7 +974,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/angiographies/:id/edit",
   name: "user-angiographies-update-form",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(77)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../User/Resources/js/angiographies/Update.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(78)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../User/Resources/js/angiographies/Update.vue"));
   },
   meta: {
     isCrud: "1",
@@ -997,7 +997,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/angiographies/:id",
   name: "user-angiographies-detail",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 52).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/angiographies/Detail.vue"));
+    return __webpack_require__.e(/*! import() */ 53).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/angiographies/Detail.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1055,7 +1055,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/aobp_calculations",
   name: "user-aobp_calculations-index",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(66)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/aobp_calculations/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(67)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/aobp_calculations/Index.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1074,7 +1074,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/aobp_calculations/:id",
   name: "user-aobp_calculations-detail",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 53).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/aobp_calculations/Detail.vue"));
+    return __webpack_require__.e(/*! import() */ 54).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/aobp_calculations/Detail.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1132,7 +1132,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/body_compositions/create",
   name: "user-body_compositions-create-form",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(98)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/body_compositions/Create.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(99)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/body_compositions/Create.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1154,7 +1154,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/body_compositions",
   name: "user-body_compositions-index",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(67)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/body_compositions/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(68)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/body_compositions/Index.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1173,7 +1173,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/body_compositions/:id/edit",
   name: "user-body_compositions-update-form",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(78)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../User/Resources/js/body_compositions/Update.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(79)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../User/Resources/js/body_compositions/Update.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1196,7 +1196,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/body_compositions/:id",
   name: "user-body_compositions-detail",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 54).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/body_compositions/Detail.vue"));
+    return __webpack_require__.e(/*! import() */ 55).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/body_compositions/Detail.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1256,7 +1256,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPreload: true */
-      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(99)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/complex_case_categories/Create.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(100)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/complex_case_categories/Create.vue"))
     );
   },
   meta: {
@@ -1278,7 +1278,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPreload: true */
-      Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(100)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/complex_case_categories/Index.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(101)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/complex_case_categories/Index.vue"))
     );
   },
   meta: {
@@ -1297,7 +1297,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPreload: true */
-      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(79)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../User/Resources/js/complex_case_categories/Update.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(80)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../User/Resources/js/complex_case_categories/Update.vue"))
     );
   },
   meta: {
@@ -1320,7 +1320,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPreload: true */
-      __webpack_require__.e(/*! import() */ 55).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/complex_case_categories/Detail.vue"))
+      __webpack_require__.e(/*! import() */ 56).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/complex_case_categories/Detail.vue"))
     );
   },
   meta: {
@@ -1376,7 +1376,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "complex_cases/create",
   name: "complex_cases-create-form",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(101)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/complex_cases/Create.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(102)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/complex_cases/Create.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1398,7 +1398,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "complex_cases",
   name: "complex_cases-index",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(68)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/complex_cases/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(69)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/complex_cases/Index.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1417,7 +1417,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "complex_cases/:id/edit",
   name: "complex_cases-update-form",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(80)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../User/Resources/js/complex_cases/Update.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(81)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../User/Resources/js/complex_cases/Update.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1440,7 +1440,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "complex_cases/:id",
   name: "complex_cases-detail",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 56).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/complex_cases/Detail.vue"));
+    return __webpack_require__.e(/*! import() */ 57).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/complex_cases/Detail.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1519,7 +1519,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPreload: true */
-      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(102)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/ct_cases/Create.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(103)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/ct_cases/Create.vue"))
     );
   },
   meta: {
@@ -1553,7 +1553,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPreload: true */
-      __webpack_require__.e(/*! import() */ 57).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/ct_cases/Detail.vue"))
+      __webpack_require__.e(/*! import() */ 58).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/ct_cases/Detail.vue"))
     );
   },
   meta: {
@@ -1609,7 +1609,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/echo_calculations",
   name: "user-echo_calculations-index",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(70)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/echo_calculations/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(71)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/echo_calculations/Index.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1686,7 +1686,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/imt_calculations/create",
   name: "user-imt_calculations-create-form",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(103)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/imt_calculations/Create.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(104)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/imt_calculations/Create.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1708,7 +1708,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/imt_calculations",
   name: "user-imt_calculations-index",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(71)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/imt_calculations/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(72)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/imt_calculations/Index.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1727,7 +1727,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/imt_calculations/:id/edit",
   name: "user-imt_calculations-update-form",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(81)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../User/Resources/js/imt_calculations/Update.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(82)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../User/Resources/js/imt_calculations/Update.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1750,7 +1750,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/imt_calculations/:id",
   name: "user-imt_calculations-detail",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 58).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/imt_calculations/Detail.vue"));
+    return __webpack_require__.e(/*! import() */ 59).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/imt_calculations/Detail.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1808,7 +1808,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/mace_assesments/create",
   name: "user-mace_assesments-create-form",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(104)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/mace_assesments/Create.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(105)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/mace_assesments/Create.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1830,7 +1830,7 @@ __webpack_require__.r(__webpack_exports__);
   path: "user/mace_assesments",
   name: "user-mace_assesments-index",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(72)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/mace_assesments/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(73)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/mace_assesments/Index.vue"));
   },
   meta: {
     isCrud: "1",
@@ -1985,7 +1985,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPreload: true */
-      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(82)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../User/Resources/js/niffr_cases/Update.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(83)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../User/Resources/js/niffr_cases/Update.vue"))
     );
   },
   meta: {
@@ -2008,7 +2008,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPrefetch: true */
-      __webpack_require__.e(/*! import() */ 59).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/niffr_cases/Detail.vue"))
+      __webpack_require__.e(/*! import() */ 60).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/niffr_cases/Detail.vue"))
     );
   },
   meta: {
@@ -2066,7 +2066,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPreload: true */
-      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(105)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/patients/Create.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(106)]).then(__webpack_require__.bind(null, /*! ./Create.vue */ "../User/Resources/js/patients/Create.vue"))
     );
   },
   meta: {
@@ -2088,7 +2088,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPreload: true */
-      Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(106)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/patients/Index.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(107)]).then(__webpack_require__.bind(null, /*! ./Index.vue */ "../User/Resources/js/patients/Index.vue"))
     );
   },
   meta: {
@@ -2107,7 +2107,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPreload: true */
-      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(83)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../User/Resources/js/patients/Update.vue"))
+      Promise.all(/*! import() */[__webpack_require__.e("/js/vendor"), __webpack_require__.e(0), __webpack_require__.e(84)]).then(__webpack_require__.bind(null, /*! ./Update.vue */ "../User/Resources/js/patients/Update.vue"))
     );
   },
   meta: {
@@ -2130,7 +2130,7 @@ __webpack_require__.r(__webpack_exports__);
   component: function component() {
     return (
       /* webpackPreload: true */
-      __webpack_require__.e(/*! import() */ 60).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/patients/Detail.vue"))
+      __webpack_require__.e(/*! import() */ 61).then(__webpack_require__.bind(null, /*! ./Detail.vue */ "../User/Resources/js/patients/Detail.vue"))
     );
   },
   meta: {
@@ -5693,7 +5693,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 }, {
   path: '',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 110).then(__webpack_require__.bind(null, /*! @/layouts/full-page/FullPage.vue */ "./Resources/js/src/layouts/full-page/FullPage.vue"));
+    return __webpack_require__.e(/*! import() */ 111).then(__webpack_require__.bind(null, /*! @/layouts/full-page/FullPage.vue */ "./Resources/js/src/layouts/full-page/FullPage.vue"));
   },
   children: [{
     path: '/callback',
@@ -5721,7 +5721,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     component: function component() {
       return (
         /* webpackPreload: true */
-        __webpack_require__.e(/*! import() */ 85).then(__webpack_require__.bind(null, /*! @/views/pages/ForgotPassword.vue */ "./Resources/js/src/views/pages/ForgotPassword.vue"))
+        __webpack_require__.e(/*! import() */ 86).then(__webpack_require__.bind(null, /*! @/views/pages/ForgotPassword.vue */ "./Resources/js/src/views/pages/ForgotPassword.vue"))
       );
     },
     meta: {}
@@ -5731,7 +5731,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     component: function component() {
       return (
         /* webpackPreload: true */
-        __webpack_require__.e(/*! import() */ 88).then(__webpack_require__.bind(null, /*! @/views/pages/ResetPassword.vue */ "./Resources/js/src/views/pages/ResetPassword.vue"))
+        __webpack_require__.e(/*! import() */ 89).then(__webpack_require__.bind(null, /*! @/views/pages/ResetPassword.vue */ "./Resources/js/src/views/pages/ResetPassword.vue"))
       );
     },
     meta: {}
@@ -5741,7 +5741,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     component: function component() {
       return (
         /* webpackPreload: true */
-        __webpack_require__.e(/*! import() */ 86).then(__webpack_require__.bind(null, /*! @/views/pages/LockScreen.vue */ "./Resources/js/src/views/pages/LockScreen.vue"))
+        __webpack_require__.e(/*! import() */ 87).then(__webpack_require__.bind(null, /*! @/views/pages/LockScreen.vue */ "./Resources/js/src/views/pages/LockScreen.vue"))
       );
     },
     meta: {}
@@ -5751,7 +5751,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     component: function component() {
       return (
         /* webpackPreload: true */
-        Promise.all(/*! import() */[__webpack_require__.e(111), __webpack_require__.e(84)]).then(__webpack_require__.bind(null, /*! @/views/pages/ComingSoon.vue */ "./Resources/js/src/views/pages/ComingSoon.vue"))
+        Promise.all(/*! import() */[__webpack_require__.e(112), __webpack_require__.e(85)]).then(__webpack_require__.bind(null, /*! @/views/pages/ComingSoon.vue */ "./Resources/js/src/views/pages/ComingSoon.vue"))
       );
     },
     meta: {}
@@ -5761,7 +5761,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     component: function component() {
       return (
         /* webpackPreload: true */
-        __webpack_require__.e(/*! import() */ 107).then(__webpack_require__.bind(null, /*! @/views/pages/Error404.vue */ "./Resources/js/src/views/pages/Error404.vue"))
+        __webpack_require__.e(/*! import() */ 108).then(__webpack_require__.bind(null, /*! @/views/pages/Error404.vue */ "./Resources/js/src/views/pages/Error404.vue"))
       );
     },
     meta: {}
@@ -5771,7 +5771,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     component: function component() {
       return (
         /* webpackPreload: true */
-        __webpack_require__.e(/*! import() */ 108).then(__webpack_require__.bind(null, /*! @/views/pages/Error500.vue */ "./Resources/js/src/views/pages/Error500.vue"))
+        __webpack_require__.e(/*! import() */ 109).then(__webpack_require__.bind(null, /*! @/views/pages/Error500.vue */ "./Resources/js/src/views/pages/Error500.vue"))
       );
     },
     meta: {}
@@ -5781,7 +5781,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     component: function component() {
       return (
         /* webpackPreload: true */
-        __webpack_require__.e(/*! import() */ 109).then(__webpack_require__.bind(null, /*! @/views/pages/NotAuthorized.vue */ "./Resources/js/src/views/pages/NotAuthorized.vue"))
+        __webpack_require__.e(/*! import() */ 110).then(__webpack_require__.bind(null, /*! @/views/pages/NotAuthorized.vue */ "./Resources/js/src/views/pages/NotAuthorized.vue"))
       );
     },
     meta: {}
@@ -5791,7 +5791,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     component: function component() {
       return (
         /* webpackPreload: true */
-        __webpack_require__.e(/*! import() */ 87).then(__webpack_require__.bind(null, /*! @/views/pages/Maintenance.vue */ "./Resources/js/src/views/pages/Maintenance.vue"))
+        __webpack_require__.e(/*! import() */ 88).then(__webpack_require__.bind(null, /*! @/views/pages/Maintenance.vue */ "./Resources/js/src/views/pages/Maintenance.vue"))
       );
     },
     meta: {}
@@ -49055,4 +49055,4 @@ module.exports = __webpack_require__(/*! D:\projects2\projects\vcathlab\Modules\
 
 /***/ })
 
-},[[0,"/js/manifest","/js/vendor"]],["/js/vendor",0,13,74,75,77,78,81,91,94,97,98,103,104,1,2,61,62,63,64,65,66,67,70,71,72,17,18,19,21,24,26,27,28,29,33,34,35,44,46,49,51,52,53,54,58]]);
+},[[0,"/js/manifest","/js/vendor"]],["/js/vendor",0,13,75,76,78,79,82,92,95,98,99,104,105,1,2,62,63,64,65,66,67,68,71,72,73,17,18,19,21,24,26,27,28,29,33,34,35,45,47,50,52,53,54,55,59]]);

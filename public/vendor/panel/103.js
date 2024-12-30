@@ -1,16 +1,16 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[103],{
 
-/***/ "../User/Resources/js/imt_calculations/Create.vue":
-/*!********************************************************!*\
-  !*** ../User/Resources/js/imt_calculations/Create.vue ***!
-  \********************************************************/
+/***/ "../User/Resources/js/ct_cases/Create.vue":
+/*!************************************************!*\
+  !*** ../User/Resources/js/ct_cases/Create.vue ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Create_vue_vue_type_template_id_1f499d9c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Create.vue?vue&type=template&id=1f499d9c& */ "../User/Resources/js/imt_calculations/Create.vue?vue&type=template&id=1f499d9c&");
-/* harmony import */ var _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Create.vue?vue&type=script&lang=js& */ "../User/Resources/js/imt_calculations/Create.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Create_vue_vue_type_template_id_20613a00___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Create.vue?vue&type=template&id=20613a00& */ "../User/Resources/js/ct_cases/Create.vue?vue&type=template&id=20613a00&");
+/* harmony import */ var _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Create.vue?vue&type=script&lang=js& */ "../User/Resources/js/ct_cases/Create.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -21,8 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Create_vue_vue_type_template_id_1f499d9c___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Create_vue_vue_type_template_id_1f499d9c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Create_vue_vue_type_template_id_20613a00___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Create_vue_vue_type_template_id_20613a00___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -32,47 +32,47 @@ var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNorma
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "User/Resources/js/imt_calculations/Create.vue"
+component.options.__file = "User/Resources/js/ct_cases/Create.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "../User/Resources/js/imt_calculations/Create.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************!*\
-  !*** ../User/Resources/js/imt_calculations/Create.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************/
+/***/ "../User/Resources/js/ct_cases/Create.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ../User/Resources/js/ct_cases/Create.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Create.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/ct_cases/Create.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "../User/Resources/js/imt_calculations/Create.vue?vue&type=template&id=1f499d9c&":
-/*!***************************************************************************************!*\
-  !*** ../User/Resources/js/imt_calculations/Create.vue?vue&type=template&id=1f499d9c& ***!
-  \***************************************************************************************/
+/***/ "../User/Resources/js/ct_cases/Create.vue?vue&type=template&id=20613a00&":
+/*!*******************************************************************************!*\
+  !*** ../User/Resources/js/ct_cases/Create.vue?vue&type=template&id=20613a00& ***!
+  \*******************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_1f499d9c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=template&id=1f499d9c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Create.vue?vue&type=template&id=1f499d9c&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_1f499d9c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_20613a00___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=template&id=20613a00& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/ct_cases/Create.vue?vue&type=template&id=20613a00&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_20613a00___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_1f499d9c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_20613a00___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Create.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/imt_calculations/Create.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/ct_cases/Create.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/ct_cases/Create.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -230,32 +230,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -264,30 +238,23 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   data: function data() {
     return {
       form: new _Form__WEBPACK_IMPORTED_MODULE_1__["default"]({
-        LCIMT: "",
-        RCIMT: "",
-        user_id: "",
+        ct_file: "",
+        result: "",
         patient_id: ""
       }),
-      model: "Modules\\User\\Models\\ImtCalculation",
+      model: "Modules\\User\\Models\\CtCase",
       locale: Iracode.$i18n.locale,
       inputs: {
-        LCIMT: {
-          type: "vs-input",
-          field_type: "text"
+        ct_file: {
+          type: "filepond",
+          filepond_options: {
+            "label-idle": "Drag &amp; Drop your files",
+            "allow-multiple": Iracode.toBool(0),
+            "instant-upload": Iracode.toBool(0)
+          }
         },
-        RCIMT: {
-          type: "vs-input",
-          field_type: "text"
-        },
-        user_id: {
-          field_type: "relation",
-          options: [],
-          selected: {},
-          foreign_key: "user_id",
-          relation_name: "user",
-          searchUrl: "/panel/api/users",
-          titleField: "email"
+        result: {
+          type: "quill-editor"
         },
         patient_id: {
           field_type: "relation",
@@ -296,7 +263,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           foreign_key: "patient_id",
           relation_name: "patient",
           searchUrl: "/user/api/patients",
-          titleField: "name"
+          titleField: "id"
         }
       }
     };
@@ -320,14 +287,14 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return _this.form.post("/user/api/imt_calculations");
+                return _this.form.post("/user/api/ct_cases");
 
               case 2:
                 data = _context.sent;
 
                 if (data.success) {
-                  Iracode.success(_this.__("Imtcalculation Created Successfully"));
-                  if (action == "close") _this.$router.push("/user/imt_calculations");else _this.form.reset();
+                  Iracode.success(_this.__("Ctcase Created Successfully"));
+                  if (action == "close") _this.$router.push("/user/ct_cases");else _this.form.reset();
                 }
 
               case 4:
@@ -343,10 +310,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Create.vue?vue&type=template&id=1f499d9c&":
-/*!*********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/imt_calculations/Create.vue?vue&type=template&id=1f499d9c& ***!
-  \*********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/ct_cases/Create.vue?vue&type=template&id=20613a00&":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/ct_cases/Create.vue?vue&type=template&id=20613a00& ***!
+  \*************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -375,7 +342,7 @@ var render = function() {
                     {
                       attrs: {
                         color: "primary",
-                        to: "/user/imt_calculations",
+                        to: "/user/ct_cases",
                         type: "filled"
                       }
                     },
@@ -424,7 +391,7 @@ var render = function() {
                                 "vs-lg": "3"
                               }
                             },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("user")))])]
+                            [_c("span", [_vm._v(_vm._s(_vm.__("patient")))])]
                           ),
                           _vm._v(" "),
                           _c(
@@ -440,21 +407,23 @@ var render = function() {
                               _c(
                                 "v-select",
                                 {
-                                  staticStyle: { width: "100%" },
                                   attrs: {
                                     dir: _vm.$vs.rtl ? "rtl" : "ltr",
-                                    value: _vm.inputs.user_id.selected,
-                                    label: "email",
+                                    value: _vm.inputs.patient_id.selected,
+                                    label: "id",
                                     filterable: false,
-                                    options: _vm.inputs.user_id.options
+                                    options: _vm.inputs.patient_id.options
                                   },
                                   on: {
                                     input: function(op) {
-                                      return _vm.onRelationSelect("user_id", op)
+                                      return _vm.onRelationSelect(
+                                        "patient_id",
+                                        op
+                                      )
                                     },
                                     search: function(search, loading) {
                                       return _vm.onRelationSearch(
-                                        "user_id",
+                                        "patient_id",
                                         search,
                                         loading
                                       )
@@ -499,14 +468,20 @@ var render = function() {
                           _c(
                             "vs-col",
                             {
-                              staticClass: "justify-end",
+                              staticClass: "justify-end pr-5",
                               attrs: {
                                 "vs-type": "flex",
                                 "vs-align": "center",
                                 "vs-lg": "3"
                               }
                             },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("patient")))])]
+                            [
+                              _c("span", [_vm._v(_vm._s(_vm.__("Ct File")))]),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "ml-1 text-red" }, [
+                                _vm._v("*")
+                              ])
+                            ]
                           ),
                           _vm._v(" "),
                           _c(
@@ -519,44 +494,30 @@ var render = function() {
                               }
                             },
                             [
-                              _c(
-                                "v-select",
-                                {
-                                  staticStyle: { width: "100%" },
-                                  attrs: {
-                                    dir: _vm.$vs.rtl ? "rtl" : "ltr",
-                                    value: _vm.inputs.patient_id.selected,
-                                    label: "name",
-                                    filterable: false,
-                                    options: _vm.inputs.patient_id.options
-                                  },
-                                  on: {
-                                    input: function(op) {
-                                      return _vm.onRelationSelect(
-                                        "patient_id",
-                                        op
-                                      )
-                                    },
-                                    search: function(search, loading) {
-                                      return _vm.onRelationSearch(
-                                        "patient_id",
-                                        search,
-                                        loading
-                                      )
-                                    }
-                                  }
-                                },
-                                [
-                                  _c("template", { slot: "no-options" }, [
-                                    _vm._v(
-                                      "\n                                    " +
-                                        _vm._s(_vm.__("Type to search")) +
-                                        "\n                                "
-                                    )
-                                  ])
-                                ],
-                                2
-                              )
+                              _c(_vm.inputs.ct_file.type, {
+                                tag: "component",
+                                staticClass: "w-full",
+                                attrs: {
+                                  imageResizeMode: "cover",
+                                  danger: _vm.hasValidationError("ct_file"),
+                                  "danger-text": _vm.validationError("ct_file"),
+                                  name: "ct_file",
+                                  "label-idle":
+                                    _vm.inputs.ct_file.filepond_options[
+                                      "label-idle"
+                                    ],
+                                  "allow-multiple":
+                                    _vm.inputs.ct_file.filepond_options[
+                                      "allow-multiple"
+                                    ],
+                                  "instant-upload":
+                                    _vm.inputs.ct_file.filepond_options[
+                                      "instant-upload"
+                                    ],
+                                  files: _vm.inputs.ct_file.files,
+                                  server: _vm.uploadServer
+                                }
+                              })
                             ],
                             1
                           )
@@ -602,7 +563,7 @@ var render = function() {
                               }
                             },
                             [
-                              _c("span", [_vm._v(_vm._s(_vm.__("L C I M T")))]),
+                              _c("span", [_vm._v(_vm._s(_vm.__("Result")))]),
                               _vm._v(" "),
                               _c("span", { staticClass: "ml-1 text-red" }, [
                                 _vm._v("*")
@@ -620,91 +581,21 @@ var render = function() {
                               }
                             },
                             [
-                              _c(_vm.inputs.LCIMT.type, {
+                              _c(_vm.inputs.result.type, {
                                 tag: "component",
                                 staticClass: "w-full",
                                 attrs: {
-                                  danger: _vm.hasValidationError("LCIMT"),
-                                  "danger-text": _vm.validationError("LCIMT"),
-                                  name: "LCIMT",
-                                  type: "text"
+                                  danger: _vm.hasValidationError("result"),
+                                  "danger-text": _vm.validationError("result"),
+                                  name: "result",
+                                  type: "quill"
                                 },
                                 model: {
-                                  value: _vm.form.LCIMT,
+                                  value: _vm.form.result,
                                   callback: function($$v) {
-                                    _vm.$set(_vm.form, "LCIMT", $$v)
+                                    _vm.$set(_vm.form, "result", $$v)
                                   },
-                                  expression: "form.LCIMT"
-                                }
-                              })
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "vs-col",
-                    {
-                      attrs: {
-                        "vs-type": "flex",
-                        "vs-align": "center",
-                        "vs-lg": "6"
-                      }
-                    },
-                    [
-                      _c(
-                        "vs-row",
-                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
-                        [
-                          _c(
-                            "vs-col",
-                            {
-                              staticClass: "justify-end pr-5",
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "3"
-                              }
-                            },
-                            [
-                              _c("span", [_vm._v(_vm._s(_vm.__("R C I M T")))]),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "ml-1 text-red" }, [
-                                _vm._v("*")
-                              ])
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "vs-col",
-                            {
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "9"
-                              }
-                            },
-                            [
-                              _c(_vm.inputs.RCIMT.type, {
-                                tag: "component",
-                                staticClass: "w-full",
-                                attrs: {
-                                  danger: _vm.hasValidationError("RCIMT"),
-                                  "danger-text": _vm.validationError("RCIMT"),
-                                  name: "RCIMT",
-                                  type: "text"
-                                },
-                                model: {
-                                  value: _vm.form.RCIMT,
-                                  callback: function($$v) {
-                                    _vm.$set(_vm.form, "RCIMT", $$v)
-                                  },
-                                  expression: "form.RCIMT"
+                                  expression: "form.result"
                                 }
                               })
                             ],

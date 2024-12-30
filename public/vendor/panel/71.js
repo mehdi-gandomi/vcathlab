@@ -1,16 +1,16 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[71],{
 
-/***/ "../User/Resources/js/imt_calculations/Index.vue":
-/*!*******************************************************!*\
-  !*** ../User/Resources/js/imt_calculations/Index.vue ***!
-  \*******************************************************/
+/***/ "../User/Resources/js/echo_calculations/Index.vue":
+/*!********************************************************!*\
+  !*** ../User/Resources/js/echo_calculations/Index.vue ***!
+  \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Index_vue_vue_type_template_id_a5b44d3c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=a5b44d3c& */ "../User/Resources/js/imt_calculations/Index.vue?vue&type=template&id=a5b44d3c&");
-/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "../User/Resources/js/imt_calculations/Index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Index_vue_vue_type_template_id_c27b18de___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=c27b18de& */ "../User/Resources/js/echo_calculations/Index.vue?vue&type=template&id=c27b18de&");
+/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "../User/Resources/js/echo_calculations/Index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -21,8 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Index_vue_vue_type_template_id_a5b44d3c___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Index_vue_vue_type_template_id_a5b44d3c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Index_vue_vue_type_template_id_c27b18de___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Index_vue_vue_type_template_id_c27b18de___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -32,38 +32,38 @@ var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNorma
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "User/Resources/js/imt_calculations/Index.vue"
+component.options.__file = "User/Resources/js/echo_calculations/Index.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "../User/Resources/js/imt_calculations/Index.vue?vue&type=script&lang=js&":
-/*!********************************************************************************!*\
-  !*** ../User/Resources/js/imt_calculations/Index.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************/
+/***/ "../User/Resources/js/echo_calculations/Index.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ../User/Resources/js/echo_calculations/Index.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/echo_calculations/Index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "../User/Resources/js/imt_calculations/Index.vue?vue&type=template&id=a5b44d3c&":
-/*!**************************************************************************************!*\
-  !*** ../User/Resources/js/imt_calculations/Index.vue?vue&type=template&id=a5b44d3c& ***!
-  \**************************************************************************************/
+/***/ "../User/Resources/js/echo_calculations/Index.vue?vue&type=template&id=c27b18de&":
+/*!***************************************************************************************!*\
+  !*** ../User/Resources/js/echo_calculations/Index.vue?vue&type=template&id=c27b18de& ***!
+  \***************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_a5b44d3c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=template&id=a5b44d3c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Index.vue?vue&type=template&id=a5b44d3c&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_a5b44d3c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_c27b18de___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=template&id=c27b18de& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/echo_calculations/Index.vue?vue&type=template&id=c27b18de&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_c27b18de___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_a5b44d3c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_c27b18de___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -177,10 +177,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Index.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/imt_calculations/Index.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/echo_calculations/Index.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/echo_calculations/Index.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -267,40 +267,18 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       searchQuery: "",
-      baseUrl: "/user/api/imt_calculations",
-      model: "ImtCalculation",
+      baseUrl: "/user/api/echo_calculations",
+      model: "EchoCalculation",
       module: "User",
-      createButtonText: this.__("Create Imtcalculation"),
-      createButtonLink: "/user/imt_calculations/create",
-      printButtonLink: "/user/imt_calculations/print",
+      createButtonText: this.__("Create Echocalculation"),
+      createButtonLink: "/user/echo_calculations/create",
+      printButtonLink: "/user/echo_calculations/print",
       columnDefs: [{
         headerName: this.__("Row"),
         width: 80,
         minWidth: 80,
         valueGetter: "node.rowIndex + 1",
         valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_5__["default"].rowNumberFormatter
-      }, {
-        headerName: this.__("LCIMT"),
-        field: "LCIMT",
-        resizable: true,
-        filter: "agTextColumnFilter"
-      }, {
-        headerName: this.__("RCIMT"),
-        field: "RCIMT",
-        resizable: true,
-        filter: "agTextColumnFilter"
-      }, {
-        headerName: this.__("Created At"),
-        field: "created_at_fa",
-        resizable: true,
-        valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_5__["default"].dateFormatter,
-        filter: "agTextColumnFilter"
-      }, {
-        headerName: this.__("Updated At"),
-        field: "updated_at_fa",
-        resizable: true,
-        valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_5__["default"].dateFormatter,
-        filter: "agTextColumnFilter"
       }, {
         headerName: this.__("user"),
         field: "user.email",
@@ -310,17 +288,36 @@ __webpack_require__.r(__webpack_exports__);
         headerName: this.__("patient"),
         field: "patient.name",
         resizable: true,
-        filter: false
+        filter: true
+      }, {
+        headerName: this.__("Weight"),
+        field: "Weight",
+        resizable: true,
+        filter: "agTextColumnFilter"
+      }, {
+        headerName: this.__("Height"),
+        field: "Height",
+        resizable: true,
+        filter: "agTextColumnFilter"
+      }, {
+        headerName: this.__("Created At"),
+        field: "created_at",
+        valueFormatter: function valueFormatter(params) {
+          return params.data.created_at_fa;
+        },
+        resizable: true,
+        filter: "agTextColumnFilter"
       }, {
         headerName: this.__("Actions"),
         field: "action",
         filter: false,
         cellRenderer: "tableActionsRenderer",
         cellRendererParams: {
-          model: "Imtcalculation",
-          baseRoutePath: "user/imt_calculations",
-          modelPlural: "imt_calculations",
-          baseApiPath: "/user/api"
+          model: "Echocalculation",
+          baseRoutePath: "user/echo_calculations",
+          modelPlural: "echo_calculations",
+          baseApiPath: "/user/api",
+          showEditButton: false
         }
       }],
       items: []
@@ -330,10 +327,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/imt_calculations/Index.vue?vue&type=template&id=a5b44d3c&":
-/*!********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/imt_calculations/Index.vue?vue&type=template&id=a5b44d3c& ***!
-  \********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/echo_calculations/Index.vue?vue&type=template&id=c27b18de&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/echo_calculations/Index.vue?vue&type=template&id=c27b18de& ***!
+  \*********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 

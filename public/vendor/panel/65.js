@@ -1,16 +1,16 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[65],{
 
-/***/ "../User/Resources/js/angiographies/Index.vue":
-/*!****************************************************!*\
-  !*** ../User/Resources/js/angiographies/Index.vue ***!
-  \****************************************************/
+/***/ "../User/Resources/js/abpm_calculations/Index.vue":
+/*!********************************************************!*\
+  !*** ../User/Resources/js/abpm_calculations/Index.vue ***!
+  \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Index_vue_vue_type_template_id_3d9b9214___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=3d9b9214& */ "../User/Resources/js/angiographies/Index.vue?vue&type=template&id=3d9b9214&");
-/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "../User/Resources/js/angiographies/Index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Index_vue_vue_type_template_id_3db7b090___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=3db7b090& */ "../User/Resources/js/abpm_calculations/Index.vue?vue&type=template&id=3db7b090&");
+/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "../User/Resources/js/abpm_calculations/Index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -21,8 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Index_vue_vue_type_template_id_3d9b9214___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Index_vue_vue_type_template_id_3d9b9214___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Index_vue_vue_type_template_id_3db7b090___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Index_vue_vue_type_template_id_3db7b090___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -32,38 +32,38 @@ var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNorma
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "User/Resources/js/angiographies/Index.vue"
+component.options.__file = "User/Resources/js/abpm_calculations/Index.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "../User/Resources/js/angiographies/Index.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************!*\
-  !*** ../User/Resources/js/angiographies/Index.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************/
+/***/ "../User/Resources/js/abpm_calculations/Index.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ../User/Resources/js/abpm_calculations/Index.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/angiographies/Index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/abpm_calculations/Index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "../User/Resources/js/angiographies/Index.vue?vue&type=template&id=3d9b9214&":
-/*!***********************************************************************************!*\
-  !*** ../User/Resources/js/angiographies/Index.vue?vue&type=template&id=3d9b9214& ***!
-  \***********************************************************************************/
+/***/ "../User/Resources/js/abpm_calculations/Index.vue?vue&type=template&id=3db7b090&":
+/*!***************************************************************************************!*\
+  !*** ../User/Resources/js/abpm_calculations/Index.vue?vue&type=template&id=3db7b090& ***!
+  \***************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_3d9b9214___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=template&id=3d9b9214& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/angiographies/Index.vue?vue&type=template&id=3d9b9214&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_3d9b9214___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_3db7b090___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=template&id=3db7b090& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/abpm_calculations/Index.vue?vue&type=template&id=3db7b090&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_3db7b090___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_3d9b9214___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_3db7b090___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -177,21 +177,29 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/angiographies/Index.vue?vue&type=script&lang=js&":
-/*!*************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/angiographies/Index.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/abpm_calculations/Index.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/abpm_calculations/Index.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _mixins_HasFilter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/mixins/HasFilter */ "./Resources/js/src/mixins/HasFilter.js");
-/* harmony import */ var _mixins_IndexPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/mixins/IndexPage */ "./Resources/js/src/mixins/IndexPage.js");
-/* harmony import */ var _mixins_Paginable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/mixins/Paginable */ "./Resources/js/src/mixins/Paginable.js");
-/* harmony import */ var _mixins_Sortable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/mixins/Sortable */ "./Resources/js/src/mixins/Sortable.js");
-/* harmony import */ var _mixins_InteractsWithQueryString__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/mixins/InteractsWithQueryString */ "./Resources/js/src/mixins/InteractsWithQueryString.js");
-/* harmony import */ var _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/components/aggrid-table/Formatters */ "./Resources/js/src/components/aggrid-table/Formatters.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _mixins_HasFilter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/mixins/HasFilter */ "./Resources/js/src/mixins/HasFilter.js");
+/* harmony import */ var _mixins_IndexPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/mixins/IndexPage */ "./Resources/js/src/mixins/IndexPage.js");
+/* harmony import */ var _mixins_Paginable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/mixins/Paginable */ "./Resources/js/src/mixins/Paginable.js");
+/* harmony import */ var _mixins_Sortable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/mixins/Sortable */ "./Resources/js/src/mixins/Sortable.js");
+/* harmony import */ var _mixins_InteractsWithQueryString__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/mixins/InteractsWithQueryString */ "./Resources/js/src/mixins/InteractsWithQueryString.js");
+/* harmony import */ var _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/components/aggrid-table/Formatters */ "./Resources/js/src/components/aggrid-table/Formatters.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
 //
 //
 //
@@ -263,50 +271,63 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mixins: [_mixins_HasFilter__WEBPACK_IMPORTED_MODULE_0__["default"], _mixins_IndexPage__WEBPACK_IMPORTED_MODULE_1__["default"], _mixins_Paginable__WEBPACK_IMPORTED_MODULE_2__["default"], _mixins_InteractsWithQueryString__WEBPACK_IMPORTED_MODULE_4__["default"], _mixins_Sortable__WEBPACK_IMPORTED_MODULE_3__["default"]],
+  mixins: [_mixins_HasFilter__WEBPACK_IMPORTED_MODULE_1__["default"], _mixins_IndexPage__WEBPACK_IMPORTED_MODULE_2__["default"], _mixins_Paginable__WEBPACK_IMPORTED_MODULE_3__["default"], _mixins_InteractsWithQueryString__WEBPACK_IMPORTED_MODULE_5__["default"], _mixins_Sortable__WEBPACK_IMPORTED_MODULE_4__["default"]],
   data: function data() {
     return {
       searchQuery: "",
-      baseUrl: "/user/api/angiographies",
-      model: "Angiography",
+      baseUrl: "/user/api/abpm_calculations",
+      model: "ABPMCalculation",
       module: "User",
-      createButtonText: this.__("Create Angiography"),
-      createButtonLink: "/user/angiographies/create",
-      printButtonLink: "/user/angiographies/print",
+      createButtonText: this.__("Create ABPMcalculation"),
+      createButtonLink: "/user/abpm_calculations/create",
+      printButtonLink: "/user/abpm_calculations/print",
       columnDefs: [{
         headerName: this.__("Row"),
         width: 80,
-        minWidth: 100,
+        minWidth: 80,
         valueGetter: "node.rowIndex + 1",
-        valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_5__["default"].rowNumberFormatter
-      }, {
+        valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_6__["default"].rowNumberFormatter
+      }, // {
+      //     headerName: this.__("Sys"),
+      //     field: "sys",
+      //     resizable: true,
+      //     filter: "agTextColumnFilter",
+      // },
+      // {
+      //     headerName: this.__("Dia"),
+      //     field: "dia",
+      //     resizable: true,
+      //     filter: "agTextColumnFilter",
+      // },
+      // {
+      //     headerName: this.__("Hr"),
+      //     field: "hr",
+      //     resizable: true,
+      //     filter: "agTextColumnFilter",
+      // },
+      {
         headerName: this.__("patient"),
         field: "patient.name",
         resizable: true,
         filter: false
       }, {
         headerName: this.__("Age"),
-        field: "Age",
+        field: "patient.age",
         resizable: true,
-        filter: "agTextColumnFilter"
+        filter: false
       }, {
         headerName: this.__("Sex"),
-        field: "Sex",
+        field: "patient.sex",
+        valueFormatter: function valueFormatter(params) {
+          return params.value == 1 ? "Male" : "Female";
+        },
         resizable: true,
-        valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_5__["default"].radioFormatter,
-        filter: "agSelectColumnFilter",
-        filterParams: {
-          buttons: ["apply"],
-          closeOnApply: true,
-          type: "select",
-          module: "User",
-          model: "Angiography"
-        }
+        filter: false
       }, {
         headerName: this.__("Created At"),
         field: "created_at_fa",
         resizable: true,
-        valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_5__["default"].dateFormatter,
+        valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_6__["default"].dateFormatter,
         filter: "agTextColumnFilter"
       }, {
         headerName: this.__("user"),
@@ -319,11 +340,39 @@ __webpack_require__.r(__webpack_exports__);
         filter: false,
         cellRenderer: "tableActionsRenderer",
         cellRendererParams: {
-          model: "Angiography",
-          baseRoutePath: "user/angiographies",
-          modelPlural: "angiographies",
+          model: "ABPMcalculation",
+          baseRoutePath: "user/abpm_calculations",
+          modelPlural: "abpm_calculations",
           baseApiPath: "/user/api",
-          showEditButton: false
+          showEditButton: false,
+          showDetailButton: false,
+          showDeleteButton: false,
+          buttons: [{
+            text: function text() {
+              return this.__("Show Result");
+            },
+            "class": "includeIcon includeIconOnly",
+            callback: function callback() {
+              var _this = this;
+
+              return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+                return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+                  while (1) {
+                    switch (_context.prev = _context.next) {
+                      case 0:
+                        location.href = "/user/abpm/result/".concat(_this.params.data.id);
+
+                      case 1:
+                      case "end":
+                        return _context.stop();
+                    }
+                  }
+                }, _callee);
+              }))();
+            },
+            color: "success",
+            icon: "eye"
+          }]
         }
       }],
       items: []
@@ -333,10 +382,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/angiographies/Index.vue?vue&type=template&id=3d9b9214&":
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/angiographies/Index.vue?vue&type=template&id=3d9b9214& ***!
-  \*****************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../User/Resources/js/abpm_calculations/Index.vue?vue&type=template&id=3db7b090&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../User/Resources/js/abpm_calculations/Index.vue?vue&type=template&id=3db7b090& ***!
+  \*********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -356,7 +405,9 @@ var render = function() {
         "vx-card",
         [
           _vm.shouldShowToolbar
-            ? _c("IndexToolbar", { attrs: { parent: this } })
+            ? _c("IndexToolbar", {
+                attrs: { showCreateButton: false, parent: this }
+              })
             : _vm._e(),
           _vm._v(" "),
           _c("ag-grid-vue", {

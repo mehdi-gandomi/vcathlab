@@ -1,16 +1,16 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[94],{
 
-/***/ "../Admin/Resources/js/physicians/Create.vue":
+/***/ "../Admin/Resources/js/niffr_cases/Index.vue":
 /*!***************************************************!*\
-  !*** ../Admin/Resources/js/physicians/Create.vue ***!
+  !*** ../Admin/Resources/js/niffr_cases/Index.vue ***!
   \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Create_vue_vue_type_template_id_0355b654___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Create.vue?vue&type=template&id=0355b654& */ "../Admin/Resources/js/physicians/Create.vue?vue&type=template&id=0355b654&");
-/* harmony import */ var _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Create.vue?vue&type=script&lang=js& */ "../Admin/Resources/js/physicians/Create.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Index_vue_vue_type_template_id_2d8bf8a0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=2d8bf8a0& */ "../Admin/Resources/js/niffr_cases/Index.vue?vue&type=template&id=2d8bf8a0&");
+/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "../Admin/Resources/js/niffr_cases/Index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Panel/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -20,9 +20,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Create_vue_vue_type_template_id_0355b654___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Create_vue_vue_type_template_id_0355b654___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Index_vue_vue_type_template_id_2d8bf8a0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Index_vue_vue_type_template_id_2d8bf8a0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -32,470 +32,215 @@ var component = Object(_Panel_node_modules_vue_loader_lib_runtime_componentNorma
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "Admin/Resources/js/physicians/Create.vue"
+component.options.__file = "Admin/Resources/js/niffr_cases/Index.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "../Admin/Resources/js/physicians/Create.vue?vue&type=script&lang=js&":
+/***/ "../Admin/Resources/js/niffr_cases/Index.vue?vue&type=script&lang=js&":
 /*!****************************************************************************!*\
-  !*** ../Admin/Resources/js/physicians/Create.vue?vue&type=script&lang=js& ***!
+  !*** ../Admin/Resources/js/niffr_cases/Index.vue?vue&type=script&lang=js& ***!
   \****************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Create.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/babel-loader/lib??ref--4-0!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/niffr_cases/Index.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_Panel_node_modules_babel_loader_lib_index_js_ref_4_0_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "../Admin/Resources/js/physicians/Create.vue?vue&type=template&id=0355b654&":
+/***/ "../Admin/Resources/js/niffr_cases/Index.vue?vue&type=template&id=2d8bf8a0&":
 /*!**********************************************************************************!*\
-  !*** ../Admin/Resources/js/physicians/Create.vue?vue&type=template&id=0355b654& ***!
+  !*** ../Admin/Resources/js/niffr_cases/Index.vue?vue&type=template&id=2d8bf8a0& ***!
   \**********************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_0355b654___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=template&id=0355b654& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Create.vue?vue&type=template&id=0355b654&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_0355b654___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_2d8bf8a0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../Panel/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../Panel/node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=template&id=2d8bf8a0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/niffr_cases/Index.vue?vue&type=template&id=2d8bf8a0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_2d8bf8a0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_0355b654___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Panel_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Panel_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_2d8bf8a0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Create.vue?vue&type=script&lang=js&":
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/niffr_cases/Index.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/physicians/Create.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/niffr_cases/Index.vue?vue&type=script&lang=js& ***!
   \************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Form */ "./Resources/js/src/Form.js");
-/* harmony import */ var _mixins_HasForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/mixins/HasForm */ "./Resources/js/src/mixins/HasForm.js");
+/* harmony import */ var _mixins_HasFilter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/mixins/HasFilter */ "./Resources/js/src/mixins/HasFilter.js");
+/* harmony import */ var _mixins_IndexPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/mixins/IndexPage */ "./Resources/js/src/mixins/IndexPage.js");
+/* harmony import */ var _mixins_Paginable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/mixins/Paginable */ "./Resources/js/src/mixins/Paginable.js");
+/* harmony import */ var _mixins_InteractsWithQueryString__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/mixins/InteractsWithQueryString */ "./Resources/js/src/mixins/InteractsWithQueryString.js");
+/* harmony import */ var _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/components/aggrid-table/Formatters */ "./Resources/js/src/components/aggrid-table/Formatters.js");
+/* harmony import */ var _components_aggrid_table_DataSource__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/components/aggrid-table/DataSource */ "./Resources/js/src/components/aggrid-table/DataSource.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  components: {},
-  mixins: [_mixins_HasForm__WEBPACK_IMPORTED_MODULE_2__["default"]],
+  mixins: [_mixins_HasFilter__WEBPACK_IMPORTED_MODULE_0__["default"], _mixins_IndexPage__WEBPACK_IMPORTED_MODULE_1__["default"], _mixins_Paginable__WEBPACK_IMPORTED_MODULE_2__["default"], _mixins_InteractsWithQueryString__WEBPACK_IMPORTED_MODULE_3__["default"]],
   data: function data() {
     return {
-      form: new _Form__WEBPACK_IMPORTED_MODULE_1__["default"]({
-        first_name: "",
-        last_name: "",
-        profession: "1",
-        specialty: "1",
-        hostpital: "",
-        cover: "",
-        avatar: ""
-      }),
-      model: "Modules\\Admin\\Models\\Physician",
-      locale: Iracode.$i18n.locale,
-      inputs: {
-        first_name: {
-          type: "vs-input",
-          field_type: "text"
-        },
-        last_name: {
-          type: "vs-input",
-          field_type: "text"
-        },
-        profession: {
-          type: "v-select",
-          field_type: "select",
-          options: [{
-            label: "Fellow",
-            value: "1"
-          }, {
-            label: "Medical student",
-            value: "2"
-          }, {
-            label: "Physician",
-            value: "3"
-          }, {
-            label: "Physician assistant",
-            value: "4"
-          }, {
-            label: "Resident",
-            value: "5"
-          }, {
-            label: "Other",
-            value: "6"
-          }],
-          selected: {}
-        },
-        specialty: {
-          type: "v-select",
-          field_type: "select",
-          options: [{
-            label: "General cardiologist",
-            value: "1"
-          }, {
-            label: "Interventional cardiologist",
-            value: "2"
-          }, {
-            label: "Interventional radilogist",
-            value: "3"
-          }, {
-            label: "Interventionalelectrophysiologist",
-            value: "4"
-          }, {
-            label: "Other",
-            value: "5"
-          }],
-          selected: {}
-        },
-        hostpital: {
-          type: "vs-input",
-          field_type: "text"
-        },
-        cover: {
-          type: "filepond",
-          field_type: "filepond_image",
-          files: [],
-          filepond_options: {
-            "label-idle": "Drag &amp; Drop your files",
-            "allow-multiple": Iracode.toBool(0),
-            "accepted-file-types": "image/jpeg, image/png",
-            "instant-upload": Iracode.toBool(1)
-          }
-        },
-        avatar: {
-          type: "filepond",
-          field_type: "filepond_image",
-          files: [],
-          filepond_options: {
-            "label-idle": "Drag &amp; Drop your files",
-            "allow-multiple": Iracode.toBool(0),
-            "accepted-file-types": "image/jpeg, image/png",
-            "instant-upload": Iracode.toBool(1)
-          }
+      searchQuery: "",
+      baseUrl: "/user/api/niffr_cases",
+      model: "NIFFRCase",
+      module: "User",
+      createButtonText: this.__("Create Niffrcase"),
+      createButtonLink: "/user/niffr_cases/create",
+      printButtonLink: "/user/niffr_cases/print",
+      columnDefs: [{
+        headerName: this.__("Physician"),
+        field: "physician",
+        resizable: true,
+        filter: "agTextColumnFilter"
+      }, {
+        headerName: this.__("Patient"),
+        field: "patient.name",
+        resizable: true,
+        filter: "agTextColumnFilter"
+      }, {
+        headerName: this.__("Age"),
+        field: "patient.age",
+        resizable: true,
+        filter: "agTextColumnFilter"
+      }, {
+        headerName: this.__("Hospital"),
+        field: "patient.hospital",
+        resizable: true,
+        filter: "agTextColumnFilter"
+      }, {
+        headerName: this.__("Created At"),
+        field: "created_at",
+        resizable: true,
+        valueFormatter: _components_aggrid_table_Formatters__WEBPACK_IMPORTED_MODULE_4__["default"].dateFormatter,
+        filter: "agDateColumnFilter",
+        filterParams: {
+          buttons: ['apply'],
+          suppressFilterButton: true,
+          suppressAndOrCondition: true,
+          defaultOption: "inRange",
+          suppressMenu: true,
+          closeOnApply: true,
+          suppressFilterOptions: true,
+          type: "date" // filterOptions:[]//display none if filter options are specified empty, in _custom.scss .ag-filter-select.ag-disabled
+
         }
-      }
+      }, {
+        headerName: this.__("Actions"),
+        field: "action",
+        filter: false,
+        minWidth: 150,
+        cellRenderer: "tableActionsRenderer",
+        cellRendererParams: {
+          model: "Niffrcase",
+          baseRoutePath: "user/niffr_cases",
+          modelPlural: "niffr_cases",
+          baseApiPath: "/user/api"
+        }
+      }],
+      items: []
     };
   },
-  props: {//
-  },
-  computed: {//
-  },
-  created: function created() {//
-  },
-  mounted: function mounted() {//
-  },
   methods: {
-    onSubmit: function onSubmit(action) {
-      var _this = this;
+    onGridReady: function onGridReady(params) {
+      params.api.setServerSideDatasource(new _components_aggrid_table_DataSource__WEBPACK_IMPORTED_MODULE_5__["default"](this)); // ;
 
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var data;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return _this.form.post("/admin/api/physicians");
-
-              case 2:
-                data = _context.sent;
-
-                if (data.success) {
-                  Iracode.success(_this.__("Physician Created Successfully"));
-                  if (action == "close") _this.$router.push("/admin/physicians");else _this.form.reset();
-                }
-
-              case 4:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee);
-      }))();
+      if (this.columnDefs.length < 8) this.gridApi.sizeColumnsToFit();else this.gridOptions.columnApi.autoSizeAllColumns();
+      this.gridOptions.columnApi.applyColumnState({
+        state: [{
+          colId: 'patient.hospital',
+          sort: 'desc'
+        }],
+        defaultState: {
+          sort: null
+        }
+      });
     }
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/physicians/Create.vue?vue&type=template&id=0355b654&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!../Admin/Resources/js/niffr_cases/Index.vue?vue&type=template&id=2d8bf8a0&":
 /*!****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/physicians/Create.vue?vue&type=template&id=0355b654& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!../Admin/Resources/js/niffr_cases/Index.vue?vue&type=template&id=2d8bf8a0& ***!
   \****************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -510,640 +255,103 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "mb-base" },
+    { staticClass: "mb-base index-page", attrs: { id: "ag-grid-demo" } },
     [
       _c(
         "vx-card",
-        {
-          scopedSlots: _vm._u([
-            {
-              key: "actions",
-              fn: function() {
-                return [
-                  _c(
-                    "vs-button",
-                    {
-                      attrs: {
-                        color: "primary",
-                        to: "/admin/physicians",
-                        type: "filled"
-                      }
-                    },
-                    [_vm._v(_vm._s(_vm.__("Back")))]
-                  )
-                ]
-              },
-              proxy: true
-            }
-          ])
-        },
         [
+          _vm.shouldShowToolbar
+            ? _c("IndexToolbar", {
+                attrs: { showCreateButton: false, parent: this }
+              })
+            : _vm._e(),
           _vm._v(" "),
-          _c(
-            "form",
-            { on: { submit: _vm.onSubmit } },
-            [
-              _c(
-                "vs-row",
-                {
-                  staticClass: "mb-6",
-                  attrs: { "vs-type": "flex", "vs-w": "12" }
-                },
+          _c("ag-grid-vue", {
+            ref: "agGridTable",
+            staticClass: "ag-theme-material w-100 my-4 ag-grid-table",
+            attrs: {
+              gridOptions: _vm.gridOptions,
+              columnDefs: _vm.columnDefs,
+              defaultColDef: _vm.defaultColDef,
+              rowSelection: "multiple",
+              colResizeDefault: "shift",
+              domLayout: "autoHeight",
+              animateRows: true,
+              modules: _vm.modules,
+              localeText: _vm.translations,
+              cacheBlockSize: _vm.paginationData.limit,
+              rowModelType: _vm.rowModelType,
+              pagination: true,
+              paginationPageSize: _vm.paginationData.limit,
+              suppressPaginationPanel: true,
+              frameworkComponents: _vm.frameworkComponents,
+              enableRtl: _vm.$vs.rtl,
+              overlayLoadingTemplate: _vm.__("loading") + "..."
+            },
+            on: { "grid-ready": _vm.onGridReady }
+          }),
+          _vm._v(" "),
+          _vm.paginationData.totalPages > 1
+            ? _c(
+                "div",
+                { staticClass: "pagination-wrap vs-pagination-primary" },
                 [
                   _c(
-                    "vs-col",
+                    "button",
                     {
-                      attrs: {
-                        "vs-type": "flex",
-                        "vs-align": "center",
-                        "vs-lg": "6"
-                      }
+                      staticClass: "vs-pagination--buttons mx-2",
+                      on: { click: _vm.gotoFirstPage }
                     },
                     [
-                      _c(
-                        "vs-row",
-                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
-                        [
-                          _c(
-                            "vs-col",
-                            {
-                              staticClass: "justify-end pr-5",
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "3"
-                              }
-                            },
-                            [
-                              _c("span", [
-                                _vm._v(_vm._s(_vm.__("First Name")))
-                              ]),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "ml-1 text-red" }, [
-                                _vm._v("*")
-                              ])
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "vs-col",
-                            {
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "9"
-                              }
-                            },
-                            [
-                              _c(_vm.inputs.first_name.type, {
-                                tag: "component",
-                                staticClass: "w-full",
-                                attrs: {
-                                  danger: _vm.hasValidationError("first_name"),
-                                  "danger-text": _vm.validationError(
-                                    "first_name"
-                                  ),
-                                  name: "first_name",
-                                  type: "text"
-                                },
-                                model: {
-                                  value: _vm.form.first_name,
-                                  callback: function($$v) {
-                                    _vm.$set(_vm.form, "first_name", $$v)
-                                  },
-                                  expression: "form.first_name"
-                                }
-                              })
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
+                      _c("vs-icon", {
+                        attrs: {
+                          "icon-pack": "feather",
+                          icon: "icon-chevrons-right"
+                        }
+                      })
                     ],
                     1
                   ),
                   _vm._v(" "),
-                  _c(
-                    "vs-col",
-                    {
-                      attrs: {
-                        "vs-type": "flex",
-                        "vs-align": "center",
-                        "vs-lg": "6"
-                      }
+                  _c("vs-pagination", {
+                    staticClass: "pagination",
+                    attrs: {
+                      goto: "",
+                      total: _vm.paginationData.totalPages,
+                      max: _vm.paginationData.maxPageNumbers
                     },
-                    [
-                      _c(
-                        "vs-row",
-                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
-                        [
-                          _c(
-                            "vs-col",
-                            {
-                              staticClass: "justify-end pr-5",
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "3"
-                              }
-                            },
-                            [
-                              _c("span", [_vm._v(_vm._s(_vm.__("Last Name")))]),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "ml-1 text-red" }, [
-                                _vm._v("*")
-                              ])
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "vs-col",
-                            {
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "9"
-                              }
-                            },
-                            [
-                              _c(_vm.inputs.last_name.type, {
-                                tag: "component",
-                                staticClass: "w-full",
-                                attrs: {
-                                  danger: _vm.hasValidationError("last_name"),
-                                  "danger-text": _vm.validationError(
-                                    "last_name"
-                                  ),
-                                  name: "last_name",
-                                  type: "text"
-                                },
-                                model: {
-                                  value: _vm.form.last_name,
-                                  callback: function($$v) {
-                                    _vm.$set(_vm.form, "last_name", $$v)
-                                  },
-                                  expression: "form.last_name"
-                                }
-                              })
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "vs-row",
-                {
-                  staticClass: "mb-6",
-                  attrs: { "vs-type": "flex", "vs-w": "12" }
-                },
-                [
-                  _c(
-                    "vs-col",
-                    {
-                      attrs: {
-                        "vs-type": "flex",
-                        "vs-align": "center",
-                        "vs-lg": "6"
-                      }
-                    },
-                    [
-                      _c(
-                        "vs-row",
-                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
-                        [
-                          _c(
-                            "vs-col",
-                            {
-                              staticClass: "justify-end pr-5",
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "3"
-                              }
-                            },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("Profession")))])]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "vs-col",
-                            {
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "9"
-                              }
-                            },
-                            [
-                              _c(_vm.inputs.profession.type, {
-                                tag: "component",
-                                staticClass: "w-full",
-                                attrs: {
-                                  value: _vm.inputs.profession.selected,
-                                  danger: _vm.hasValidationError("profession"),
-                                  "danger-text": _vm.validationError(
-                                    "profession"
-                                  ),
-                                  name: "profession",
-                                  type: "select",
-                                  options: _vm.inputs.profession.options,
-                                  dir: _vm.$vs.rtl ? "rtl" : "ltr"
-                                },
-                                on: {
-                                  input: function(op) {
-                                    return _vm.onSelect("profession", op)
-                                  }
-                                }
-                              })
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  ),
+                    on: { change: _vm.loadPage },
+                    model: {
+                      value: _vm.paginationData.currentPage,
+                      callback: function($$v) {
+                        _vm.$set(_vm.paginationData, "currentPage", $$v)
+                      },
+                      expression: "paginationData.currentPage"
+                    }
+                  }),
                   _vm._v(" "),
                   _c(
-                    "vs-col",
+                    "button",
                     {
-                      attrs: {
-                        "vs-type": "flex",
-                        "vs-align": "center",
-                        "vs-lg": "6"
-                      }
+                      staticClass: "vs-pagination--buttons mx-2",
+                      on: { click: _vm.gotoLastPage }
                     },
                     [
-                      _c(
-                        "vs-row",
-                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
-                        [
-                          _c(
-                            "vs-col",
-                            {
-                              staticClass: "justify-end pr-5",
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "3"
-                              }
-                            },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("Specialty")))])]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "vs-col",
-                            {
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "9"
-                              }
-                            },
-                            [
-                              _c(_vm.inputs.specialty.type, {
-                                tag: "component",
-                                staticClass: "w-full",
-                                attrs: {
-                                  value: _vm.inputs.specialty.selected,
-                                  danger: _vm.hasValidationError("specialty"),
-                                  "danger-text": _vm.validationError(
-                                    "specialty"
-                                  ),
-                                  name: "specialty",
-                                  type: "select",
-                                  options: _vm.inputs.specialty.options,
-                                  dir: _vm.$vs.rtl ? "rtl" : "ltr"
-                                },
-                                on: {
-                                  input: function(op) {
-                                    return _vm.onSelect("specialty", op)
-                                  }
-                                }
-                              })
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
+                      _c("vs-icon", {
+                        attrs: {
+                          "icon-pack": "feather",
+                          icon: "icon-chevrons-left"
+                        }
+                      })
                     ],
                     1
                   )
                 ],
                 1
-              ),
-              _vm._v(" "),
-              _c(
-                "vs-row",
-                {
-                  staticClass: "mb-6",
-                  attrs: { "vs-type": "flex", "vs-w": "12" }
-                },
-                [
-                  _c(
-                    "vs-col",
-                    {
-                      attrs: {
-                        "vs-type": "flex",
-                        "vs-align": "center",
-                        "vs-lg": "6"
-                      }
-                    },
-                    [
-                      _c(
-                        "vs-row",
-                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
-                        [
-                          _c(
-                            "vs-col",
-                            {
-                              staticClass: "justify-end pr-5",
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "3"
-                              }
-                            },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("Hospital")))])]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "vs-col",
-                            {
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "9"
-                              }
-                            },
-                            [
-                              _c(_vm.inputs.hostpital.type, {
-                                tag: "component",
-                                staticClass: "w-full",
-                                attrs: {
-                                  danger: _vm.hasValidationError("hostpital"),
-                                  "danger-text": _vm.validationError(
-                                    "hostpital"
-                                  ),
-                                  name: "hostpital",
-                                  type: "text"
-                                },
-                                model: {
-                                  value: _vm.form.hostpital,
-                                  callback: function($$v) {
-                                    _vm.$set(_vm.form, "hostpital", $$v)
-                                  },
-                                  expression: "form.hostpital"
-                                }
-                              })
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "vs-row",
-                {
-                  staticClass: "mb-6",
-                  attrs: { "vs-type": "flex", "vs-w": "12" }
-                },
-                [
-                  _c(
-                    "vs-col",
-                    {
-                      attrs: {
-                        "vs-type": "flex",
-                        "vs-align": "center",
-                        "vs-lg": "6"
-                      }
-                    },
-                    [
-                      _c(
-                        "vs-row",
-                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
-                        [
-                          _c(
-                            "vs-col",
-                            {
-                              staticClass: "justify-end pr-5",
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "3"
-                              }
-                            },
-                            [_c("span", [_vm._v(_vm._s(_vm.__("Cover")))])]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "vs-col",
-                            {
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "9"
-                              }
-                            },
-                            [
-                              _c(_vm.inputs.cover.type, {
-                                tag: "component",
-                                staticClass: "w-full",
-                                attrs: {
-                                  imageResizeMode: "cover",
-                                  danger: _vm.hasValidationError("cover"),
-                                  "danger-text": _vm.validationError("cover"),
-                                  name: "cover",
-                                  "label-idle":
-                                    _vm.inputs.cover.filepond_options[
-                                      "label-idle"
-                                    ],
-                                  "allow-multiple":
-                                    _vm.inputs.cover.filepond_options[
-                                      "allow-multiple"
-                                    ],
-                                  "accepted-file-types":
-                                    _vm.inputs.cover.filepond_options[
-                                      "accepted-file-types"
-                                    ],
-                                  "instant-upload":
-                                    _vm.inputs.cover.filepond_options[
-                                      "instant-upload"
-                                    ],
-                                  files: _vm.inputs.cover.files,
-                                  server: _vm.uploadServer
-                                }
-                              })
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "vs-col",
-                    {
-                      attrs: {
-                        "vs-type": "flex",
-                        "vs-align": "center",
-                        "vs-lg": "6"
-                      }
-                    },
-                    [
-                      _c(
-                        "vs-row",
-                        { attrs: { "vs-type": "flex", "vs-w": "12" } },
-                        [
-                          _c(
-                            "vs-col",
-                            {
-                              staticClass: "justify-end pr-5",
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "3"
-                              }
-                            },
-                            [
-                              _c("span", [_vm._v(_vm._s(_vm.__("Avatar")))]),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "ml-1 text-red" }, [
-                                _vm._v("*")
-                              ])
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "vs-col",
-                            {
-                              attrs: {
-                                "vs-type": "flex",
-                                "vs-align": "center",
-                                "vs-lg": "9"
-                              }
-                            },
-                            [
-                              _c(_vm.inputs.avatar.type, {
-                                tag: "component",
-                                staticClass: "w-full",
-                                attrs: {
-                                  imageResizeMode: "cover",
-                                  danger: _vm.hasValidationError("avatar"),
-                                  "danger-text": _vm.validationError("avatar"),
-                                  name: "avatar",
-                                  "label-idle":
-                                    _vm.inputs.avatar.filepond_options[
-                                      "label-idle"
-                                    ],
-                                  "allow-multiple":
-                                    _vm.inputs.avatar.filepond_options[
-                                      "allow-multiple"
-                                    ],
-                                  "accepted-file-types":
-                                    _vm.inputs.avatar.filepond_options[
-                                      "accepted-file-types"
-                                    ],
-                                  "instant-upload":
-                                    _vm.inputs.avatar.filepond_options[
-                                      "instant-upload"
-                                    ],
-                                  files: _vm.inputs.avatar.files,
-                                  server: _vm.uploadServer
-                                }
-                              })
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c("vs-row", {
-                staticClass: "mb-6",
-                attrs: { "vs-type": "flex", "vs-w": "12" }
-              }),
-              _vm._v(" "),
-              _c("div", { staticClass: "flex justify-end mt-16" }, [
-                _c(
-                  "div",
-                  { staticClass: "flex" },
-                  [
-                    _c(
-                      "vs-button",
-                      {
-                        staticClass: "mr-3 mb-2",
-                        attrs: { color: "success" },
-                        on: {
-                          click: function() {
-                            return _vm.onSubmit("new")
-                          }
-                        }
-                      },
-                      [_vm._v(_vm._s(_vm.__("Save and new")))]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "vs-button",
-                      {
-                        staticClass: "mr-3 mb-2",
-                        attrs: { color: "success" },
-                        on: {
-                          click: function() {
-                            return _vm.onSubmit("close")
-                          }
-                        }
-                      },
-                      [_vm._v(_vm._s(_vm.__("Save and close")))]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "vs-button",
-                      {
-                        staticClass: "mb-2",
-                        attrs: { color: "warning" },
-                        on: {
-                          click: function($event) {
-                            return _vm.form.reset()
-                          }
-                        }
-                      },
-                      [_vm._v(_vm._s(_vm.__("Clear")))]
-                    )
-                  ],
-                  1
-                )
-              ])
-            ],
-            1
-          )
-        ]
+              )
+            : _vm._e()
+        ],
+        1
       )
     ],
     1

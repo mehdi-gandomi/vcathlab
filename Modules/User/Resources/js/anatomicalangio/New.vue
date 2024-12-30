@@ -1230,9 +1230,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idfa9rt9m4iq"><input
                                                                                     id="idfa9rt9m4iq"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_ostial[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12842_12846">
+                                                                                    value="20_30">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1246,9 +1246,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idsqfc8nugp4"><input
                                                                                     id="idsqfc8nugp4"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_ostial[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12842_12847">
+                                                                                    value="30_40">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1262,9 +1262,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idmt10tjl3mi"><input
                                                                                     id="idmt10tjl3mi"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_ostial[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12842_12848">
+                                                                                    value="50_70">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1278,9 +1278,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idsr8m1igate"><input
                                                                                     id="idsr8m1igate"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_ostial[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12842_12849">
+                                                                                    value="70_80">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1294,9 +1294,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idnx8vsglmzj"><input
                                                                                     id="idnx8vsglmzj"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_ostial[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12842_12850">
+                                                                                    value="80_90">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1310,9 +1310,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="iduaqe1ldgzl"><input
                                                                                     id="iduaqe1ldgzl"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_ostial[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12842_12851">
+                                                                                    value="99">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1326,9 +1326,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idl2hbl6etrh"><input
                                                                                     id="idl2hbl6etrh"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_ostial[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12842_12852">
+                                                                                    value="100">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1342,9 +1342,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id6ezukt7naa"><input
                                                                                     id="id6ezukt7naa"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_ostial[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12842_12853">
+                                                                                    value="muscle">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1358,9 +1358,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id4dnq9o1oxc"><input
                                                                                     id="id4dnq9o1oxc"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_ostial[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12842_12854">
+                                                                                    value="diffuse">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1374,9 +1374,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idk2aox2gcbz"><input
                                                                                     id="idk2aox2gcbz"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_ostial[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12842_12855">
+                                                                                    value="stent">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1390,9 +1390,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id8wqirus58m"><input
                                                                                     id="id8wqirus58m"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_ostial[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12842_12856">
+                                                                                    value="long">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1406,9 +1406,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id49bi2f5vda"><input
                                                                                     id="id49bi2f5vda"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_ostial[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12842_12857">
+                                                                                    value="ISR">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1427,9 +1427,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idl54qcbinba"><input
                                                                                     id="idl54qcbinba"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_proximal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12843_12846">
+                                                                                    value="20_30">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1443,9 +1443,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idb89l4usrov"><input
                                                                                     id="idb89l4usrov"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_proximal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12843_12847">
+                                                                                    value="30_40">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1459,9 +1459,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idlku0htt7s4"><input
                                                                                     id="idlku0htt7s4"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_proximal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12843_12848">
+                                                                                    value="50_70">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1475,9 +1475,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id96lr0pn6km"><input
                                                                                     id="id96lr0pn6km"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_proximal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12843_12849">
+                                                                                    value="70_80">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1491,9 +1491,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id9ygbyonczh"><input
                                                                                     id="id9ygbyonczh"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_proximal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12843_12850">
+                                                                                    value="80_90">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1507,9 +1507,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idtanp0l71n"><input
                                                                                     id="idtanp0l71n"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_proximal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12843_12851">
+                                                                                    value="99">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1523,9 +1523,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idixzzmqii02"><input
                                                                                     id="idixzzmqii02"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_proximal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12843_12852">
+                                                                                    value="100">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1539,9 +1539,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idoyr0bhwpnd"><input
                                                                                     id="idoyr0bhwpnd"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_proximal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12843_12853">
+                                                                                    value="muscle">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1555,9 +1555,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id4o0g9z2z4"><input
                                                                                     id="id4o0g9z2z4"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_proximal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12843_12854">
+                                                                                    value="diffuse">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1571,9 +1571,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id9intto3ren"><input
                                                                                     id="id9intto3ren"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_proximal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12843_12855">
+                                                                                    value="stent">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1587,9 +1587,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idp3dq9ld7i6"><input
                                                                                     id="idp3dq9ld7i6"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_proximal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12843_12856">
+                                                                                    value="long">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1603,9 +1603,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id77ztgihftx"><input
                                                                                     id="id77ztgihftx"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_proximal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12843_12857">
+                                                                                    value="ISR">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1624,9 +1624,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id3xbvcwdg89"><input
                                                                                     id="id3xbvcwdg89"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_mid[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12844_12846">
+                                                                                    value="20_30">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1640,9 +1640,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id2l9743n0lm"><input
                                                                                     id="id2l9743n0lm"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_mid[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12844_12847">
+                                                                                    value="30_40">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1656,9 +1656,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id2oq3v6jy35"><input
                                                                                     id="id2oq3v6jy35"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_mid[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12844_12848">
+                                                                                    value="50_70">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1672,9 +1672,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id09sdxl96if"><input
                                                                                     id="id09sdxl96if"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_mid[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12844_12849">
+                                                                                    value="70_80">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1688,9 +1688,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idkx60qzdb55"><input
                                                                                     id="idkx60qzdb55"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_mid[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12844_12850">
+                                                                                    value="80_90">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1704,9 +1704,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id756dhqkj7g"><input
                                                                                     id="id756dhqkj7g"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_mid[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12844_12851">
+                                                                                    value="99">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1720,9 +1720,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idzv0f2dqy1c"><input
                                                                                     id="idzv0f2dqy1c"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_mid[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12844_12852">
+                                                                                    value="100">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1736,9 +1736,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idybt6jwe8zu"><input
                                                                                     id="idybt6jwe8zu"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_mid[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12844_12853">
+                                                                                    value="muscle">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1752,9 +1752,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id8wjixvxyt2"><input
                                                                                     id="id8wjixvxyt2"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_mid[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12844_12854">
+                                                                                    value="diffuse">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1768,9 +1768,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id541gptfsp1"><input
                                                                                     id="id541gptfsp1"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_mid[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12844_12855">
+                                                                                    value="stent">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1784,9 +1784,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="ido0k8bwksww"><input
                                                                                     id="ido0k8bwksww"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_mid[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12844_12856">
+                                                                                    value="long">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1800,9 +1800,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id19l4xrvea6"><input
                                                                                     id="id19l4xrvea6"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_mid[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12844_12857">
+                                                                                    value="ISR">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1821,9 +1821,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id8ulul0fqcf"><input
                                                                                     id="id8ulul0fqcf"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_distal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12845_12846">
+                                                                                    value="20_30">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1837,9 +1837,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idp9wpq4svz"><input
                                                                                     id="idp9wpq4svz"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_distal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12845_12847">
+                                                                                    value="30_40">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1853,9 +1853,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idsku3noyazq"><input
                                                                                     id="idsku3noyazq"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_distal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12845_12848">
+                                                                                    value="50_70">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1869,9 +1869,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="ids7toa3aeir"><input
                                                                                     id="ids7toa3aeir"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_distal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12845_12849">
+                                                                                    value="70_80">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1885,9 +1885,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id54jch5r6au"><input
                                                                                     id="id54jch5r6au"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_distal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12845_12850">
+                                                                                    value="80_90">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1901,9 +1901,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idz5297evse9"><input
                                                                                     id="idz5297evse9"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_distal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12845_12851">
+                                                                                    value="99">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1917,9 +1917,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idae66ncum2l"><input
                                                                                     id="idae66ncum2l"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_distal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12845_12852">
+                                                                                    value="100">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1933,9 +1933,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idqg51bu5wy7"><input
                                                                                     id="idqg51bu5wy7"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_distal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12845_12853">
+                                                                                    value="muscle">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1949,9 +1949,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idhuumz6cgr3"><input
                                                                                     id="idhuumz6cgr3"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_distal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12845_12854">
+                                                                                    value="diffuse">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1965,9 +1965,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="idyv88ei4s7b"><input
                                                                                     id="idyv88ei4s7b"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_distal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12845_12855">
+                                                                                    value="stent">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1981,9 +1981,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id087k7ldywz"><input
                                                                                     id="id087k7ldywz"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_distal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12845_12856">
+                                                                                    value="long">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
@@ -1997,9 +1997,9 @@
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
                                                                                 for="id1g8rqdfsxv"><input
                                                                                     id="id1g8rqdfsxv"
-                                                                                    name="names6mxd7t91c"
+                                                                                    name="LAD_distal[]"
                                                                                     type="checkbox" ch="false"
-                                                                                    value="12845_12857">
+                                                                                    value="ISR">
                                                                                 <div class="cover">
                                                                                     <div
                                                                                         class="ravesh-form-control-indicator">
