@@ -87,6 +87,12 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   component: function component() {
     return __webpack_require__.e(/*! import() */ 112).then(__webpack_require__.bind(null, /*! @external_modules/Admin/Resources/js/Report.vue */ "../Admin/Resources/js/Report.vue"));
   }
+}, {
+  path: '/anatomicalangio/assesment',
+  name: 'anatomicalangio-assesment',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ 113).then(__webpack_require__.bind(null, /*! @external_modules/User/Resources/js/anatomicalangio/New.vue */ "../User/Resources/js/anatomicalangio/New.vue"));
+  }
 }], _toConsumableArray(__webpack_require__(/*! @external_modules/User/Resources/js/mace_assesments/routes.js */ "../User/Resources/js/mace_assesments/routes.js")["default"]), _toConsumableArray(__webpack_require__(/*! @external_modules/User/Resources/js/echo_calculations/routes.js */ "../User/Resources/js/echo_calculations/routes.js")["default"]), _toConsumableArray(__webpack_require__(/*! @external_modules/User/Resources/js/body_compositions/routes.js */ "../User/Resources/js/body_compositions/routes.js")["default"]), _toConsumableArray(__webpack_require__(/*! @external_modules/User/Resources/js/angiographies/routes.js */ "../User/Resources/js/angiographies/routes.js")["default"]), _toConsumableArray(__webpack_require__(/*! @external_modules/User/Resources/js/aobp_calculations/routes.js */ "../User/Resources/js/aobp_calculations/routes.js")["default"]), _toConsumableArray(__webpack_require__(/*! @external_modules/User/Resources/js/abpm_calculations/routes.js */ "../User/Resources/js/abpm_calculations/routes.js")["default"]), _toConsumableArray(__webpack_require__(/*! @external_modules/User/Resources/js/imt_calculations/routes.js */ "../User/Resources/js/imt_calculations/routes.js")["default"])));
 
 /***/ }),

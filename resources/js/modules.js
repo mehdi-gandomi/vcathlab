@@ -75,6 +75,11 @@ export default [
         name: 'report',
         component: ()=> import('@external_modules/Admin/Resources/js/Report.vue'),
     },
+    {
+        path: '/anatomicalangio/assesment',
+        name: 'anatomicalangio-assesment',
+        component: ()=> import('@external_modules/User/Resources/js/anatomicalangio/New.vue'),
+    },
 	...require('@external_modules/User/Resources/js/mace_assesments/routes.js').default,
 	...require('@external_modules/User/Resources/js/echo_calculations/routes.js').default,
 	...require('@external_modules/User/Resources/js/body_compositions/routes.js').default,

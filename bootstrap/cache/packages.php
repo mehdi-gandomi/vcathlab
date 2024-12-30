@@ -1,4 +1,11 @@
 <?php return array (
+  'actuallymab/laravel-comment' => 
+  array (
+    'providers' => 
+    array (
+      0 => '\\Actuallymab\\LaravelComment\\LaravelCommentServiceProvider',
+    ),
+  ),
   'anetwork/validation' => 
   array (
     'providers' => 
@@ -35,6 +42,17 @@
       0 => 'BenSampo\\Enum\\EnumServiceProvider',
     ),
   ),
+  'beyondcode/laravel-websockets' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'BeyondCode\\LaravelWebSockets\\WebSocketsServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'WebSocketRouter' => 'BeyondCode\\LaravelWebSockets\\Facades\\WebSocketRouter',
+    ),
+  ),
   'cviebrock/eloquent-sluggable' => 
   array (
     'providers' => 
@@ -51,6 +69,13 @@
     'aliases' => 
     array (
       'Flare' => 'Facade\\Ignition\\Facades\\Flare',
+    ),
+  ),
+  'felixkiss/uniquewith-validator' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Felixkiss\\UniqueWithValidator\\ServiceProvider',
     ),
   ),
   'fideloper/proxy' => 
@@ -71,7 +96,7 @@
   array (
     'providers' => 
     array (
-      0 => 'Hekmatinasser\\Verta\\Laravel\\VertaServiceProvider',
+      0 => 'Hekmatinasser\\Verta\\VertaServiceProvider',
     ),
     'aliases' => 
     array (
@@ -195,6 +220,17 @@
       'Captcha' => 'Mews\\Captcha\\Facades\\Captcha',
     ),
   ),
+  'mews/purifier' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Mews\\Purifier\\PurifierServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Purifier' => 'Mews\\Purifier\\Facades\\Purifier',
+    ),
+  ),
   'nesbot/carbon' => 
   array (
     'providers' => 
@@ -220,15 +256,29 @@
       'Module' => 'Nwidart\\Modules\\Facades\\Module',
     ),
   ),
-  'shetabit/payment' => 
+  'qoraiche/laravel-mail-editor' => 
   array (
     'providers' => 
     array (
-      0 => 'Shetabit\\Payment\\Provider\\PaymentServiceProvider',
+      0 => 'Qoraiche\\MailEclipse\\MailEclipseServiceProvider',
     ),
     'aliases' => 
     array (
-      'Payment' => 'Shetabit\\Payment\\Facade\\Payment',
+      'MailEclipse' => 'Qoraiche\\MailEclipse\\Facades\\MailEclipse',
+    ),
+  ),
+  'rinvex/laravel-subscriptions' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Rinvex\\Subscriptions\\Providers\\SubscriptionsServiceProvider',
+    ),
+  ),
+  'rinvex/laravel-support' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Rinvex\\Support\\Providers\\SupportServiceProvider',
     ),
   ),
   'silber/bouncer' => 
@@ -249,6 +299,13 @@
       0 => 'LaravelPWA\\Providers\\LaravelPWAServiceProvider',
     ),
   ),
+  'spatie/eloquent-sortable' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\EloquentSortable\\EloquentSortableServiceProvider',
+    ),
+  ),
   'spatie/laravel-activitylog' => 
   array (
     'providers' => 
@@ -256,11 +313,29 @@
       0 => 'Spatie\\Activitylog\\ActivitylogServiceProvider',
     ),
   ),
+  'spatie/laravel-image-optimizer' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\LaravelImageOptimizer\\ImageOptimizerServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'ImageOptimizer' => 'Spatie\\LaravelImageOptimizer\\Facades\\ImageOptimizer',
+    ),
+  ),
   'spatie/laravel-query-builder' => 
   array (
     'providers' => 
     array (
       0 => 'Spatie\\QueryBuilder\\QueryBuilderServiceProvider',
+    ),
+  ),
+  'spatie/laravel-schemaless-attributes' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\SchemalessAttributes\\SchemalessAttributesServiceProvider',
     ),
   ),
   'spatie/laravel-sitemap' => 
@@ -275,6 +350,17 @@
     'providers' => 
     array (
       0 => 'Spatie\\Translatable\\TranslatableServiceProvider',
+    ),
+  ),
+  'yajra/laravel-datatables-oracle' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Yajra\\DataTables\\DataTablesServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'DataTables' => 'Yajra\\DataTables\\Facades\\DataTables',
     ),
   ),
 );

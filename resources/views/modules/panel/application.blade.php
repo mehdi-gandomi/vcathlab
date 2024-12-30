@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ asset('vendor/panel/css/vuesax.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/panel/css/prism-tomorrow.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/panel/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/formbuilder.css') }}">
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/toastr.min.css') }}"> --}}
     <link rel="shortcut icon" href="{{ asset('images/logo/favicon.png') }}">
     <style>
@@ -109,7 +110,7 @@
         @endif
     @endforeach
 
-    
+
 
 </head>
 <body>

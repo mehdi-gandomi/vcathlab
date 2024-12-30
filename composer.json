@@ -33,6 +33,7 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.3.0",
         "hekmatinasser/verta": "^1.10",
+        "http-interop/http-factory-guzzle": "^1.2",
         "illuminate/support": "^5.1|^6.0|^7.0|^8.0",
         "jenssegers/date": "^3.0|^4.0",
         "jorenvanhocht/laravel-share": "^3.3",
@@ -47,6 +48,7 @@
         "maatwebsite/excel": "^3.1",
         "mews/captcha": "^3.1",
         "nwidart/laravel-modules": "^8.0.0",
+        "openai-php/client": "^0.4.1",
         "phpoffice/phpword": "^0.17.0",
         "shetabit/payment": "^4.3",
         "silber/bouncer": "v1.0.0-rc.9",
@@ -66,7 +68,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     },
     "extra": {
         "laravel": {
