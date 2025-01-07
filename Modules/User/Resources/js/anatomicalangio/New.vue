@@ -5638,8 +5638,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idryv4m787di"><input
-                                                                                    id="idryv4m787di"
+                                                                                for="plv_ostial_20_30"><input
+                                                                                    id="plv_ostial_20_30"
                                                                                     v-model="form.plv_ostial"
                                                                                     name="plv_ostial[]" type="checkbox"
                                                                                     value="20_30">
@@ -5654,8 +5654,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idevnfvfj36b"><input
-                                                                                    id="idevnfvfj36b"
+                                                                                for="plv_ostial_30_40"><input
+                                                                                    id="plv_ostial_30_40"
                                                                                     v-model="form.plv_ostial"
                                                                                     name="plv_ostial[]" type="checkbox"
                                                                                     value="30_40">
@@ -5670,8 +5670,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idelcnbaqqno"><input
-                                                                                    id="idelcnbaqqno"
+                                                                                for="plv_ostial_50_70"><input
+                                                                                    id="plv_ostial_50_70"
                                                                                     v-model="form.plv_ostial"
                                                                                     name="plv_ostial[]" type="checkbox"
                                                                                     value="50_70">
@@ -5686,8 +5686,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idg9vbfe5wa5"><input
-                                                                                    id="idg9vbfe5wa5"
+                                                                                for="plv_ostial_70_80"><input
+                                                                                    id="plv_ostial_70_80"
                                                                                     v-model="form.plv_ostial"
                                                                                     name="plv_ostial[]" type="checkbox"
                                                                                     value="70_80">
@@ -5702,8 +5702,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idxgo7a39qwr"><input
-                                                                                    id="idxgo7a39qwr"
+                                                                                for="plv_ostial_80_90"><input
+                                                                                    id="plv_ostial_80_90"
                                                                                     v-model="form.plv_ostial"
                                                                                     name="plv_ostial[]" type="checkbox"
                                                                                     value="80_90">
@@ -5718,8 +5718,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="id4nyyprkfzy"><input
-                                                                                    id="id4nyyprkfzy"
+                                                                                for="plv_ostial_99"><input
+                                                                                    id="plv_ostial_99"
                                                                                     v-model="form.plv_ostial"
                                                                                     name="plv_ostial[]" type="checkbox"
                                                                                     value="99">
@@ -5734,8 +5734,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idbmutd983e9"><input
-                                                                                    id="idbmutd983e9"
+                                                                                for="plv_ostial_100"><input
+                                                                                    id="plv_ostial_100"
                                                                                     v-model="form.plv_ostial"
                                                                                     name="plv_ostial[]" type="checkbox"
                                                                                     value="100">
@@ -5750,8 +5750,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="id0887d049py"><input
-                                                                                    id="id0887d049py"
+                                                                                for="plv_ostial_muscle"><input
+                                                                                    id="plv_ostial_muscle"
                                                                                     v-model="form.plv_ostial"
                                                                                     name="plv_ostial[]" type="checkbox"
                                                                                     value="muscle">
@@ -5766,8 +5766,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="id3p2pmyb8gs"><input
-                                                                                    id="id3p2pmyb8gs"
+                                                                                for="plv_ostial_diffuse"><input
+                                                                                    id="plv_ostial_diffuse"
                                                                                     v-model="form.plv_ostial"
                                                                                     name="plv_ostial[]" type="checkbox"
                                                                                     value="diffuse">
@@ -5782,8 +5782,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idqrddjbq9yf"><input
-                                                                                    id="idqrddjbq9yf"
+                                                                                for="plv_ostial_stent"><input
+                                                                                    id="plv_ostial_stent"
                                                                                     v-model="form.plv_ostial"
                                                                                     name="plv_ostial[]" type="checkbox"
                                                                                     value="stent">
@@ -5798,8 +5798,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="id1tsvoykeg3"><input
-                                                                                    id="id1tsvoykeg3"
+                                                                                for="plv_ostial_long"><input
+                                                                                    id="plv_ostial_long"
                                                                                     v-model="form.plv_ostial"
                                                                                     name="plv_ostial[]" type="checkbox"
                                                                                     value="long">
@@ -5814,8 +5814,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idk8acwfys7p"><input
-                                                                                    id="idk8acwfys7p"
+                                                                                for="plv_ostial_isr"><input
+                                                                                    id="plv_ostial_isr"
                                                                                     v-model="form.plv_ostial"
                                                                                     name="plv_ostial[]" type="checkbox"
                                                                                     value="ISR">
@@ -5835,8 +5835,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idz7ly7btz8p"><input
-                                                                                    id="idz7ly7btz8p"
+                                                                                for="plv_proximal_20_30"><input
+                                                                                    id="plv_proximal_20_30"
                                                                                     v-model="form.plv_proximal"
                                                                                     name="plv_proximal[]"
                                                                                     type="checkbox" value="20_30">
@@ -5851,8 +5851,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idr2faqwm926"><input
-                                                                                    id="idr2faqwm926"
+                                                                                for="plv_proximal_30_40"><input
+                                                                                    id="plv_proximal_30_40"
                                                                                     v-model="form.plv_proximal"
                                                                                     name="plv_proximal[]"
                                                                                     type="checkbox" value="30_40">
@@ -5867,8 +5867,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="id9h9cl929om"><input
-                                                                                    id="id9h9cl929om"
+                                                                                for="plv_proximal_50_70"><input
+                                                                                    id="plv_proximal_50_70"
                                                                                     v-model="form.plv_proximal"
                                                                                     name="plv_proximal[]"
                                                                                     type="checkbox" value="50_70">
@@ -5883,8 +5883,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idgyhbp4s6ey"><input
-                                                                                    id="idgyhbp4s6ey"
+                                                                                for="plv_proximal_70_80"><input
+                                                                                    id="plv_proximal_70_80"
                                                                                     v-model="form.plv_proximal"
                                                                                     name="plv_proximal[]"
                                                                                     type="checkbox" value="70_80">
@@ -5899,8 +5899,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="iddse875kj88"><input
-                                                                                    id="iddse875kj88"
+                                                                                for="plv_proximal_80_90"><input
+                                                                                    id="plv_proximal_80_90"
                                                                                     v-model="form.plv_proximal"
                                                                                     name="plv_proximal[]"
                                                                                     type="checkbox" value="80_90">
@@ -5915,8 +5915,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idm4b23auf15"><input
-                                                                                    id="idm4b23auf15"
+                                                                                for="plv_proximal_90"><input
+                                                                                    id="plv_proximal_90"
                                                                                     v-model="form.plv_proximal"
                                                                                     name="plv_proximal[]"
                                                                                     type="checkbox" value="99">
@@ -5931,8 +5931,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="id7l8u8dq7a4"><input
-                                                                                    id="id7l8u8dq7a4"
+                                                                                for="plv_proximal_100"><input
+                                                                                    id="plv_proximal_100"
                                                                                     v-model="form.plv_proximal"
                                                                                     name="plv_proximal[]"
                                                                                     type="checkbox" value="100">
@@ -5947,8 +5947,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="id4aigldwtqc"><input
-                                                                                    id="id4aigldwtqc"
+                                                                                for="plv_proximal_muscle"><input
+                                                                                    id="plv_proximal_muscle"
                                                                                     v-model="form.plv_proximal"
                                                                                     name="plv_proximal[]"
                                                                                     type="checkbox" value="muscle">
@@ -5963,8 +5963,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="id1t0o74orbt"><input
-                                                                                    id="id1t0o74orbt"
+                                                                                for="plv_proximal_diffuse"><input
+                                                                                    id="plv_proximal_diffuse"
                                                                                     v-model="form.plv_proximal"
                                                                                     name="plv_proximal[]"
                                                                                     type="checkbox" value="diffuse">
@@ -5979,8 +5979,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="id3twge9b5h3"><input
-                                                                                    id="id3twge9b5h3"
+                                                                                for="plv_proximal_stent"><input
+                                                                                    id="plv_proximal_stent"
                                                                                     v-model="form.plv_proximal"
                                                                                     name="plv_proximal[]"
                                                                                     type="checkbox" value="stent">
@@ -5995,8 +5995,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idyn2fdx2v8g"><input
-                                                                                    id="idyn2fdx2v8g"
+                                                                                for="plv_proximal_long"><input
+                                                                                    id="plv_proximal_long"
                                                                                     v-model="form.plv_proximal"
                                                                                     name="plv_proximal[]"
                                                                                     type="checkbox" value="long">
@@ -6011,8 +6011,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idqs84usoy9d"><input
-                                                                                    id="idqs84usoy9d"
+                                                                                for="plv_proximal_isr"><input
+                                                                                    id="plv_proximal_isr"
                                                                                     v-model="form.plv_proximal"
                                                                                     name="plv_proximal[]"
                                                                                     type="checkbox" value="ISR">
@@ -6047,8 +6047,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idbak4nymae7"><input
-                                                                                    id="idbak4nymae7" name="plv_mid[]"
+                                                                                for="plv_mid_30_40"><input
+                                                                                    id="plv_mid_30_40" name="plv_mid[]"
                                                                                     v-model="form.plv_mid"
                                                                                     type="checkbox" value="30_40">
                                                                                 <div class="cover">
@@ -6062,8 +6062,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="id0ft764dh68"><input
-                                                                                    id="id0ft764dh68" name="plv_mid[]"
+                                                                                for="plv_mid_50_70"><input
+                                                                                    id="plv_mid_50_70" name="plv_mid[]"
                                                                                     v-model="form.plv_mid"
                                                                                     type="checkbox" value="50_70">
                                                                                 <div class="cover">
@@ -6077,8 +6077,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idrbgyfchj80"><input
-                                                                                    id="idrbgyfchj80" name="plv_mid[]"
+                                                                                for="plv_mid_70_80"><input
+                                                                                    id="plv_mid_70_80" name="plv_mid[]"
                                                                                     v-model="form.plv_mid"
                                                                                     type="checkbox" value="70_80">
                                                                                 <div class="cover">
@@ -6092,8 +6092,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idz0bro2omvp"><input
-                                                                                    id="idz0bro2omvp" name="plv_mid[]"
+                                                                                for="plv_mid_80_90"><input
+                                                                                    id="plv_mid_80_90" name="plv_mid[]"
                                                                                     v-model="form.plv_mid"
                                                                                     type="checkbox" value="80_90">
                                                                                 <div class="cover">
@@ -6107,8 +6107,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="id097gibbg59"><input
-                                                                                    id="id097gibbg59" name="plv_mid[]"
+                                                                                for="plv_mid_99"><input
+                                                                                    id="plv_mid_99" name="plv_mid[]"
                                                                                     v-model="form.plv_mid"
                                                                                     type="checkbox" value="99">
                                                                                 <div class="cover">
@@ -6122,8 +6122,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idyy0rpjppea"><input
-                                                                                    id="idyy0rpjppea" name="plv_mid[]"
+                                                                                for="plv_mid_100"><input
+                                                                                    id="plv_mid_100" name="plv_mid[]"
                                                                                     v-model="form.plv_mid"
                                                                                     type="checkbox" value="100">
                                                                                 <div class="cover">
@@ -6137,8 +6137,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idpbp1sxu5jn"><input
-                                                                                    id="idpbp1sxu5jn" name="plv_mid[]"
+                                                                                for="plv_mid_muscle"><input
+                                                                                    id="plv_mid_muscle" name="plv_mid[]"
                                                                                     v-model="form.plv_mid"
                                                                                     type="checkbox" value="muscle">
                                                                                 <div class="cover">
@@ -6152,8 +6152,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idlrw7bqghbh"><input
-                                                                                    id="idlrw7bqghbh" name="plv_mid[]"
+                                                                                for="plv_mid_diffuse"><input
+                                                                                    id="plv_mid_diffuse" name="plv_mid[]"
                                                                                     v-model="form.plv_mid"
                                                                                     type="checkbox" value="diffuse">
                                                                                 <div class="cover">
@@ -6167,8 +6167,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idlyequt0p9x"><input
-                                                                                    id="idlyequt0p9x" name="plv_mid[]"
+                                                                                for="plv_mid_stent"><input
+                                                                                    id="plv_mid_stent" name="plv_mid[]"
                                                                                     v-model="form.plv_mid"
                                                                                     type="checkbox" value="stent">
                                                                                 <div class="cover">
@@ -6182,8 +6182,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idb2c804sdi3"><input
-                                                                                    id="idb2c804sdi3" name="plv_mid[]"
+                                                                                for="plv_mid_long"><input
+                                                                                    id="plv_mid_long" name="plv_mid[]"
                                                                                     v-model="form.plv_mid"
                                                                                     type="checkbox" value="long">
                                                                                 <div class="cover">
@@ -6197,8 +6197,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="id3nho7qmm2i"><input
-                                                                                    id="id3nho7qmm2i" name="plv_mid[]"
+                                                                                for="plv_mid_isr"><input
+                                                                                    id="plv_mid_isr" name="plv_mid[]"
                                                                                     v-model="form.plv_mid"
                                                                                     type="checkbox" value="ISR">
                                                                                 <div class="cover">
@@ -6217,8 +6217,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="iddmuu7pg569"><input
-                                                                                    id="iddmuu7pg569"
+                                                                                for="plv_distal_20_30"><input
+                                                                                    id="plv_distal_20_30"
                                                                                     name="plv_distal[]"
                                                                                     v-model="form.plv_distal"
                                                                                     type="checkbox" value="20_30">
@@ -6233,8 +6233,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="id7nxmrt8im6"><input
-                                                                                    id="id7nxmrt8im6"
+                                                                                for="plv_distal_30_40"><input
+                                                                                    id="plv_distal_30_40"
                                                                                     name="plv_distal[]"
                                                                                     v-model="form.plv_distal"
                                                                                     type="checkbox" value="30_40">
@@ -6249,8 +6249,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="ideusulztb37"><input
-                                                                                    id="ideusulztb37"
+                                                                                for="plv_distal_50_70"><input
+                                                                                    id="plv_distal_50_70"
                                                                                     name="plv_distal[]"
                                                                                     v-model="form.plv_distal"
                                                                                     type="checkbox" value="50_70">
@@ -6265,8 +6265,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idd2xjcmeayk"><input
-                                                                                    id="idd2xjcmeayk"
+                                                                                for="plv_distal_70_80"><input
+                                                                                    id="plv_distal_70_80"
                                                                                     name="plv_distal[]"
                                                                                     v-model="form.plv_distal"
                                                                                     type="checkbox" value="70_80">
@@ -6281,8 +6281,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idll1kf6mnqm"><input
-                                                                                    id="idll1kf6mnqm"
+                                                                                for="plv_distal_80_90"><input
+                                                                                    id="plv_distal_80_90"
                                                                                     name="plv_distal[]"
                                                                                     v-model="form.plv_distal"
                                                                                     type="checkbox" value="80_90">
@@ -6297,8 +6297,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idej4qx2a8h4"><input
-                                                                                    id="idej4qx2a8h4"
+                                                                                for="plv_distal_99"><input
+                                                                                    id="plv_distal_99"
                                                                                     name="plv_distal[]"
                                                                                     v-model="form.plv_distal"
                                                                                     type="checkbox" value="99">
@@ -6313,8 +6313,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idtmvu1tw4ql"><input
-                                                                                    id="idtmvu1tw4ql"
+                                                                                for="plv_distal_100"><input
+                                                                                    id="plv_distal_100"
                                                                                     name="plv_distal[]"
                                                                                     v-model="form.plv_distal"
                                                                                     type="checkbox" value="100">
@@ -6329,8 +6329,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idplntb6gsvp"><input
-                                                                                    id="idplntb6gsvp"
+                                                                                for="plv_distal_muscle"><input
+                                                                                    id="plv_distal_muscle"
                                                                                     name="plv_distal[]"
                                                                                     v-model="form.plv_distal"
                                                                                     type="checkbox" value="muscle">
@@ -6345,8 +6345,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idyzayubph3r"><input
-                                                                                    id="idyzayubph3r"
+                                                                                for="plv_distal_diffuse"><input
+                                                                                    id="plv_distal_diffuse"
                                                                                     name="plv_distal[]"
                                                                                     v-model="form.plv_distal"
                                                                                     type="checkbox" value="diffuse">
@@ -6361,8 +6361,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idqli8dpihhs"><input
-                                                                                    id="idqli8dpihhs"
+                                                                                for="plv_distal_stent"><input
+                                                                                    id="plv_distal_stent"
                                                                                     name="plv_distal[]"
                                                                                     v-model="form.plv_distal"
                                                                                     type="checkbox" value="stent">
@@ -6377,8 +6377,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="iduzos4xmann"><input
-                                                                                    id="iduzos4xmann"
+                                                                                for="plv_distal_long"><input
+                                                                                    id="plv_distal_long"
                                                                                     name="plv_distal[]"
                                                                                     v-model="form.plv_distal"
                                                                                     type="checkbox" value="long">
@@ -6393,8 +6393,8 @@
                                                                             style="font-size: 10px; color: rgb(0, 0, 0);  font-weight: normal; font-style: unset;">
                                                                             <label
                                                                                 class="ravesh-form-control no-text ravesh-form-control-checkbox"
-                                                                                for="idj1ku3h3ze1"><input
-                                                                                    id="idj1ku3h3ze1"
+                                                                                for="plv_distal_isr"><input
+                                                                                    id="plv_distal_isr"
                                                                                     name="plv_distal[]"
                                                                                     v-model="form.plv_distal"
                                                                                     type="checkbox" value="ISR">
