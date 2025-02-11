@@ -1512,95 +1512,91 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0) { ; } } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     placeholder: {
       type: String,
-      "default": 'Search..'
+      default: 'Search..'
     },
     data: {
       type: Object,
@@ -1608,7 +1604,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     },
     initalData: {
       type: Object,
-      "default": function _default() {
+      default: function _default() {
         return new Object();
       }
     },
@@ -1617,19 +1613,19 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     },
     autoFocus: {
       type: Boolean,
-      "default": false
+      default: false
     },
     showPinned: {
       type: Boolean,
-      "default": false
+      default: false
     },
     searchLimit: {
       type: Number,
-      "default": 4
+      default: 4
     },
     hideGroupTitle: {
       type: Boolean,
-      "default": false
+      default: false
     }
   },
   data: function data() {
@@ -1645,9 +1641,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     // UPDATE SUGGESTIONS LIST
     searchQuery: function searchQuery(val) {
       var _this = this;
-
       this.$emit('input', val);
-
       if (val == '') {
         this.inputInit();
       } else {
@@ -1655,14 +1649,14 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
         var data_grps = Object.keys(this.data);
         data_grps.forEach(function (grp, i) {
           queried_data[data_grps[i]] = _this.filter_grp(_this.data[grp]);
-        }); // Check if any of group has at least one queried item
+        });
 
+        // Check if any of group has at least one queried item
         if (!Object.values(queried_data).some(function (obj) {
           return obj.length;
         })) {
           this.currentSelected = -1;
         }
-
         this.filteredData = queried_data;
       }
     },
@@ -1672,16 +1666,13 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     filteredData: function filteredData(val) {
       // Auto Select first item if it's not item-404
       var grp_index = null;
-
       var _iterator = _createForOfIteratorHelper(Object.values(val).entries()),
-          _step;
-
+        _step;
       try {
         for (_iterator.s(); !(_step = _iterator.n()).done;) {
           var _step$value = _slicedToArray(_step.value, 2),
-              index = _step$value[0],
-              grp_suggestions = _step$value[1];
-
+            index = _step$value[0],
+            grp_suggestions = _step$value[1];
           if (grp_suggestions.length) {
             grp_index = index;
             break;
@@ -1692,7 +1683,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       } finally {
         _iterator.f();
       }
-
       if (grp_index != null) this.currentSelected = grp_index + ".0";
     }
   },
@@ -1703,7 +1693,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     },
     filter_grp: function filter_grp(grp) {
       var _this2 = this;
-
       var exactEle = grp.data.filter(function (item) {
         return item[grp.key].toLowerCase().startsWith(_this2.searchQuery.toLowerCase());
       });
@@ -1721,9 +1710,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     },
     updateInputFocus: function updateInputFocus() {
       var _this3 = this;
-
       var val = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
-
       if (val) {
         if (this.searchQuery == '') this.inputInit();
         setTimeout(function () {
@@ -1740,10 +1727,9 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     suggestionSelected: function suggestionSelected() {
       if (this.currentSelected > -1) {
         var _this$currentSelected = this.currentSelected.split("."),
-            _this$currentSelected2 = _slicedToArray(_this$currentSelected, 2),
-            grp_index = _this$currentSelected2[0],
-            item_index = _this$currentSelected2[1];
-
+          _this$currentSelected2 = _slicedToArray(_this$currentSelected, 2),
+          grp_index = _this$currentSelected2[0],
+          item_index = _this$currentSelected2[1];
         var grp_of_selected_item = Object.keys(this.data)[grp_index];
         var selected_item = this.filteredData[grp_of_selected_item][item_index];
         this.$emit('selected', _defineProperty({}, grp_of_selected_item, selected_item));
@@ -1752,26 +1738,27 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     },
     increaseIndex: function increaseIndex() {
       var val = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
-
       var _this$currentSelected3 = this.currentSelected.split("."),
-          _this$currentSelected4 = _slicedToArray(_this$currentSelected3, 2),
-          grp_i = _this$currentSelected4[0],
-          item_i = _this$currentSelected4[1];
-
+        _this$currentSelected4 = _slicedToArray(_this$currentSelected3, 2),
+        grp_i = _this$currentSelected4[0],
+        item_i = _this$currentSelected4[1];
       var grp_arr = Object.entries(this.filteredData);
       var active_grp_total_items = grp_arr[grp_i][1].length;
-
       if (val) {
         // If active item is not of last item in grp
         if (active_grp_total_items - 1 > item_i) {
-          this.currentSelected = grp_i + "." + (Number(item_i) + 1); // If active item grp is not last in grp list
+          this.currentSelected = grp_i + "." + (Number(item_i) + 1);
+
+          // If active item grp is not last in grp list
         } else if (grp_i < grp_arr.length - 1) {
           this.currentSelected = Number(grp_i) + 1 + ".0";
         }
       } else {
         // If active item is not of first item in grp
         if (Number(item_i)) {
-          this.currentSelected = grp_i + "." + (Number(item_i) - 1); // If active item grp  is not first in grp list
+          this.currentSelected = grp_i + "." + (Number(item_i) - 1);
+
+          // If active item grp  is not first in grp list
         } else if (Number(grp_i)) {
           this.currentSelected = Number(grp_i) - 1 + "." + (grp_arr[grp_i - 1][1].length - 1);
         }
@@ -1800,6 +1787,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   computed: {
     logoUrl: function logoUrl() {
@@ -1841,6 +1829,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "the-footer",
   props: {
@@ -2086,6 +2075,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     footerType: {
@@ -2103,7 +2093,7 @@ __webpack_require__.r(__webpack_exports__);
     navbarColor: {
       type: String,
       required: true,
-      "default": "#fff"
+      default: "#fff"
     },
     routerTransition: {
       type: String,
@@ -2173,7 +2163,6 @@ __webpack_require__.r(__webpack_exports__);
     },
     navbarColorOptionClasses: function navbarColorOptionClasses() {
       var _this = this;
-
       return function (color) {
         var classes = {};
         if (color == _this.navbarColorLocal) classes['shadow-outline'] = true;
@@ -2331,6 +2320,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     // navbarColor  : { type: String, default: "#fff", },
@@ -2352,15 +2342,12 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     checkGrpChildrenActive: function checkGrpChildrenActive(group) {
       var _this = this;
-
       var path = this.$route.fullPath;
       var active = false;
       var routeParent = this.$route.meta ? this.$route.meta.parent : undefined;
-
       if (group.submenu) {
         group.submenu.forEach(function (item) {
           if (active) return true;
-
           if ((path == item.url || routeParent == item.slug) && item.url) {
             active = true;
           } else if (item.submenu) {
@@ -2368,7 +2355,6 @@ __webpack_require__.r(__webpack_exports__);
           }
         });
       }
-
       return active;
     }
   }
@@ -2453,6 +2439,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 // import VNavMenuItem from './VerticalNavMenuItem.vue'
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2460,11 +2447,11 @@ __webpack_require__.r(__webpack_exports__);
   props: {
     openHover: {
       type: Boolean,
-      "default": true
+      default: true
     },
     open: {
       type: Boolean,
-      "default": false
+      default: false
     },
     group: {
       type: Object
@@ -2474,7 +2461,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     bottom: {
       type: Boolean,
-      "default": false
+      default: false
     }
   },
   components: {
@@ -2495,7 +2482,6 @@ __webpack_require__.r(__webpack_exports__);
     },
     styleItems: function styleItems() {
       var style = {};
-
       if (this.bottom) {
         style.top = "100%";
         style.left = "0";
@@ -2503,18 +2489,15 @@ __webpack_require__.r(__webpack_exports__);
         style.top = "12px";
         style.left = "100%";
       }
-
       if (this.dropLeft) {
         style.left = null;
         style.right = "100%";
       }
-
       if (this.$vs.rtl) {
         var temp = style.left;
         style.left = style.right;
         style.right = temp;
       }
-
       return style;
     },
     itemIcon: function itemIcon() {
@@ -2525,12 +2508,10 @@ __webpack_require__.r(__webpack_exports__);
     },
     isGroupActive: function isGroupActive() {
       var _this = this;
-
       return function (item) {
         var path = _this.$route.fullPath;
         var open = false;
         var routeParent = _this.$route.meta ? _this.$route.meta.parent : undefined;
-
         var func = function func(item) {
           if (item.submenu) {
             item.submenu.forEach(function (item) {
@@ -2542,7 +2523,6 @@ __webpack_require__.r(__webpack_exports__);
             });
           }
         };
-
         func(item);
         return open;
       };
@@ -2551,22 +2531,18 @@ __webpack_require__.r(__webpack_exports__);
   watch: {
     hovered: function hovered(val) {
       var _this2 = this;
-
       this.$nextTick(function () {
         if (val) {
           var dd = _this2.$refs.childDropdown;
-
           if (window.innerHeight - dd.getBoundingClientRect().top - dd.getBoundingClientRect().height - 28 < 1) {
             var maxHeight = window.innerHeight - dd.getBoundingClientRect().top - 70;
             dd.style.maxHeight = "".concat(maxHeight, "px");
             dd.style.overflowY = "auto";
             dd.style.overflowX = "hidden";
           }
-
           if (dd.getBoundingClientRect().left + dd.offsetWidth - (window.innerWidth - 16) >= 0 || _this2.$parent.dropLeft) {
             _this2.dropLeft = true;
           }
-
           if (_this2.$vs.rtl) {
             if (dd.getBoundingClientRect().right - dd.offsetWidth - 16 < 0) {
               _this2.dropLeft = true;
@@ -2581,14 +2557,12 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     mouseover: function mouseover() {
       this.hovered = true;
-
       if (this.openHover) {
         this.showChildren();
       }
     },
     mouseout: function mouseout() {
       this.hovered = false;
-
       if (this.openHover) {
         this.showChildren(false);
       }
@@ -2663,6 +2637,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     header: {
@@ -2671,7 +2646,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     openOnHover: {
       type: Boolean,
-      "default": true
+      default: true
     }
   },
   components: {
@@ -2688,7 +2663,6 @@ __webpack_require__.r(__webpack_exports__);
   computed: {
     isHeaderActive: function isHeaderActive() {
       var _this = this;
-
       var path = this.$route.fullPath;
       var active = false;
       var routeParent = this.$route.meta ? this.$route.meta.parent : undefined;
@@ -2710,11 +2684,9 @@ __webpack_require__.r(__webpack_exports__);
   watch: {
     showChildren: function showChildren() {
       var _this2 = this;
-
       this.$nextTick(function () {
         if (_this2.showChildren) {
           var dd = _this2.$refs.headerDropdown;
-
           if (dd.getBoundingClientRect().left + dd.offsetWidth - (window.innerWidth - 16) >= 0) {
             _this2.dropRight = true;
           }
@@ -2725,11 +2697,9 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     checkGrpChildrenActive: function checkGrpChildrenActive(group) {
       var _this3 = this;
-
       var path = this.$route.fullPath;
       var active = false;
       var routeParent = this.$route.meta ? this.$route.meta.parent : undefined;
-
       if (group.submenu) {
         group.submenu.forEach(function (item) {
           if ((path == item.url || routeParent == item.slug) && item.slug) {
@@ -2739,13 +2709,11 @@ __webpack_require__.r(__webpack_exports__);
           }
         });
       }
-
       return active;
     },
     hovered: function hovered() {
       var val = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
       this.isHovered = val;
-
       if (this.openOnHover) {
         val ? this.showChildren = true : this.showChildren = false;
       }
@@ -2802,48 +2770,49 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'v-nav-menu-item',
   props: {
     icon: {
       type: String,
-      "default": ""
+      default: ""
     },
     iconSmall: {
       type: Boolean,
-      "default": false
+      default: false
     },
     iconPack: {
       type: String,
-      "default": 'material-icons'
+      default: 'material-icons'
     },
     href: {
       type: [String, null],
-      "default": '#'
+      default: '#'
     },
     to: {
       type: [String, Object, null],
-      "default": null
+      default: null
     },
     slug: {
       type: String,
-      "default": null
+      default: null
     },
     index: {
       type: [String, Number],
-      "default": null
+      default: null
     },
     featherIcon: {
       type: Boolean,
-      "default": true
+      default: true
     },
     target: {
       type: String,
-      "default": '_self'
+      default: '_self'
     },
     isDisabled: {
       type: Boolean,
-      "default": false
+      default: false
     }
   },
   computed: {
@@ -2851,7 +2820,8 @@ __webpack_require__.r(__webpack_exports__);
       return this.iconSmall ? 'w-3 h-3 mr-3' : 'w-5 h-5 mr-3';
     },
     canSee: function canSee() {
-      return true; //   this.$acl.check(this.$store.state.AppActiveUser.userRole)
+      return true;
+      //   this.$acl.check(this.$store.state.AppActiveUser.userRole)
       //   return this.to ? this.$acl.check(this.$router.match(this.to).meta.rule) : true
     },
     activeLink: function activeLink() {
@@ -2919,10 +2889,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 // import Bookmarks            from "./components/Bookmarks.vue"
 
- // import CartDropDown         from "./components/CartDropDown.vue"
 
+// import CartDropDown         from "./components/CartDropDown.vue"
 
 
 
@@ -3053,10 +3024,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 // import Bookmarks            from "./components/Bookmarks.vue"
 
- // import CartDropDown         from "./components/CartDropDown.vue"
 
+// import CartDropDown         from "./components/CartDropDown.vue"
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3064,7 +3036,7 @@ __webpack_require__.r(__webpack_exports__);
   props: {
     navbarColor: {
       type: String,
-      "default": "#fff"
+      default: "#fff"
     }
   },
   data: function data() {
@@ -3115,30 +3087,26 @@ __webpack_require__.r(__webpack_exports__);
         this.isFullScreen = false;
         return this.closeFullscreen();
       }
-
       this.isFullScreen = true;
-      var el = document.body; // use necessary prefixed versions
+      var el = document.body;
 
+      // use necessary prefixed versions
       if (el.webkitRequestFullscreen) {
         return el.webkitRequestFullscreen();
       }
-
       if (el.mozRequestFullScreen) {
         return el.mozRequestFullScreen();
       }
-
       if (el.msRequestFullscreen) {
         return el.msRequestFullscreen();
-      } // finally the standard version
+      }
 
-
+      // finally the standard version
       if (el.requestFullscreen) {
         return el.requestFullscreen();
       }
     },
-
-    /* Close fullscreen */
-    closeFullscreen: function closeFullscreen() {
+    /* Close fullscreen */closeFullscreen: function closeFullscreen() {
       if (document.exitFullscreen) {
         document.exitFullscreen();
       } else if (document.webkitExitFullscreen) {
@@ -3179,6 +3147,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   computed: {
     locale: function locale() {
@@ -3233,86 +3202,83 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 
-
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? Object(arguments[i]) : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys.push.apply(ownKeys, Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3329,7 +3295,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     };
     return obj;
   },
-  computed: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_2__["mapState"])(['notifications'])), Object(vuex__WEBPACK_IMPORTED_MODULE_2__["mapGetters"])(['unreadNotificationsCount'])),
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_2__["mapState"])(['notifications']), Object(vuex__WEBPACK_IMPORTED_MODULE_2__["mapGetters"])(['unreadNotificationsCount'])),
   methods: {
     elapsedTime: function elapsedTime(startTime) {
       var x = new Date(startTime);
@@ -3345,7 +3311,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       var days = Math.round(timeDiff % 365);
       timeDiff = Math.floor(timeDiff / 365);
       var years = timeDiff;
-
       if (years > 0) {
         return years + (years > 1 ? this.__(' Years ') : this.__(' Year ')) + __('ago');
       } else if (days > 0) {
@@ -3357,54 +3322,50 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       } else if (seconds > 0) {
         return seconds + (seconds > 1 ? this.__(' sec ago') : this.__('just now'));
       }
-
       return this.__('Just Now');
     },
     // Method for creating dummy notification time
     randomDate: function randomDate(_ref) {
       var hr = _ref.hr,
-          min = _ref.min,
-          sec = _ref.sec;
+        min = _ref.min,
+        sec = _ref.sec;
       var date = new Date();
       if (hr) date.setHours(date.getHours() - hr);
       if (min) date.setMinutes(date.getMinutes() - min);
       if (sec) date.setSeconds(date.getSeconds() - sec);
       return date;
     },
-    markAllAsRead: function markAllAsRead() {
-      var _this = this;
-
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var _yield$_this$$http$po, data;
-
+    markAllAsRead: function () {
+      var _markAllAsRead = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var _yield$this$$http$pos, data;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                if (!(_this.unreadNotificationsCount > 0)) {
+                if (!(this.unreadNotificationsCount > 0)) {
                   _context.next = 6;
                   break;
                 }
-
                 _context.next = 3;
-                return _this.$http.post("".concat(window.config.panel_url, "/api/notifications/mark_as_read"));
-
+                return this.$http.post("".concat(window.config.panel_url, "/api/notifications/mark_as_read"));
               case 3:
-                _yield$_this$$http$po = _context.sent;
-                data = _yield$_this$$http$po.data;
-
-                _this.$store.dispatch("SET_NOTIFICATIONS", data.data); // const {data}=await app.$http.get(`${window.config.panel_url}/api/notifications`);
+                _yield$this$$http$pos = _context.sent;
+                data = _yield$this$$http$pos.data;
+                this.$store.dispatch("SET_NOTIFICATIONS", data.data);
+                // const {data}=await app.$http.get(`${window.config.panel_url}/api/notifications`);
                 // app.$store.dispatch("SET_NOTIFICATIONS",data.data);
-
-
               case 6:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee);
-      }))();
-    }
+        }, _callee, this);
+      }));
+      function markAllAsRead() {
+        return _markAllAsRead.apply(this, arguments);
+      }
+      return markAllAsRead;
+    }()
   }
 });
 
@@ -3485,6 +3446,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {};
@@ -3497,7 +3459,8 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     logout: function logout() {
       this.$auth.logOut();
-      window.location.href = "".concat(window.config.path_prefix, "/logout"); // try{
+      window.location.href = "".concat(window.config.path_prefix, "/logout");
+      // try{
       //     ;
       //     this.$http.post(`${window.config.path_prefix}/api/logout`);
       //     this.$router.push('/login').catch(() => {})
@@ -3604,6 +3567,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     VxAutoSuggest: _components_vx_auto_suggest_VxAutoSuggest_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
@@ -3623,7 +3587,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     selected: function selected(item) {
-      item.pages ? this.$router.push(item.pages.url)["catch"](function () {}) : null;
+      item.pages ? this.$router.push(item.pages.url).catch(function () {}) : null;
       this.showFullSearch = false;
     },
     hnd_search_query_update: function hnd_search_query_update(query) {
@@ -3650,135 +3614,129 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _VerticalNavMenuItem_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./VerticalNavMenuItem.vue */ "./Resources/js/src/layouts/components/vertical-nav-menu/VerticalNavMenuItem.vue");
 /* harmony import */ var _Logo_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Logo.vue */ "./Resources/js/src/layouts/components/Logo.vue");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0) { ; } } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -3797,14 +3755,14 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     },
     openGroupHover: {
       type: Boolean,
-      "default": false
+      default: false
     },
     parent: {
       type: String
     },
     reduceNotRebound: {
       type: Boolean,
-      "default": true
+      default: true
     },
     navMenuItems: {
       type: Array,
@@ -3835,12 +3793,10 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   computed: {
     isGroupActive: function isGroupActive() {
       var _this = this;
-
       return function (item) {
         var path = _this.$route.fullPath;
         var routeParent = _this.$route.meta ? _this.$route.meta.parent : undefined;
         var open = false;
-
         var func = function func(item) {
           if (item.submenu) {
             item.submenu.forEach(function (item) {
@@ -3852,37 +3808,30 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
             });
           }
         };
-
         func(item);
         return open;
       };
     },
     menuItemsUpdated: function menuItemsUpdated() {
       var clone = this.navMenuItems.slice();
-
       var _iterator = _createForOfIteratorHelper(this.navMenuItems.entries()),
-          _step;
-
+        _step;
       try {
         var _loop = function _loop() {
           var _step$value = _slicedToArray(_step.value, 2),
-              index = _step$value[0],
-              item = _step$value[1];
-
+            index = _step$value[0],
+            item = _step$value[1];
           if (item.header && item.items.length && (index || 1)) {
             var i = clone.findIndex(function (ix) {
               return ix.header === item.header;
             });
-
             var _iterator2 = _createForOfIteratorHelper(item.items.entries()),
-                _step2;
-
+              _step2;
             try {
               for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
                 var _step2$value = _slicedToArray(_step2.value, 2),
-                    subIndex = _step2$value[0],
-                    subItem = _step2$value[1];
-
+                  subIndex = _step2$value[0],
+                  subItem = _step2$value[1];
                 clone.splice(i + 1 + subIndex, 0, subItem);
               }
             } catch (err) {
@@ -3892,7 +3841,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
             }
           }
         };
-
         for (_iterator.s(); !(_step = _iterator.n()).done;) {
           _loop();
         }
@@ -3901,7 +3849,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       } finally {
         _iterator.f();
       }
-
       return clone;
     },
     isVerticalNavMenuActive: {
@@ -3980,55 +3927,75 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       if (this.windowWidth > 1200) {
         if (this.layoutType === 'vertical') {
           // Set reduce
-          this.reduce = this.reduceButton ? true : false; // Open NavMenu
+          this.reduce = this.reduceButton ? true : false;
 
-          this.$store.commit('TOGGLE_IS_VERTICAL_NAV_MENU_ACTIVE', true); // Set Menu Items Only Icon Mode
+          // Open NavMenu
+          this.$store.commit('TOGGLE_IS_VERTICAL_NAV_MENU_ACTIVE', true);
 
+          // Set Menu Items Only Icon Mode
           var verticalNavMenuItemsMin = this.reduceButton && !this.isMouseEnter ? true : false;
-          this.$store.commit('UPDATE_VERTICAL_NAV_MENU_ITEMS_MIN', verticalNavMenuItemsMin); // Menu Action buttons
+          this.$store.commit('UPDATE_VERTICAL_NAV_MENU_ITEMS_MIN', verticalNavMenuItemsMin);
 
+          // Menu Action buttons
           this.clickNotClose = true;
           this.showCloseButton = false;
           var verticalNavMenuWidth = this.isVerticalNavMenuReduced ? "reduced" : "default";
           this.$store.dispatch('updateVerticalNavMenuWidth', verticalNavMenuWidth);
           return;
         }
-      } // Close NavMenu
+      }
 
+      // Close NavMenu
+      this.$store.commit('TOGGLE_IS_VERTICAL_NAV_MENU_ACTIVE', false);
 
-      this.$store.commit('TOGGLE_IS_VERTICAL_NAV_MENU_ACTIVE', false); // Reduce button
+      // Reduce button
+      if (this.reduceButton) this.reduce = false;
 
-      if (this.reduceButton) this.reduce = false; // Menu Action buttons
-
+      // Menu Action buttons
       this.showCloseButton = true;
-      this.clickNotClose = false; // Update NavMenu Width
+      this.clickNotClose = false;
 
-      this.$store.dispatch('updateVerticalNavMenuWidth', 'no-nav-menu'); // Remove Only Icon in Menu
+      // Update NavMenu Width
+      this.$store.dispatch('updateVerticalNavMenuWidth', 'no-nav-menu');
 
-      this.$store.commit('UPDATE_VERTICAL_NAV_MENU_ITEMS_MIN', false); // if(this.layoutType === 'vertical' || (this.layoutType === 'horizontal' && this.windowWidth < 1200))
+      // Remove Only Icon in Menu
+      this.$store.commit('UPDATE_VERTICAL_NAV_MENU_ITEMS_MIN', false);
+
+      // if(this.layoutType === 'vertical' || (this.layoutType === 'horizontal' && this.windowWidth < 1200))
       // if (this.windowWidth < 1200) {
+
       //   // Close NavMenu
       //   this.$store.commit('TOGGLE_IS_VERTICAL_NAV_MENU_ACTIVE', false)
+
       //   // Reduce button
       //   if (this.reduceButton) this.reduce = false
+
       //   // Menu Action buttons
       //   this.showCloseButton = true
       //   this.clickNotClose   = false
+
       //   // Update NavMenu Width
       //   this.$store.dispatch('updateVerticalNavMenuWidth', 'no-nav-menu')
+
       //   // Remove Only Icon in Menu
       //   this.$store.commit('UPDATE_VERTICAL_NAV_MENU_ITEMS_MIN', false)
+
       // } else {
+
       //   // Set reduce
       //   this.reduce = this.reduceButton ? true : false
+
       //   // Open NavMenu
       //   this.$store.commit('TOGGLE_IS_VERTICAL_NAV_MENU_ACTIVE', true)
+
       //   // Set Menu Items Only Icon Mode
       //   const verticalNavMenuItemsMin = (this.reduceButton && !this.isMouseEnter) ? true : false
       //   this.$store.commit('UPDATE_VERTICAL_NAV_MENU_ITEMS_MIN', verticalNavMenuItemsMin)
+
       //   // Menu Action buttons
       //   this.clickNotClose   = true
       //   this.showCloseButton = false
+
       //   const verticalNavMenuWidth   = this.isVerticalNavMenuReduced ? "reduced" : "default"
       //   this.$store.dispatch('updateVerticalNavMenuWidth', verticalNavMenuWidth)
       // }
@@ -4040,7 +4007,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   },
   mounted: function mounted() {
     var _this2 = this;
-
     this.setVerticalNavMenuWidth();
     Iracode.$on("toggleMinMenu", function () {
       _this2.toggleReduce(!_this2.reduce);
@@ -4151,16 +4117,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'v-nav-menu-group',
   props: {
     openHover: {
       type: Boolean,
-      "default": false
+      default: false
     },
     open: {
       type: Boolean,
-      "default": false
+      default: false
     },
     group: {
       type: Object
@@ -4194,12 +4161,10 @@ __webpack_require__.r(__webpack_exports__);
     },
     isGroupActive: function isGroupActive() {
       var _this = this;
-
       return function (item) {
         var path = _this.$route.fullPath;
         var open = false;
         var routeParent = _this.$route.meta ? _this.$route.meta.parent : undefined;
-
         var func = function func(item) {
           if (item.submenu) {
             item.submenu.forEach(function (item) {
@@ -4211,7 +4176,6 @@ __webpack_require__.r(__webpack_exports__);
             });
           }
         };
-
         func(item);
         return open;
       };
@@ -4221,15 +4185,17 @@ __webpack_require__.r(__webpack_exports__);
     // OPEN & CLOSES DROPDOWN ON ROUTE CHANGE
     '$route': function $route() {
       var _this2 = this;
-
       if (this.verticalNavMenuItemsMin) return;
-      var scrollHeight = this.scrollHeight; // Collapse Group
+      var scrollHeight = this.scrollHeight;
 
+      // Collapse Group
       if (this.openItems && !this.open) {
         this.maxHeight = "".concat(scrollHeight, "px");
         setTimeout(function () {
           _this2.maxHeight = "".concat(0, "px");
-        }, 50); // Expand Group
+        }, 50);
+
+        // Expand Group
       } else if (this.open) {
         this.maxHeight = "".concat(scrollHeight, "px");
         setTimeout(function () {
@@ -4243,9 +4209,7 @@ __webpack_require__.r(__webpack_exports__);
     // OPEN AND CLOSES DROPDOWN MENU ON NavMenu COLLAPSE AND DEFAULT VIEW
     '$store.state.verticalNavMenuItemsMin': function $storeStateVerticalNavMenuItemsMin(val) {
       var _this3 = this;
-
       var scrollHeight = this.$refs.items.scrollHeight;
-
       if (!val && this.open) {
         this.maxHeight = "".concat(scrollHeight, "px");
         setTimeout(function () {
@@ -4257,7 +4221,6 @@ __webpack_require__.r(__webpack_exports__);
           _this3.maxHeight = '0px';
         }, 50);
       }
-
       if (val && this.open) {
         this.maxHeight = "".concat(scrollHeight, "px");
         setTimeout(function () {
@@ -4269,10 +4232,8 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     clickGroup: function clickGroup() {
       var _this4 = this;
-
       if (!this.openHover) {
         var thisScrollHeight = this.$refs.items.scrollHeight;
-
         if (this.maxHeight == '0px') {
           this.maxHeight = "".concat(thisScrollHeight, "px");
           setTimeout(function () {
@@ -4284,7 +4245,6 @@ __webpack_require__.r(__webpack_exports__);
             _this4.maxHeight = "".concat(0, "px");
           }, 50);
         }
-
         this.$parent.$children.map(function (child) {
           if (child.isGroupActive) {
             if (child !== _this4 && !child.open && child.maxHeight != '0px') {
@@ -4311,7 +4271,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     this.openItems = this.open;
-
     if (this.open) {
       this.maxHeight = 'none';
     }
@@ -4368,53 +4327,55 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'v-nav-menu-item',
   props: {
     icon: {
       type: String,
-      "default": ""
+      default: ""
     },
     iconSmall: {
       type: Boolean,
-      "default": false
+      default: false
     },
     iconPack: {
       type: String,
-      "default": 'material-icons'
+      default: 'material-icons'
     },
     href: {
       type: [String, null],
-      "default": '#'
+      default: '#'
     },
     to: {
       type: [String, Object, null],
-      "default": null
+      default: null
     },
     slug: {
       type: String,
-      "default": null
+      default: null
     },
     index: {
       type: [String, Number],
-      "default": null
+      default: null
     },
     featherIcon: {
       type: Boolean,
-      "default": true
+      default: true
     },
     target: {
       type: String,
-      "default": '_self'
+      default: '_self'
     },
     isDisabled: {
       type: Boolean,
-      "default": false
+      default: false
     }
   },
   computed: {
     canSee: function canSee() {
-      return true; //   this.$acl.check(this.$store.state.AppActiveUser.userRole)
+      return true;
+      //   this.$acl.check(this.$store.state.AppActiveUser.userRole)
       //   return this.to ? this.$acl.check(this.$router.match(this.to).meta.rule) : true
     },
     activeLink: function activeLink() {
@@ -4444,11 +4405,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layouts_components_TheFooter_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/layouts/components/TheFooter.vue */ "./Resources/js/src/layouts/components/TheFooter.vue");
 /* harmony import */ var _layouts_components_vertical_nav_menu_VerticalNavMenu_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/layouts/components/vertical-nav-menu/VerticalNavMenu.vue */ "./Resources/js/src/layouts/components/vertical-nav-menu/VerticalNavMenu.vue");
 
-
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
 //
 //
 //
@@ -4554,13 +4512,16 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 
- // import navMenuItems        from "@/layouts/components/vertical-nav-menu/navMenuItems.js"
+
+
+// import navMenuItems        from "@/layouts/components/vertical-nav-menu/navMenuItems.js"
 
 
 
 
 
- // const VxTour = () => /* webpackPreload: true */ import('@/components/VxTour.vue')
+
+// const VxTour = () => /* webpackPreload: true */ import('@/components/VxTour.vue')
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -4570,8 +4531,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     TheFooter: _layouts_components_TheFooter_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
     TheNavbarHorizontal: _layouts_components_navbar_TheNavbarHorizontal_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
     TheNavbarVertical: _layouts_components_navbar_TheNavbarVertical_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
-    VNavMenu: _layouts_components_vertical_nav_menu_VerticalNavMenu_vue__WEBPACK_IMPORTED_MODULE_7__["default"] // VxTour
-
+    VNavMenu: _layouts_components_vertical_nav_menu_VerticalNavMenu_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
+    // VxTour
   },
   data: function data() {
     return {
@@ -4630,7 +4591,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     contentAreaClass: function contentAreaClass() {
       if (this.mainLayoutType === "vertical") {
         if (this.verticalNavMenuWidth == "default") return "content-area-reduced";else if (this.verticalNavMenuWidth == "reduced") return "content-area-lg";else return "content-area-full";
-      } // else if(this.mainLayoutType === "boxed") return "content-area-reduced"
+      }
+      // else if(this.mainLayoutType === "boxed") return "content-area-reduced"
       else return "content-area-full";
     },
     footerClasses: function footerClasses() {
@@ -4704,88 +4666,78 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     toggleHideScrollToTop: function toggleHideScrollToTop(val) {
       this.hideScrollToTop = val;
     },
-    handleMenus: function handleMenus() {
-      var _this = this;
-
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var menuItems, menus, _yield$_this$$http$ge, _menus;
-
+    handleMenus: function () {
+      var _handleMenus = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var menuItems, menus, _yield$this$$http$get, _menus;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
                 menuItems = localStorage.getItem("menu_items");
                 menuItems = JSON.parse(menuItems);
-
                 if (!menuItems) {
                   _context.next = 6;
                   break;
                 }
-
-                _this.navMenuItems = menuItems;
+                this.navMenuItems = menuItems;
                 _context.next = 18;
                 break;
-
               case 6:
                 if (!window.menus) {
                   _context.next = 10;
                   break;
                 }
-
                 menus = window.menus;
                 _context.next = 16;
                 break;
-
               case 10:
-                _this.$vs.loading();
-
+                this.$vs.loading();
                 _context.next = 13;
-                return _this.$http.get("".concat(window.config.path_prefix, "/api/partials/menu"));
-
+                return this.$http.get("".concat(window.config.path_prefix, "/api/partials/menu"));
               case 13:
-                _yield$_this$$http$ge = _context.sent;
-                _menus = _yield$_this$$http$ge.data;
-
-                _this.$vs.loading.close();
-
+                _yield$this$$http$get = _context.sent;
+                _menus = _yield$this$$http$get.data;
+                this.$vs.loading.close();
               case 16:
-                _this.navMenuItems = menus;
-
+                this.navMenuItems = menus;
                 if (window.Iracode.config.cache_menus) {
                   localStorage.setItem("menu_items", JSON.stringify(menus));
                 }
-
               case 18:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee);
-      }))();
-    }
+        }, _callee, this);
+      }));
+      function handleMenus() {
+        return _handleMenus.apply(this, arguments);
+      }
+      return handleMenus;
+    }()
   },
-  mounted: function mounted() {
-    var _this2 = this;
-
-    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+  mounted: function () {
+    var _mounted = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
         while (1) {
           switch (_context2.prev = _context2.next) {
             case 0:
-              _this2.handleMenus();
-
+              this.handleMenus();
             case 1:
             case "end":
               return _context2.stop();
           }
         }
-      }, _callee2);
-    }))();
-  },
-  created: function created() {
-    var _this3 = this;
-
-    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3() {
+      }, _callee2, this);
+    }));
+    function mounted() {
+      return _mounted.apply(this, arguments);
+    }
+    return mounted;
+  }(),
+  created: function () {
+    var _created = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3() {
+      var _this = this;
       var color;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
         while (1) {
@@ -4795,48 +4747,44 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               // await this.$http.get('/sanctum/csrf-cookie').then(response => {
               //     console.log(response)
               // });
-              color = _this3.navbarColor == "#fff" && _this3.isThemeDark ? "#10163a" : _this3.navbarColor;
+              color = this.navbarColor == "#fff" && this.isThemeDark ? "#10163a" : this.navbarColor;
+              this.updateNavbarColor(color);
+              this.setNavMenuVisibility(this.$store.state.mainLayoutType);
 
-              _this3.updateNavbarColor(color);
-
-              _this3.setNavMenuVisibility(_this3.$store.state.mainLayoutType); // Dynamic Watchers for tour
+              // Dynamic Watchers for tour
               // Reason: Once tour is disabled it is not required to enable it.
               // So, watcher is required for just disabling it.
-
-
-              _this3.dynamicWatchers.windowWidth = _this3.$watch("$store.state.windowWidth", function (val) {
+              this.dynamicWatchers.windowWidth = this.$watch("$store.state.windowWidth", function (val) {
                 if (val < 1200) {
-                  _this3.disableThemeTour = true;
-
-                  _this3.dynamicWatchers.windowWidth();
+                  _this.disableThemeTour = true;
+                  _this.dynamicWatchers.windowWidth();
                 }
               });
-              _this3.dynamicWatchers.verticalNavMenuWidth = _this3.$watch("$store.state.verticalNavMenuWidth", function () {
-                _this3.disableThemeTour = true;
-
-                _this3.dynamicWatchers.verticalNavMenuWidth();
+              this.dynamicWatchers.verticalNavMenuWidth = this.$watch("$store.state.verticalNavMenuWidth", function () {
+                _this.disableThemeTour = true;
+                _this.dynamicWatchers.verticalNavMenuWidth();
               });
-              _this3.dynamicWatchers.rtl = _this3.$watch("$vs.rtl", function () {
-                _this3.disableThemeTour = true;
-
-                _this3.dynamicWatchers.rtl();
+              this.dynamicWatchers.rtl = this.$watch("$vs.rtl", function () {
+                _this.disableThemeTour = true;
+                _this.dynamicWatchers.rtl();
               });
-
             case 6:
             case "end":
               return _context3.stop();
           }
         }
-      }, _callee3);
-    }))();
-  },
+      }, _callee3, this);
+    }));
+    function created() {
+      return _created.apply(this, arguments);
+    }
+    return created;
+  }(),
   beforeDestroy: function beforeDestroy() {
-    var _this4 = this;
-
+    var _this2 = this;
     Object.keys(this.dynamicWatchers).map(function (i) {
-      _this4.dynamicWatchers[i]();
-
-      delete _this4.dynamicWatchers[i];
+      _this2.dynamicWatchers[i]();
+      delete _this2.dynamicWatchers[i];
     });
   }
 });

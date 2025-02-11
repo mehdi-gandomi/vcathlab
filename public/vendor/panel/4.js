@@ -553,19 +553,12 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
-
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
 var $fakeParent = Symbol();
-
 function setFakeParent(node, fakeParent) {
   if (!node[$fakeParent]) {
     node[$fakeParent] = fakeParent;
@@ -576,7 +569,6 @@ function setFakeParent(node, fakeParent) {
     });
   }
 }
-
 var resetChildren = function resetChildren(frag, moveTo) {
   var nodes = frag.splice(0);
   moveTo.append.apply(moveTo, _toConsumableArray(nodes));
@@ -584,68 +576,53 @@ var resetChildren = function resetChildren(frag, moveTo) {
     node[$fakeParent] = undefined;
   });
 };
-
 function insertBefore(newNode, refNode) {
   if (this.frag) {
     var idx = this.frag.indexOf(refNode);
-
     if (idx > -1) {
       this.frag.splice(idx, 0, newNode);
     }
   }
-
   if (this[$fakeChildren]) {
     var hasFakeChildren = this[$fakeChildren].get(refNode);
-
     if (hasFakeChildren) {
       refNode = hasFakeChildren[0];
     }
   }
-
   refNode.before(newNode);
   setFakeParent(newNode, this);
 }
-
 function removeChild(node) {
   if (this.frag) {
     var idx = this.frag.indexOf(node);
-
     if (idx > -1) {
       this.frag.splice(idx, 1);
     }
   }
-
   var fc = this[$fakeChildren];
-
   if (fc) {
     var hasFakeChildren = fc.get(node);
-
     if (hasFakeChildren) {
       resetChildren(hasFakeChildren, node);
-      fc["delete"](node);
+      fc.delete(node);
       node[$fakeParent] = undefined;
       return;
     }
   }
-
   node.remove();
 }
-
 var $fakeChildren = Symbol();
 var parentPatches = {
   insertBefore: insertBefore,
   removeChild: removeChild
 };
-
 function patchParent(parent, child, nodes) {
   if (!parent[$fakeChildren]) {
     parent[$fakeChildren] = new Map();
     Object.assign(parent, parentPatches);
   }
-
   parent[$fakeChildren].set(child, nodes);
 }
-
 var $placeholder = Symbol();
 var elementPatches = {
   insertBefore: insertBefore,
@@ -666,12 +643,10 @@ var elementPatches = {
     var length = this.frag.length;
     this.frag[length - 1].after(node);
     var placeholder = this[$placeholder];
-
     if (this.frag[0] === placeholder) {
       this.frag.splice(0, 1);
       placeholder.remove();
     }
-
     setFakeParent(node, this);
     this.frag.push(node);
   }
@@ -682,27 +657,26 @@ var frag = {
     var parent = element.parentNode;
     var placeholder = document.createComment('');
     element[$placeholder] = placeholder;
-
     if (nodes.length === 0) {
       nodes.push(placeholder);
     }
-
     var fragment = document.createDocumentFragment();
-    fragment.append.apply(fragment, _toConsumableArray(nodes));
+    fragment.append.apply(fragment, nodes);
     element.replaceWith(fragment);
     element.frag = nodes;
     patchParent(parent, element, nodes);
     setFakeParent(element, parent);
     nodes.forEach(function (node) {
       return setFakeParent(node, element);
-    }); // Handle v-html
+    });
 
+    // Handle v-html
     Object.defineProperty(element, 'innerHTML', {
       set: function set(htmlString) {
         var domify = document.createElement('div');
         domify.innerHTML = htmlString;
-        var oldNodesIdx = element.frag.length; // eslint-disable-next-line unicorn/prefer-node-append
-
+        var oldNodesIdx = element.frag.length;
+        // eslint-disable-next-line unicorn/prefer-node-append
         Array.from(domify.childNodes).forEach(function (node) {
           return element.appendChild(node);
         });
@@ -740,17 +714,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _all_points__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./all_points */ "../User/Resources/js/niffr_cases/all_points.js");
 /* harmony import */ var _PointTable__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./PointTable */ "../User/Resources/js/niffr_cases/PointTable.vue");
 
-
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? Object(arguments[i]) : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys.push.apply(ownKeys, Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 //
 //
 //
@@ -1058,8 +1028,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
- // import CreatePatientModal from '../components/CreatePatientModal.vue'
 
+
+// import CreatePatientModal from '../components/CreatePatientModal.vue'
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Points: _Points_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
@@ -1068,9 +1039,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   mixins: [_mixins_HasForm__WEBPACK_IMPORTED_MODULE_2__["default"]],
   data: function data() {
     var lang = this.$i18n;
-
     var user = _objectSpread({}, this.$store.state.auth.userInfo);
-
     var data = {
       ld: "",
       form: {
@@ -1141,26 +1110,27 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     };
     return data;
   },
-  props: {//
+  props: {
+    //
   },
-  computed: {//
+  computed: {
+    //
   },
-  created: function created() {
-    var _this = this;
-
-    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+  created: function () {
+    var _created = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
       var nifferTos;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return _this.getPatients();
-
+              return this.getPatients();
             case 2:
               nifferTos = localStorage.getItem("niffer_tos");
-              _this.niffer_tos = !!nifferTos;
-              _this.noticePopupOpen = !_this.niffer_tos; // Iracode.$on("saveNiffr",async()=>{
+              this.niffer_tos = !!nifferTos;
+              this.noticePopupOpen = !this.niffer_tos;
+
+              // Iracode.$on("saveNiffr",async()=>{
               //     this.calculateAll();
               //     Iracode.loading();
               //     try{
@@ -1173,6 +1143,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
               //             Iracode.close_loading();
               //             return this.resultPopupActive=true;
               //         }
+
               //         Iracode.error(data.message)
               //     }catch(e){
               //         Iracode.error(data.message)
@@ -1180,27 +1151,30 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
               //         Iracode.close_loading();
               //     }
               // })
-
             case 5:
             case "end":
               return _context.stop();
           }
         }
-      }, _callee);
-    }))();
-  },
+      }, _callee, this);
+    }));
+    function created() {
+      return _created.apply(this, arguments);
+    }
+    return created;
+  }(),
   beforeMount: function beforeMount() {
     var modelViewerScript = document.createElement('script');
     modelViewerScript.setAttribute('src', this.url("vendor/user/js/model-viewer.min.js"));
     modelViewerScript.setAttribute('type', 'module');
-    document.head.appendChild(modelViewerScript); //   scene-graph-ready
+    document.head.appendChild(modelViewerScript);
+    //   scene-graph-ready
   },
   mounted: function mounted() {
-    var _this2 = this;
-
+    var _this = this;
     if (this.$refs['modelViewer']) {
       this.$refs['modelViewer'].addEventListener("load", function (e) {
-        _this2.showPoints = true;
+        _this.showPoints = true;
       });
     }
   },
@@ -1209,251 +1183,231 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       if (!this.niffer_tos) {
         return;
       }
-
       localStorage.setItem("niffer_tos", this.niffer_tos);
       this.noticePopupOpen = false;
     },
-    exportAsWord: function exportAsWord(name) {
-      var _this3 = this;
-
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
-        var point, _yield$_this3$$http$g, blob, url, a, clickHandler;
-
+    exportAsWord: function () {
+      var _exportAsWord = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(name) {
+        var _this2 = this;
+        var point, _yield$this$$http$get, blob, url, a, clickHandler;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                point = _this3.ctCaseResults[name];
-
+                point = this.ctCaseResults[name];
                 if (point.result_file) {
                   _context2.next = 3;
                   break;
                 }
-
                 return _context2.abrupt("return");
-
               case 3:
-                _this3.$vs.loading();
-
+                this.$vs.loading();
                 _context2.next = 6;
-                return _this3.$http.get(_this3.url(point.result_file), {
+                return this.$http.get(this.url(point.result_file), {
                   responseType: 'blob' // important
-
                 });
-
               case 6:
-                _yield$_this3$$http$g = _context2.sent;
-                blob = _yield$_this3$$http$g.data;
+                _yield$this$$http$get = _context2.sent;
+                blob = _yield$this$$http$get.data;
                 // Create an object URL for the blob object
                 url = URL.createObjectURL(blob); // Create a new anchor element
-
                 a = document.createElement('a'); // Set the href and download attributes for the anchor element
                 // You can optionally set other attributes like `title`, etc
                 // Especially, if the anchor element will be attached to the DOM
-
                 a.href = url;
-                a.download = Iracode.basename(point.result_file); // Click handler that releases the object URL after the element has been clicked
-                // This is required for one-off downloads of the blob content
+                a.download = Iracode.basename(point.result_file);
 
+                // Click handler that releases the object URL after the element has been clicked
+                // This is required for one-off downloads of the blob content
                 clickHandler = function clickHandler(e) {
                   console.log(e);
                   setTimeout(function () {
-                    URL.revokeObjectURL(url); // this.removeEventListener('click', clickHandler);
-
-                    _this3.$vs.loading.close();
+                    URL.revokeObjectURL(url);
+                    // this.removeEventListener('click', clickHandler);
+                    _this2.$vs.loading.close();
                   }, 150);
                 }; // Add the click event listener on the anchor element
                 // Comment out this line if you don't want a one-off download of the blob content
+                a.addEventListener('click', clickHandler, false);
 
-
-                a.addEventListener('click', clickHandler, false); // Programmatically trigger a click on the anchor element
+                // Programmatically trigger a click on the anchor element
                 // Useful if you want the download to happen automatically
                 // Without attaching the anchor element to the DOM
                 // Comment out this line if you don't want an automatic download of the blob content
+                a.click();
 
-                a.click(); // Return the anchor element
+                // Return the anchor element
                 // Useful if you want a reference to the element
                 // in order to attach it to the DOM or use it in some other way
-
                 return _context2.abrupt("return", a);
-
               case 16:
               case "end":
                 return _context2.stop();
             }
           }
-        }, _callee2);
-      }))();
-    },
-    saveNiffr: function saveNiffr() {
-      var _this4 = this;
-
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3() {
-        var _yield$_this4$$http$p, patient, _yield$_this4$$http$p2, data;
-
+        }, _callee2, this);
+      }));
+      function exportAsWord(_x) {
+        return _exportAsWord.apply(this, arguments);
+      }
+      return exportAsWord;
+    }(),
+    saveNiffr: function () {
+      var _saveNiffr = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3() {
+        var _this3 = this;
+        var _yield$this$$http$pos, patient, _yield$this$$http$pos2, data;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
-                _this4.resultPopupActive = true;
-                _this4.isLoading = true; // Iracode.loading();
-
+                this.resultPopupActive = true;
+                this.isLoading = true;
+                // Iracode.loading();
                 _context3.next = 4;
-                return _this4.$http.post("/user/api/patients", _this4.form);
-
+                return this.$http.post("/user/api/patients", this.form);
               case 4:
-                _yield$_this4$$http$p = _context3.sent;
-                patient = _yield$_this4$$http$p.data;
-
-                _this4.calculateAll(); // if(!this.patient.id) {
+                _yield$this$$http$pos = _context3.sent;
+                patient = _yield$this$$http$pos.data;
+                this.calculateAll();
+                // if(!this.patient.id) {
                 //     return Iracode.error(this.__("You have to specify a patient"))
                 // }
-
-
                 console.log("patient", patient);
                 _context3.prev = 8;
                 _context3.next = 11;
-                return _this4.$http.post(_this4.url("user/api/niffr_cases"), {
-                  points: _this4.points,
+                return this.$http.post(this.url("user/api/niffr_cases"), {
+                  points: this.points,
                   patient_id: patient.data.id,
-                  map: _this4.pressureForm.pressure,
-                  physician: _this4.form.physician,
-                  niffr_case_id: _this4.niffr_case_id // result:this.points
-
+                  map: this.pressureForm.pressure,
+                  physician: this.form.physician,
+                  niffr_case_id: this.niffr_case_id
+                  // result:this.points
                 });
-
               case 11:
-                _yield$_this4$$http$p2 = _context3.sent;
-                data = _yield$_this4$$http$p2.data;
-
+                _yield$this$$http$pos2 = _context3.sent;
+                data = _yield$this$$http$pos2.data;
                 if (data.success) {
-                  Iracode.success(data.message); // Iracode.close_loading();
-
+                  Iracode.success(data.message);
+                  // Iracode.close_loading();
                   setTimeout(function () {
                     try {
-                      _this4.ctCaseResults = data.data.points;
-                      _this4.niffr_case_id = data.data["case"].id;
+                      _this3.ctCaseResults = data.data.points;
+                      _this3.niffr_case_id = data.data.case.id;
                     } catch (e) {
                       console.log(data, e);
                     }
-
-                    _this4.isLoading = false;
+                    _this3.isLoading = false;
                   }, 500);
                 } else {
                   Iracode.error(data.message);
                 }
-
                 _context3.next = 19;
                 break;
-
               case 16:
                 _context3.prev = 16;
                 _context3.t0 = _context3["catch"](8);
-
                 if (_context3.t0.response) {
                   Iracode.error(_context3.t0.response.data.message);
                 }
-
               case 19:
                 _context3.prev = 19;
                 return _context3.finish(19);
-
               case 21:
               case "end":
                 return _context3.stop();
             }
           }
-        }, _callee3, null, [[8, 16, 19, 21]]);
-      }))();
-    },
+        }, _callee3, this, [[8, 16, 19, 21]]);
+      }));
+      function saveNiffr() {
+        return _saveNiffr.apply(this, arguments);
+      }
+      return saveNiffr;
+    }(),
     renderStatus: function renderStatus(point) {
       var status = "Non-Significant";
       console.log(point);
-
       if (point.ffr < 0.8) {
         status = "Significant";
       }
-
       return status;
     },
-    onPatientCreated: function onPatientCreated(patient) {
-      var _this5 = this;
-
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4() {
+    onPatientCreated: function () {
+      var _onPatientCreated = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4(patient) {
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee4$(_context4) {
           while (1) {
             switch (_context4.prev = _context4.next) {
               case 0:
-                _this5.showCreatePatientModal = false;
+                this.showCreatePatientModal = false;
                 _context4.next = 3;
-                return _this5.getPatients();
-
+                return this.getPatients();
               case 3:
-                _this5.patient = patient;
-
+                this.patient = patient;
               case 4:
               case "end":
                 return _context4.stop();
             }
           }
-        }, _callee4);
-      }))();
-    },
-    getPatients: function getPatients() {
-      var _this6 = this;
-
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee5() {
-        var _yield$_this6$$http$g, data;
-
+        }, _callee4, this);
+      }));
+      function onPatientCreated(_x2) {
+        return _onPatientCreated.apply(this, arguments);
+      }
+      return onPatientCreated;
+    }(),
+    getPatients: function () {
+      var _getPatients = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee5() {
+        var _yield$this$$http$get2, data;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee5$(_context5) {
           while (1) {
             switch (_context5.prev = _context5.next) {
               case 0:
                 _context5.next = 2;
-                return _this6.$http.get("/user/api/patients");
-
+                return this.$http.get("/user/api/patients");
               case 2:
-                _yield$_this6$$http$g = _context5.sent;
-                data = _yield$_this6$$http$g.data;
-                _this6.patients = data.data.items;
-
+                _yield$this$$http$get2 = _context5.sent;
+                data = _yield$this$$http$get2.data;
+                this.patients = data.data.items;
               case 5:
               case "end":
                 return _context5.stop();
             }
           }
-        }, _callee5);
-      }))();
-    },
-    calculateAll: function calculateAll() {
-      var _this7 = this;
-
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee6() {
+        }, _callee5, this);
+      }));
+      function getPatients() {
+        return _getPatients.apply(this, arguments);
+      }
+      return getPatients;
+    }(),
+    calculateAll: function () {
+      var _calculateAll = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee6() {
         var key;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee6$(_context6) {
           while (1) {
             switch (_context6.prev = _context6.next) {
               case 0:
-                if (_this7.pressureForm.pressure) {
+                if (this.pressureForm.pressure) {
                   _context6.next = 2;
                   break;
                 }
-
-                return _context6.abrupt("return", Iracode.error(_this7.__("You have to specify parameters needed for MAP")));
-
+                return _context6.abrupt("return", Iracode.error(this.__("You have to specify parameters needed for MAP")));
               case 2:
-                for (key in _this7.points) {
-                  _this7.calculate(key, _this7.points[key]);
+                for (key in this.points) {
+                  this.calculate(key, this.points[key]);
                 }
-
               case 3:
               case "end":
                 return _context6.stop();
             }
           }
-        }, _callee6);
-      }))();
-    },
+        }, _callee6, this);
+      }));
+      function calculateAll() {
+        return _calculateAll.apply(this, arguments);
+      }
+      return calculateAll;
+    }(),
     calculate: function calculate(key, point) {
       var PI = 3.141592;
       var MAP = parseFloat(this.pressureForm.pressure) * 133.3;
@@ -1467,16 +1421,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       var Ls = Ll;
       var Lp = 0;
       var TFC = parseFloat(this.tfc);
-      var TTFC = TFC; // Ds = ((2 * Ds1) + Ds2) / 3;
+      var TTFC = TFC;
+      // Ds = ((2 * Ds1) + Ds2) / 3;
 
       Ds = Ds * 1e-3;
       Dp = Dp * 1e-3;
       Dd = Dd * 1e-3;
       Ls = Ls * 1e-3;
-      Ld = Ld * 1e-3; // Calculation of Mean of Diameter:
+      Ld = Ld * 1e-3;
+      // Calculation of Mean of Diameter:
+      var Dm = (2 * Dp + Dd) / 3;
 
-      var Dm = (2 * Dp + Dd) / 3; // Calulation of Area:
-
+      // Calulation of Area:
       var As = PI / 4 * Math.pow(Ds, 2);
       var Ad = PI / 4 * Math.pow(Dd, 2);
       var Ap = PI / 4 * Math.pow(Dp, 2);
@@ -1486,104 +1442,99 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       var CFR = 2;
       var Age = this.form.age;
       console.log(point, "point");
-
       if (point.vessel == "LAD" || point.vessel == "DIAGONAL 2" || point.vessel == "Dig") {
         Lenght = 160 * 1e-3;
         CFR = Math.pow(10, 1.16 - 0.48 * Math.log10(rAPV) - 0.0025 * Age);
-
         if (TFC < 14) {
           TFC = 14;
         }
-
         if (TTFC < 7.5) {
           TTFC = 7.5;
         }
       } else if (point.vessel == "LCX" || point.vessel == "OM1" || point.vessel == "OM2") {
         Lenght = 120 * 1e-3;
         CFR = Math.pow(10, 1.14 - 0.45 * Math.log10(rAPV) - 0.0031 * Age);
-
         if (TFC < 9) {
           TFC = 9;
         }
-
         if (TTFC < 6) {
           TTFC = 6;
         }
       } else if (point.vessel == "RCA" || point.vessel == "PDA" || point.vessel == "PLV") {
         Lenght = 107 * 1e-3;
         CFR = Math.pow(10, 1.15 - 0.50 * Math.log10(rAPV) - 0.0021 * Age);
-
         if (TFC < 9) {
           TFC = 9;
         }
-
         if (TTFC < 6) {
           TTFC = 6;
         }
       }
-
       var AFDN = 15;
       AFDN = this.frame_number;
-      console.log(AFDN); // if (radioButton2.Checked)
+      console.log(AFDN);
+      // if (radioButton2.Checked)
       // {
       //     AFDN = 15.0;
       // }
+
       // else if (radioButton3.Checked)
       // {
       //     AFDN = 25.0;
       // }
+
       // else if (radioButton7.Checked)
       // {
       //     AFDN = 30.0;
       // }
+
       // Caliculation of Mean of Velocity (Vm):
-
       var Vm;
-
       if (AFDN == 7.5) {
         Vm = Lenght * AFDN / TTFC;
       } else if (AFDN == 15) {
         Vm = Lenght * AFDN / TFC;
-      } // Caliculation of Flow of the rest state (Qr):
+      }
 
+      // Caliculation of Flow of the rest state (Qr):
+      var Qr = Vm * Am;
 
-      var Qr = Vm * Am; // Total Coronary Resistance Index (TCRI)
-
-      var TCRI = 0.21; // Caliculation of Flow of the hyperemia state (Qh):
-
+      // Total Coronary Resistance Index (TCRI)
+      var TCRI = 0.21;
+      // Caliculation of Flow of the hyperemia state (Qh):
       var Qh = Qr / TCRI;
       var Density = 1060;
-      var Viscosity = 0.0035; // debugger;
-      // Calculation of Pressure Drop of hypermia state:
+      var Viscosity = 0.0035;
 
+      // debugger;
+      // Calculation of Pressure Drop of hypermia state:
       var DeltaPh_eddy = Density * Math.pow(Qh, 2) * Math.pow(1 / As - 1 / Am, 2) / 2;
       var DeltaPh_proxim = 8 * PI * Viscosity * Lp * Qh / Math.pow(Ap, 2);
       var DeltaPh_distal = 8 * PI * Viscosity * Ld * Qh / Math.pow(Ad, 2);
       var DeltaPh_stenos = 8 * PI * Viscosity * Ls * Qh / Math.pow(As, 2);
-      var DeltaPh = DeltaPh_eddy + DeltaPh_proxim + DeltaPh_distal + DeltaPh_stenos; // Calculation of Pressure Drop of rest state:
-
+      var DeltaPh = DeltaPh_eddy + DeltaPh_proxim + DeltaPh_distal + DeltaPh_stenos;
+      // Calculation of Pressure Drop of rest state:
       var DeltaPrs = Density * Math.pow(Qr, 2) * Math.pow(1 / As - 1 / Am, 2) / 2;
       var DeltaPrr = 8 * PI * Viscosity * Ls * Qr / Math.pow(Am, 2);
-      var DeltaPr = DeltaPrs + DeltaPrr; // Calculation of Fractional Flow Reserved (FFR):
-
+      var DeltaPr = DeltaPrs + DeltaPrr;
+      // Calculation of Fractional Flow Reserved (FFR):
       var FFR = (12888.777 - DeltaPh) / 12888.777;
-
       if (FFR > 0.40 & FFR < 0.75) {
         FFR = 0.2817 * FFR + 0.547;
       }
-
       if (FFR < 0.40) {
         FFR = 0.65;
-      } // Calculation of Wall Shear Stress (WSS):
+      }
 
-
+      // Calculation of Wall Shear Stress (WSS):
       var WSS = 4 * Viscosity * Qr / (PI * Math.pow(Ds / 2, 3));
       var Dss = (Dm - Ds) / Dm * 100;
       var Ass = (Math.pow(Dm, 2) - Math.pow(Ds, 2)) / Math.pow(Dm, 2) * 100;
-      var GP = (MAP - DeltaPh) / 133.3; // Calculation of Index of Microvascular Resistance:
+      var GP = (MAP - DeltaPh) / 133.3;
 
-      var IMR = (MAP - DeltaPh) / Qh * (1e-6 / 133.3); // debugger;
-
+      // Calculation of Index of Microvascular Resistance:
+      var IMR = (MAP - DeltaPh) / Qh * (1e-6 / 133.3);
+      // debugger;
       this.points[point.name].ffr = FFR.toFixed(2);
       this.points[point.name].wss = WSS.toFixed(2);
       this.points[point.name].imr = IMR.toFixed(2);
@@ -1594,26 +1545,22 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     updatePressureValue: function updatePressureValue(type, value) {
       this.pressureForm[type] = value;
       var isDone = true;
-
       for (var key in this.pressureForm) {
         if (!this.pressureForm[key] && key != "pressure") {
           isDone = false;
           break;
         }
       }
-
       console.log(this.pressureForm);
-
       if (isDone) {
         // Calculation of Mean Artery Pressure:
-        var map = parseFloat(this.pressureForm.dbp) + (0.3333 + parseFloat(this.pressureForm.hr) * 0.0012) * (parseFloat(this.pressureForm.sbp) - parseFloat(this.pressureForm.dbp)); // Calculation of Mean Artery Pressure:
-
+        var map = parseFloat(this.pressureForm.dbp) + (0.3333 + parseFloat(this.pressureForm.hr) * 0.0012) * (parseFloat(this.pressureForm.sbp) - parseFloat(this.pressureForm.dbp));
+        // Calculation of Mean Artery Pressure:
         this.pressureForm.pressure = map.toFixed(2);
       }
     },
     onClose: function onClose() {
       var hasError = false;
-
       if (this.points[this.selectedPoint.name]) {
         for (var key in this.points[this.selectedPoint.name]) {
           if (!this.points[this.selectedPoint.name]['values'][key]) {
@@ -1622,7 +1569,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           }
         }
       }
-
       console.log(hasError);
       if (hasError) delete this.points[this.selectedPoint.name];
     },
@@ -1636,21 +1582,21 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       console.log(oX, oY);
       var model = this.$refs['modelViewer'];
       var posandnormal = model.positionAndNormalFromPoint(oX, oY);
-
       if (posandnormal != null) {
         var position = posandnormal.position;
         var normal = posandnormal.normal;
         var strPosition = position.x + " " + position.y + " " + position.z;
         var cameraTarget = position.x + "m " + position.y + "m " + position.z + "m";
-        var strNormal = normal.x + " " + normal.y + " " + normal.z; // var strPosandnormal = JSON.stringify(posandnormal);
+        var strNormal = normal.x + " " + normal.y + " " + normal.z;
+        // var strPosandnormal = JSON.stringify(posandnormal);
         // model.updateHotspot({"name": "hotspot-pivotpoint", "position": strPosition, "normal": strNormal});
-
-        model.cameraTarget = cameraTarget; // document.getElementById("pivotpoint").style.display = "block";
+        model.cameraTarget = cameraTarget;
+        // document.getElementById("pivotpoint").style.display = "block";
       }
-
       elsex;
       {
-        model.cameraTarget = cameraTarget; // document.getElementById("pivotpoint").style.display = "none";
+        model.cameraTarget = cameraTarget;
+        // document.getElementById("pivotpoint").style.display = "none";
       }
     },
     showLabel: function showLabel(point) {
@@ -1662,43 +1608,35 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
     savePoint: function savePoint() {
       var hasError = false;
-
       for (var key in this.points[this.selectedPoint.name]['values']) {
         console.log(key);
-
         if (!this.points[this.selectedPoint.name]['values'][key]) {
           if (!this.pointsErrors[this.selectedPoint.name]) {
             this.pointsErrors[this.selectedPoint.name] = {};
           }
-
           this.pointsErrors[this.selectedPoint.name][key] = "".concat(key, " should not be empty");
           hasError = true;
           break;
         }
       }
-
       console.log(hasError);
-
       if (!hasError) {
         this.points[this.selectedPoint.name].done = true;
         this.pointInputPopupActive = false;
         this.pointsKey++;
       }
-
-      this.$forceUpdate(); // document.querySelector(`[data-name=${this.selectedPoint.name}]`).classList.add("done")
+      this.$forceUpdate();
+      // document.querySelector(`[data-name=${this.selectedPoint.name}]`).classList.add("done")
     },
     updatePoint: function updatePoint(point, value) {
       this.points[this.selectedPoint.name]['values'][point] = value;
-
       if (this.pointsErrors[this.selectedPoint.name]) {
         this.pointsErrors[this.selectedPoint.name][point] = "";
       }
-
       this.$forceUpdate();
     },
     onPointClicked: function onPointClicked(point) {
       this.selectedPoint = point;
-
       if (!this.points[point.name]) {
         this.points[point.name] = {
           done: false,
@@ -1719,18 +1657,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           }
         };
       }
-
       this.pointInputPopupActive = true;
     },
-    onSubmit: function onSubmit(action) {// const data = await this.form.post("/user/api/niffr_cases");
-      // if (data.success) {
-      //     Iracode.success(this.__("Niffrcase Created Successfully"));
-      //     if (action == "close")
-      //         this.$router.push("/user/niffr_cases");
-      //     else this.form.reset();
-      // }
-
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee7() {
+    onSubmit: function () {
+      var _onSubmit = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee7(action) {
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee7$(_context7) {
           while (1) {
             switch (_context7.prev = _context7.next) {
@@ -1740,8 +1670,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             }
           }
         }, _callee7);
-      }))();
-    }
+      }));
+      function onSubmit(_x3) {
+        return _onSubmit.apply(this, arguments);
+      }
+      return onSubmit;
+    }()
   }
 });
 
@@ -1759,141 +1693,139 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 
-
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['point', 'ctCaseResults'],
   data: function data() {
@@ -1945,80 +1877,74 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     };
   },
   methods: {
-    exportAsDocx: function exportAsDocx(name) {
-      var _this = this;
-
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+    exportAsDocx: function () {
+      var _exportAsDocx = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(name) {
         var point;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.prev = 0;
-                console.log(name, _this.ctCaseResults[name], _this.ctCaseResults);
-                point = _this.ctCaseResults[name];
-
+                console.log(name, this.ctCaseResults[name], this.ctCaseResults);
+                point = this.ctCaseResults[name];
                 if (point.result_file) {
                   _context.next = 5;
                   break;
                 }
-
                 return _context.abrupt("return");
-
               case 5:
-                window.open(_this.url(point.result_file), "_blank");
+                window.open(this.url(point.result_file), "_blank");
                 _context.next = 10;
                 break;
-
               case 8:
                 _context.prev = 8;
                 _context.t0 = _context["catch"](0);
-
               case 10:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[0, 8]]);
-      }))();
-    },
-    exportAsWord: function exportAsWord(name) {
-      var _this2 = this;
-
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+        }, _callee, this, [[0, 8]]);
+      }));
+      function exportAsDocx(_x) {
+        return _exportAsDocx.apply(this, arguments);
+      }
+      return exportAsDocx;
+    }(),
+    exportAsWord: function () {
+      var _exportAsWord = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(name) {
         var point;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.prev = 0;
-                console.log(name, _this2.ctCaseResults[name], _this2.ctCaseResults);
-                point = _this2.ctCaseResults[name];
-
+                console.log(name, this.ctCaseResults[name], this.ctCaseResults);
+                point = this.ctCaseResults[name];
                 if (point.result_file) {
                   _context2.next = 5;
                   break;
                 }
-
                 return _context2.abrupt("return");
-
               case 5:
-                window.open("https://docs.google.com/viewerng/viewer?url=".concat(_this2.url(point.result_file)), "_blank");
+                window.open("https://docs.google.com/viewerng/viewer?url=".concat(this.url(point.result_file)), "_blank");
                 _context2.next = 10;
                 break;
-
               case 8:
                 _context2.prev = 8;
                 _context2.t0 = _context2["catch"](0);
-
               case 10:
               case "end":
                 return _context2.stop();
             }
           }
-        }, _callee2, null, [[0, 8]]);
-      }))();
-    },
+        }, _callee2, this, [[0, 8]]);
+      }));
+      function exportAsWord(_x2) {
+        return _exportAsWord.apply(this, arguments);
+      }
+      return exportAsWord;
+    }(),
     renderStatus: function renderStatus(point, type) {
       if (!point) return;
       console.log(point, this.scores, type, "point");
@@ -2032,7 +1958,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       } else if (point.ffr < 0.75) {
         return "red";
       }
-
       return "";
     }
   }
@@ -2414,6 +2339,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({

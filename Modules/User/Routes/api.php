@@ -44,10 +44,12 @@ Route::get('mace_assesments/{id}/export/{type}', 'MaceAssesmentAPIController@qui
 Route::crud('mace_assesments', 'MaceAssesmentAPIController');
 
 Route::post('body_composition', 'BodyAnalyzerController@store')->name("body_composition.store");
-Route::crud('computation_centers', 'ComputationCenterAPIController');
+Route::post('dominant_reports/report', 'DominantReportController@report')->name("dominant_reports.report");
+Route::crud('computation_center                                                                                                                                          s', 'ComputationCenterAPIController');
 Route::crud('echo_calculations', 'EchoCalculationAPIController');
 Route::post('computation_center', 'ComputationCenterAPIController@store')->name("computation_center.store");
 Route::post('angiography', 'AngiographyAPIController@store')->name("angiography.store");
+Route::post('gpt/report', 'GPTController@report')->name("gpt.report");
 
 
 Route::crud('angiographies', 'AngiographyAPIController');

@@ -80,6 +80,11 @@ export default [
         name: 'anatomicalangio-assesment',
         component: ()=> import('@external_modules/User/Resources/js/anatomicalangio/New.vue'),
     },
+    {
+        path: '/voice-gpt',
+        name: 'voice-gpt',
+        component: ()=> import('@external_modules/User/Resources/js/VoiceGpt.vue'),
+    },
 	...require('@external_modules/User/Resources/js/mace_assesments/routes.js').default,
 	...require('@external_modules/User/Resources/js/echo_calculations/routes.js').default,
 	...require('@external_modules/User/Resources/js/body_compositions/routes.js').default,

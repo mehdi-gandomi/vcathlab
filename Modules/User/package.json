@@ -22,6 +22,7 @@
         "@xkeshi/image-compressor": "^0.5.3",
         "cropperjs": "^1.5.9",
         "vue-fullscreen": "^2.1.6",
+        "vue-markdown": "^2.2.4",
         "vue-repeater": "^1.1.2",
         "vue-social-sharing": "^3.0.4",
         "vue-upload-component": "^2.8.20"
